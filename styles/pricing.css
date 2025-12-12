@@ -1,0 +1,401 @@
+.pricing_heading {
+  font-family: "Satoshi", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0d0d;
+  max-width: 650px;
+}
+
+.pricing_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 860px;
+  margin-top: 100px;
+}
+.pricing_Subheading {
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  max-width: 430px;
+}
+.special_advantage_program_button .demo_button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  background: #00954a;
+  color: #ffffff;
+  height: 52px;
+  width: 208px;
+  border: none;
+  border-radius: 4px;
+}
+.special_advantage_program_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  gap: 48px;
+  padding: 48px 86px;
+}
+
+.brand_container {
+  border: 0.5px solid #002211;
+  border-radius: 12px;
+  height: 191px;
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.brand-subContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  border-bottom: 0.5px solid #002211;
+  display: "flex";
+}
+.quote-btn-container {
+  display: flex;
+  justify-content: right;
+  gap: 96px;
+  margin-top: 20px;
+}
+.quote-btn {
+  width: 208px;
+  height: 52px;
+  padding: 16px 24px 16px 24px;
+  gap: 20px;
+  border-radius: 4px;
+  background: #00954a;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.quote-btn2 {
+  width: 208px;
+  height: 52px;
+  padding: 16px 24px 16px 24px;
+  gap: 20px;
+  border-radius: 4px;
+  background: #00954a;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.quote-btn3 {
+  width: 208px;
+  height: 52px;
+  padding: 16px 24px 16px 24px;
+  gap: 20px;
+  border-radius: 4px;
+  background: #00954a;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.brand_container_heading {
+  font-family: "Satoshi", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #002211;
+  padding: 20px;
+}
+.brand-icons {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+.pricing-table {
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  margin-top: 72px;
+}
+.pricing-table-mobile {
+  display: none;
+}
+.RoiCal-img-mobile {
+  display: none;
+}
+
+.demo_container {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background: #002211;
+  border: none;
+  border-radius: 4px;
+  margin: 50px 0px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+  flex-wrap: wrap;
+}
+
+.demo_button_link {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end; /* Aligns button to the right end */
+}
+
+.demo_button {
+  width: auto; /* Ensures button takes necessary space without wrapping */
+  flex-shrink: 0; /* Prevents button from shrinking too much */
+}
+
+.demo_container p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 343px;
+}
+
+.demo_container button {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  background: #00954a;
+  color: #ffffff;
+  height: 52px;
+  width: 208px;
+  border: none;
+  border-radius: 4px;
+}
+.quote-btn-mobile {
+  display: none;
+}
+
+.brand-parent-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* updated work */
+.cashflow-main {
+  display: flex;
+  flex-direction: column;
+}
+.cashflow-cal {
+  display: flex;
+  align-items: center;
+  padding: 72px 48px;
+  border-radius: 12px;
+  background: #f6f7f2;
+}
+.cashflow-container {
+  max-width: 522px;
+}
+.cashflow-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: Satoshi;
+  font-style: normal;
+}
+.cashflow-heading {
+  color: #021;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 38px; /* 105.556% */
+  text-transform: capitalize;
+}
+
+.cashflow-para p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
+.quote-roi-btn {
+  gap: 4px;
+  height: 52px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 4px;
+  background: #00954a;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .brand-parent-container {
+    padding: 0px 21px;
+  }
+  .pricing_heading {
+    font-family: "Satoshi", sans-serif;
+    letter-spacing: 0.01em;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: #0d0d0d;
+  }
+  .pricing_Subheading {
+    font-family: "Satoshi", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+  }
+  .special_advantage_program_container {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .pricing_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 860px;
+    margin-top: 50px;
+  }
+  .brand-icons {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .pricing-table {
+    display: none;
+  }
+
+  .pricing-table-mobile {
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    display: inline;
+    margin-top: 50px;
+  }
+  .quote-btn-mobile {
+    width: 100%;
+    height: 52px;
+    padding: 16px 24px 16px 24px;
+    gap: 20px;
+    border-radius: 4px;
+    background: #00954a;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    display: inline;
+    font-family: "Satoshi", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+  }
+  .quote-btn {
+    display: none;
+  }
+
+  .quote-btn2 {
+    display: none;
+  }
+
+  .quote-btn3 {
+    display: none;
+  }
+  .quote_anchor {
+    display: none;
+  }
+  .brand_container {
+    border: 0.5px solid #002211;
+    border-radius: 12px;
+    min-height: 650px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    margin-top: 50px;
+  }
+  .brand-subContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    border-bottom: 0.5px solid #002211;
+    display: "flex";
+  }
+  .demo_container {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    background: #002211;
+    border: none;
+    border-radius: 4px;
+    margin: 50px 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    flex-wrap: wrap;
+  }
+  .demo_container button {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    background: #00954a;
+    color: #ffffff;
+    height: 52px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+  }
+
+  /* updated work */
+  .cashflow-cal {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .cashflow-main {
+    margin-top: 120px;
+  }
+}

@@ -1,0 +1,278 @@
+.whyFinfloh-header {
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #021;
+  background-image: url("../public/images/whyfinfloh-hero-bg.svg");
+  background-repeat: no-repeat;
+}
+.whyFinfloh-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  padding: 120px 228px;
+}
+.whyFinfloh-header-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Icon-Size-Icon-Size-24, 24px);
+  align-self: stretch;
+}
+.whyFinfloh-header-heading {
+  color: #fff;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+}
+.whyFinfloh-header-subheading {
+  color: #bfe3c4;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+.whyFinflohReason-heading h2{
+  color: #0a0f15;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px; /* 122.222% */
+}
+.whyFinflohReason-heading h2 span {
+  color: #00954a;
+}
+
+.whyFinfloh-reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 48px;
+  margin-bottom: 120px;
+}
+.whyFinfloh-reason {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+  padding: 48px 86px;
+  flex: 1 0 0;
+  border-radius: var(--Spacing-Spacing-16, 16px);
+  border: 1px solid #d9d9d9;
+}
+.whyFinfloh-reason span {
+  color: var(--Color-Brand_font_clr, #00954a);
+  font-family: Satoshi;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+}
+.reason-heading {
+  color: var(--Color-primary_font_clr, #0a0f15);
+  font-family: Satoshi;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  max-width: 370px;
+  width: 100%;
+  margin: 0px;
+}
+.reason-subHeading {
+  max-width: 674px;
+  width: 100%;
+  color: var(--Color-teritary_font_clr, #657084);
+  font-family: Satoshi;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 145.455% */
+}
+.whyFinfloh-subTitleStyle {
+  max-width: 687px;
+  width: 100%;
+  color: var(--Color-teritary_font_clr, #657084);
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  margin-top: 24px;
+}
+.whyfinfloh-newsletter {
+  display: flex;
+  padding: 48px 86px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  border-radius: 8px;
+  background: #0c492b;
+  margin-bottom: 120px;
+}
+.whyfinfloh-newsletter-cnt {
+  width: 100%;
+}
+.whyfinfloh-newsletter-cnt p {
+  color: var(--White-100, #fff);
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+}
+
+// responsive styles
+
+@media (max-width: 720px) {
+  .whyFinfloh-header {
+    height: auto;
+  }
+  .whyFinfloh-header-heading{
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .whyFinfloh-header-subheading{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .whyFinfloh-header-content {
+    padding: 72px 24px 86px 24px;
+  }
+  .whyFinfloh-reasons {
+    gap: 40px;
+  }
+  .whyFinfloh-reason {
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    gap: 16px;
+  }
+  .reason-subHeading {
+    font-size: 20px;
+  }
+  .whyFinfloh-subTitleStyle {
+    font-size: 16px;
+  }
+  .whyfinfloh-newsletter {
+    padding: 48px 24px;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .whyfinfloh-users-heading {
+    text-align: center;
+  }
+  .whyfinfloh-certificate-banners {
+    flex-wrap: wrap;
+  }
+  .whyfinfloh-certificate-banners img {
+    width: 102px;
+    height: 102px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  .whyFinfloh-header-content {
+    padding: 120px 86px;
+  }
+  
+}
+
+
+
+
+
+
+// award page styles
+
+.awards-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.awards-header-para{
+  display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 673px;
+    width: 100%;
+    margin-top: 86px;
+    justify-content: center;
+    align-items: center;
+}
+.awards-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  max-width: 888px;
+  width: 100%;
+  margin-top: 86px;
+
+}
+
+.awards-header-main-heading{
+  color: #222631;
+text-align: center;
+font-family: Satoshi;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 120% */
+margin: 0px;
+}
+.awards-header-subheading{
+  color: #62716A;
+text-align: center;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+.awards-header-heading{
+  color: #222631;
+text-align: center;
+font-family: Satoshi;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 114.286% */
+}
+.awards-main-para-content{
+  color: #62716A;
+font-family: Satoshi;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+
+}
+.award-logos-slide img{
+  width: 113px;
+  height: 148px;
+}
+.InspireAwards-heading{
+  color: #222631;
+text-align: center;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 140% */
+}

@@ -1,0 +1,124 @@
+.podcast-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 36px;
+}
+.podcast-slider-strip {
+  overflow: hidden;
+  background: white;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.podcast-slider-strip:before,
+.podcast-slider-strip:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.podcast-slider-strip:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.podcast-slider-strip:hover .podcast-slider-track {
+  animation-play-state: paused !important;
+}
+.podcast-slider-strip:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.podcast-slider-track {
+  display: flex;
+  width: max-content;
+  animation: podcast-slider-slide 200s linear infinite;
+  gap: 24px;
+}
+
+
+@keyframes podcast-slider-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.podcast-slider-episode {
+  display: flex;
+  flex-direction: column;
+  max-width: 694px;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 8px;
+}
+
+.podcast-slider-episode-content {
+  display: flex;
+  padding: 48px 24px 24px 24px;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 24px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 8px 8px 8px 0px;
+}
+
+.podcast-slider-author-img {
+  width: 180px;
+  height: 180px;
+  aspect-ratio: 1/1;
+  border-radius: 134px;
+  border: 0.736px solid #e5e7eb;
+  background: #fff;
+  margin: 0px;
+}
+.podcast-slider-author-position-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  height: 200px;
+  align-self: stretch;
+}
+
+.podcast-slider-author-position-heading .podcast-slider-author {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0px;
+}
+
+.podcast-slider-author-position-heading .podcast-slider-position {
+  color: #374151;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0px;
+}
+.podcast-slider-author-position-container .podcast-slider-position {
+    color: #374151;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .podcast-slider-strip:before,
+  .podcast-slider-strip:after {
+    display: none;
+  }
+  .podcast-slider-track {
+    animation-duration: 235s;
+  }
+}

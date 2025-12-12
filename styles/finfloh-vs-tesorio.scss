@@ -1,0 +1,453 @@
+// global Style
+.green-highlight {
+  background-color: #e6f7ec;
+}
+
+.green-text-highlight {
+  color: #00954a;
+}
+
+.comparison-h2 {
+  color: #121a16;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+// -- FinFloh Vs Tesario Hero --
+.hero-comparison-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/images/competitors-page/comparison-pattern.svg"),
+    linear-gradient(180deg, #006331 45%, #002f17 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: bottom, center;
+}
+
+.comparison-section-content-wrapper {
+  display: grid;
+  justify-items: center;
+  width: 800px;
+  gap: 24px;
+  padding: 48px;
+}
+
+.comparison-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comparison-section-content h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  margin: 0;
+}
+
+.comparison-section-content p {
+  color: #e6f7ec;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  line-height: 160%; /* 32px */
+}
+
+// G2 Section Main
+.g2-rating-section {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: #b3efa0;
+  width: 100%;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.g2-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.g2-logo-wrapper img {
+  width: 48px;
+  height: auto;
+}
+
+.g2-logo-wrapper p {
+  color: #121a16;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+
+// G2 Rating Card
+.g2-rating-wrapper {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+}
+
+.g2-rating-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  gap: 8px;
+  justify-content: space-between;
+}
+.g2-rating-card span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.res-img-ign {
+  height: 32px;
+  align-items: center;
+}
+
+.g2-rating-card p {
+  color: #121a16;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+// -- Hero Section - Ends here --
+
+// -- Why FinFloh Stands Out --
+.comparison-table {
+  margin-bottom: 240px;
+}
+.comparison-usp-wrapper {
+  display: grid;
+  gap: 48px;
+  margin-bottom: 120px;
+}
+
+.comparison-usp-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.usp-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.usp-single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 24px;
+  gap: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background-image: url(/images/competitors-page/three-lines-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.usp-single-card h3 {
+  font-family: Satoshi;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+  margin: 0px;
+}
+
+.usp-single-card img {
+  width: 56px;
+  height: 56px;
+}
+// -- Why FinFloh Stands Out - Ends Here --
+
+// Rework on this part
+// Comparison Table
+.sectionHeaders {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.sectionHeaders h2 {
+  max-width: 360px;
+  width: 100%;
+}
+
+.lineHeader {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e5e7eb;
+}
+
+// Comparison Table Section
+.tableData {
+  display: flex;
+  background-color: #002f17;
+}
+
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Features Wrapper
+.feature-table-wrapper {
+  margin: 48px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.feature-table-wrapper:last-child {
+  border: none;
+}
+
+// Features - Sub Header
+.feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.feature-header h3 {
+  font-weight: 500;
+  line-height: 160%;
+  max-width: 600px;
+  width: 100%;
+}
+
+// Table & Image Wrapper
+
+.feature-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 48px 0;
+}
+
+.feature-container-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+}
+
+.featureTable {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  height: fit-content;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.featureTable thead {
+  display: grid;
+  grid-template-columns: 1fr 160px 160px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.featureTable thead tr:first-child {
+  justify-content: left;
+}
+.featureTable thead tr {
+  display: flex;
+  width: 160px;
+  padding: 24px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.featureTable tbody tr {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.featureTable tbody img {
+  max-width: 24px;
+  width: 100%;
+}
+
+.featureTable tbody tr:last-child {
+  border: none;
+}
+
+.featureTable tbody td {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  width: 160px;
+}
+
+.featureTable tbody td:first-child {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.flohsenseAI-container {
+  display: flex;
+  align-items: center;
+  background-color: #002f17;
+  padding: 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.flohsenseAI-container img {
+  width: 62px;
+  height: auto;
+}
+
+.flohsenseAI-content {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 4px;
+}
+
+.flohsenseAI-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-style: capitalise;
+  background: linear-gradient(304deg, #ffffff 45%, #00ff5c82 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Safari */
+  color: transparent; /* Fallback */
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.flohsenseAI-content p {
+  color: #e2fcee;
+}
+
+// ipad width
+@media (max-width: 1024px) {
+  .comparison-section-content-wrapper {
+    width: fit-content;
+  }
+  .usp-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .TestingImage {
+    display: none;
+  }
+
+  .featureTable thead {
+    grid-template-columns: 1fr 220px 220px;
+  }
+  .featureTable thead tr {
+    padding: 16px;
+    width: 220px;
+  }
+  .featureTable tbody td {
+    padding: 16px;
+    width: 220px;
+  }
+}
+
+// mobile width
+@media (max-width: 640px) {
+  .comparison-section-content-wrapper {
+    padding: 24px;
+  }
+
+  .comparison-section-content h1 {
+    font-size: 44px;
+    text-align: left;
+  }
+
+  .comparison-section-content p {
+    font-size: 22px;
+    line-height: 170%;
+    text-align: left;
+  }
+
+  .hero-tesario-illustration {
+    display: none;
+  }
+  .comparison-h2 {
+    text-align: center;
+  }
+
+  .sectionHeaders h2 {
+    text-align: left;
+  }
+  .g2-rating-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .g2-rating-wrapper {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .usp-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .comparison-usp-header {
+    margin-top: 48px;
+    justify-content: center;
+  }
+  .lineHeader {
+    display: none;
+  }
+  .TestingImage {
+    display: none;
+  }
+  .feature-wrapper {
+    margin: none;
+    padding: none;
+  }
+  .feature-container-left {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+  }
+
+  .featureTable {
+    width: fit-content;
+  }
+
+  .featureTable thead {
+    width: fit-content;
+  }
+
+  .flohsenseAI-container {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .table-wrapper {
+    height: fit-content;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+}

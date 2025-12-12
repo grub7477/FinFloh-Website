@@ -1,0 +1,191 @@
+.about-header {
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #021;
+  background-image: url("../public/images/whyfinfloh-hero-bg.svg");
+  background-repeat: no-repeat;
+}
+.about-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  padding: 86px 160px;
+}
+.about-header-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Icon-Size-Icon-Size-24, 24px);
+  align-self: stretch;
+}
+.about-header-heading {
+  color: #a7f29d;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px; /* 114.286% */
+  margin: 0px;
+}
+.about-header-subheading-common {
+  color: #222631;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin: 0px;
+}
+.our-solution-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 86px 228px;
+}
+
+.our-solution-heading-common {
+  color: #222631;
+  font-family: Satoshi;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px; /* 133.333% */
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0px;
+}
+
+.our-mission {
+  display: flex;
+  gap: 86px;
+  padding: 86px;
+  border-radius: 8px;
+  text-align: left;
+  background: rgba(242, 243, 242, 0.5);
+}
+
+.our-mission-content {
+  max-width: 546px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Why-FinFloh-Why-Now {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #f2f3f2;
+  margin-bottom: 48px;
+}
+.our-features {
+  display: flex;
+  gap: 24px;
+  padding: 0px 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.our-features-content {
+  display: flex;
+  padding: 48px;
+  max-width: 512px;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.our-features-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.our-features-title{
+  color: #222631;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+text-transform: capitalize;
+margin: 0px;
+}
+.our-features-description{
+  color: #222631;
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 150% */
+text-transform: capitalize;
+margin: 0px;
+}
+.about-calculate-container {
+  display: flex;
+  gap: 24px;
+  margin: 48px;
+  padding: 48px;
+  border-radius: 8px;
+  justify-content: space-between;
+    align-items: center;
+  background: #021;
+}
+.about-calculate-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 714px;
+  width: 100%;
+}
+.about-calculate-heading {
+  color: #a7f29d;
+  font-family: Satoshi;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 107.143% */
+  // text-transform: capitalize;
+  margin: 0px;
+}
+.about-calculate-para {
+  max-width: 714px;
+  width: 100%;
+  color: #fff;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin: 0px;
+}
+
+
+@media (max-width: 1024px) {
+  .about-header-content {
+    padding: 86px 16px;
+  }
+  .our-solution-content {
+    padding: 86px 16px 0px;
+  }
+  .our-mission {
+    padding: 86px 16px;
+    flex-direction: column;
+  }
+  .our-features {
+    padding: 0px 16px;
+  }
+  .our-features-content {
+    padding: 24px;
+  }
+  .about-calculate-container {
+    margin: 24px;
+    padding: 24px;
+    flex-direction: column;
+  }
+  
+}

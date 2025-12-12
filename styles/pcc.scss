@@ -1,0 +1,404 @@
+.ppc-dashboardImg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  /* Adjust the max-width and max-height as needed */
+  max-width: 529px;
+  max-height: 493px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ppc-dashboardImg {
+    display: none !important;
+  }
+}
+.autoPilotContainer {
+  width: 409px;
+  min-width: 33%;
+  height: 204px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #f6f7f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .autoPilotContainer {
+    width: 100%;
+    height: 142.67px;
+    padding: 16.79px;
+    border-radius: 5.6px;
+  }
+}
+
+.autoPilotContainerDesc {
+  font-size: 18px;
+  color: #233b2f;
+  font-weight: 400;
+  width: 231px;
+  text-align: center;
+}
+
+.businessContainer {
+  width: 624px;
+  height: 422px;
+  padding: 48px;
+  border-radius: 8px;
+  border: 4px;
+  gap: 24px;
+  background-image: url(/images/ppc-pattern.png);
+  background-size: cover; /* or contain, depending on your preference */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  border: solid 4px#F6F7F2;
+}
+
+.businessContainerTitle {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .businessContainer {
+    width: 100%;
+    height: 365.69px;
+    padding: 32.28px 21.52px 32.28px 21.52px;
+    border-radius: 7.17px;
+    border: 2px;
+    gap: 21.52px;
+    background-image: url(/images/ppc-pattern.png);
+    background-size: cover; /* or contain, depending on your preference */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: solid 4px#F6F7F2;
+  }
+  .businessContainerTitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+}
+/* Your CSS styles for the list */
+.custom-list {
+  list-style-type: none; /* Remove default list item marker */
+  padding: 0;
+}
+
+.custom-list-item {
+  padding: 12px;
+  background-image: url(/images/tick-green-gradient.svg);
+  background-repeat: no-repeat;
+  background-position: left center; /* Adjust the position of the tick image */
+  padding-left: 36px; /* Add space between the tick image and text */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .custom-list-item {
+    width: 100%;
+    height: 65px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.custom-list-item span {
+  /* Adjust the margin or add any other styles for additional content within the list item */
+  margin-left: 12px;
+}
+
+.finFlohService {
+  width: 624px;
+  max-height: 509px;
+  padding: 48px;
+  border-radius: 8px;
+  gap: 5px;
+  background: #f6f7f2;
+}
+
+@media (max-width: 767px) {
+  .finFlohService {
+    width: 100%;
+    height: 422px;
+    padding: 32.28px 21.52px 32.28px 21.52px;
+    border-radius: 8px;
+    border: 4px;
+    gap: 24px;
+    background-size: cover; /* or contain, depending on your preference */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: solid 4px#F6F7F2;
+  }
+}
+.productIntegration {
+  width: 100%;
+  min-height: 313.81px;
+  padding: 48px;
+  border-radius: 8px;
+  gap: 24px;
+  background: #002211;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .productIntegration {
+    width: 100%;
+    min-height: 843.62px;
+    padding: 36px 24px 36px 24px;
+    border-radius: 8px;
+    gap: 36px;
+    flex-direction: column;
+  }
+}
+.custom-left,
+.custom-right {
+  flex: 1;
+}
+
+.secureContainer {
+  width: 100%;
+  min-height: 213px;
+  border-radius: 12px;
+  background: #f6f7f2;
+  margin-top: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .secureContainer {
+    width: 100%;
+    height: 493px;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+  }
+}
+
+.autoPilot {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .autoPilot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileScreen {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+}
+
+.autoPilotText {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .autoPilot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .autoPilotText {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .autoPilotContainerDesc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 161px;
+  }
+  .autoPilotHeading {
+    padding-bottom: 0px;
+  }
+}
+
+// For styles targeting screens up to 767 pixels (mobile screens)
+.titleStyle {
+  // Styles for mobile (Heading-XS style)
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  line-height: 42px !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+}
+@media (max-width: 767px) {
+  .titleStyle {
+    // Styles for mobile (Heading-XS style)
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    line-height: 42px !important;
+    letter-spacing: 0em !important;
+    text-align: center !important;
+  }
+  .mobileScreen {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.testContainer {
+  display: flex;
+  justify-content: space-between; // Default: Mobile layout
+
+  @media (min-width: 576px) {
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.secureImg {
+  display: flex;
+  gap: 50px;
+  /* flex: auto; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (width: 860px) and (height: 1391px) {
+  .productIntegration {
+    width: 100%;
+    min-height: 843.62px;
+    padding: 36px 24px 36px 24px;
+    border-radius: 8px;
+    gap: 36px;
+    flex-direction: column;
+  }
+}
+
+.demoInput {
+  min-width: 0px !important;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.complimentary-offer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  height: 37px;
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.complimentary-offer-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #002211;
+}
+
+.complimentary-price-text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #002211;
+}
+
+.offer-parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  flex-direction: column;
+}
+
+.offer-parent-container h3 {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+
+
+.offer-container {
+  width: 100px;
+  height: 26px;
+  padding: 2px 12px 2px 12px;
+  border-radius: 50px;
+  gap: 10px;
+  background: #96d300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.pricing-offer-banner {
+  max-width: 623px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #96d300;
+  color: #021;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px; /* 150% */
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+

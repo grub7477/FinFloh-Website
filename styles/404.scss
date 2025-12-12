@@ -1,0 +1,131 @@
+// Custom404.module.scss
+
+.parent-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-not-found {
+  background-color: #f6f7f2;
+  max-height: 700px;
+  height: 100vh;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/404-bg.png');
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .page-not-found {
+    background-image: url('/images/404-mobile.png');
+    max-height: 100%;
+  }
+}
+
+.page-content {
+  text-align: center;
+
+  p {
+    font-weight: 600;
+    color: #002211;
+    font-size: 36px;
+    margin-bottom: 10px;
+    line-height: 42px;
+  }
+
+  .large-number {
+    color: #002211;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 700px;
+    font-family: 'Satoshi';
+  }
+  @media (max-width: 767px) {
+    .large-number {
+      font-size: 36px !important;
+      font-weight: 600 !important;
+      line-height: 43px !important;
+      letter-spacing: 0em !important;
+      text-align: center !important;
+    }
+  }
+}
+
+.subHeading {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 26px !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+  .subHeading {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+    letter-spacing: 0em !important;
+    text-align: center !important;
+  }
+}
+
+.redirectionBtn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 767px) {
+  .redirectionBtn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 28px;
+    padding: 16px;
+  }
+}
+
+.transparentBtn {
+  background: transparent;
+  border: 1px solid #002211;
+  color: #002211;
+  border-radius: 4px;
+  max-width: 224px;
+  height: 45px;
+  padding: 12px 20px 12px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transparentBtn:hover {
+  background: transparent;
+  color: #002211;
+}
+
+.transparentBtn:not(:hover) {
+  background: transparent;
+  color: #002211;
+}
+
+@media (max-width: 767px) {  
+
+  .transparentBtn {
+
+    max-width: 100%;
+  }
+
+ }

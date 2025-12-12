@@ -1,0 +1,249 @@
+.flohsense-ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  border-radius: 16px;
+  margin: 0px 24px;
+}
+
+.flohsense-ai-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  max-width: 670px;
+  width: 100%;
+}
+.flohsense-ai-icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.flohsense-ai-heading {
+  color: var(--Font-primary, #111827);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0px;
+  text-align: left;
+}
+.flohsense-ai-sub-heading {
+  color: var(--Font-primary, #111827);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0px;
+  text-align: left;
+  max-width: 620px;
+  width: 100%;
+}
+.flohsense-ai-sub-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flohsense-ai-description {
+  color: var(--Font-secondary, #374151);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin: 0px;
+  text-align: left;
+  max-width: 472px;
+  width: 100%;
+}
+.flohsense-ai-special-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(45deg, #8445cc 0%, #4e1d87 100%);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+.flohsense-ai-special-offer p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.flohsense-ai-traditional-system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.flohsense-ai-traditional-system-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flohsense-ai-traditional-system-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.Traditional-system-desktop-img {
+  display: block;
+}
+
+.Traditional-system-mobile-img {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .Traditional-system-desktop-img {
+    display: none;
+  }
+
+  .Traditional-system-mobile-img {
+    display: block;
+  }
+}
+
+.flohsense-ai-flowchart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: radial-gradient(ellipse at bottom, #47eb92 -86%, #000 100%);
+  padding: 80px 48px;
+  border-radius: 16px;
+  margin-bottom: 86px;
+}
+
+.flohsense-ai-flowchart {
+  width: 100%;
+  height: 100%;
+}
+
+.finance-team-benefits-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 86px;
+  background: #f8fcfa;
+  margin: 86px 0px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.finance-team-benefits-heading {
+  color: var(--Font-primary, #111827);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0px;
+  text-align: center;
+  max-width: 472px;
+  width: 100%;
+}
+
+.finance-team-benefits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.finance-team-benefits-grid-first {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.finance-team-benefits-grid-last {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.benefit-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #eaf6f0;
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 220px;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-title {
+  color: var(--Font-primary, #111827);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0px;
+  text-align: left;
+}
+
+.benefit-desc {
+  color: var(--Font-secondary, #374151);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  margin: 0px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .flohsense-ai-header {
+    height: auto;
+    padding: 48px 0px;
+  }
+  .flohsense-ai-header-content {
+    padding: 0px;
+  }
+  .flohsense-ai-heading {
+    font-size: 32px;
+  }
+  .flohsense-ai-sub-heading {
+    font-size: 28px;
+  }
+  .flohsense-ai-description {
+    font-size: 16px;
+  }
+  .flohsense-ai-flowchart-container {
+    padding: 24px 16px;
+  }
+  .flohsense-ai-flowchart {
+    width: 100%;
+  }
+  .finance-team-benefits-section {
+    padding: 0px;
+    background: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .finance-team-benefits-grid-first {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .finance-team-benefits-grid-last {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

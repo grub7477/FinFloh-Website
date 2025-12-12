@@ -1,0 +1,10 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="rubric">
+<mask id="mask0_284_1485" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+<rect id="Bounding box" x="0.666656" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_284_1485)">
+<path id="rubric_2" d="M5.16666 20.5192V3.48074H20.1667V12.75H6.66666V15.1347H11.9167V16.6345H6.66666V19.0192H11.9167V20.5192H5.16666ZM16.0667 20.5192L13.6129 18.0652L14.6667 17.0115L16.0667 18.4115L19.6167 14.8615L20.6704 15.9152L16.0667 20.5192ZM6.66666 11.25H11.9167V8.86524H6.66666V11.25ZM13.4167 11.25H18.6667V8.86524H13.4167V11.25ZM6.66666 7.36549H11.9167V4.98074H6.66666V7.36549ZM13.4167 7.36549H18.6667V4.98074H13.4167V7.36549Z" fill="#1C1B1F"/>
+</g>
+</g>
+</svg>
