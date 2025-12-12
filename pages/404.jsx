@@ -3,11 +3,10 @@ import { useRouter } from "next/router";
 import LinkButton from "../components/Common/LinkButton";
 import WebsiteLayout from "../components/Layouts/WebsiteLayout";
 
-
 const pageNotFound = () => {
   const router = useRouter();
   useEffect(() => {
-    // Check if the page is not in a loading state (404 error)
+    // Check if the page is not in a loading state (404 error) check
     if (!router.isFallback) {
       // Check if the current route is '/404'
       if (router.asPath === "/404") {
@@ -35,9 +34,16 @@ const pageNotFound = () => {
                   >
                     Return to Website
                   </LinkButton>
-                  <a href="/book-a-demo" className="transparentBtn" target="_blank" >
+                  <a
+                    href="/book-a-demo"
+                    className="transparentBtn"
+                    target="_blank"
+                  >
                     Talk to our Experts
-                    <img src="/images/blackuparrow.svg" alt="Black up arrow icon FinFloh" />
+                    <img
+                      src="/images/blackuparrow.svg"
+                      alt="Black up arrow icon FinFloh"
+                    />
                   </a>
                 </div>
               </div>
