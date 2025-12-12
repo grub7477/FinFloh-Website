@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import LinkButton from "../components/Common/LinkButton";
 import WebsiteLayout from "../components/Layouts/WebsiteLayout";
 
+
 const pageNotFound = () => {
   const router = useRouter();
   useEffect(() => {
