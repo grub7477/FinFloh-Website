@@ -19,14 +19,11 @@ const whyFinfloh = () => {
             {/* Why Finfloh Header */}
             <div className="journal-entries-header">
               <div className="je-container">
-                <h1>
-                  Automating Loan Journal Entries in ERP for Bank & NBFC's
-                </h1>
+                <h1>Automating Loan Journal Entries in ERP for Bank & NBFCs</h1>
                 <p>
-                  FinFloh solves this through a seamless automation-driven layer
-                  that updates the ERP instantly and accurately—eliminating
-                  spreadsheets, manual mapping, version errors, and
-                  reconciliation chaos.
+                  Use FinFloh’s seamless automation and connectivity layer to
+                  update the ERP instantly and accurately—eliminating
+                  spreadsheets, manual mapping, and reconciliation chaos.
                 </p>
                 <LinkButton
                   openInNewTab={true}
@@ -78,7 +75,25 @@ const whyFinfloh = () => {
                 </div>
               </div>
             </div>
-
+            <div
+              className="journal-entries-newsletter"
+              style={{ marginTop: "86px" }}
+            >
+              <div className="journal-entries-newsletter-cnt">
+                <p>
+                  Check out our detailed blog on Automation <br />
+                  of Loan Journal Entry in ERP
+                </p>
+              </div>
+              <div className="journal-entries-newsletter-btn">
+                <LinkButton
+                  openInNewTab={true}
+                  href="https://finfloh.com/blog/automate-loan-journal-entries-in-erp"
+                >
+                  Read More
+                </LinkButton>
+              </div>
+            </div>
             {/* Section 2: How FinFloh Automates */}
             <div className="journal-entries-reasons-section">
               <h2>How FinFloh Automates Journal Entry Updates in ERP</h2>
@@ -150,10 +165,9 @@ const whyFinfloh = () => {
               <div className="integration-je-content-wrapper">
                 <h2>Out-Of-The-Box Seamless Integration</h2>
                 <p>
-                  Integrate with your ERP/Accounting Software, Payments, CRM,
-                  Communications & other tools in just a few simple steps
-                  without any coding efforts and start managing your accounts
-                  receivables with ease.
+                  Integrate seamlessly with CBS, LMS, ERP/Accounting systems,
+                  and payment rails — to connect collections activity with
+                  real-time accounting workflows.
                 </p>
               </div>
               <div className="integrations-je-ph">
@@ -176,29 +190,40 @@ const whyFinfloh = () => {
                   intervention or reconciliation chaos.
                 </p>
                 <div className="feature-item-wrapper-je">
-                  <li>
-                    <b>Zero manual journal entries:</b> repetitive daily work is
-                    eliminated
-                  </li>
-                  <li>
-                    <b>Real-time loan book accuracy:</b> ERP always shows the
-                    true position
-                  </li>
-                  <li>
-                    <b>Faster month-end close:</b> clean data, no last-minute
-                    reconciliations
-                  </li>
-                  <li>
-                    <b>Stronger compliance & governance:</b> audit-ready entries
-                    with full traceability
-                  </li>
+                  <div className="je-list-items">
+                    <img
+                      src="../images/check.svg"
+                      alt="Green checkmark icon FinFloh"
+                    />
+                    <p>Zero manual journal entries</p>
+                  </div>
+
+                  <div className="je-list-items">
+                    <img
+                      src="../images/check.svg"
+                      alt="Green checkmark icon FinFloh"
+                    />
+                    <p>Real-time loan book accuracy</p>
+                  </div>
+                  <div className="je-list-items">
+                    <img
+                      src="../images/check.svg"
+                      alt="Green checkmark icon FinFloh"
+                    />
+                    <p>Faster month-end close</p>
+                  </div>
+
+                  <div className="je-list-items">
+                    <img
+                      src="../images/check.svg"
+                      alt="Green checkmark icon FinFloh"
+                    />
+                    <p>Stronger compliance & governance</p>
+                  </div>
                 </div>
               </div>
               <div className="feature-image-je">
-                <img
-                  src="/images/competitors-page/collection-workflow.svg"
-                  alt=""
-                />
+                <img src="/images/journal-entries/je-illustration.svg" alt="" />
               </div>
             </div>
 
@@ -209,7 +234,8 @@ const whyFinfloh = () => {
             >
               <div className="journal-entries-newsletter-cnt">
                 <p>
-                  Take Control of Your <br /> Credit-to-Cash Journey Today!{" "}
+                  Take Control of your Loan
+                  <br /> Journal Automation Today!
                 </p>
               </div>
               <div className="journal-entries-newsletter-btn">
