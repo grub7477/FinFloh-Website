@@ -95,6 +95,7 @@ h3 {
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin-top: 48px;
 }
 
 .feature-je-content-wrapper {
@@ -102,6 +103,10 @@ h3 {
   flex-direction: column;
   padding: 24px;
   gap: 24px;
+}
+
+.feature-je-content-wrapper h2 {
+  text-align: left;
 }
 
 .feature-content-je p {
@@ -165,6 +170,10 @@ h3 {
   height: auto;
 }
 
+.feature-content-je {
+  gap: 24px;
+}
+
 // responsive styles
 
 @media (max-width: 720px) {
@@ -194,11 +203,13 @@ h3 {
     grid-template-columns: repeat(1, 100%);
   }
   .feature-je-content-wrapper {
-    padding: 48px;
+    padding: 0;
   }
   .journal-entries-card {
     flex-direction: column;
     justify-content: left;
+    padding: 24px;
+    align-items: flex-start;
   }
   .journal-entries-header {
     height: auto;
