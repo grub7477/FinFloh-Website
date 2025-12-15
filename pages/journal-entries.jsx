@@ -37,7 +37,7 @@ const whyFinfloh = () => {
             {/* Why Finfloh reason to choose Section */}
             <div className="journal-entries-reasons-section">
               <h2>
-                Why Automating Loan Journal Entries Matters for Banks & NBFCs
+                Why Automating Loan Journal Entries Matters for Banks & NBFCs?
               </h2>
               <div className="journal-entries-reasons-cards">
                 <div className="journal-entries-card">
@@ -64,7 +64,7 @@ const whyFinfloh = () => {
               <div className="journal-entries-reasons-cards">
                 <div className="journal-entries-card">
                   <span>#3</span>
-                  <h3>Lack of Integration Between LMS and ERP</h3>
+                  <h3>Lack of Connectivity Between CBS, ERP & LMS</h3>
                   <p>
                     Banks and NBFCs run on multiple systems—CBS, LMS, payment
                     gateways, ERP—that rarely sync in real time. FinFloh acts as
@@ -96,7 +96,7 @@ const whyFinfloh = () => {
             </div>
             {/* Section 2: How FinFloh Automates */}
             <div className="journal-entries-reasons-section">
-              <h2>How FinFloh Automates Journal Entry Updates in ERP</h2>
+              <h2>How FinFloh Automates Journal Entry Updates in ERP?</h2>
               <div className="journal-entries-reasons-cards">
                 <div className="journal-entries-card">
                   <span>#1</span>
