@@ -174,6 +174,17 @@ h3 {
   gap: 24px;
 }
 
+.je-list-items {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.je-list-items img {
+  width: 24px;
+  height: auto;
+}
+
 // responsive styles
 
 @media (max-width: 720px) {
