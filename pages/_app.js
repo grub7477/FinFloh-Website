@@ -33,6 +33,7 @@ import GoTop from "../components/Shared/GoTop";
 import { Analytics } from "@vercel/analytics/react";
 import Custom404 from "./404";
 import "../styles/finfloh-vs-tesorio.scss";
+import "../styles/journal-entries.scss";
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
