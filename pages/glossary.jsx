@@ -368,8 +368,8 @@ const terms = {
       url: "https://finfloh.com/blog/deal-sheets",
     },
     {
-      keyword: "Debt Collection Strategies",
-      url: "https://finfloh.com/blog/effective-debt-collection-strategies",
+      keyword: "Debt Collection Agency",
+      url: "https://finfloh.com/blog/debt-collection-agency-dca",
     },
     {
       keyword: "Delinquent Invoices",
