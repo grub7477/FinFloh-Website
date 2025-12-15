@@ -115,6 +115,28 @@ const FlohSenseAi = () => {
 
         <div className="bg-container">
           <div className="container-main">
+            <h2>
+              Key Outcomes (in 30 Days) with 2× improvement in customer response
+              rates
+            </h2>
+            <div className="fai-card-wrapper">
+              <div className="fai-card">
+                <h3>74→64 days</h3>
+                <p>faster dispute resolution</p>
+              </div>
+              <div className="fai-card">
+                <h3>50%</h3>
+                <p>faster dispute resolution</p>
+              </div>
+              <div className="fai-card">
+                <h3>300+</h3>
+                <p>man-hours/month saved</p>
+              </div>
+              <div className="fai-card">
+                <h3> &lt; 24-hour </h3>
+                <p>Cash Application via FlohRecon</p>
+              </div>
+            </div>
             <div
               className="flohsense-ai-traditional-system"
               style={{ margin: "86px 0px" }}
