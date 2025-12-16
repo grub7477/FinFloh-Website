@@ -75,7 +75,49 @@
   font-weight: 400;
   line-height: 180%;
 }
+// Section - Fai in Numbers
+.fai-in-numbers {
+  display: grid;
+  margin: 48px 0;
+}
 
+.fai-number-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fai-number-header h2 {
+  font-size: 28px;
+  color: #111827;
+}
+
+.fai-number-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 24px;
+  gap: 24px;
+}
+
+.fai-number-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background-color: #f6f4f2;
+
+  // border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.fai-number-card h4 {
+  font-size: 32px;
+  color: #00954a;
+  margin: 0;
+}
+
+// Section 2
 .flohsense-ai-traditional-system {
   display: flex;
   flex-direction: column;
