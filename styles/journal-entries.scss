@@ -1,0 +1,358 @@
+.journal-entries-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #021;
+  background-image: url("../public/images/whyfinfloh-hero-bg.svg");
+  background-repeat: no-repeat;
+  height: fit-content;
+  padding: 32px;
+}
+.je-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 720px;
+  width: 100%;
+  padding: 48px;
+}
+
+.journal-entries-header h1 {
+  width: 100%;
+  font-size: 48px;
+  line-height: 130%;
+  color: white;
+}
+
+.journal-entries-header p {
+  width: 100%;
+  font-size: 22px;
+  color: rgb(187, 255, 198);
+  line-height: 160%;
+  text-align: center;
+}
+
+// Sub Header Starts Here
+
+p {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.journal-entries-reasons-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 0;
+  gap: 24px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 130%;
+  color: #0a0f15;
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+}
+
+.journal-entries-reasons-cards {
+  display: flex;
+}
+
+.journal-entries-card {
+  display: flex;
+  flex-direction: row;
+  padding: 48px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  gap: 20px;
+  align-items: center;
+}
+h3 {
+  font-size: 24px;
+  line-height: 130%;
+  max-width: 320px;
+  width: 100%;
+  font-weight: 500;
+}
+.journal-entries-card span {
+  font-size: 28px;
+  font-weight: 600;
+  color: #00954a;
+}
+
+.feature-content-je {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 48px;
+}
+
+.feature-je-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+
+.feature-je-content-wrapper h2 {
+  text-align: left;
+}
+
+.feature-content-je p {
+  margin: 0;
+}
+
+.feature-image-je {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.journal-entries-newsletter {
+  display: flex;
+  padding: 48px 86px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  border-radius: 8px;
+  background: #0c492b;
+  margin-bottom: 120px;
+}
+.journal-entries-newsletter-cnt {
+  width: 100%;
+}
+.journal-entries-newsletter-cnt p {
+  color: var(--White-100, #fff);
+  font-family: Satoshi;
+  font-size: 36px;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+}
+
+.Integrations-banks-nbfc {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  background-color: #f0f1f5;
+  align-items: center;
+  gap: 24px;
+  border-radius: 8px;
+}
+
+.integration-je-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  padding: 48px;
+}
+
+.integrations-je-ph img {
+  width: 100%;
+  height: auto;
+}
+
+.feature-content-je {
+  gap: 24px;
+}
+
+.je-list-items {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.je-list-items img {
+  width: 24px;
+  height: auto;
+}
+
+// responsive styles
+
+@media (max-width: 720px) {
+  .je-container {
+    padding: 0;
+  }
+  .journal-entries-header h1 {
+    font-size: 28px;
+  }
+  .journal-entries-newsletter-cnt p {
+    font-size: 24px;
+  }
+
+  .journal-entries-header p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .feature-content-je {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .feature-je-content-wrapper {
+    padding: 0;
+  }
+  .journal-entries-card {
+    flex-direction: column;
+    justify-content: left;
+    padding: 24px;
+    align-items: flex-start;
+  }
+  .journal-entries-header {
+    height: auto;
+  }
+  .journal-entries-header-heading {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .journal-entries-header-subheading {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .journal-entries-header-content {
+    padding: 72px 24px 86px 24px;
+  }
+  .journal-entries-reasons {
+    gap: 40px;
+  }
+  .journal-entries-reason {
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    gap: 16px;
+  }
+  .reason-subHeading {
+    font-size: 20px;
+  }
+  .journal-entries-subTitleStyle {
+    font-size: 16px;
+  }
+  .journal-entries-newsletter {
+    padding: 48px 24px;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .journal-entries-users-heading {
+    text-align: center;
+  }
+  .journal-entries-certificate-banners {
+    flex-wrap: wrap;
+  }
+  .journal-entries-certificate-banners img {
+    width: 102px;
+    height: 102px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  .journal-entries-header-content {
+    padding: 120px 86px;
+  }
+}
+
+.integration-je-content-wrapper {
+}
+// award page styles
+
+.awards-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awards-header-para {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 673px;
+  width: 100%;
+  margin-top: 86px;
+  justify-content: center;
+  align-items: center;
+}
+.awards-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  max-width: 888px;
+  width: 100%;
+  margin-top: 86px;
+}
+
+.awards-header-main-heading {
+  color: #222631;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  margin: 0px;
+}
+.awards-header-subheading {
+  color: #62716a;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+.awards-header-heading {
+  color: #222631;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 114.286% */
+}
+.awards-main-para-content {
+  color: #62716a;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 188.889% */
+}
+.award-logos-slide img {
+  width: 113px;
+  height: 148px;
+}
+.InspireAwards-heading {
+  color: #222631;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
