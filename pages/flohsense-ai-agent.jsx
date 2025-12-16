@@ -115,6 +115,32 @@ const FlohSenseAi = () => {
 
         <div className="bg-container">
           <div className="container-main">
+            {/* Flohsense in Numbers */}
+            <div className="fai-in-numbers">
+              <div className="fai-number-header">
+                <h2>Key Outcomes (in 30 Days)</h2>
+                <p>with 2× improvement in customer response rates</p>
+              </div>
+              <div className="fai-number-card-wrapper">
+                <div className="fai-number-card">
+                  <h4>355</h4>
+                  <p>Man-hours saved</p>
+                </div>
+                <div className="fai-number-card">
+                  <h4>54%</h4>
+                  <p>quicker payment conversion</p>
+                </div>
+                <div className="fai-number-card">
+                  <h4>63%</h4>
+                  <p>faster closure of disputed invoices</p>
+                </div>
+                <div className="fai-number-card">
+                  <h4>37%</h4>
+                  <p>decrease in revert time to queries</p>
+                </div>
+              </div>
+            </div>
+            {/* Section 2 Traditional Shortcomes */}
             <div
               className="flohsense-ai-traditional-system"
               style={{ margin: "86px 0px" }}
