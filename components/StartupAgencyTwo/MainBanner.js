@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import emailjs from "@emailjs/browser";
 import Marquee from "../Common/Marque";
+import { validateBusinessEmail } from "../../utils/emailValidation";
 
 const INVOICE_TYPE = [
   {
@@ -69,36 +70,7 @@ const MainBanner = ({ utmURLs }) => {
     setEmailTimeout(timeoutId); // Store the new timeout ID
   };
   const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    const isValidSyntax = emailRegex.test(email);
-    const domainPart = email.includes("@") ? email.split("@")[1] : "";
-    const domain = domainPart ? domainPart.toLowerCase() : "";
-
-    const excludedDomains = [
-      "gmail.com",
-      "yahoo.com",
-      "hotmail.com",
-      "outlook.com",
-      "aol.com",
-      "icloud.com",
-      "live.com",
-      "msn.com",
-      "protonmail.com",
-      "zoho.com",
-      "gmx.com",
-      "mail.com",
-      "yandex.com",
-      "haotuwu.com",
-      "tempmail.com",
-    ];
-
-    // Check if the domain is excluded (in the list)
-    const isValidDomain = domain === "" || !excludedDomains.some(
-      (excludedDomain) => domain.toLowerCase() === excludedDomain.toLowerCase()
-    );
-
-    return isValidSyntax && isValidDomain;
+    return validateBusinessEmail(email);
   };
 
   const sendEmailMain = (e) => {

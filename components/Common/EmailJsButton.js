@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { validateBusinessEmail } from "../../utils/emailValidation";
 
 const EmailJsButton = ({
   templateID = "template_mf4qcim",
@@ -43,36 +44,7 @@ const EmailJsButton = ({
   };
   
   const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    const isValidSyntax = emailRegex.test(email);
-    const domainPart = email.includes("@") ? email.split("@")[1] : "";
-    const domain = domainPart ? domainPart.toLowerCase() : "";
-
-    const excludedDomains = [
-      "gmail.com",
-      "yahoo.com",
-      "hotmail.com",
-      "outlook.com",
-      "aol.com",
-      "icloud.com",
-      "live.com",
-      "msn.com",
-      "protonmail.com",
-      "zoho.com",
-      "gmx.com",
-      "mail.com",
-      "yandex.com",
-      "haotuwu.com",
-      "tempmail.com",
-    ];
-
-    // Check if the domain is excluded (in the list)
-    const isValidDomain = domain === "" || !excludedDomains.some(
-      (excludedDomain) => domain.toLowerCase() === excludedDomain.toLowerCase()
-    );
-
-    return isValidSyntax && isValidDomain;
+    return validateBusinessEmail(email);
   };
 
   // const handleEmailChange = (e) => {
