@@ -39,10 +39,10 @@
 
 // Sub Header Starts Here
 
-p {
-  font-size: 18px;
-  line-height: 160%;
-}
+// p {
+//   font-size: 18px;
+//   line-height: 160%;
+// }
 
 .journal-entries-reasons-section {
   width: 100%;
@@ -54,7 +54,7 @@ p {
   gap: 24px;
 }
 
-h2 {
+.journal-entries-reasons-section h2 {
   font-size: 40px;
   line-height: 130%;
   color: #0a0f15;
@@ -76,17 +76,22 @@ h2 {
   gap: 20px;
   align-items: center;
 }
-h3 {
+.journal-entries-card h3 {
   font-size: 24px;
   line-height: 130%;
   max-width: 320px;
   width: 100%;
   font-weight: 500;
+  margin: 0;
 }
 .journal-entries-card span {
   font-size: 28px;
   font-weight: 600;
   color: #00954a;
+}
+.journal-entries-card p {
+  font-size: 18px;
+  line-height: 160%;
 }
 
 .feature-content-je {
@@ -106,10 +111,17 @@ h3 {
 }
 
 .feature-je-content-wrapper h2 {
+  font-size: 40px;
+  line-height: 130%;
+  color: #0a0f15;
+  max-width: 720px;
+  width: 100%;
   text-align: left;
 }
 
 .feature-content-je p {
+  font-size: 18px;
+  line-height: 160%;
   margin: 0;
 }
 
@@ -164,7 +176,18 @@ h3 {
   gap: 24px;
   padding: 48px;
 }
-
+.integration-je-content-wrapper h2 {
+  font-size: 40px;
+  line-height: 130%;
+  color: #0a0f15;
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+} 
+.integration-je-content-wrapper p {
+  font-size: 18px;
+  line-height: 160%;
+}
 .integrations-je-ph img {
   width: 100%;
   height: auto;
@@ -206,7 +229,7 @@ h3 {
     font-size: 24px;
   }
 
-  h3 {
+  .journal-entries-card h3 {
     font-size: 20px;
   }
 
