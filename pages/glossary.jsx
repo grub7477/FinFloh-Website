@@ -526,6 +526,10 @@ const terms = {
       url: "https://finfloh.com/blog/market-risk",
     },
     {
+      keyword: "Microsoft Dynamics 365 AR Automation",
+      url: "https://finfloh.com/blog/msd365-ar-automation",
+    },
+    {
       keyword: "Month End Close",
       url: "https://finfloh.com/blog/month-end-close-guide",
     },
@@ -631,6 +635,10 @@ const terms = {
     {
       keyword: "Promise to Pay",
       url: "https://finfloh.com/blog/promise-to-pay-for-debt-recovery",
+    },
+    {
+      keyword: "Pay to the Order of checks",
+      url: "https://finfloh.com/blog/pay-to-the-order-of-checks",
     },
     {
       keyword: "Profit Center",
@@ -739,6 +747,12 @@ const terms = {
     {
       keyword: "Unused Credits",
       url: "https://finfloh.com/blog/unused-credits",
+    },
+  ],
+  V: [
+    {
+      keyword: "VP of Finance",
+      url: "https://finfloh.com/blog/vp-of-finance",
     },
   ],
   W: [
