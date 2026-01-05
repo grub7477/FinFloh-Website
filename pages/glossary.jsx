@@ -403,6 +403,10 @@ const terms = {
       keyword: "DSO Optimization",
       url: "https://finfloh.com/blog/dso-optimization",
     },
+    {
+      keyword: "Dunning Letters",
+      url: "https://finfloh.com/blog/dunning-letters",
+    },
   ],
   E: [
     {
@@ -528,6 +532,10 @@ const terms = {
     {
       keyword: "Microsoft Dynamics 365 AR Automation",
       url: "https://finfloh.com/blog/msd365-ar-automation",
+    },
+    {
+      keyword: "Modern Finance Teams",
+      url: "https://finfloh.com/blog/modern-finance-teams",
     },
     {
       keyword: "Month End Close",
@@ -691,6 +699,10 @@ const terms = {
     {
       keyword: "Shared Services",
       url: "https://finfloh.com/blog/shared-services-department",
+    },
+    {
+      keyword: "Ship to Process",
+      url: "https://finfloh.com/blog/ship-to-process",
     },
     {
       keyword: "Sight Draft",
