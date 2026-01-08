@@ -19,7 +19,7 @@ export const podcastData = [
     thumbnail: "/images/BrendaWilliamsJohnson-ep22-banner.svg",
     thumbnail_mobile: "/images/BrendaWilliamsJohnson-ep22-banner-mobile.svg",
     video_url:
-    "https://www.youtube.com/embed/ikJpSgMfFeg?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
+      "https://www.youtube.com/embed/ikJpSgMfFeg?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
   {
     id: 21,
@@ -41,7 +41,7 @@ export const podcastData = [
     thumbnail: "/images/swarn-ep21-banner.svg",
     thumbnail_mobile: "/images/swarn-ep21-banner-mobile.svg",
     video_url:
-    "https://www.youtube.com/embed/QaEUuxn3D1g?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
+      "https://www.youtube.com/embed/QaEUuxn3D1g?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
   {
     id: 20,
@@ -600,5 +600,29 @@ export const AiInFinanceData = [
     thumbnail_mobile: "/images/AmartyaSingh-ep1-FLF-mobile.svg",
     video_url:
       "https://www.youtube.com/embed/-6t_6lsaZ9A?si=lxqUDNsHdQ6dIEWN&list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
+  },
+];
+
+export const CreditToCashData = [
+  {
+    id: 1,
+    slug: "the-billing-backbone:-critical-connection-between-invoices-&-orders",
+    title:
+      "The Billing Backbone: The Critical Connection Between Invoices and Orders ",
+    author: "Brandon Polson",
+    position: "Director-Level Global Order-to-Cash, Insightsoftware",
+    episode: 1,
+    isNew: false,
+    date: "8 Jan 2026",
+    author_profile_pic: "/images/profile_podcast/brandonPolson.svg",
+    hosted_by: "Amartya Singh",
+    hosted_position: "Co-Founder & CEO, FinFloh",
+    hosted_profile_pic: "/images/profile_podcast/amartya.svg",
+    thumbnail:
+      "/images/podcast/credit-to-cash/ep01/ep01-Brandon Polson-c2c_Thumbnail.svg",
+    thumbnail_mobile:
+      "/images/podcast/credit-to-cash/ep01/ep01-Brandon Polson-c2c_Youtube.svg",
+    video_url:
+      "https://www.youtube.com/embed?v=cg28zSwJC0A&list=PLSh1ycsSrby_DM-HUNEPTosQZCAhaCIdc&autoplay=1",
   },
 ];
