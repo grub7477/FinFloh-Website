@@ -2,7 +2,11 @@ import React, { useRef, useState } from "react";
 import WebsiteLayout from "../../components/Layouts/WebsiteLayout";
 import HeadComponent from "../../components/Common/HeadComponent";
 import { useRouter } from "next/router";
-import { podcastData, AiInFinanceData } from "../../data/podcastData";
+import {
+  podcastData,
+  AiInFinanceData,
+  CreditToCashData,
+} from "../../data/podcastData";
 import { podcastContent } from "../../data/podcastContent";
 import Link from "next/link";
 
@@ -18,6 +22,8 @@ const PodcastDetails = () => {
   const getPodcastData = () => {
     if (type === "ai-in-finance") {
       return AiInFinanceData.find((podcast) => podcast.slug === slug);
+    } else if (type === "credit-to-cash") {
+      return CreditToCashData.find((podcast) => podcast.slug === slug);
     }
     return podcastData.find((podcast) => podcast.slug === slug);
   };
@@ -25,15 +31,21 @@ const PodcastDetails = () => {
   const getLatestEpisodes = () => {
     const regularLatest = podcastData[0]; // Get the first (latest) inside-the-cfo-office podcast
     const aiLatest = AiInFinanceData[0]; // Get the first (latest) ai-in-finance podcast
-    return { regularLatest, aiLatest };
+    const CreditToCash = CreditToCashData[0];
+    return { regularLatest, aiLatest, CreditToCash };
   };
 
   const podcast = getPodcastData();
   const content =
     podcastContent[
-      type === "ai-in-finance" ? "ai-in-finance" : "inside-the-cfo-office"
+      type === "credit-to-cash"
+        ? "credit-to-cash"
+        : type === "ai-in-finance"
+        ? "ai-in-finance"
+        : "inside-the-cfo-office"
     ]?.[slug];
-  const { regularLatest, aiLatest } = getLatestEpisodes();
+
+  const { regularLatest, aiLatest, CreditToCash } = getLatestEpisodes();
 
   if (!podcast || !content) {
     return <div>Loading...</div>;

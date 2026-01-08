@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import WebsiteLayout from "../components/Layouts/WebsiteLayout";
 import HeadComponent from "../components/Common/HeadComponent";
 import { useRouter } from "next/router";
-import { podcastData, AiInFinanceData } from "../data/podcastData";
+import {
+  podcastData,
+  AiInFinanceData,
+  CreditToCashData,
+} from "../data/podcastData";
 
 const Podcast = () => {
   const router = useRouter();
@@ -14,8 +18,12 @@ const Podcast = () => {
   const handleAiInFinanceVideoClick = (slug) => {
     router.push(`/podcast/${slug}?type=ai-in-finance`);
   };
+  const handleCreditToCashVideoClick = (slug) => {
+    router.push(`/podcast/${slug}?type=credit-to-cash`);
+  };
 
-  const latestPodcast = podcastData[0]
+  const latestPodcast = podcastData[0];
+  const latestCreditToCashPodcast = CreditToCashData[0];
   const latestAiInFinancePodcast = AiInFinanceData[0];
 
   return (
@@ -119,18 +127,18 @@ const Podcast = () => {
                 <div
                   className="latest-podcast-episode"
                   onClick={() =>
-                    handleAiInFinanceVideoClick(latestAiInFinancePodcast.slug)
+                    handleCreditToCashVideoClick(latestCreditToCashPodcast.slug)
                   }
                 >
                   <div className="thumbnail-container">
                     <img
-                      src={latestAiInFinancePodcast.thumbnail}
-                      alt={latestAiInFinancePodcast.title}
+                      src={latestCreditToCashPodcast.thumbnail}
+                      alt={latestCreditToCashPodcast.title}
                       className="latest-podcast-episode-thumbnail"
                     />
                     <img
-                      src={latestAiInFinancePodcast.thumbnail_mobile}
-                      alt={latestAiInFinancePodcast.title}
+                      src={latestCreditToCashPodcast.thumbnail_mobile}
+                      alt={latestCreditToCashPodcast.title}
                       className="latest-podcast-episode-thumbnail-mobile"
                     />
                     <img
@@ -141,27 +149,28 @@ const Podcast = () => {
                   </div>
                   <div className="podcast-common-content">
                     <div className="podcast-info">
-                      <span>{`EPISODE ${latestAiInFinancePodcast.episode}`}</span>
-                      {latestAiInFinancePodcast.isNew && (
+                      <span>{`EPISODE ${latestCreditToCashPodcast.episode}`}</span>
+                      {latestCreditToCashPodcast.isNew && (
                         <span className="new-episode green-text">
                           NEW EPISODE
                         </span>
                       )}
                     </div>
                     <div className="latest-podcast-title">
-                      {latestAiInFinancePodcast.title}
+                      {latestCreditToCashPodcast.title}
                     </div>
                     <div className="latest-podcast-author">
-                      {latestAiInFinancePodcast.author}
+                      {latestCreditToCashPodcast.author}
                     </div>
                     <div className="latest-podcast-position">
-                      {latestAiInFinancePodcast.position}
+                      {latestCreditToCashPodcast.position}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* inside the cfo office */}
             <div className="podcast-main">
               <div className="podcast-main-left">
                 <div className="podcast-images">
@@ -270,6 +279,163 @@ const Podcast = () => {
               </div>
             </div>
 
+            {/* credit to cash*/}
+            <div className="podcast-main" style={{ marginBottom: "120px" }}>
+              <div className="podcast-main-left-c2cleaders">
+                <div className="podcast-images">
+                  <div>
+                    <img
+                      src="/images/podcast/credit-to-cash/brand/c2c-podcast-logo.svg"
+                      alt="Credit to Cash Leaders logo"
+                      className="logo-img"
+                    />
+                  </div>
+                </div>
+
+                <div className="podcast-content">
+                  <h2 className="empty-header">Credit to Cash leaders</h2>
+                  <p style={{ color: "#d0e1fcd0" }}>
+                    Credit to Cash Leaders brings together O2C, credit, billing,
+                    and AR leaders to discuss how process, technology, and AI
+                    automations accelerate the credit-to-cash lifecycle.
+                  </p>
+                </div>
+                <div
+                  className="podcast-hostedBy"
+                  style={{ background: "#d0e1fc33", width: "100%" }}
+                >
+                  <div className="podcast-hostedBy-left">
+                    <div className="img-hostedBy">
+                      <img
+                        src="/images/podcast/credit-to-cash/brand/valerius-podcast.svg"
+                        alt="valerius finfloh"
+                      />
+                    </div>
+                    <div className="hosted-by">
+                      <p className="h-y" style={{ color: "#d0e1fcd0" }}>
+                        Hosted By
+                      </p>
+                      <p className="h-y-n" style={{ color: "#FFF" }}>
+                        Valerius Dcunha
+                      </p>
+                      <p className="h-y-p" style={{ color: "#d0e1fc91" }}>
+                        Founding Member - Business & Strategy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="linkdln-profile"
+                    style={{ background: "#FFF" }}
+                  >
+                    <a href="https://www.linkedin.com/in/valerius-d/">
+                      <span>Connect on </span>
+
+                      <img src="images/image11.svg" alt="Linkedin" />
+                    </a>
+                  </div>
+                  <div className="linkdln-profile-mobile">
+                    <a href="https://www.linkedin.com/in/valerius-d/">
+                      Connect on Linkedin
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="podcast-hostedBy"
+                  style={{ background: "#d0e1fc33", width: "100%" }}
+                >
+                  <div className="podcast-hostedBy-left">
+                    <div className="img-hostedBy">
+                      <img
+                        src="images/Amartya-profilepic.svg"
+                        alt="Amartya-profilepic finfloh"
+                      />
+                    </div>
+                    <div className="hosted-by">
+                      <p className="h-y" style={{ color: "#d0e1fcd0" }}>
+                        Hosted By
+                      </p>
+                      <p className="h-y-n" style={{ color: "#FFF" }}>
+                        Amartya Singh
+                      </p>
+                      <p className="h-y-p" style={{ color: "#d0e1fcd0" }}>
+                        CEO & Cofounder, FinFloh
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="linkdln-profile"
+                    style={{ background: "#FFF" }}
+                  >
+                    <a href="https://www.linkedin.com/in/amartya-singh/">
+                      <span>Connect on </span>
+
+                      <img src="images/image11.svg" alt="Linkedin" />
+                    </a>
+                  </div>
+                  <div className="linkdln-profile-mobile">
+                    <a href="https://www.linkedin.com/in/amartya-singh/">
+                      Connect on Linkedin
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="podcast-main-right custom-podcast-height">
+                <div className="podcast-main-right-container">
+                  {CreditToCashData.map((latestCreditToCashPodcast) => (
+                    <div
+                      key={latestCreditToCashPodcast.slug}
+                      className="podcast-episode"
+                      onClick={() =>
+                        handleCreditToCashVideoClick(
+                          latestCreditToCashPodcast.slug
+                        )
+                      }
+                    >
+                      <div className="thumbnail-container">
+                        <img
+                          src={latestCreditToCashPodcast.thumbnail}
+                          alt={latestCreditToCashPodcast.title}
+                          className="podcast-episode-thumbnail"
+                        />
+                        <img
+                          src={latestCreditToCashPodcast.thumbnail_mobile}
+                          alt={latestCreditToCashPodcast.title}
+                          className="podcast-episode-thumbnail-mobile"
+                        />
+                        <img
+                          src="images/play_circle.svg"
+                          alt="Play"
+                          className="play-circle"
+                        />
+                      </div>
+                      <div className="podcast-information podcast-common-content">
+                        <div className="podcast-info">
+                          <span>{`EPISODE ${latestCreditToCashPodcast.episode}`}</span>
+                          {latestCreditToCashPodcast.isNew && (
+                            <span className="new-episode green-text">
+                              NEW EPISODE
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="latest-podcast-title">
+                          {latestCreditToCashPodcast.title}
+                        </div>
+                        <div className="latest-podcast-author">
+                          {latestCreditToCashPodcast.author}
+                        </div>
+                        <div className="latest-podcast-position">
+                          {latestCreditToCashPodcast.position}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* ai in finance */}
             <div className="podcast-main" style={{ marginBottom: "120px" }}>
               <div className="podcast-main-left-Ai">
                 <div className="podcast-images">
@@ -297,7 +463,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="images/valerius-podcast.svg"
+                        src="/images/podcast/credit-to-cash/brand/valerius-podcast.svg"
                         alt="valerius finfloh"
                       />
                     </div>
