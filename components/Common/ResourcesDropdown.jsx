@@ -40,7 +40,7 @@ const ResourcesDropdown = () => {
         subtitle: "With Brandon Polson",
         image:
           "/images/podcast/credit-to-cash/ep01/BrandonPolson-ep1-C2C-mobile.svg",
-        url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders",
+        url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders?type=credit-to-cash",
       },
 
       // latest blog content manually added
