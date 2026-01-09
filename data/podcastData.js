@@ -618,10 +618,9 @@ export const CreditToCashData = [
     hosted_by: "Amartya Singh",
     hosted_position: "Co-Founder & CEO, FinFloh",
     hosted_profile_pic: "/images/profile_podcast/amartya.svg",
-    thumbnail:
-      "/images/podcast/credit-to-cash/ep01/ep01-Brandon Polson-c2c_Thumbnail.svg",
+    thumbnail: "/images/podcast/credit-to-cash/ep01/BrandonPolson-ep1-C2C.svg",
     thumbnail_mobile:
-      "/images/podcast/credit-to-cash/ep01/ep01-Brandon Polson-c2c_Youtube.svg",
+      "/images/podcast/credit-to-cash/ep01/BrandonPolson-ep1-C2C-mobile.svg",
     video_url:
       "https://www.youtube.com/embed?v=cg28zSwJC0A&list=PLSh1ycsSrby_DM-HUNEPTosQZCAhaCIdc&autoplay=1",
   },
