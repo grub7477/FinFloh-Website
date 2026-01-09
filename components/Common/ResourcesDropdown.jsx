@@ -35,13 +35,15 @@ const ResourcesDropdown = () => {
       // latest podcast content manuaaly added
       {
         heading: "Podcast",
-        title: "O2C Transformation: A Solutions Architect’s View",
-        subtitle: "With Brenda Williams Johnson",
-        image: "/images/BrendaWilliamsJohnson-ep22-banner-mobile.svg",
-        url: "/podcast/o2c-transformation-a-solutions-architects-view",
+        title:
+          "The Billing Backbone: The Critical Connection Between Invoices and Orders",
+        subtitle: "With Brandon Polson",
+        image:
+          "/images/podcast/credit-to-cash/ep01/BrandonPolson-ep1-C2C-mobile.svg",
+        url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders",
       },
 
-      // latest blog content manuaaly added
+      // latest blog content manually added
       {
         heading: "Blog",
         title: "Have you outgrown Quickbooks? 9 Signs – It’s Time to Upgrade",

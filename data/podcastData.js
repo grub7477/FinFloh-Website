@@ -608,11 +608,11 @@ export const CreditToCashData = [
     id: 1,
     slug: "the-billing-backbone:-critical-connection-between-invoices-&-orders",
     title:
-      "The Billing Backbone: The Critical Connection Between Invoices and Orders ",
+      "The Billing Backbone: The Critical Connection Between Invoices and Orders",
     author: "Brandon Polson",
     position: "Director-Level Global Order-to-Cash, Insightsoftware",
     episode: 1,
-    isNew: false,
+    isNew: true,
     date: "8 Jan 2026",
     author_profile_pic: "/images/profile_podcast/brandonPolson.svg",
     hosted_by: "Amartya Singh",
