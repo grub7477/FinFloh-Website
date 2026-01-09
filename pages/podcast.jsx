@@ -169,7 +169,6 @@ const Podcast = () => {
                 </div>
               </div>
             </div>
-
             {/* inside the cfo office */}
             <div className="podcast-main">
               <div className="podcast-main-left">
@@ -280,7 +279,7 @@ const Podcast = () => {
             </div>
 
             {/* credit to cash*/}
-            <div className="podcast-main" style={{ marginBottom: "120px" }}>
+            <div className="podcast-main">
               <div className="podcast-main-left-c2cleaders">
                 <div className="podcast-images">
                   <div>
