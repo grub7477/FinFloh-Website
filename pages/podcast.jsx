@@ -307,7 +307,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="/images/podcast/credit-to-cash/brand/valerius-podcast.svg"
+                        src="/images/profile_podcast/ValeriusDcuhna.svg"
                         alt="valerius finfloh"
                       />
                     </div>
@@ -463,7 +463,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="/images/podcast/credit-to-cash/brand/valerius-podcast.svg"
+                        src="/images/profile_podcast/ValeriusDcuhna.svg"
                         alt="valerius finfloh"
                       />
                     </div>
