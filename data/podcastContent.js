@@ -1440,6 +1440,51 @@ Amartya Singh: Thanks, Rachel. And with that, we conclude our first episode of I
   },
 
   "ai-in-finance": {
+    "finance-through-the-years-from-legacy-systems-to-intelligent-automation": {
+      transcript: `
+      Subhasis (Intro): Welcome to Episode X of Finance Leaders in Focus. Today I’m joined by Jernita Prince, Sr. Director of Billing & Accounts Receivable at Trace3. Jernita brings nearly 25 years of experience in billing and accounts receivable, and she’s been at the forefront of automation-led finance transformation.
+      Jernita: I wouldn’t even call this a journey—it’s been an odyssey of 25 years in accounts receivable.
+      Subhasis: Your experience across startups and large enterprises gives you a unique lens on how finance evolves at scale.
+      Jernita: Growth for me has been about moving from transactional work to driving real business outcomes.
+      Subhasis: You’ve seen finance shift from being viewed as a cost to delivering measurable ROI through technology.
+      Jernita: The biggest challenge in transformation isn’t systems—it’s mindset, starting with leadership. Leaders have to think three to five years ahead and clearly articulate the path forward.
+      Subhasis: When finance leaders embrace innovation, teams unlock far more value from technology.
+      Jernita: Successful automation starts by defining what “good looks like,” not by fixing things as you go. If you automate flawed processes, you just make bad outcomes happen faster. Clean data and strong parent processes are what make automation actually work. Automation should support long-term vision—not just solve short-term problems.
+      Subhasis: Let’s talk about invoicing and collections.
+      Jernita: Clean invoices are the foundation for effective collections—everything depends on that. Invoice accuracy directly impacts customer experience, not just internal efficiency. Poor cash application creates friction for customers, not just accounting issues.
+      Subhasis: Automated dunning alone isn’t enough.
+      Jernita: Exactly. You need intelligence to focus on the right customers. AR becomes strategic when you understand customer payment behavior—not just DSO. Knowing why a customer didn’t pay is more valuable than simply getting a promise to pay. AR teams are the conduit between execution and real business insight.
+      Subhasis (Closing): This shift—from transactional execution to insight-driven finance—is exactly how technology, data, and leadership together reshape the office of the CFO.
+  `,
+
+      keyTakeaways: [
+        "Transformation starts with mindset, not systems — automation works only when leaders clearly define the future state",
+        "Defining what 'good' looks like before automating prevents scaling broken processes",
+        "Clean, accurate invoices are the strongest drivers of faster cash and better customer experience",
+        "Understanding customer payment behavior turns AR from collections into a strategic function",
+        "Technology and AI allow finance teams to scale impact without increasing headcount",
+      ],
+
+      chapters: [
+        { time: "00:00", title: "Introduction" },
+        { time: "01:21", title: "Jernita’s journey through the years" },
+        {
+          time: "03:08",
+          title: "How cross-industry experience shaped her finance leadership",
+        },
+        {
+          time: "04:09",
+          title: "Biggest challenges in transformation & how to overcome them",
+        },
+        { time: "06:32", title: "Making AR a strategic business function" },
+        {
+          time: "12:08",
+          title: "Finance transformation projects & success metrics",
+        },
+        { time: "17:51", title: "How modern finance teams choose software" },
+        { time: "22:03", title: "From cost center to value optimizer" },
+      ],
+    },
     "building-resilient-finance-operations-in-high-volume-businesses": {
       transcript: `
       Subhasis: Welcome to Episode 6 of Finance Leaders in Focus. I’m joined by Amit Raj Chandla, Director of Accounts Receivable at Clean Harbors. With 20 years across OTC, P2P, and R2R, he’s scaled finance ops and unlocked millions in working capital.

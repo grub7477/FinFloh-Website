@@ -493,13 +493,33 @@ export const podcastData = [
 
 export const AiInFinanceData = [
   {
+    id: 7,
+    slug: "finance-through-the-years-from-legacy-systems-to-intelligent-automation",
+    title:
+      "Finance Through the Years: From Legacy Systems to Intelligent Automation",
+    author: "Jernita Prince",
+    position: "Sr. Director of Billing & Accounts Receivable at Trace3",
+    episode: 7,
+    isNew: true,
+    date: "13 August 2025",
+    author_profile_pic: "/images/profile_podcast/jernita.svg",
+    hosted_by: "Subhasis Sahoo",
+    hosted_position: "Founding Member, Marketing",
+    hosted_profile_pic: "/images/profile_podcast/subhasis.svg",
+    thumbnail: "/images/podcast/ai-in-finance/ep07/jernita-ep7-FLF.svg",
+    thumbnail_mobile:
+      "/images/podcast/ai-in-finance/ep07/jernita-ep7-FLF-mobile.svg",
+    video_url:
+      "https://www.youtube.com/embed/dpUQEyrY3w4?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
+  },
+  {
     id: 6,
     slug: "building-resilient-finance-operations-in-high-volume-businesses",
     title: "Building Resilient Finance Operations in High-Volume Businesses",
     author: "Amit Raj Chandla",
     position: "Director of Accounts Receivable at Clean Harbors",
     episode: 6,
-    isNew: true,
+    isNew: false,
     date: "10 July 2025",
     author_profile_pic: "/images/profile_podcast/AmitRajChandla.svg",
     hosted_by: "Subhasis Sahoo",
