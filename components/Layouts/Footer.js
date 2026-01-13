@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Link from "next/link";
 import { PRODUCT, PRODUCT_INFO_MAP } from "../Common/ProductArea";
 import {
@@ -66,6 +66,26 @@ const Features = ({ PRODUCT_INFO_MAP_url = {} }) => (
           {PRODUCT_INFO_MAP[product].title}
         </a>
       ))}
+    </div>
+  </div>
+);
+
+const Competitors = () => (
+  <div className="footerResources">
+    <h3>Competitors</h3>
+    <div className="footerFeaturesInner">
+      <a href="/finfloh-vs-tesorio" className="footerResourcesBtn">
+        FinFloh vs Tesorio
+      </a>
+      <a href="/finfloh-vs-growfin" className="footerResourcesBtn">
+        FinFloh vs Growfin
+      </a>
+      <a href="/finfloh-vs-upflow" className="footerResourcesBtn">
+        FinFloh vs Upflow
+      </a>
+      <a href="/finfloh-vs-emagia" className="footerResourcesBtn">
+        FinFloh vs Emagia
+      </a>
     </div>
   </div>
 );
@@ -141,15 +161,13 @@ const Footer = (props) => {
         <footer className="footerArea">
           <div className="footerAreaInner">
             <AboutFinFloh utmURLs={utmURLs} />
-
-            <div className="footerAreaInnerRight">
-              <Features
-                utmURLs={utmURLs}
-                PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_url}
-              />
-              <Resources />
-              <Company utmURLs={utmURLs} />
-            </div>
+            <Features
+              utmURLs={utmURLs}
+              PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_url}
+            />
+            <Resources />
+            <Company utmURLs={utmURLs} />
+            <Competitors />
           </div>
 
           <div className="footerSocialHandles mobile-only">
