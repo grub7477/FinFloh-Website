@@ -114,6 +114,10 @@ const terms = {
       url: "https://finfloh.com/blog/ar-accounting",
     },
     {
+      keyword: "ASC 606",
+      url: "https://finfloh.com/blog/asc606",
+    },
+    {
       keyword: "Asset Based Lending",
       url: "https://finfloh.com/blog/asset-based-lending",
     },
@@ -410,6 +414,10 @@ const terms = {
   ],
   E: [
     {
+      keyword: "eChecks vs ACH payments",
+      url: "https://finfloh.com/blog/echecks-vs-ach-payments",
+    },
+    {
       keyword: "e-Lockbox",
       url: "https://finfloh.com/blog/e-lockbox",
     },
@@ -481,6 +489,10 @@ const terms = {
     },
   ],
   I: [
+    {
+      keyword: "IFRS 15",
+      url: "https://finfloh.com/blog/ifrs15",
+    },
     {
       keyword: "Invoice recon with Payment Gateway",
       url: "https://finfloh.com/blog/invoice-reconciliation-payment-gateways",
@@ -633,6 +645,10 @@ const terms = {
       url: "https://finfloh.com/blog/point-of-purchase-pop",
     },
     {
+      keyword: "POS Transactions",
+      url: "https://finfloh.com/blog/pos-transactions-for-b2b-sellers",
+    },
+    {
       keyword: "Predictive Analytics in Finance",
       url: "https://finfloh.com/blog/finance-predictive-analytics-unlocking-future-insights",
     },
@@ -759,6 +775,10 @@ const terms = {
     {
       keyword: "Unused Credits",
       url: "https://finfloh.com/blog/unused-credits",
+    },
+    {
+      keyword: "US GAAP",
+      url: "https://finfloh.com/blog/us-gaap",
     },
   ],
   V: [
