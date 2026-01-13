@@ -28,7 +28,7 @@ const featureData = [
 
   {
     category: "AI Agents that Think & Act like your Finance Team",
-    image: "/images/competitors-page/ai-agent.svg",
+    image: "/images/competitors-page/dispute-loop-workflow.svg",
     features: [
       {
         Feature: "Understand & reply to customer emails & chats",
