@@ -258,7 +258,7 @@ const emagiaAlternative = () => {
                           src="/images/competitors-page/star_half.svg"
                           alt="star"
                         />
-                        <p>4.8</p>
+                        <p>--</p>
                       </span>
                     </div>
                   </div>
