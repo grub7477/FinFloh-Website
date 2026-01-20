@@ -35,10 +35,11 @@ const ResourcesDropdown = () => {
       // latest podcast content manuaaly added
       {
         heading: "Podcast",
-        title: "O2C Transformation: A Solutions Architect’s View",
-        subtitle: "With Brenda Williams Johnson",
-        image: "/images/BrendaWilliamsJohnson-ep22-banner-mobile.svg",
-        url: "/podcast/o2c-transformation-a-solutions-architects-view",
+        title:
+          "The Billing Backbone: The Critical Connection Between Invoices and Orders",
+        subtitle: "With Brandon Polson",
+        image: "/images/podcast/thumbnails/ep01-brandon_polson-mobile.svg",
+        url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders?type=credit-to-cash",
       },
 
       // latest blog content manuaaly added

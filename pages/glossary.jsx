@@ -98,7 +98,7 @@ const terms = {
       url: "https://finfloh.com/blog/accounts-receivable-technology",
     },
     {
-      keyword: "Accounts receivable Kpis",
+      keyword: "Accounts Receivable KPIS",
       url: "https://finfloh.com/blog/accounts-receivable-kpis",
     },
     {
@@ -106,12 +106,48 @@ const terms = {
       url: "https://finfloh.com/blog/advance-billing",
     },
     {
+      keyword: "Agentic AI in Enterprise Finance",
+      url: "https://finfloh.com/blog/agentic-ai-in-enterprise-finance",
+    },
+    {
+      keyword: "Agentic AI in Finance",
+      url: "https://finfloh.com/blog/agentic-ai-finance",
+    },
+    {
+      keyword: "Agentic AI vs Generative AI",
+      url: "https://finfloh.com/blog/agenticai-vs-generativeai-o2c",
+    },
+    {
       keyword: "Aging Report",
       url: "https://finfloh.com/blog/aging-report",
     },
     {
+      keyword: "AI in Revenue Recognition",
+      url: "https://finfloh.com/blog/ai-in-revenue-recognition",
+    },
+    {
       keyword: "AR Accounting",
       url: "https://finfloh.com/blog/ar-accounting",
+    },
+    {
+      keyword: "AR Asset or Liability",
+      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
+    },
+    {
+      keyword: "AR Days Outstanding",
+      url: "https://finfloh.com/blog/accounts-receivable-days-outstanding",
+    },
+    {
+      keyword: "AR Teams",
+      url: "https://finfloh.com/blog/ar-teams",
+    },
+    {
+      keyword: "ASC 606",
+      url: "https://finfloh.com/blog/asc606",
+    },
+    {
+      keyword: "AR Asset or Liability",
+      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
     },
     {
       keyword: "Asset Based Lending",
@@ -151,10 +187,7 @@ const terms = {
       keyword: "Bad Debt Expense",
       url: "https://finfloh.com/blog/bad-debt-formula-master-calculation-management-tips",
     },
-    {
-      keyword: "Balance Reconciliation",
-      url: "https://finfloh.com/blog/master-average-days-delinquent",
-    },
+
     {
       keyword: "Balance Sheet Reconciliation",
       url: "https://finfloh.com/blog/balance-sheet-reconciliation-guide",
@@ -198,17 +231,13 @@ const terms = {
   ],
   C: [
     {
-      keyword: "CEI",
-      url: "https://finfloh.com/blog/master-collection-effectiveness-index",
-    },
-    {
       keyword: "Cash Application",
       url: "https://finfloh.com/blog/cash-application-guide",
     },
-    {
-      keyword: "Cash Conversion",
-      url: "https://finfloh.com/blog/cash-conversion-cycle",
-    },
+    // {
+    //   keyword: "Cash Conversion",
+    //   url: "https://finfloh.com/blog/cash-conversion-cycle",
+    // },
     {
       keyword: "Cash Conversion Cycle",
       url: "https://finfloh.com/blog/cash-conversion-cycle",
@@ -245,17 +274,14 @@ const terms = {
       keyword: "Cash Posting",
       url: "https://finfloh.com/blog/cash-posting-from-receipts-to-records",
     },
-    {
-      keyword: "Cash Posting",
-      url: "https://finfloh.com/blog/zero-touch-cash-posting",
-    },
+
     {
       keyword: "Cash Surrender Value (CSV)",
       url: "https://finfloh.com/blog/cash-surrender-value-csv",
     },
     {
-      keyword: "Cash Variance",
-      url: "https://finfloh.com/blog/variance-analysis-comprehensive-guide",
+      keyword: "CEI",
+      url: "https://finfloh.com/blog/master-collection-effectiveness-index",
     },
     {
       keyword: "Certified Treasury Professional (CTP)",
@@ -544,8 +570,8 @@ const terms = {
       url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
     },
     {
-      keyword: "Not required - Ignore",
-      url: "https://finfloh.com/blog/finfloh-wins-best-ar-software-usa-2024-wealth_and_finance_international",
+      keyword: "Not Sufficient Funds",
+      url: "https://finfloh.com/blog/not-sufficient-funds-explained",
     },
     {
       keyword: "NSF Checks",
@@ -740,6 +766,20 @@ const terms = {
       keyword: "Unused Credits",
       url: "https://finfloh.com/blog/unused-credits",
     },
+    {
+      keyword: "US GAAP",
+      url: "https://finfloh.com/blog/us-gaap",
+    },
+  ],
+  V: [
+    {
+      keyword: "Variance Analysis",
+      url: "https://finfloh.com/blog/variance-analysis-comprehensive-guide",
+    },
+    {
+      keyword: "VP of Finance",
+      url: "https://finfloh.com/blog/vp-of-finance",
+    },
   ],
   W: [
     {
@@ -761,6 +801,12 @@ const terms = {
     {
       keyword: "Year-End Closing",
       url: "https://finfloh.com/blog/year-end-closing",
+    },
+  ],
+  Z: [
+    {
+      keyword: "Zero-Touch Cash Posting",
+      url: "https://finfloh.com/blog/zero-touch-cash-posting",
     },
   ],
 };
@@ -866,7 +912,7 @@ const GlossarySection = ({ posts: postList }) => {
     alphabet.reduce((acc, letter) => {
       acc[letter] = React.createRef();
       return acc;
-    }, {})
+    }, {}),
   );
   // Step 1: Get the available letters from the terms object keys
   const availableLetters = Object.keys(terms);
@@ -905,7 +951,7 @@ const GlossarySection = ({ posts: postList }) => {
   const filteredTerms = searchQuery
     ? Object.entries(terms).reduce((acc, [letter, termList]) => {
         const matchedTerms = termList.filter((term) =>
-          term.keyword.toLowerCase().includes(searchQuery)
+          term.keyword.toLowerCase().includes(searchQuery),
         );
         if (matchedTerms.length > 0) acc[letter] = matchedTerms;
         return acc;
@@ -1327,10 +1373,10 @@ const GlossarySection = ({ posts: postList }) => {
                 src={
                   AiInFinancePlayingVideoId
                     ? AiInFinanceData.find(
-                        (podcast) => podcast.id === AiInFinancePlayingVideoId
+                        (podcast) => podcast.id === AiInFinancePlayingVideoId,
                       )?.video_url
                     : podcastData.find(
-                        (podcast) => podcast.id === playingVideoId
+                        (podcast) => podcast.id === playingVideoId,
                       )?.video_url
                 }
                 title="Podcast Video"
