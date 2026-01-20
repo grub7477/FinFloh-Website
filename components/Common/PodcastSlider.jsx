@@ -46,9 +46,9 @@ const PodcastHeadingSlider = ({ podcastData }) => {
                     </p>
                   </div>
                   <img
-                    src={episode.podcast_logo}
-                    alt="flison logo"
                     className="podcast-slider-logo"
+                    src={episode.podcast_logo}
+                    alt="Logo of the company"
                   />
                 </div>
               </div>
