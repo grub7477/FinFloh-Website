@@ -36,12 +36,29 @@ Amartya (Closing): That philosophy—talent, empowerment, and continuous improve
       chapters: [
         { time: "00:00", title: "Teaser" },
         { time: "03:10", title: "Introduction" },
-        { time: "04:24", title: "Brenda’s 20-year journey across Koch, Georgia Pacific & other firms" },
-        { time: "05:32", title: "Overall Transformation of A/R as a Solutions Architect" },
-        { time: "10:25", title: "Businesses being behind the curve of automation" },
+        {
+          time: "04:24",
+          title:
+            "Brenda’s 20-year journey across Koch, Georgia Pacific & other firms",
+        },
+        {
+          time: "05:32",
+          title: "Overall Transformation of A/R as a Solutions Architect",
+        },
+        {
+          time: "10:25",
+          title: "Businesses being behind the curve of automation",
+        },
         { time: "14:11", title: "Transformation projects" },
-        { time: "14:34", title: "Small change - Automating invoice delivery and building a self-serving O2C" },
-        { time: "17:31", title: "Big Change - Connecting the systems for data centralization" },
+        {
+          time: "14:34",
+          title:
+            "Small change - Automating invoice delivery and building a self-serving O2C",
+        },
+        {
+          time: "17:31",
+          title: "Big Change - Connecting the systems for data centralization",
+        },
         { time: "24:43", title: "Projects and Learnings at Georgia Pacific" },
         { time: "26:32", title: "Take on applications of AI in O2C" },
         { time: "28:30", title: "Advice to finance professionals" },
@@ -1423,6 +1440,51 @@ Amartya Singh: Thanks, Rachel. And with that, we conclude our first episode of I
   },
 
   "ai-in-finance": {
+    "finance-through-the-years-from-legacy-systems-to-intelligent-automation": {
+      transcript: `
+      Subhasis (Intro): Welcome to Episode X of Finance Leaders in Focus. Today I’m joined by Jernita Prince, Sr. Director of Billing & Accounts Receivable at Trace3. Jernita brings nearly 25 years of experience in billing and accounts receivable, and she’s been at the forefront of automation-led finance transformation.
+      Jernita: I wouldn’t even call this a journey—it’s been an odyssey of 25 years in accounts receivable.
+      Subhasis: Your experience across startups and large enterprises gives you a unique lens on how finance evolves at scale.
+      Jernita: Growth for me has been about moving from transactional work to driving real business outcomes.
+      Subhasis: You’ve seen finance shift from being viewed as a cost to delivering measurable ROI through technology.
+      Jernita: The biggest challenge in transformation isn’t systems—it’s mindset, starting with leadership. Leaders have to think three to five years ahead and clearly articulate the path forward.
+      Subhasis: When finance leaders embrace innovation, teams unlock far more value from technology.
+      Jernita: Successful automation starts by defining what “good looks like,” not by fixing things as you go. If you automate flawed processes, you just make bad outcomes happen faster. Clean data and strong parent processes are what make automation actually work. Automation should support long-term vision—not just solve short-term problems.
+      Subhasis: Let’s talk about invoicing and collections.
+      Jernita: Clean invoices are the foundation for effective collections—everything depends on that. Invoice accuracy directly impacts customer experience, not just internal efficiency. Poor cash application creates friction for customers, not just accounting issues.
+      Subhasis: Automated dunning alone isn’t enough.
+      Jernita: Exactly. You need intelligence to focus on the right customers. AR becomes strategic when you understand customer payment behavior—not just DSO. Knowing why a customer didn’t pay is more valuable than simply getting a promise to pay. AR teams are the conduit between execution and real business insight.
+      Subhasis (Closing): This shift—from transactional execution to insight-driven finance—is exactly how technology, data, and leadership together reshape the office of the CFO.
+  `,
+
+      keyTakeaways: [
+        "Transformation starts with mindset, not systems — automation works only when leaders clearly define the future state",
+        "Defining what 'good' looks like before automating prevents scaling broken processes",
+        "Clean, accurate invoices are the strongest drivers of faster cash and better customer experience",
+        "Understanding customer payment behavior turns AR from collections into a strategic function",
+        "Technology and AI allow finance teams to scale impact without increasing headcount",
+      ],
+
+      chapters: [
+        { time: "00:00", title: "Introduction" },
+        { time: "01:21", title: "Jernita’s journey through the years" },
+        {
+          time: "03:08",
+          title: "How cross-industry experience shaped her finance leadership",
+        },
+        {
+          time: "04:09",
+          title: "Biggest challenges in transformation & how to overcome them",
+        },
+        { time: "06:32", title: "Making AR a strategic business function" },
+        {
+          time: "12:08",
+          title: "Finance transformation projects & success metrics",
+        },
+        { time: "17:51", title: "How modern finance teams choose software" },
+        { time: "22:03", title: "From cost center to value optimizer" },
+      ],
+    },
     "building-resilient-finance-operations-in-high-volume-businesses": {
       transcript: `
       Subhasis: Welcome to Episode 6 of Finance Leaders in Focus. I’m joined by Amit Raj Chandla, Director of Accounts Receivable at Clean Harbors. With 20 years across OTC, P2P, and R2R, he’s scaled finance ops and unlocked millions in working capital.
@@ -1859,6 +1921,98 @@ Amartya Singh: Thanks, Subhasis! Looking forward to more conversations. Bye, eve
           time: "13:06",
           title: "Takeaways for Companies Building AI Solutions",
         },
+      ],
+    },
+  },
+
+  "credit-to-cash": {
+    "the-billing-backbone:-critical-connection-between-invoices-&-orders": {
+      title:
+        "Credit to Cash Leaders | EP 1 | The Billing Backbone: Critical Connection Between Invoices & Orders",
+      author: "Brandon Polson",
+      position: "Director-Level Global Order-to-Cash at insightsoftware",
+      position_without_company: "Director-Level Global Order-to-Cash",
+      quote:
+        "Orders are the foundation of invoices. Without solid orders, your invoicing leaks revenue.",
+
+      hosted_by: "Amartya Singh",
+      hosted_position: "CEO & Cofounder, FinFloh",
+      hosted_profile_pic: "/images/profile_podcast/amartya.svg",
+
+      thumbnail: "<to be shared by Nithil>",
+      thumbnail_mobile: "<to be shared by Nithil>",
+      video_url: "",
+
+      transcript: `
+Amartya (Intro): Brandon brings over a decade of hands-on Order-to-Cash experience across high-growth and complex billing environments—it’s great to have him on our very first episode.
+
+Brandon: I started my O2C journey over ten years ago, and scaling through growth and acquisitions really changes how billing and orders behave.
+
+Amartya: Your journey shows what happens when O2C scales fast—systems, processes, and teams are constantly tested.
+
+📄 Orders, Invoices & Revenue Leakage
+Brandon: Orders are the foundation of invoices—without solid orders, your invoicing leaks revenue.
+
+Amartya: That gap between sales, finance, and billing is where most mismatches quietly begin.
+
+Brandon: We had no way to connect sales orders to invoices without reviewing each one manually—and that led to revenue leakage.
+
+Amartya: This is where CRM structure really matters, not just billing systems.
+
+Brandon: When your CRM is weak, you lose visibility—and that directly impacts revenue and customer experience.
+
+🔧 Transformation & Process Fixes
+Amartya: You also highlighted that technology alone doesn’t solve problems—how it’s set up does.
+
+Brandon: Sometimes you already have the right tools—they’re just not configured correctly.
+
+Amartya: Your transformation story around mass actions really stood out.
+
+Brandon: We rebuilt six failing mass actions into three with audit trails—and saved multiple team seats as a result.
+
+Amartya: That’s a powerful example of simplification driving scale.
+
+🤖 AI, Automation & Efficiency
+Brandon: AI wasn’t the answer for invoice validation—automation using existing systems worked better.
+
+Amartya: And that shift freed teams to focus on higher-value work instead of constant rechecks.
+
+Brandon: We’ve already saved 30–40% of invoicing time, and we’re aiming for 70% plus in the next phases.
+
+Amartya: Your phased view of AI—from revenue leakage to analytics, automation, and security—really brings clarity.
+
+Brandon: AI will help find problems faster, but humans still matter—especially for complex and high-value orders.
+
+🎯 Closing
+Amartya: That balance between automation and human judgment is what modern O2C teams need.
+
+Amartya (Closing): This mindset—strong order foundations, thoughtful automation, and people-first leadership—is exactly what Credit to Cash Leaders is about.
+    `,
+
+      keyTakeaways: [
+        "Orders are the foundation of invoices — weak order data directly leads to revenue leakage",
+        "Poorly structured CRMs quietly create billing errors, manual reviews, and lost revenue",
+        "Most billing issues originate at the sales-to-finance handoff where context is lost",
+        "True transformation comes from fixing configurations, not endlessly adding new tools",
+        "Thoughtful automation can outperform AI, delivering 30–40% time savings today with a path to 70%+",
+      ],
+
+      chapters: [
+        { time: "00:00", title: "Teaser" },
+        { time: "03:24", title: "Brandon's introduction" },
+        { time: "04:44", title: "Brandon’s Order-to-Cash journey" },
+        {
+          time: "06:30",
+          title:
+            "The Billing Backbone: Critical connection between invoices & orders",
+        },
+        { time: "10:17", title: "Transformation projects in Order-to-Cash" },
+        { time: "20:49", title: "AI in Order-to-Cash" },
+        {
+          time: "27:57",
+          title: "Brandon’s advice to finance professionals",
+        },
+        { time: "31:45", title: "Closing thoughts" },
       ],
     },
   },

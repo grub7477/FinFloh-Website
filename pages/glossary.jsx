@@ -429,8 +429,16 @@ const terms = {
       keyword: "DSO Optimization",
       url: "https://finfloh.com/blog/dso-optimization",
     },
+    {
+      keyword: "Dunning Letters",
+      url: "https://finfloh.com/blog/dunning-letters",
+    },
   ],
   E: [
+    {
+      keyword: "eChecks vs ACH payments",
+      url: "https://finfloh.com/blog/echecks-vs-ach-payments",
+    },
     {
       keyword: "e-Lockbox",
       url: "https://finfloh.com/blog/e-lockbox",
@@ -504,6 +512,10 @@ const terms = {
   ],
   I: [
     {
+      keyword: "IFRS 15",
+      url: "https://finfloh.com/blog/ifrs15",
+    },
+    {
       keyword: "Invoice recon with Payment Gateway",
       url: "https://finfloh.com/blog/invoice-reconciliation-payment-gateways",
     },
@@ -550,6 +562,14 @@ const terms = {
     {
       keyword: "Market Risk",
       url: "https://finfloh.com/blog/market-risk",
+    },
+    {
+      keyword: "Microsoft Dynamics 365 AR Automation",
+      url: "https://finfloh.com/blog/msd365-ar-automation",
+    },
+    {
+      keyword: "Modern Finance Teams",
+      url: "https://finfloh.com/blog/modern-finance-teams",
     },
     {
       keyword: "Month End Close",
@@ -647,6 +667,10 @@ const terms = {
       url: "https://finfloh.com/blog/point-of-purchase-pop",
     },
     {
+      keyword: "POS Transactions",
+      url: "https://finfloh.com/blog/pos-transactions-for-b2b-sellers",
+    },
+    {
       keyword: "Predictive Analytics in Finance",
       url: "https://finfloh.com/blog/finance-predictive-analytics-unlocking-future-insights",
     },
@@ -657,6 +681,10 @@ const terms = {
     {
       keyword: "Promise to Pay",
       url: "https://finfloh.com/blog/promise-to-pay-for-debt-recovery",
+    },
+    {
+      keyword: "Pay to the Order of checks",
+      url: "https://finfloh.com/blog/pay-to-the-order-of-checks",
     },
     {
       keyword: "Profit Center",
@@ -709,6 +737,10 @@ const terms = {
     {
       keyword: "Shared Services",
       url: "https://finfloh.com/blog/shared-services-department",
+    },
+    {
+      keyword: "Ship to Process",
+      url: "https://finfloh.com/blog/ship-to-process",
     },
     {
       keyword: "Sight Draft",

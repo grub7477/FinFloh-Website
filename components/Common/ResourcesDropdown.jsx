@@ -42,7 +42,7 @@ const ResourcesDropdown = () => {
         url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders?type=credit-to-cash",
       },
 
-      // latest blog content manuaaly added
+      // latest blog content manually added
       {
         heading: "Blog",
         title: "Have you outgrown Quickbooks? 9 Signs – It’s Time to Upgrade",

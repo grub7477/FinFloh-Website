@@ -2095,7 +2095,7 @@
 .aboutFinFooterBottom p,
 .copyrightArea p {
   color: var(--Font-secondary, #374151);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 180%; /* 32.4px */
@@ -2103,7 +2103,7 @@
   max-width: 500px;
   width: 100%;
 }
-.aboutFinFooterOffices p{
+.aboutFinFooterOffices p {
   color: #374151;
   font-size: 18px;
   font-style: normal;
@@ -2113,7 +2113,7 @@
   max-width: 500px;
   width: 100%;
 }
-.aboutFinFooterOffices span{
+.aboutFinFooterOffices span {
   color: #111827;
   font-weight: 500;
 }
@@ -2153,13 +2153,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px;
 }
 .footerFeaturesInner a,
 .footerResourcesInner a,
 .footerCompanyInner a {
   color: var(--Font-secondary, #374151);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
@@ -2177,7 +2177,7 @@
 .footerResources h3,
 .footerCompany h3 {
   color: var(--Font-primary, #111827);
-  font-size: var(--Font-22, 22px);
+  font-size: var(--Font-16, 16px);
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 30.8px */
@@ -2337,11 +2337,11 @@
 /* section 11 ->> Faq section css start here */
 .faq-container {
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 48px;
-padding: 0px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 0px 120px;
 }
 .faq-content {
   display: flex;
@@ -2352,11 +2352,11 @@ padding: 0px 120px;
   gap: 24px;
 }
 .faq-content-text-title {
-  color: var(--Font-brand, #00954A);
-font-size: var(--Font-32, 32px);
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 44.8px */
+  color: var(--Font-brand, #00954a);
+  font-size: var(--Font-32, 32px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 44.8px */
   margin: 0px;
 }
 .faq-content-text-subtext {
@@ -2368,13 +2368,13 @@ line-height: 140%; /* 44.8px */
   margin: 0px;
 }
 
-.showMoreBtn-container{
+.showMoreBtn-container {
   display: flex;
   align-items: center;
   width: 100%;
 }
-.showMoreBtn{
-  color: var(--Font-brand, #00954A);
+.showMoreBtn {
+  color: var(--Font-brand, #00954a);
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -2388,10 +2388,10 @@ line-height: 140%; /* 44.8px */
   .faq-container {
     padding: 0px;
   }
-  .faq-content-text-title{
+  .faq-content-text-title {
     font-size: 20px;
   }
-  .faq-content-text-subtext{
+  .faq-content-text-subtext {
     font-size: 28px;
   }
 }
