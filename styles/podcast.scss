@@ -168,7 +168,8 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 8px;
-  background: url("/images/podcast/credit-to-cash/brand/c2c-pattern.svg"),
+  background:
+    url("/images/podcast/misc/c2c-pattern.svg"),
     linear-gradient(135deg, #1962d8 15.7409%, #000000 100%);
 }
 
@@ -409,6 +410,11 @@
   display: flex;
   justify-content: center;
   gap: 22px;
+  align-items: center;
+}
+.img-hostedBy {
+  width: 96px;
+  height: auto;
 }
 
 /* Small Mobile Styles */

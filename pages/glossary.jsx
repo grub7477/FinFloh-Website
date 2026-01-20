@@ -568,10 +568,6 @@ const terms = {
       url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
     },
     {
-      keyword: "Not required - Ignore",
-      url: "https://finfloh.com/blog/finfloh-wins-best-ar-software-usa-2024-wealth_and_finance_international",
-    },
-    {
       keyword: "NSF Checks",
       url: "https://finfloh.com/blog/nsf-checks",
     },
@@ -912,7 +908,7 @@ const GlossarySection = ({ posts: postList }) => {
     alphabet.reduce((acc, letter) => {
       acc[letter] = React.createRef();
       return acc;
-    }, {})
+    }, {}),
   );
   // Step 1: Get the available letters from the terms object keys
   const availableLetters = Object.keys(terms);
@@ -951,7 +947,7 @@ const GlossarySection = ({ posts: postList }) => {
   const filteredTerms = searchQuery
     ? Object.entries(terms).reduce((acc, [letter, termList]) => {
         const matchedTerms = termList.filter((term) =>
-          term.keyword.toLowerCase().includes(searchQuery)
+          term.keyword.toLowerCase().includes(searchQuery),
         );
         if (matchedTerms.length > 0) acc[letter] = matchedTerms;
         return acc;
@@ -1373,10 +1369,10 @@ const GlossarySection = ({ posts: postList }) => {
                 src={
                   AiInFinancePlayingVideoId
                     ? AiInFinanceData.find(
-                        (podcast) => podcast.id === AiInFinancePlayingVideoId
+                        (podcast) => podcast.id === AiInFinancePlayingVideoId,
                       )?.video_url
                     : podcastData.find(
-                        (podcast) => podcast.id === playingVideoId
+                        (podcast) => podcast.id === playingVideoId,
                       )?.video_url
                 }
                 title="Podcast Video"

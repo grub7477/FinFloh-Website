@@ -204,7 +204,10 @@ const Podcast = () => {
                 <div className="podcast-hostedBy">
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
-                      <img src="images/Amartya-profilepic.svg" alt="" />
+                      <img
+                        src="/images/podcast/speakerProfile/amartya-singh.png"
+                        alt=""
+                      />
                     </div>
                     <div className="hosted-by">
                       <p className="h-y">Hosted By</p>
@@ -284,7 +287,7 @@ const Podcast = () => {
                 <div className="podcast-images">
                   <div>
                     <img
-                      src="/images/podcast/credit-to-cash/brand/c2c-podcast-logo.svg"
+                      src="/images/podcast/misc/c2c-podcast-logo.svg"
                       alt="Credit to Cash Leaders logo"
                       className="logo-img"
                     />
@@ -306,7 +309,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="/images/profile_podcast/ValeriusDcuhna.svg"
+                        src="/images/podcast/speakerProfile/valerius-dcuhna.png"
                         alt="valerius finfloh"
                       />
                     </div>
@@ -345,7 +348,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="images/Amartya-profilepic.svg"
+                        src="/images/podcast/speakerProfile/amartya-singh.png"
                         alt="Amartya-profilepic finfloh"
                       />
                     </div>
@@ -387,7 +390,7 @@ const Podcast = () => {
                       className="podcast-episode"
                       onClick={() =>
                         handleCreditToCashVideoClick(
-                          latestCreditToCashPodcast.slug
+                          latestCreditToCashPodcast.slug,
                         )
                       }
                     >
@@ -462,7 +465,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="/images/profile_podcast/ValeriusDcuhna.svg"
+                        src="/images/podcast/speakerProfile/valerius-dcuhna.png"
                         alt="valerius finfloh"
                       />
                     </div>
@@ -501,7 +504,7 @@ const Podcast = () => {
                   <div className="podcast-hostedBy-left">
                     <div className="img-hostedBy">
                       <img
-                        src="images/Amartya-profilepic.svg"
+                        src="/images/podcast/speakerProfile/amartya-singh.png"
                         alt="Amartya-profilepic finfloh"
                       />
                     </div>
@@ -547,7 +550,7 @@ const Podcast = () => {
                       className="podcast-episode"
                       onClick={() =>
                         handleAiInFinanceVideoClick(
-                          latestAiInFinancePodcast.slug
+                          latestAiInFinancePodcast.slug,
                         )
                       }
                     >

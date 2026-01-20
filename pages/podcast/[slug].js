@@ -41,8 +41,8 @@ const PodcastDetails = () => {
       type === "credit-to-cash"
         ? "credit-to-cash"
         : type === "ai-in-finance"
-        ? "ai-in-finance"
-        : "inside-the-cfo-office"
+          ? "ai-in-finance"
+          : "inside-the-cfo-office"
     ]?.[slug];
 
   const { regularLatest, aiLatest, CreditToCash } = getLatestEpisodes();
@@ -148,7 +148,6 @@ const PodcastDetails = () => {
                     <img
                       src={podcast.author_profile_pic}
                       alt="podcast.profile_pic"
-                      style={{ width: "100px", height: "100px" }}
                     />
                   </div>
                   <div className="hosted-by">
@@ -162,7 +161,6 @@ const PodcastDetails = () => {
                     <img
                       src={podcast.hosted_profile_pic}
                       alt="hosted_profile_pic"
-                      style={{ width: "100px", height: "100px" }}
                     />
                   </div>
                   <div className="hosted-by">
