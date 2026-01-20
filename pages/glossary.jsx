@@ -98,7 +98,7 @@ const terms = {
       url: "https://finfloh.com/blog/accounts-receivable-technology",
     },
     {
-      keyword: "Accounts receivable Kpis",
+      keyword: "Accounts Receivable KPIS",
       url: "https://finfloh.com/blog/accounts-receivable-kpis",
     },
     {
@@ -106,16 +106,48 @@ const terms = {
       url: "https://finfloh.com/blog/advance-billing",
     },
     {
+      keyword: "Agentic AI in Enterprise Finance",
+      url: "https://finfloh.com/blog/agentic-ai-in-enterprise-finance",
+    },
+    {
+      keyword: "Agentic AI in Finance",
+      url: "https://finfloh.com/blog/agentic-ai-finance",
+    },
+    {
+      keyword: "Agentic AI vs Generative AI",
+      url: "https://finfloh.com/blog/agenticai-vs-generativeai-o2c",
+    },
+    {
       keyword: "Aging Report",
       url: "https://finfloh.com/blog/aging-report",
+    },
+    {
+      keyword: "AI in Revenue Recognition",
+      url: "https://finfloh.com/blog/ai-in-revenue-recognition",
     },
     {
       keyword: "AR Accounting",
       url: "https://finfloh.com/blog/ar-accounting",
     },
     {
+      keyword: "AR Asset or Liability",
+      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
+    },
+    {
+      keyword: "AR Days Outstanding",
+      url: "https://finfloh.com/blog/accounts-receivable-days-outstanding",
+    },
+    {
+      keyword: "AR Teams",
+      url: "https://finfloh.com/blog/ar-teams",
+    },
+    {
       keyword: "ASC 606",
       url: "https://finfloh.com/blog/asc606",
+    },
+    {
+      keyword: "AR Asset or Liability",
+      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
     },
     {
       keyword: "Asset Based Lending",
@@ -155,10 +187,7 @@ const terms = {
       keyword: "Bad Debt Expense",
       url: "https://finfloh.com/blog/bad-debt-formula-master-calculation-management-tips",
     },
-    {
-      keyword: "Balance Reconciliation",
-      url: "https://finfloh.com/blog/master-average-days-delinquent",
-    },
+
     {
       keyword: "Balance Sheet Reconciliation",
       url: "https://finfloh.com/blog/balance-sheet-reconciliation-guide",
@@ -202,17 +231,13 @@ const terms = {
   ],
   C: [
     {
-      keyword: "CEI",
-      url: "https://finfloh.com/blog/master-collection-effectiveness-index",
-    },
-    {
       keyword: "Cash Application",
       url: "https://finfloh.com/blog/cash-application-guide",
     },
-    {
-      keyword: "Cash Conversion",
-      url: "https://finfloh.com/blog/cash-conversion-cycle",
-    },
+    // {
+    //   keyword: "Cash Conversion",
+    //   url: "https://finfloh.com/blog/cash-conversion-cycle",
+    // },
     {
       keyword: "Cash Conversion Cycle",
       url: "https://finfloh.com/blog/cash-conversion-cycle",
@@ -249,17 +274,14 @@ const terms = {
       keyword: "Cash Posting",
       url: "https://finfloh.com/blog/cash-posting-from-receipts-to-records",
     },
-    {
-      keyword: "Cash Posting",
-      url: "https://finfloh.com/blog/zero-touch-cash-posting",
-    },
+
     {
       keyword: "Cash Surrender Value (CSV)",
       url: "https://finfloh.com/blog/cash-surrender-value-csv",
     },
     {
-      keyword: "Cash Variance",
-      url: "https://finfloh.com/blog/variance-analysis-comprehensive-guide",
+      keyword: "CEI",
+      url: "https://finfloh.com/blog/master-collection-effectiveness-index",
     },
     {
       keyword: "Certified Treasury Professional (CTP)",
@@ -568,6 +590,10 @@ const terms = {
       url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
     },
     {
+      keyword: "Not Sufficient Funds",
+      url: "https://finfloh.com/blog/not-sufficient-funds-explained",
+    },
+    {
       keyword: "NSF Checks",
       url: "https://finfloh.com/blog/nsf-checks",
     },
@@ -779,6 +805,10 @@ const terms = {
   ],
   V: [
     {
+      keyword: "Variance Analysis",
+      url: "https://finfloh.com/blog/variance-analysis-comprehensive-guide",
+    },
+    {
       keyword: "VP of Finance",
       url: "https://finfloh.com/blog/vp-of-finance",
     },
@@ -803,6 +833,12 @@ const terms = {
     {
       keyword: "Year-End Closing",
       url: "https://finfloh.com/blog/year-end-closing",
+    },
+  ],
+  Z: [
+    {
+      keyword: "Zero-Touch Cash Posting",
+      url: "https://finfloh.com/blog/zero-touch-cash-posting",
     },
   ],
 };

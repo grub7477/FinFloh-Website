@@ -38,8 +38,7 @@ const ResourcesDropdown = () => {
         title:
           "The Billing Backbone: The Critical Connection Between Invoices and Orders",
         subtitle: "With Brandon Polson",
-        image:
-          "/images/podcast/credit-to-cash/ep01/BrandonPolson-ep1-C2C-mobile.svg",
+        image: "/images/podcast/thumbnails/ep01-brandon_polson-mobile.svg",
         url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders?type=credit-to-cash",
       },
 
