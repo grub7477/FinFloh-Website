@@ -18,8 +18,10 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/BrendaWilliamsJohnson-ep22-banner.svg",
-    thumbnail_mobile: "/images/BrendaWilliamsJohnson-ep22-banner-mobile.svg",
+    thumbnail:
+      "/images/podcast/thumbnails/ep22-brenda_williams_johnson-thumbnail.png",
+    thumbnail_mobile:
+      "/images/podcast/thumbnails/ep22-brenda_williams_johnson.png",
     video_url:
       "https://www.youtube.com/embed/ikJpSgMfFeg?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -40,8 +42,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/swarn-ep21-banner.svg",
-    thumbnail_mobile: "/images/swarn-ep21-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep21-swarn_kamal-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep21-swarn_kamal.png",
     video_url:
       "https://www.youtube.com/embed/QaEUuxn3D1g?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -63,8 +65,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/DeanaReynolds-ep20-banner.svg",
-    thumbnail_mobile: "/images/DeanaReynolds-ep20-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep20-deana_reynolds-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep20-deana_reynolds.png",
     video_url:
       "https://www.youtube.com/embed/ZlBn_UYGKHA?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -85,8 +87,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Tracy-Mitchell-ep19-banner.svg",
-    thumbnail_mobile: "/images/Tracy-Mitchell-ep19-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep19-tracy_mitchell-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep19-tracy_mitchell.png",
     video_url:
       "https://www.youtube.com/embed/VKIxzW-412Y?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -108,8 +110,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/MarkBeaubouef-ep18-banner.svg",
-    thumbnail_mobile: "/images/MarkBeaubouef-ep18-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep18-mark_beaubouef-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep18-mark_beaubouef.png",
     video_url:
       "https://www.youtube.com/embed/HOQhihaMVJU?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -131,8 +133,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/josh_rappoport-ep17-banner.svg",
-    thumbnail_mobile: "/images/josh_rappoport-ep17-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep17-josh_rappoport-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep17-josh_rappoport.png",
     video_url:
       "https://www.youtube.com/embed/RKK66WHjEY4?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -153,8 +155,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/jason-ep16-banner.svg",
-    thumbnail_mobile: "/images/jason-ep16-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep16-jason_wooten-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep16-jason_wooten.png",
     video_url:
       "https://www.youtube.com/embed/gVKro9XuyvU?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -176,8 +178,9 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/alex-ep15-banner.svg",
-    thumbnail_mobile: "/images/alex-ep15-banner-mobile.svg",
+    thumbnail:
+      "/images/podcast/thumbnails/ep15-alex_macgillivray-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep15-alex_macgillivray.png",
     video_url:
       "https://www.youtube.com/embed/8BR-N3EPkhU?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -201,8 +204,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/jeff-ep14-banner.svg",
-    thumbnail_mobile: "/images/jeff-ep14-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep14-jeff_pollack-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep14-jeff_pollack.png",
     video_url:
       "https://www.youtube.com/embed/Ag6OocDivoU?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -224,8 +227,9 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/alex-ep13-banner.svg",
-    thumbnail_mobile: "/images/alex-ep13-banner-mobile.svg",
+    thumbnail:
+      "/images/podcast/thumbnails/ep13-alexander_j_freeman-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep13-alexander_j_freeman.png",
     video_url:
       "https://www.youtube.com/embed/2MVqk2VLUEg?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -246,8 +250,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/scott-ep12-banner.svg",
-    thumbnail_mobile: "/images/scott-ep12-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep12-scott_meyers-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep12-scott_meyers.png",
     video_url:
       "https://www.youtube.com/embed/pTSmrLV8YwI?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -268,8 +272,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Gary-ep11-banner.svg",
-    thumbnail_mobile: "/images/Gary-ep11-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep11-gary_lu-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep11-gary_lu.png",
     video_url:
       "https://www.youtube.com/embed/J84Rd8ItPaw?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -290,8 +294,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Subodh-ep10-banner.svg",
-    thumbnail_mobile: "/images/Subodh-ep10-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep10-subodh_karnad-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep10-subodh_karnad.png",
     video_url:
       "https://www.youtube.com/embed/iIt0GJDMre8?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -312,8 +316,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/new-ep9-banner.svg",
-    thumbnail_mobile: "/images/new-ep9-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep09-marc_steifman-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep09-marc_steifman.png",
     video_url:
       "https://www.youtube.com/embed/x60Kp0JBPzc?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -334,8 +338,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Jon-ep8-banner.svg",
-    thumbnail_mobile: "/images/Jon-ep8-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep08-jon_gross-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep08-jon_gross.png",
     video_url:
       "https://www.youtube.com/embed/oNCpJRk-1I4?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -356,8 +360,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Chris-ep6-banner.svg",
-    thumbnail_mobile: "/images/Chris-ep6-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep07-chris_mccourt-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep07-chris_mccourt.png",
     video_url:
       "https://www.youtube.com/embed/NeGCEB8dhus?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -379,8 +383,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/alyssa-ep6-banner.svg",
-    thumbnail_mobile: "/images/alyssa-ep6-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep06-alyssa_shadinger-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep06-alyssa_shadinger.png",
     video_url:
       "https://www.youtube.com/embed/3k4xsfzrL7I?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -402,8 +406,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/darren-ep5-banner.svg",
-    thumbnail_mobile: "/images/darren-ep5-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep05-darren_farry-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep05-darren_farry.png",
     video_url:
       "https://www.youtube.com/embed/XFBnARwf9QI?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -424,8 +428,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Ruchi_Kasliwal-ep4-banner.svg",
-    thumbnail_mobile: "/images/Ruchi_Kasliwal-ep4-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep04-ruchi_kasliwal-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep04-ruchi_kasliwal.png",
     video_url:
       "https://www.youtube.com/embed/IFXqk-lmUT0?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -446,8 +450,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Josh_Troy-ep3-banner.svg",
-    thumbnail_mobile: "/images/Josh_Troy-ep3-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep03-josh_troy-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep03-josh_troy.png",
     video_url:
       "https://www.youtube.com/embed/UxF1GUju16s?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -468,8 +472,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/Dustin-ep2-banner.svg",
-    thumbnail_mobile: "/images/Dustin-ep2-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep02-dustin_walsted-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep02-dustin_walsted.png",
     video_url:
       "https://www.youtube.com/embed/AjgzwfOTL8o?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -490,8 +494,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/racheal-ep1-banner.svg",
-    thumbnail_mobile: "/images/racheal-ep1-banner-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep01-rachal_c-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep01-rachal_c.png",
     video_url:
       "https://www.youtube.com/embed/OukEygEM7R8?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
@@ -512,9 +516,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/podcast/thumbnails/ep07-jernita_prince.svg",
-    thumbnail_mobile:
-      "/images/podcast/thumbnails/ep07-jernita_prince-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep07-jernita_prince-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep07-jernita_prince.png",
     video_url:
       "https://www.youtube.com/embed/dpUQEyrY3w4?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
   },
@@ -531,8 +534,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/amit-ep6-FLF.svg",
-    thumbnail_mobile: "/images/amit-ep6-FLF-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep06-amit_raj_chandla-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep06-amit_raj_chandla.png",
     video_url:
       "https://www.youtube.com/embed/ot3ekBrw0-4?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
   },
@@ -549,8 +552,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/abhishek-ep5-FLF.svg",
-    thumbnail_mobile: "/images/abhishek-ep5-FLF-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep05-abhishek_chandna-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep05-abhishek_chandna.png",
     video_url:
       "https://www.youtube.com/embed/3Ki14DRVP_Y?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
   },
@@ -567,8 +570,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/roshan-ep4-FLF.svg",
-    thumbnail_mobile: "/images/roshan-ep4-FLF-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep04-roshan_shanker-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep04-roshan_shanker.png",
     video_url:
       "https://www.youtube.com/embed/cQiaGSECELI?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
   },
@@ -585,8 +588,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/Elaine-ep3-FLF.svg",
-    thumbnail_mobile: "/images/Elaine-ep3-FLF-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep03-elaine_m_nowak-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep03-elaine_m_nowak.png",
 
     video_url:
       "https://www.youtube.com/embed/_MZXSmjJbwg?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
@@ -604,8 +607,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/MohitSharma-ep2-FLF.svg",
-    thumbnail_mobile: "/images/MohitSharma-ep2-FLF-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep02-mohit_sharma-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep02-mohit_sharma.png",
     video_url:
       "https://www.youtube.com/embed/EVgiEGIiGUI?list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
   },
@@ -622,8 +625,8 @@ export const AiInFinanceData = [
     hosted_by: "Subhasis Sahoo",
     hosted_position: "Founding Member, Marketing",
     hosted_profile_pic: "/images/podcast/speakerProfile/subhasis-sahoo.png",
-    thumbnail: "/images/AmartyaSingh-ep1-FLF.svg",
-    thumbnail_mobile: "/images/AmartyaSingh-ep1-FLF-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep01-amartya_singh-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep01-amartya_singh.png",
     video_url:
       "https://www.youtube.com/embed/-6t_6lsaZ9A?si=lxqUDNsHdQ6dIEWN&list=PLSh1ycsSrby8zvJ3xBfZfDjCg1Mvzapf-&autoplay=1",
   },
@@ -644,9 +647,8 @@ export const CreditToCashData = [
     hosted_by: "Amartya Singh",
     hosted_position: "Co-Founder & CEO, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/podcast/thumbnails/ep01-brandon_polson.svg",
-    thumbnail_mobile:
-      "/images/podcast/thumbnails/ep01-brandon_polson-mobile.svg",
+    thumbnail: "/images/podcast/thumbnails/ep01-brandon_polson-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep01-brandon_polson.png",
     video_url:
       "https://www.youtube.com/embed?v=cg28zSwJC0A&list=PLSh1ycsSrby_DM-HUNEPTosQZCAhaCIdc&autoplay=1",
   },
