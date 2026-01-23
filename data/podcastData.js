@@ -360,8 +360,8 @@ export const podcastData = [
     hosted_by: "Amartya Singh",
     hosted_position: "CEO & Cofounder, FinFloh",
     hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
-    thumbnail: "/images/podcast/thumbnails/ep07-chris_mccourt-thumbnail.png",
-    thumbnail_mobile: "/images/podcast/thumbnails/ep07-chris_mccourt.png",
+    thumbnail: "/images/podcast/thumbnails/ep07-chris_mcCourt-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep07-chris_mcCourt.png",
     video_url:
       "https://www.youtube.com/embed/NeGCEB8dhus?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
   },
