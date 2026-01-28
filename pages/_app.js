@@ -58,12 +58,28 @@ const MyApp = ({ Component, pageProps }) => {
               defer
             ></script>
             {/* HubSpot Embed Code */}
-            <script
+            {/* <script
               type="text/javascript"
               id="hs-script-loader"
               async
               defer
               src="//js-na1.hs-scripts.com/43524322.js"
+            ></script> */}
+
+            {/* Zoho SalesIQ Script */}
+            <script
+              type="text/javascript"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.$zoho=window.$zoho || {};
+                  $zoho.salesiq=$zoho.salesiq||{ready:function(){}};
+                `,
+              }}
+            />
+            <script
+              id="zsiqscript"
+              src="https://salesiq.zohopublic.in/widget?wc=siq8f739920962a0b57f7d897da6b1c5ad67822153e7e8e3bb158e0242f201cfe8d"
+              defer
             ></script>
 
             {/* Clarity Analytics Script */}
