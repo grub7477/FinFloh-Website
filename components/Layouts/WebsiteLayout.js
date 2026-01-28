@@ -28,13 +28,22 @@ const WebsiteLayout = (props) => {
           content="Receivables, AR, A/R, AR Automation, AI, Accounts Receivable"
         />
         {/* Start of HubSpot Embed Code */}
-        <script
+        {/* <script
           type="text/javascript"
           id="hs-script-loader"
           async
           defer
           src="//js-na1.hs-scripts.com/43524322.js"
-        ></script>
+        ></script> */}
+         <script
+              type="text/javascript"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.$zoho=window.$zoho || {};
+                  $zoho.salesiq=$zoho.salesiq||{ready:function(){}};
+                `,
+              }}
+            />
 
         {/* End of HubSpot Embed Code */}
         <script
