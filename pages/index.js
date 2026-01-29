@@ -274,6 +274,10 @@ const Simple_Features_CONTENT = [
       "https://finfloh.com/accounts-receivable-collections?utm_source=homepage_central&utm_medium=finfloh_website",
     imgSrc: "/images/Collect-home.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+
+    flohsenseAI: {
+      description: "Auto Send Invoices, Ledger Statements On Request",
+    },
   },
 
   {
@@ -303,6 +307,10 @@ const Simple_Features_CONTENT = [
       "https://finfloh.com/credit-decisioning?utm_source=homepage_central&utm_medium=finfloh_website",
     imgSrc: "/images/Credit-home.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+
+    flohsenseAI: {
+      description: "Analyze buyer sentiment and behaviour over emails",
+    },
   },
   {
     icon: "images/recon-icon.svg",
@@ -331,6 +339,10 @@ const Simple_Features_CONTENT = [
       "https://finfloh.com/automated-cash-application-software?utm_source=homepage_central&utm_medium=finfloh_website",
     imgSrc: "/images/Recon-home.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+
+    flohsenseAI: {
+      description: "Extract payment details from customer emails/chats",
+    },
   },
   {
     icon: "images/invoice-icon.svg",
@@ -359,6 +371,8 @@ const Simple_Features_CONTENT = [
       "https://finfloh.com/invoice-validation-automation?utm_source=homepage_central&utm_medium=finfloh_website",
     imgSrc: "/images/invoice-home.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+
+    // todo: Flohsense AI for Invoice Generation & Manual Overheads
   },
   // {
   //   icon: "images/dispute-icon.svg",
@@ -416,7 +430,7 @@ const FinFlohHome = () => {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when at least 50% of the section is visible
+      { threshold: 0.5 }, // Trigger when at least 50% of the section is visible
     );
 
     sectionRefs.current.forEach((ref) => {
@@ -517,7 +531,7 @@ const FinFlohHome = () => {
     // Create the Intersection Observer instance
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions
+      observerOptions,
     );
 
     // Observe the component
@@ -879,7 +893,19 @@ const FinFlohHome = () => {
                           <p>{point.description}</p>
                         </div>
                       ))}
+
+                      {/* FlohSense AI Agent */}
+                      {feature.flohsenseAI && (
+                        <div className="flohsenseAI-container" key={i}>
+                          <img src="/images/fAI.svg" alt="FlohSense AI Logo" />
+                          <div className="flohsenseAI-content">
+                            <h4>FLOHSENSE AI AGENT</h4>
+                            <p>{feature.flohsenseAI.description}</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
+
                     <CommonButton
                       text={feature.btnTxt}
                       type={"primary"}
@@ -889,6 +915,7 @@ const FinFlohHome = () => {
                       iconPosition="right"
                     />
                   </div>
+
                   <div className="feature-image">
                     <img
                       src={feature.imgSrc}
