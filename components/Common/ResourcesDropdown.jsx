@@ -35,11 +35,10 @@ const ResourcesDropdown = () => {
       // latest podcast content manuaaly added
       {
         heading: "Podcast",
-        title:
-          "The Billing Backbone: The Critical Connection Between Invoices and Orders",
-        subtitle: "With Brandon Polson",
-        image: "/images/podcast/thumbnails/ep01-brandon_polson.png",
-        url: "/podcast/the-billing-backbone:-critical-connection-between-invoices-&-orders?type=credit-to-cash",
+        title: "Working with the C-Suite: A CFO Playbook",
+        subtitle: "With Venkatraman G S",
+        image: "/images/podcast/thumbnails/ep23-venkatramanGS.png",
+        url: "/podcast/working-with-the-c-suite-a-cfo-playbook?type=inside-the-cfo-office",
       },
 
       // latest blog content manually added

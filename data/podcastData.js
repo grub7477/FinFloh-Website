@@ -1,5 +1,27 @@
 export const podcastData = [
   {
+    id: 23,
+    slug: "working-with-the-c-suite-a-cfo-playbook",
+    title: "Working with the C-Suite: A CFO Playbook",
+    author: "Venkatraman G S",
+    position: "Chief Financial Officer at MathCo",
+    position_without_company: "Chief Financial Officer",
+    quote:
+      "Automation moves AR from behind the curve to real-time acceleration in responses, account updates, and cash application.",
+    podcast_logo: "/images/podcast/speakerBrandLogos/ep23-mathCo.png",
+    episode: 23,
+    isNew: true,
+    date: "4 February 2026",
+    author_profile_pic: "/images/podcast/speakerProfile/venkatraman-g-s.png",
+    hosted_by: "Amartya Singh",
+    hosted_position: "CEO & Cofounder, FinFloh",
+    hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
+    thumbnail: "/images/podcast/thumbnails/ep23-venkatramanGS-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep23-venkatramanGS.png",
+    video_url:
+      "https://www.youtube.com/embed/m0tuha4-5d4?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
+  },
+  {
     id: 22,
     slug: "o2c-transformation-a-solutions-architects-view",
     title: "O2C Transformation: A Solutions Architect’s View",
@@ -11,7 +33,7 @@ export const podcastData = [
     podcast_logo:
       "/images/podcast/speakerBrandLogos/ep22-marketing_dot_com.png",
     episode: 22,
-    isNew: true,
+    isNew: false,
     date: "10 December 2025",
     author_profile_pic:
       "/images/podcast/speakerProfile/brenda-williams-johnson.png",
