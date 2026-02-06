@@ -1,5 +1,85 @@
 export const podcastContent = {
   "inside-the-cfo-office": {
+    "working-with-the-c-suite-a-cfo-playbook": {
+      transcript: `
+Amartya Singh (Intro): Venky’s journey spans large MNCs, Indian multinationals, listed companies, and high-growth firms—giving him a rare, end-to-end view of how finance leadership really evolves.
+
+Venkatraman G S: I’ve been part of companies that grew rapidly, and when you grow with the company, the learning is intense and continuous.
+
+Amartya: That kind of growth forces finance leaders to adapt quickly - systems, teams, and decision-making all at once.
+
+Venky: Managing teams across different organizations exposed me to very different working styles, expectations, and ways of solving problems.
+
+Amartya: And that exposure compounds as responsibilities increase and the stakes get higher.
+
+Amartya: A major part of your career has been working closely with CEOs, boards, and investors across very different business contexts.
+
+Venky: When you work with the C-suite, the first thing is to clearly understand what they’re really asking for—not what you assume they want.
+
+Venky: When you work with CXO leaders, the ability to listen patiently and fully process the question before responding is critical—because what they’re really asking is often beneath the surface.
+
+Venky: At the C-suite level, credibility comes from being sharp and precise—long explanations don’t help if they don’t directly answer the question.
+
+Amartya: What stood out to me is how much C-suite trust is built through clarity—being able to distill complexity into a few decisive points.
+
+Venky: When you go to the C-suite with a problem, you’re expected to go in with potential solutions—not just the issue.
+
+Venky: Even if your solution isn’t chosen, having a clear point of view builds credibility.
+
+Amartya: You took a very practical view on AI—focusing on where it can truly change decision-making, not just automate tasks.
+
+Venky: Financial reporting is ideal for AI because it requires interpretation and judgment—not just rule-based processing.
+
+Venky: FP&A today consumes enormous effort, and AI can help make planning and analysis far more dynamic and real time.
+
+Venky: Instead of producing static reports, finance teams can use AI to directly surface insights and actions from the data.
+
+Venky: That shift moves finance from explaining numbers after the fact to influencing decisions as they happen.
+
+Venky: Finance professionals need to stay curious about technology while continuing to execute the core finance work rigorously.
+
+Venky: The so-called “boring” fundamentals are what actually enable advanced automation and better decision-making.
+
+Amartya (Closing): This episode captures what it really takes to operate effectively at the CFO and C-suite level today.
+  `,
+
+      keyTakeaways: [
+        "C-suite effectiveness starts with listening before responding - At senior leadership levels, understanding what’s really being asked is critical. Careful listening leads to clearer responses and better outcomes.",
+
+        "Working across multiple companies builds perspective, not just experience - Exposure to large MNCs, Indian multinationals, listed companies, and growing firms gives finance leaders broader context and sharper judgment as they grow with the business.",
+
+        "Problems must come with potential solutions - When engaging with the C-suite or board, finance leaders are expected to present options—not just highlight issues. A clear point of view enables faster, more productive discussions.",
+
+        "Strong CFOs anticipate questions, not just agendas - Preparing beyond the meeting deck—historical context, forward-looking implications, and likely follow-ups—builds long-term trust with boards and investors.",
+
+        "AI will reshape finance at the insight layer, not just operations - The biggest impact of AI will be in financial reporting and FP&A—helping finance teams move from static reports to real-time interpretation and decision support.",
+      ],
+
+      chapters: [
+        { time: "00:00", title: "Teaser" },
+        { time: "03:28", title: "Introduction" },
+        {
+          time: "04:42",
+          title: "Finance leadership journey across diverse firms",
+        },
+        {
+          time: "17:22",
+          title: "Working with the C-Suite: A CFO Playbook",
+        },
+        {
+          time: "27:13",
+          title: "AI’s impact on CFO tech",
+        },
+        {
+          time: "34:11",
+          title: "Career advice for finance professionals",
+        },
+        {
+          time: "39:00",
+          title: "Closing reflections",
+        },
+      ],
+    },
     "o2c-transformation-a-solutions-architects-view": {
       transcript: `Amartya (Intro): Brenda brings two decades of O2C transformation experience — from Koch and Georgia Pacific to private equity environments — it’s a privilege to have her here.
 Brenda: I’ve watched AR evolve from intercompany mail and paper processes to the real-time digital world we operate in today.
