@@ -125,6 +125,11 @@ const Collections = () => {
             </div>
           </div>
         </div>
+        <div className="bg-container">
+          <div className="container-main">
+            <CompaniesLogo />
+          </div>
+        </div>
         <div className="collection-cont">
           <h2>
             Help Teams Come Together
@@ -133,11 +138,7 @@ const Collections = () => {
           </h2>
         </div>
         <MainFeatures mainFeatures={mainFeatures} />
-        <div className="bg-container">
-          <div className="container-main">
-            <CompaniesLogo />
-          </div>
-        </div>
+
         <Newsletter
           heading={"Enable Seamless Collaboration & Fastrack A/R Operations"}
           text={""}

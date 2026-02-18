@@ -1,15 +1,47 @@
 import axios from "axios";
 import HeadComponent from "../../components/Common/HeadComponent";
 import WebsiteLayout from "../../components/Layouts/WebsiteLayout";
+import generateUtmUrls from "../../utils/utmUrls";
+import ProductArea, { PRODUCT } from "../../components/Common/ProductArea";
 import Newsletter from "../../components/Common/Newsletter";
 import { CategoryDate, parsePost } from ".";
 import { useEffect, useState } from "react";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
 
+const utmURLs = generateUtmUrls("blog");
+export const PRODUCT_INFO_MAP_blog = {
+  [PRODUCT.Integration]: {
+    title: "Invoice Validation Automation",
+    url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
+    url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
+  },
+  [PRODUCT.CollaborativeCommunication]: {
+    title: "Dispute Resolution",
+    url_navbar: utmURLs.collaborativeCommunication_navbar,
+    url_footer: utmURLs.collaborativeCommunication_footer,
+  },
+  [PRODUCT.AIDrivenCollections]: {
+    title: "Collections",
+    url_navbar: utmURLs.accountsReceivableCollections_navbar,
+    url_footer: utmURLs.accountsReceivableCollections_footer,
+  },
+  [PRODUCT.BuyerIntelligence]: {
+    title: "Credit Scoring & Decisions",
+    url_navbar: utmURLs.creditdecisioning_navbar,
+    url_footer: utmURLs.creditdecisioning_footer,
+  },
+
+  [PRODUCT.AutomatedCashApp]: {
+    title: "Cash Application",
+    url_navbar: utmURLs.automatedCashApplication_navbar,
+    url_footer: utmURLs.automatedCashApplication_footer,
+  },
+};
+
 const RelatedPost = ({ post }) => (
   <div className="related-post-container">
     <div className="related-post-img">
-      {post?.img && <img src={post?.img} alt={post?.title} />}
+      {post?.img && <img src={post?.img} loading="lazy" alt={post?.title} />}
     </div>
     <div className="related-post-content">
       <CategoryDate category={post?.context} date={post?.date} />
@@ -17,10 +49,10 @@ const RelatedPost = ({ post }) => (
       <a href={`/blog/${post?.slug}`}>
         <h4 dangerouslySetInnerHTML={{ __html: post?.title }}></h4>
       </a>
-      <div
+      {/* <div
         className="related-post-excerpt"
         dangerouslySetInnerHTML={{ __html: post?.excerpt }}
-      ></div>
+      ></div> */}
     </div>
   </div>
 );
@@ -46,7 +78,7 @@ const Post = ({ post }) => {
     if (!html) return html;
     let updated = html.replace(
       /https:\/\/blog\.finfloh\.com/g,
-      "https://finfloh.com/blog"
+      "https://finfloh.com/blog",
     );
 
     const siteSlugs = [
@@ -78,7 +110,7 @@ const Post = ({ post }) => {
     const slugAlternation = siteSlugs.join("|");
     const rootPageRegex = new RegExp(
       `https://finfloh\\.com/blog/(${slugAlternation})(?=[$/\\"?#])|https://finfloh\\.com/blog/(${slugAlternation})$`,
-      "g"
+      "g",
     );
 
     updated = updated.replace(rootPageRegex, (match) => {
@@ -181,7 +213,7 @@ const Post = ({ post }) => {
               </div>
             </div>
             <div className="blog-header-img">
-              <img src={post?.imgURL} alt="blog post finfloh" />
+              <img src={post?.imgURL} loading="lazy" alt="blog post finfloh" />
             </div>
           </div>
           <div className="blog-imgAndContents">
@@ -242,7 +274,7 @@ const Post = ({ post }) => {
 
 export async function getServerSideProps({ req, query }) {
   const { data: post } = await axios.get(
-    `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/posts?slug=${query.slug}`
+    `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/posts?slug=${query.slug}`,
   );
   if (post.length === 0) {
     return {
@@ -252,21 +284,21 @@ export async function getServerSideProps({ req, query }) {
 
   const author = await axios
     .get(
-      `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/users/${post[0]?.author}`
+      `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/users/${post[0]?.author}`,
     )
     .catch(() => {});
 
   const media = await axios
     .get(
-      `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/media/${post[0]?.featured_media}`
+      `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/media/${post[0]?.featured_media}`,
     )
     .catch(() => {});
 
   const categories = await axios
     .get(
       `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/categories?include=${post[0]?.categories?.join(
-        ","
-      )}`
+        ",",
+      )}`,
     )
     .catch(() => {});
 

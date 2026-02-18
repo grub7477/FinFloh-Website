@@ -247,6 +247,11 @@ const Collections = () => {
             </div>
           </div>
         </div>
+        <div className="bg-container">
+          <div className="container-main">
+            <CompaniesLogo />
+          </div>
+        </div>
 
         <div className="collection-cont">
           <h2 id="credit-heading-update">
@@ -255,11 +260,7 @@ const Collections = () => {
           </h2>
         </div>
         <MainFeatures mainFeatures={mainFeatures} />
-        <div className="bg-container">
-          <div className="container-main">
-            <CompaniesLogo />
-          </div>
-        </div>
+
         <Newsletter
           heading={
             "Put Your Accounts Receivable Collections on Auto-Pilot with FinFloh"

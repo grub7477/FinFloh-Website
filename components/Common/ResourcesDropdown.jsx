@@ -24,7 +24,7 @@ const ResourcesDropdown = () => {
         url: "/roi-calculator",
       },
       {
-        title: "AR Glossary",
+        title: "Glossary",
         subtitle: "Key AR Terms Explained",
         icon: "/images/ar_glossary.svg",
         url: "/glossary",
