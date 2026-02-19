@@ -189,7 +189,11 @@ const CashApplication = () => {
             </div>
           </div>
         </div>
-
+        <div className="bg-container">
+          <div className="container-main">
+            <CompaniesLogo />
+          </div>
+        </div>
         <div className="youtube-embed-video">
           <h2>See FinFloh Transform Your AR Workflow</h2>
           <iframe
@@ -208,11 +212,7 @@ const CashApplication = () => {
           </h2>
         </div>
         <MainFeatures mainFeatures={mainFeatures} />
-        <div className="bg-container">
-          <div className="container-main">
-            <CompaniesLogo />
-          </div>
-        </div>
+
         <Newsletter
           heading={"Accelerate Your Cash Application Process with FinFloh"}
           text={""}

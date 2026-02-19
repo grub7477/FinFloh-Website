@@ -5,13 +5,13 @@ const ProductsDropdown = () => {
   const productData = {
     GET_PAID_FASTER: [
       {
-        title: "Invoice Validation Automation",
+        title: "Invoice Automation",
         subtitle: "Invoice generation, validation & sending",
         icon: "/images/file_export.svg",
         url: "/invoice-validation-automation",
       },
       {
-        title: "Receivables Collection",
+        title: "Collections",
         subtitle: "Automate AR collection follow-ups",
         icon: "/images/attach_email.svg",
         url: "/accounts-receivable-collections",

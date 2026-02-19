@@ -168,7 +168,11 @@ const Integration = () => {
             </div>
           </div>
         </div>
-
+        <div className="bg-container">
+          <div className="container-main">
+            <CompaniesLogo />
+          </div>
+        </div>
         <div className="collection-cont">
           <h2>
             Goodbye Disconnected Systems,
@@ -196,11 +200,6 @@ const Integration = () => {
             <img alt="resustanability-icon" src="images/resustanability.svg" />
           </div>
         </div> */}
-        <div className="bg-container">
-          <div className="container-main">
-            <CompaniesLogo />
-          </div>
-        </div>
 
         <Newsletter
           heading={"Start your Integration Journey Today"}

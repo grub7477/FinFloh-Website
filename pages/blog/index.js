@@ -4,8 +4,9 @@ import WebsiteLayout from "../../components/Layouts/WebsiteLayout";
 import HeadComponent from "../../components/Common/HeadComponent";
 import { useEffect, useState } from "react";
 import generateUtmUrls from "../../utils/utmUrls";
-import { PRODUCT } from "../../components/Common/ProductArea";
+import ProductArea, { PRODUCT } from "../../components/Common/ProductArea";
 import Loader from "../../components/Common/Loader";
+
 const utmURLs = generateUtmUrls("blog");
 export const PRODUCT_INFO_MAP_blog = {
   [PRODUCT.Integration]: {
@@ -84,7 +85,9 @@ export const Article = ({ post }) => {
           }
           style={{ minHeight: !post?.imgURL ? "185.59px" : null }}
         >
-          {post.imgURL && <img src={post.imgURL} alt="blog post finfloh"></img>}
+          {post.imgURL && (
+            <img src={post.imgURL} loading="lazy" alt="blog post finfloh"></img>
+          )}
         </div>
         <div className="col-md-12 col-sm-6 col-12 article-content">
           <div style={{ marginTop: "15px", marginBottom: "10px" }}>
@@ -149,7 +152,7 @@ const Blog = ({ initialPosts, totalPosts }) => {
     : blogList.filter(
         (blog) =>
           blog.title &&
-          blog.title.toLowerCase().includes(searchBlog.toLowerCase())
+          blog.title.toLowerCase().includes(searchBlog.toLowerCase()),
       );
 
   // Generate page numbers for pagination
@@ -222,7 +225,11 @@ const Blog = ({ initialPosts, totalPosts }) => {
               style={{ marginBottom: "50px", borderRadius: "4px" }}
             >
               <div className="col-md-6 col-12 bg_dark d-flex align-items-center">
-                <img src={blogList[0]?.imgURL} alt="blog finfloh" />
+                <img
+                  src={blogList[0]?.imgURL}
+                  loading="lazy"
+                  alt="blog finfloh"
+                />
               </div>
               <div className="col-md-6 col-12">
                 <div className="blog-home-banner-content">
@@ -346,6 +353,10 @@ const Blog = ({ initialPosts, totalPosts }) => {
           )}
         </div>
       </div>
+      <ProductArea
+        currentProduct={PRODUCT.blog}
+        PRODUCT_INFO_MAP={PRODUCT_INFO_MAP_blog}
+      />
     </WebsiteLayout>
   );
 };
@@ -357,7 +368,7 @@ export const parsePost = (post) => {
   const updatedCanonicalUrl = canonicalUrl
     ? canonicalUrl.replace(
         /^https?:\/\/blog\.finfloh\.com/gi,
-        "https://finfloh.com/blog"
+        "https://finfloh.com/blog",
       )
     : "";
   return {
@@ -392,7 +403,7 @@ export const parsePost = (post) => {
                 segment &&
                 segment !== "https:" &&
                 segment !== "http:" &&
-                segment !== "blog.finfloh.com"
+                segment !== "blog.finfloh.com",
             )
             .pop() || "";
 
@@ -425,7 +436,7 @@ export async function getServerSideProps({ req }) {
           page: 1,
           _embed: true,
         },
-      }
+      },
     );
 
     const totalPosts = parseInt(headers["x-wp-total"]);
@@ -440,7 +451,7 @@ export async function getServerSideProps({ req }) {
         params: {
           include: authorIds.join(","),
         },
-      }
+      },
     );
 
     // Get unique featured media IDs from posts
@@ -453,12 +464,12 @@ export async function getServerSideProps({ req }) {
         params: {
           include: featuredMediaIds.join(","),
         },
-      }
+      },
     );
 
     // Fetch all categories
     const { data: categories } = await axios.get(
-      `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/categories`
+      `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/categories`,
     );
 
     // Process posts to include media and category data
