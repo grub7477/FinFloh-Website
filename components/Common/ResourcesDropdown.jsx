@@ -35,10 +35,10 @@ const ResourcesDropdown = () => {
       // latest podcast content manuaaly added
       {
         heading: "Podcast",
-        title: "Working with the C-Suite: A CFO Playbook",
-        subtitle: "With Venkatraman G S",
-        image: "/images/podcast/thumbnails/ep23-venkatramanGS.png",
-        url: "/podcast/working-with-the-c-suite-a-cfo-playbook?type=inside-the-cfo-office",
+        title: "The All-Round CFO",
+        subtitle: "With Vinod Hariharan",
+        image: "/images/podcast/thumbnails/ep24-vinod_hariharan.png",
+        url: "/podcast/the-all-round-cfo?type=inside-the-cfo-office",
       },
 
       // latest blog content manually added

@@ -1,5 +1,73 @@
 export const podcastContent = {
   "inside-the-cfo-office": {
+    "the-all-round-cfo": {
+      transcript: `
+Amartya Singh (Intro): Vinod, you’ve had the opportunity to work across public companies, private growth environments, and multiple finance and operating roles — it’s great to have you on the show.
+
+Vinod Hariharan: I started my career in audit at PwC, but moving into Salesforce during the early SaaS wave fundamentally changed how I viewed finance in a scaling business.
+
+Vinod: In high-growth environments, you’re forced to deeply understand revenue drivers, customer acquisition, and operational efficiency — not just focus on reporting accuracy.
+
+Amartya: More and more CFOs are being promoted to CEOs, which is a great thing because boards are increasingly recognizing CFOs as enterprise leaders.
+
+Vinod: Taking on RevOps, legal, HR, and IT alongside finance gave me real visibility into how decisions get made and how value is actually created.
+
+Amartya: When finance leaders step into operating roles like RevOps, they begin to see how strategy, execution, and metrics truly connect.
+
+Vinod: You’ve got pipeline metrics, conversion rates, bookings, gross and net ARR, cost structure — and ultimately liquidity tying it all together.
+
+Vinod: Public-company environments teach you cadence and discipline, while private companies demand faster iteration and adaptability.
+
+Amartya: Focusing on growth, apart from bringing balance in finance, is extremely important — and that clearly comes across in your approach as well.
+
+Vinod: When working with the board, it’s not just about the numbers — it’s about the clarity of the narrative and where the business is heading.
+
+Vinod: You’ve got to have the foundation of strategic thinking — how you want to tell that story to the board and the outside world.
+
+Vinod: People are good at identifying their ICP, but how do you go and operationalize that ICP across sales, marketing, and customer success?
+
+Vinod: AI is going to significantly accelerate budgeting and forecasting cycles by helping teams pressure-test scenarios much faster.
+
+Vinod: Financial reporting is one of the most natural use cases for AI because interpretation and pattern recognition matter more than rules.
+
+Vinod: I’ve told my team to run financial models through an LLM to challenge assumptions and refine outputs more efficiently.
+
+Vinod: That’s where solutions like FinFloh definitely help out — you can make sure your accounts receivable is automated, your application of cash is streamlined, and you’re signing on customers who are credit worthy.
+
+Amartya: Thanks for mentioning us — and I completely agree that using AI within an A/R product to drive cash flow visibility and outcomes makes a lot of sense.
+
+Vinod: Build your profile, build your personal brand — that’s how I’ve helped many folks on my team take the next step toward becoming CFOs.
+
+Vinod: Always be curious — it’s good to step out of your swim lane, get more exposure into the business, and understand how other parts of the organization operate.
+
+Amartya (Closing): Thanks Vinod for coming onto the podcast and sharing your views and sharing your thoughts with us.
+`,
+      keyTakeaways: [
+        "High-growth environments require finance leaders to deeply understand revenue drivers, customer acquisition, and operational efficiency.",
+
+        "Cross-functional exposure through RevOps, legal, HR, and IT helps finance leaders understand how decisions are made and how value is created.",
+
+        "Board communication requires clarity of narrative and strategic storytelling beyond just presenting numbers.",
+
+        "AI will accelerate budgeting, forecasting, and financial interpretation through faster scenario analysis and pattern recognition.",
+
+        "Curiosity, cross-functional exposure, and personal brand building help finance professionals grow into CFO and enterprise leadership roles.",
+      ],
+
+      chapters: [
+        { time: "00:00", title: "Teaser" },
+        { time: "03:40", title: "Introduction" },
+        { time: "04:35", title: "Finance Leadership Journey" },
+        { time: "07:57", title: "Journey Across Alida, Totango & Sauce Labs" },
+        {
+          time: "11:50",
+          title: "The All-Round CFO: Strategy, Growth & Operating Lens",
+        },
+        { time: "19:40", title: "Take on AI in Finance" },
+        { time: "24:03", title: "Advice for Finance Professionals" },
+        { time: "28:12", title: "Closing" },
+      ],
+    },
     "working-with-the-c-suite-a-cfo-playbook": {
       transcript: `
 Amartya Singh (Intro): Venky’s journey spans large MNCs, Indian multinationals, listed companies, and high-growth firms—giving him a rare, end-to-end view of how finance leadership really evolves.

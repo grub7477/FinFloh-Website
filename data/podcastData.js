@@ -1,5 +1,28 @@
 export const podcastData = [
   {
+    id: 24,
+    slug: "the-all-round-cfo",
+    title: "The All-Round CFO",
+    author: "Vinod Hariharan",
+    position: "Chief Financial Officer at Sauce Labs",
+    position_without_company: "Chief Financial Officer",
+    quote:
+      "As a Finance Leader, you’ve got to have the foundation of strategic thinking — how you want to tell that story to the board and the outside world.",
+    podcast_logo: "/images/podcast/speakerBrandLogos/ep24-sauce-labs.png",
+    episode: 24,
+    isNew: true,
+    date: "19 February 2026",
+    author_profile_pic: "/images/podcast/speakerProfile/vinod-hariharan.png",
+    hosted_by: "Amartya Singh",
+    hosted_position: "CEO & Cofounder, FinFloh",
+    hosted_profile_pic: "/images/podcast/speakerProfile/amartya-singh.png",
+    thumbnail: "/images/podcast/thumbnails/ep24-vinod_hariharan-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep24-vinod_hariharan.png",
+    video_url:
+      "https://www.youtube.com/embed/P3GG4NzKZhA?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1",
+  },
+
+  {
     id: 23,
     slug: "working-with-the-c-suite-a-cfo-playbook",
     title: "Working with the C-Suite: A CFO Playbook",
@@ -7,10 +30,10 @@ export const podcastData = [
     position: "Chief Financial Officer at MathCo",
     position_without_company: "Chief Financial Officer",
     quote:
-      "Automation moves AR from behind the curve to real-time acceleration in responses, account updates, and cash application.",
+      "When you go to the C-suite with a problem, you’re expected to go in with potential solutions—not just the issue.",
     podcast_logo: "/images/podcast/speakerBrandLogos/ep23-mathCo.png",
     episode: 23,
-    isNew: true,
+    isNew: false,
     date: "4 February 2026",
     author_profile_pic: "/images/podcast/speakerProfile/venkatraman-g-s.png",
     hosted_by: "Amartya Singh",
