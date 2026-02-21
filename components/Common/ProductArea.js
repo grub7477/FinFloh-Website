@@ -8,8 +8,8 @@ export const PRODUCT = {
 
 export const PRODUCT_INFO_MAP = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
-    url: "/invoice-validation-automation",
+    title: "Invoice Automation",
+    url: "/invoice-automation",
   },
   [PRODUCT.CollaborativeCommunication]: {
     title: "Dispute Resolution",
@@ -84,7 +84,7 @@ const PRODUCT_MAP = {
       className="feature-card"
       href={PRODUCT_INFO_MAP[PRODUCT.Integration].url}
     >
-      <h3>Invoice Validation Automation</h3>
+      <h3>Invoice Automation</h3>
       <p>
         Automate invoice generation, validation & sending with the least errors,
         <br />
@@ -96,7 +96,7 @@ const PRODUCT_MAP = {
 
 const ProductArea = ({ currentProduct, PRODUCT_INFO_MAP }) => {
   const products = Object.values(PRODUCT).filter(
-    (product) => product != currentProduct
+    (product) => product != currentProduct,
   );
 
   return (

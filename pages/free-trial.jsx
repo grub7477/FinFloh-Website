@@ -11,7 +11,7 @@ import { useState } from "react";
 const utmURLs = generateUtmUrls("try_for_free");
 export const PRODUCT_INFO_MAP_try_for_free = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
   },

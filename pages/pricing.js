@@ -10,7 +10,7 @@ import CommonButton from "../components/Common/CommonButton";
 const utmURLs = generateUtmUrls("pricing");
 export const PRODUCT_INFO_MAP_pricing = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
     url_otherProducts: utmURLs.integrationsAndInvoiceVerification_otherProducts,

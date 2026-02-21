@@ -11,7 +11,7 @@ import CompaniesLogo from "../components/Common/CompaniesLogo";
 const utmURLs = generateUtmUrls("credit");
 export const PRODUCT_INFO_MAP_credit = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
     url_otherProducts: utmURLs.integrationsAndInvoiceVerification_otherProducts,

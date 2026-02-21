@@ -10,7 +10,7 @@ import FaqContent from "../components/Faq/FaqContent_New";
 const utmURLs = generateUtmUrls("integrations");
 export const PRODUCT_INFO_MAP_integrations = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
     url_otherProducts: utmURLs.integrationsAndInvoiceVerification_otherProducts,

@@ -19,7 +19,7 @@ import NewNewsLetter from "../components/Common/NewNewsLetter";
 const utmURLs = generatehomeUtmUrls("homepage");
 export const PRODUCT_INFO_MAP_homePage = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.homePage_integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.homePage_integrationsAndInvoiceVerification_footer,
   },
