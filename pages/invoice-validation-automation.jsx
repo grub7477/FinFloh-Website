@@ -6,6 +6,7 @@ import ProductBanner from "../components/Common/ProductBanner";
 import HeadComponent from "../components/Common/HeadComponent";
 import generateUtmUrls from "../utils/utmUrls";
 import CompaniesLogo from "../components/Common/CompaniesLogo";
+import FaqContent from "../components/Faq/FaqContent_New";
 const utmURLs = generateUtmUrls("integrations");
 export const PRODUCT_INFO_MAP_integrations = {
   [PRODUCT.Integration]: {
@@ -123,6 +124,119 @@ const mainFeatures = [
   },
 ];
 
+const FAQ_CONTENT = [
+  {
+    uuid: "a",
+    question: "What is automated invoice generation?",
+    answer: [
+      "Automated invoice generation is the process of creating invoices directly within ERP systems using structured data from CRM, order management, or billing platforms.",
+      "Instead of manually preparing invoices, the system generates invoices automatically based on transactional and contractual data.",
+      "FinFloh enables auto-generation of invoices in ERPs through APIs or structured uploads, ensuring accurate and timely billing.",
+    ],
+  },
+  {
+    uuid: "b",
+    question: "How does FinFloh automate invoice generation?",
+    answer: [
+      "FinFloh syncs ERP systems with CRM, order, and contract data to generate invoices automatically.",
+      "It validates pricing, quantities, tax details, customer information, and required references before invoice creation.",
+      "This eliminates manual data extraction and reduces billing errors at scale.",
+    ],
+  },
+  {
+    uuid: "c",
+    question: "How does FinFloh ensure invoices are generated accurately?",
+    answer: [
+      "FinFloh validates invoice data by matching it against approved quotes, orders, and contract terms before generation.",
+      "By verifying pricing logic, quantities, and customer details upfront, the system minimizes invoice errors and reduces downstream disputes.",
+    ],
+  },
+  {
+    uuid: "d",
+    question:
+      "Can FinFloh auto-generate invoices and credit notes in ERP systems?",
+    answer: [
+      "Yes. FinFloh supports auto-generation of invoices and linked credit notes directly within ERP systems.",
+      "When invoice cancellations or adjustments occur, corresponding credit notes can be automatically created and tracked.",
+      "This ensures billing corrections are structured, traceable, and audit-ready.",
+    ],
+  },
+  {
+    uuid: "e",
+    question: "How does FinFloh prevent missed or delayed invoicing?",
+    answer: [
+      "FinFloh uses alerts and notifications to ensure invoices are not missed due to manual process gaps.",
+      "If billing events are pending or delayed, the system flags them for action.",
+      "This prevents revenue leakage caused by missed invoicing cycles.",
+    ],
+  },
+  {
+    uuid: "f",
+    question: "How does FinFloh automate invoice sending?",
+    answer: [
+      "Once invoices are generated and validated, FinFloh automates invoice distribution into buyer email inboxes or configured delivery workflows.",
+      "This eliminates manual downloading, attaching, and sending of invoices, ensuring consistent and timely delivery.",
+    ],
+  },
+  {
+    uuid: "g",
+    question:
+      "Does FinFloh support auto-upload of invoices into buyer AP and ERP portals?",
+    answer: [
+      "Yes. Many B2B customers require invoice submission through Accounts Payable (AP) or ERP vendor portals.",
+      "FinFloh supports automated or assisted upload of invoices into buyer portals, reducing manual portal submissions and ensuring compliance with customer requirements.",
+    ],
+  },
+  {
+    uuid: "h",
+    question:
+      "Can FinFloh track invoice delivery status and customer responses?",
+    answer: [
+      "FinFloh tracks invoice delivery status and monitors responses where applicable.",
+      "Finance teams gain visibility into delivery confirmation, acknowledgments, and customer queries.",
+      "This improves follow-up efficiency and reduces uncertainty in billing communications.",
+    ],
+  },
+  {
+    uuid: "i",
+    question: "How does invoice automation reduce disputes?",
+    answer: [
+      "Invoice disputes often arise from incorrect pricing, missing references, or mismatches with approved contracts or orders.",
+      "By validating invoices before generation and ensuring accurate delivery, FinFloh minimizes billing errors and significantly reduces dispute occurrences.",
+    ],
+  },
+  {
+    uuid: "j",
+    question:
+      "How does FlohSense AI Agent enable intelligent invoice communications during the invoice-to-cash process?",
+    answer: [
+      "FlohSense AI Agent reads and parses incoming customer emails related to invoices, ledger statements, outstanding balances, and contact updates.",
+      "When customers request copies of invoices, statements, or balance confirmations, the AI Agent identifies the request, retrieves the relevant documents, and can automatically respond with the appropriate information.",
+      "If customers provide updated contact details, FlohSense captures and updates the records within FinFloh and synchronizes them with the CRM system.",
+      "By converting unstructured email requests into structured actions, FlohSense reduces manual inbox monitoring, improves response times, and ensures accurate customer communication throughout the invoice-to-cash cycle.",
+    ],
+  },
+  {
+    uuid: "k",
+    question:
+      "How does invoice automation connect to the broader invoice-to-cash process?",
+    answer: [
+      "Accurate invoice generation and timely delivery form the foundation of the invoice-to-cash cycle.",
+      "By integrating invoice automation with collections, cash application, and credit workflows, FinFloh ensures downstream receivables processes operate smoothly, improving recovery rates and overall cash flow visibility.",
+    ],
+  },
+  {
+    uuid: "l",
+    question: "How can I get started with FinFloh’s Invoice Automation?",
+    answer: [
+      "To get started, you can schedule a demo or consultation with our team.",
+      "We will review your current invoice generation, validation, and sending workflows, along with ERP and CRM integrations.",
+      "Our team will demonstrate how FinFloh can automate invoice creation, streamline delivery (including AP portal uploads), and reduce billing errors.",
+      "Implementation focuses on rapid ERP integration, configurable validation rules, and minimal disruption to existing processes — enabling you to go live within weeks.",
+    ],
+  },
+];
+
 const Integration = () => {
   return (
     <>
@@ -206,6 +320,15 @@ const Integration = () => {
           text={""}
           utmURLs={utmURLs}
         />
+        <FaqContent
+          bgColor="#ffffff"
+          title="Frequently asked questions"
+          subTitle="Frequently asked questions about FinFloh's 
+          Invoice Validation Software
+          "
+          questions={FAQ_CONTENT}
+        />
+
         <ProductArea
           currentProduct={PRODUCT.Integration}
           PRODUCT_INFO_MAP={PRODUCT_INFO_MAP_integrations}

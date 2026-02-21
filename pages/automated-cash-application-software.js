@@ -94,57 +94,97 @@ const mainFeatures = [
 const FAQ_CONTENT = [
   {
     uuid: "a",
-    question:
-      "Does FinFloh's cash application software post information back to ERP?",
+    question: "What is automated cash application?",
     answer: [
-      "FinFloh's cash application software matches invoices with payments and posts the informaiton back to your ERP completing the entire invoice to cash process with complete accuracy.",
+      "Automated cash application is the process of matching incoming customer payments to open invoices without manual reconciliation.",
+      "Instead of reviewing bank statements and ERP ledgers manually, automation software reconciles payments using structured data and intelligent matching logic, improving accuracy and reducing processing time.",
     ],
   },
   {
     uuid: "b",
-    question:
-      "What challenges does the cash application process present, and how can they be overcome?",
+    question: "How does FinFloh automate cash application?",
     answer: [
-      "Addressing challenges such as manual remittance data capture from email bodies, attachments, portals and more, ERP code assignments to disputes, and handling missing remittance scenarios is crucial. Our proprietary algorithm tackles these hurdles, providing efficient solutions to streamline the entire cash application process.",
+      "FinFloh ingests bank statement data and open invoice data from ERP systems, then applies configurable matching rules and intelligent algorithms to reconcile payments automatically.",
+      "Payments are matched using invoice numbers, customer identifiers, amounts, and remittance details, significantly reducing manual intervention.",
     ],
   },
   {
     uuid: "c",
     question:
-      "Does FinFloh's cash application software integrate with other finance and accounting systems?",
+      "Can FinFloh handle partial payments, short payments, and consolidated remittances?",
     answer: [
-      "Our cash application software not just integrates with all your finance and accounting systems but also provides a single source of truth for you. to track all your invoice and payments information.",
+      "Yes. FinFloh supports complex reconciliation scenarios including partial payments, short payments, overpayments, bulk remittances, and multi-invoice settlements.",
+      "The system intelligently allocates payments across invoices while maintaining structured exception handling and full audit visibility.",
     ],
   },
   {
     uuid: "d",
     question:
-      "What is the pricing for your automated cash application software?",
+      "How does FinFloh process remittance advice and payment references?",
     answer: [
-      "Our pricing usually comprises two components, including a one-time setup fee and an annual/monthly recurring platform fee. We offer customized pricing tailored to your specific business needs, and you can discuss your requirements with us ",
-      <a
-        href="https://finfloh.com/book-a-demo"
-        style={{ display: "inline" }}
-        key="demoLink"
-      >
-        during a call.
-      </a>,
+      "FinFloh captures and processes remittance information from bank references, structured data feeds, and supporting documentation.",
+      "Relevant identifiers such as invoice numbers and payment references are extracted and matched against open invoices to accelerate reconciliation and reduce unapplied cash.",
     ],
   },
   {
     uuid: "e",
-    question:
-      "How quickly can the FinFloh Cash Application software be implemented?",
+    question: "What happens when payments cannot be automatically matched?",
     answer: [
-      "It completely depends on the complexity of scope. Typically it takes us 2-3 weeks for the complete setup and go-live of our cash application software tool.",
+      "If a payment cannot be matched with high confidence, FinFloh routes it into a structured exception workflow.",
+      "The system provides suggested matches and contextual information to help finance teams resolve discrepancies quickly while maintaining control and accuracy.",
     ],
   },
   {
     uuid: "f",
-    question:
-      "What are the benefits of an automated cash application software?",
+    question: "How does automated cash application reduce unapplied cash?",
     answer: [
-      "Our automated cash application software helps you post your cash faster and with more accuracy, and eliminate the hassle of manually collecting remittance information. Spend less time on a labour intensive process like cash application and shift your team's efforts to more strategic and revenue generating functions.",
+      "Unapplied cash occurs when payments are received but not properly matched to invoices.",
+      "FinFloh reduces unapplied cash by combining intelligent matching logic, configurable allocation rules, and real-time visibility into unmatched payments.",
+      "This improves ledger accuracy and strengthens financial reporting reliability.",
+    ],
+  },
+  {
+    uuid: "g",
+    question: "How does FinFloh integrate with ERP and banking systems?",
+    answer: [
+      "FinFloh integrates with ERP systems such as Oracle NetSuite, Oracle Fusion, Microsoft Dynamics 365, and SAP S/4HANA.",
+      "It connects with banking data feeds or imported bank statements to reconcile payments directly within the ERP environment, eliminating manual re-entry and reconciliation gaps.",
+    ],
+  },
+  {
+    uuid: "h",
+    question: "How does FinFloh reduce man-hours in cash application?",
+    answer: [
+      "Manual cash reconciliation requires reviewing bank statements, interpreting remittance details, cross-checking invoice data, and posting allocations into ERP systems.",
+      "FinFloh automates payment matching, allocation, and exception routing, significantly reducing manual workload.",
+      "Finance teams can process higher payment volumes without increasing headcount and accelerate month-end close cycles.",
+    ],
+  },
+  {
+    uuid: "i",
+    question:
+      "How does FlohSense AI Agent accelerate straight-through cash posting from customer emails?",
+    answer: [
+      "FlohSense AI Agent reads and parses incoming customer emails to extract payment-related information such as payment reference numbers, invoice references, amounts paid, and remittance details.",
+      "It automatically matches the extracted data with open invoices and customer records in the ERP system, validates the allocation, and posts the payment into ERP when confidence thresholds are met.",
+      "Payments requiring review are routed through structured exception workflows.",
+      "By converting unstructured email communication into structured ERP postings, FlohSense accelerates straight-through cash application, reduces manual reconciliation effort, and increases automation rates.",
+    ],
+  },
+  {
+    uuid: "j",
+    question: "How does automated cash application improve month-end closing?",
+    answer: [
+      "By reducing manual reconciliation and accelerating payment allocation, FinFloh shortens reconciliation cycles and improves ledger accuracy.",
+      "This enables finance teams to close books faster with fewer manual adjustments and improved audit readiness.",
+    ],
+  },
+  {
+    uuid: "k",
+    question: "How does FinFloh ensure auditability and financial control?",
+    answer: [
+      "Every payment allocation, adjustment, exception resolution, and ERP posting is logged with a detailed audit trail.",
+      "FinFloh provides visibility into matching logic, user approvals, and posting history, ensuring compliance, transparency, and strong internal financial controls.",
     ],
   },
 ];

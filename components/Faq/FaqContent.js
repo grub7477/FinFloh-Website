@@ -18,7 +18,7 @@ const FaqContent = (props) => {
 
   return (
     <>
-      <div className="bg-container" style={{margin: "120px 0px"}}>
+      <div className="bg-container" style={{ margin: "120px 0px" }}>
         <div className="container-main">
           <div className="faq-container">
             <div className="faq-content">
@@ -48,247 +48,286 @@ const FaqContent = (props) => {
                       answer: (
                         <>
                           <p>
-                            FinFloh is a global accounts receivable automation
-                            software that enables B2B finance teams to transform
-                            their accounts receivable process by collecting
-                            receivables faster, reducing DSO, closing disputes
-                            effortlessly, and minimizing bad debt. This makes
-                            the overall accounts receivable management seamless
-                            and enhances collections efficiency.
+                            FinFloh is an AI-native B2B accounts receivable
+                            automation and credit decisioning platform built for
+                            finance teams managing postpaid billing. It
+                            automates the entire invoice-to-cash process —
+                            including invoice generation, invoice sending,
+                            collections, cash application, credit risk scoring,
+                            and credit onboarding decisions.
                           </p>
                           <p>
-                            Collaborative communication is at the center of
-                            FinFloh's accounts receivable technology, bringing
-                            together finance, accounts receivable, sales, and
-                            customer support teams to help resolve issues and
-                            disputes efficiently, which ultimately leads to
-                            increased cash flow.
+                            By connecting ERP and CRM systems, FinFloh helps
+                            companies reduce DSO, improve cash flow visibility,
+                            and eliminate manual receivables operations.
                           </p>
                         </>
                       ),
                     },
                     {
                       uuid: "b",
-                      question: "Can FinFloh integrate with Oracle Netsuite?",
+                      question:
+                        "What is accounts receivable automation, and how does FinFloh support it?",
                       answer: (
-                        <p>
-                          Yes, FinFloh is ERP agnostic and can integrate with
-                          any ERP/accounting system, including Netsuite, SAP,
-                          Microsoft Dynamics 365, Oracle and more.
-                        </p>
+                        <>
+                          <p>
+                            Accounts receivable automation software digitizes
+                            and automates invoice-to-cash workflows such as
+                            invoice distribution, collections follow-ups,
+                            dispute tracking, cash application, and
+                            reconciliation.
+                          </p>
+                          <p>
+                            FinFloh automates these processes end-to-end while
+                            adding structured prioritization, performance
+                            visibility, and AI-driven credit intelligence. This
+                            enables finance teams to operate faster, reduce
+                            errors, and gain real-time control over receivables
+                            performance.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "c",
                       question:
-                        "Can FinFloh help me find the gaps in my current Accounts Receivable process?",
+                        "How does FinFloh reduce DSO (Days Sales Outstanding)?",
                       answer: (
                         <>
                           <p>
-                            Absolutely! Yes, we would be happy to schedule a
-                            call with you to understand your current accounts
-                            receivable process, identify areas of improvement,
-                            and suggest appropriate solutions.
+                            DSO decreases when invoices are issued accurately,
+                            follow-ups are consistent, high-risk accounts are
+                            prioritized, and disputes are resolved quickly.
                           </p>
                           <p>
-                            You can reach out to us by email at
-                            hello@finfloh.com.
+                            FinFloh reduces DSO by automating collections
+                            workflows, enabling risk-based prioritization,
+                            embedding structured credit controls directly within
+                            CRM systems, and triggering internal alerts and
+                            escalations for delayed payments. This improves
+                            working capital efficiency and accelerates cash
+                            recovery.
                           </p>
                         </>
                       ),
                     },
                     {
                       uuid: "d",
-                      question: "What is the Pricing for FinFloh?",
+                      question:
+                        "How is FinFloh different from ERP accounts receivable modules?",
                       answer: (
-                        <p>
-                          Our pricing usually comprises two components,
-                          including a one-time setup fee and an annual recurring
-                          platform fee. We offer customized pricing tailored to
-                          your specific business needs, and you can discuss your
-                          requirements with us during a call.
-                        </p>
+                        <>
+                          <p>
+                            ERP systems primarily record accounting transactions
+                            and generate financial reports. They typically do
+                            not automate collections workflows, intelligent cash
+                            matching, or structured credit approval processes.
+                          </p>
+                          <p>
+                            FinFloh works alongside ERP systems to automate
+                            invoice-to-cash operations, apply AI-based cash
+                            application, and enable structured credit
+                            decisioning within CRM workflows. It adds
+                            operational automation, performance tracking, and
+                            decision intelligence on top of accounting systems.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "e",
                       question:
-                        "How can FinFloh help me reduce payment delays?",
+                        "Does FinFloh integrate with ERP and CRM systems such as Oracle NetSuite, Oracle Fusion, Microsoft Dynamics 365, and SAP S/4HANA?",
                       answer: (
-                        <p>
-                          By using FinFloh's collaborative accounts receivable
-                          automation software, you can integrate finance, sales,
-                          and customer support teams to ensure that no
-                          information falls through the cracks. In addition, you
-                          can take advantage of our prioritized collection
-                          worklist, multi-channel payment reminders, predefined
-                          dunning templates and real-time risk alerts to stay on
-                          top of unpaid invoices, reduce payment delays, and
-                          decrease DSO.
-                        </p>
+                        <>
+                          <p>
+                            Yes. FinFloh integrates with leading ERP systems
+                            such as Oracle NetSuite, Oracle Fusion, Microsoft
+                            Dynamics 365, and SAP S/4HANA, and connects
+                            seamlessly with CRM platforms.
+                          </p>
+                          <p>
+                            By synchronizing receivables data, collections
+                            activity, and credit decisions across ERP and CRM
+                            systems, FinFloh eliminates manual reconciliation,
+                            improves cross-functional visibility, and ensures
+                            structured credit controls within customer
+                            onboarding workflows.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "f",
                       question:
-                        "How long does it take to get started and implement FinFloh for my organization?",
+                        "How does FinFloh handle automated cash application?",
                       answer: (
-                        <p>
-                          It completely depends on the complexity of scope.
-                          Typically it takes us 2-6 weeks for the complete setup
-                          and go-live of our Accounts Receivable tool.
-                        </p>
+                        <>
+                          <p>
+                            FinFloh uses AI-based matching algorithms to
+                            reconcile incoming payments with open invoices.
+                          </p>
+                          <p>
+                            It supports complex scenarios such as partial
+                            payments, short payments, consolidated remittances,
+                            and structured exception workflows. By automating
+                            cash application, finance teams improve
+                            reconciliation accuracy, reduce manual workload, and
+                            accelerate month-end closing cycles.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "g",
                       question:
-                        "How can FinFloh's accounts receivable software benefit my business?",
+                        "What is automated credit risk scoring and decisioning in FinFloh?",
                       answer: (
-                        <p>
-                          FinFloh's accounts receivable software offers advanced
-                          features such as automated workflows, real-time
-                          tracking, and data-driven credit decisioning, all
-                          aimed at optimizing accounts receivable management and
-                          maximizing cash flows.
-                        </p>
+                        <>
+                          <p>
+                            Automated credit risk scoring evaluates customers
+                            using financial data, behavioral signals, and
+                            predefined risk parameters to generate structured
+                            credit scores.
+                          </p>
+                          <p>
+                            FinFloh applies parameter-level scoring with dynamic
+                            weightages and translates risk scores into
+                            actionable credit onboarding recommendations
+                            directly within CRM workflows. This standardizes
+                            credit approvals, improves transparency, and reduces
+                            bad debt exposure.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "h",
-                      question:
-                        "Does FinFloh's accounts receivable software integrate with other systems?",
+                      question: "How does FinFloh accelerate collections?",
                       answer: (
-                        <p>
-                          Yes, FinFloh's accounts receivable software offers
-                          native integration with ERP/CRM systems to ensure
-                          seamless data synchronization and eliminate manual
-                          errors in accounts receivable management processes.
-                        </p>
+                        <>
+                          <p>
+                            FinFloh accelerates collections by automating
+                            follow-ups, prioritizing high-impact accounts based
+                            on aging and risk signals, and providing structured
+                            visibility into disputes and payment behavior.
+                          </p>
+                          <p>
+                            It triggers internal alerts and escalation workflows
+                            for delayed payments while providing performance
+                            dashboards for managers to track recovery trends and
+                            team efficiency. This improves recovery rates and
+                            shortens collection cycles.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "i",
                       question:
-                        "How does FinFloh's accounts receivable software handle invoice disputes?",
+                        "How does FinFloh improve finance team productivity and reduce manual workload?",
                       answer: (
-                        <p>
-                          FinFloh's accounts receivable software offers
-                          centralized communication channels, real-time dispute
-                          tracking, and customizable dispute workflows, enabling
-                          businesses to resolve invoice disputes faster and
-                          close process silos efficiently.
-                        </p>
+                        <>
+                          <p>
+                            Manual accounts receivable processes often require
+                            significant effort for follow-ups, reconciliation,
+                            dispute management, and credit evaluations.
+                          </p>
+                          <p>
+                            FinFloh automates repetitive invoice-to-cash
+                            workflows and introduces structured prioritization
+                            and performance tracking. This allows finance teams
+                            to reduce manual effort, minimize errors, and scale
+                            receivables operations without proportionally
+                            increasing headcount.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "j",
                       question:
-                        "Does FinFloh's accounts receivable software support automated invoice sending?",
+                        "How does FlohSense AI Agent automate and enable the invoice-to-cash process?",
                       answer: (
-                        <p>
-                          Yes, FinFloh's accounts receivable software automates
-                          the process of sending invoices via email and APIs
-                          into buyer's inbox, eliminating manual efforts and
-                          ensuring timely delivery of invoices to customers.
-                        </p>
+                        <>
+                          <p>
+                            FlohSense AI Agent acts as the intelligence layer
+                            across FinFloh’s invoice-to-cash workflows. It reads
+                            and interprets operational data and customer
+                            communications to automate actions across invoice
+                            generation, invoice sending, collections reminders,
+                            cash application, and dispute handling.
+                          </p>
+                          <p>
+                            The AI Agent parses customer email responses to
+                            capture promise-to-pay commitments, payment
+                            references, and dispute details, converting
+                            unstructured communication into structured
+                            workflows. It assists in matching payments to
+                            invoices, triggering follow-ups, routing disputes,
+                            and recommending next-best actions.
+                          </p>
+                          <p>
+                            By connecting invoice sending, dunning, cash
+                            reconciliation, and dispute resolution into a
+                            unified, data-driven process, FlohSense reduces
+                            manual intervention, improves automation rates, and
+                            accelerates working capital cycles.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "k",
                       question:
-                        "Can FinFloh's accounts receivable software help prioritize collection efforts?",
+                        "Which types of businesses benefit most from FinFloh?",
                       answer: (
-                        <p>
-                          Absolutely. FinFloh's accounts receivable software
-                          provides prioritized worklists and predictive
-                          analytics to identify high-risk accounts, enabling
-                          businesses to maximize collections efficiency and
-                          minimize manual dunning.
-                        </p>
+                        <>
+                          <p>
+                            FinFloh is built for B2B companies with postpaid
+                            billing models, including SaaS, manufacturing,
+                            distribution, and service-based businesses with
+                            structured credit processes.
+                          </p>
+                          <p>
+                            It is most valuable for CFOs, finance leaders, and
+                            credit managers seeking to automate invoice-to-cash
+                            workflows, improve working capital predictability,
+                            and implement data-driven credit decisioning across
+                            ERP and CRM systems.
+                          </p>
+                        </>
                       ),
                     },
                     {
                       uuid: "l",
                       question:
-                        "How does FinFloh's accounts receivable software handle cash application?",
+                        "How can I get started with FinFloh and how long does implementation take?",
                       answer: (
-                        <p>
-                          FinFloh's accounts receivable software leverages OCR
-                          technology to read through remittance data and bank
-                          account statements, match invoices with payments,
-                          automate cash posting, and update invoice-payment
-                          matching in ERP systems, ensuring accurate and
-                          efficient cash application processes.
-                        </p>
-                      ),
-                    },
-                    {
-                      uuid: "m",
-                      question:
-                        "Does FinFloh's accounts receivable software offer credit decisioning capabilities?",
-                      answer: (
-                        <p>
-                          Yes, FinFloh's accounts receivable software provides
-                          AI-driven credit scoring, buyer intelligence, and
-                          real-time risk alerts, empowering businesses to make
-                          faster and more accurate credit decisions tailored to
-                          each customer's credit risk profile.
-                        </p>
-                      ),
-                    },
-                    {
-                      uuid: "n",
-                      question:
-                        "Can FinFloh's accounts receivable software improve communication between buyers and sellers?",
-                      answer: (
-                        <p>
-                          Absolutely. FinFloh's accounts receivable software
-                          provides centralized communication channels, event
-                          timelines, and dashboard features to facilitate
-                          seamless communication and collaboration between
-                          buyers and sellers.
-                        </p>
-                      ),
-                    },
-                    {
-                      uuid: "o",
-                      question:
-                        "Can FinFloh's accounts receivable software help with accurate cash forecasting?",
-                      answer: (
-                        <p>
-                          Yes, FinFloh's accounts receivable software provides
-                          advanced analytics and buyer data insights, enabling
-                          businesses to accurately forecast cash flows and make
-                          informed financial decisions.
-                        </p>
-                      ),
-                    },
-                    {
-                      uuid: "p",
-                      question:
-                        "How does FinFloh's accounts receivable software handle payment advices?",
-                      answer: (
-                        <p>
-                          FinFloh's accounts receivable software automates
-                          follow-ups for payment advices and auto-extraction of
-                          payment-related information from emails and buyer
-                          dashboards, ensuring efficient communication and
-                          record-keeping.
-                        </p>
-                      ),
-                    },
-                    {
-                      uuid: "q",
-                      question:
-                        "Does FinFloh's accounts receivable software offer a free trial?",
-                      answer: (
-                        <p>
-                          Yes, FinFloh offers a 14-days free trial of its
-                          accounts receivable software, allowing businesses to
-                          experience its features and benefits firsthand before
-                          making a commitment.
-                        </p>
+                        <>
+                          <p>
+                            You can get started by scheduling a demo or
+                            consultation with our team. We will review your
+                            current invoice-to-cash workflows, ERP and CRM
+                            landscape, credit policies, and receivables
+                            performance to identify automation opportunities.
+                          </p>
+                          <p>
+                            Most organizations can go live within a few weeks,
+                            depending on integration scope and process
+                            complexity. FinFloh’s implementation approach
+                            focuses on rapid deployment with minimal IT
+                            dependency while ensuring secure ERP and CRM
+                            integration.
+                          </p>
+                          <p>
+                            Our onboarding process includes workflow
+                            configuration, policy setup, system integrations,
+                            and user enablement — enabling finance and revenue
+                            teams to transition smoothly to automated, AI-driven
+                            invoice-to-cash operations.
+                          </p>
+                        </>
                       ),
                     },
                   ]
@@ -311,13 +350,13 @@ const FaqContent = (props) => {
                     style={{ textDecoration: "none" }}
                   >
                     {showAll ? "Show Less" : "Show More"}
-                    <img 
-                      src="/images/Dropdown1.svg" 
+                    <img
+                      src="/images/Dropdown1.svg"
                       alt="Dropdown icon"
                       style={{
                         marginLeft: "8px",
                         transform: showAll ? "rotate(180deg)" : "rotate(0deg)",
-                        transition: "transform 0.3s ease"
+                        transition: "transform 0.3s ease",
                       }}
                     />
                   </button>

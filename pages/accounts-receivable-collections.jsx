@@ -52,81 +52,119 @@ const staticBannerContent = {
 const FAQ_CONTENT = [
   {
     uuid: "a",
-    question:
-      "What makes FinFloh's accounts receivable collections software unique?",
+    question: "What is AI-driven collections software?",
     answer: [
-      "FinFloh's accounts receivable collections software stands out for its AI-driven automation, customizable workflows, and seamless integration with existing accounting systems. With FinFloh, businesses can streamline their collections process and improve cash flow efficiently.",
+      "AI-driven collections software helps finance teams recover outstanding receivables by automating follow-ups, prioritizing high-risk accounts, and structuring collection workflows based on real-time data.",
+      "FinFloh analyzes aging, invoice value, customer payment behavior, and risk indicators to guide collectors toward the highest-impact actions and accelerate receivables recovery.",
     ],
   },
   {
     uuid: "b",
     question:
-      "How does FinFloh's accounts receivable collections software help businesses manage overdue invoices?",
+      "How does FinFloh prioritize customers and invoices for collections?",
     answer: [
-      "FinFloh's collections software automates the process of sending reminders and follow-ups to customers with outstanding payments, enabling businesses to efficiently track and manage overdue invoices. By leveraging AI-driven prioritization and personalized communication, FinFloh helps businesses recover outstanding debts effectively.",
+      "FinFloh evaluates invoices based on overdue days, outstanding amount, historical payment trends, and risk signals.",
+      "It generates a prioritized worklist so collectors focus first on accounts with the greatest recovery potential.",
+      "This structured prioritization improves efficiency and shortens collection cycles.",
     ],
   },
   {
     uuid: "c",
-    question:
-      "Can FinFloh's accounts receivable collections software be customized to suit our business needs?",
+    question: "What is an AI-driven collector’s worklist?",
     answer: [
-      "Yes, FinFloh's collections software offers customizable workflows that can be tailored to meet the specific needs and preferences of your business. Whether you need to adjust the frequency of reminders, personalize communication templates, or segment customers based on payment behavior, FinFloh provides flexible options to accommodate your requirements.",
+      "An AI-driven collector’s worklist is a dynamically generated task list that ranks action items based on urgency, risk level, and potential recovery value.",
+      "FinFloh provides collectors with clear next-best actions, eliminating manual spreadsheet sorting and enabling focused execution.",
     ],
   },
   {
     uuid: "d",
-    question:
-      "How secure is FinFloh's accounts receivable collections software?",
+    question: "How does FinFloh automate collection follow-ups?",
     answer: [
-      "FinFloh prioritizes data security and employs robust measures to protect sensitive financial information. Our collections software utilizes encryption, secure data storage, and role-based access controls to ensure the confidentiality and integrity of your data, providing you with peace of mind.",
+      "FinFloh automates follow-ups through configurable dunning workflows triggered by overdue days, invoice value, customer segmentation, or risk category.",
+      "Organizations can define communication frequency, escalation paths, and message templates to ensure consistent and professional customer engagement.",
     ],
   },
   {
     uuid: "e",
-    question:
-      "Does FinFloh's collections software integrate with popular accounting systems?",
+    question: "Can collection workflows be customized?",
     answer: [
-      "Yes, FinFloh's collections software seamlessly integrates with leading accounting systems such as QuickBooks, Xero, and NetSuite. This integration enables businesses to sync customer data, invoices, and payment information between FinFloh and their accounting system, streamlining financial processes and enhancing accuracy.",
+      "Yes. FinFloh allows organizations to configure collections workflows based on customer priority, overdue duration, invoice amount, and risk profile.",
+      "Different dunning strategies and escalation rules can be applied across customer segments to balance relationship management with recovery efficiency.",
     ],
   },
   {
     uuid: "f",
-    question: "How can FinFloh's collections software help improve cash flow?",
+    question:
+      "How does FlohSense AI accelerate customer communications during the dunning and reminder process?",
     answer: [
-      "FinFloh's collections software accelerates the collections process by automating repetitive tasks and providing insights into customer payment behavior. By optimizing collections workflows, prioritizing collections efforts, and reducing the time it takes to receive payments, FinFloh helps businesses improve cash flow and liquidity.",
+      "FlohSense AI enhances collections by intelligently managing customer communications during dunning cycles.",
+      "It monitors outgoing reminders and reads incoming customer responses to extract key information such as promise-to-pay commitments, payment references, and dispute details.",
+      "The AI Agent parses unstructured email replies, captures payment information for downstream cash application, and routes disputes or queries to the appropriate teams.",
+      "It can also adjust follow-up workflows based on customer responses and risk signals.",
+      "By converting email interactions into structured action items, FlohSense accelerates response handling, reduces manual inbox monitoring, and ensures coordinated resolution across finance, sales, and operations teams.",
     ],
   },
   {
     uuid: "g",
     question:
-      "What kind of reporting and analytics capabilities does FinFloh's collections software offer?",
+      "Can FinFloh record promise-to-pay and customer payment commitments?",
     answer: [
-      "FinFloh's collections software provides comprehensive reporting and analytics tools that offer insights into key performance metrics such as DSO (Days Sales Outstanding), receivables aging, and collection effectiveness. With customizable reports and dashboards, businesses can gain actionable insights to optimize their collections strategy and drive better results.",
+      "Yes. Collectors can log promise-to-pay commitments, payment confirmations, and interaction notes directly within the system.",
+      "FlohSense AI can also extract promise-to-pay details from customer emails, ensuring commitments are captured accurately and tracked for follow-up.",
     ],
   },
   {
     uuid: "h",
-    question:
-      "Is FinFloh's accounts receivable collections software suitable for businesses of all sizes?",
+    question: "How does FinFloh help reduce DSO and improve CEI?",
     answer: [
-      "Yes, FinFloh's collections software is designed to cater to businesses of all sizes, from small startups to large enterprises. Whether you have a modest customer base or a vast clientele, FinFloh's scalable solution can adapt to your needs and grow with your business.",
+      "Days Sales Outstanding (DSO) measures how long it takes to collect payments, while Collection Effectiveness Index (CEI) measures how effectively receivables are recovered.",
+      "FinFloh reduces DSO and improves CEI by prioritizing high-risk accounts, automating timely follow-ups, enforcing structured escalation workflows, and providing real-time visibility into overdue receivables.",
+      "This data-driven approach improves recovery rates and strengthens working capital performance.",
     ],
   },
   {
     uuid: "i",
-    question:
-      "How does FinFloh's accounts receivable collections software leverage AI technology?",
+    question: "What collections performance metrics can be tracked in FinFloh?",
     answer: [
-      "FinFloh's collections software leverages AI technology to analyze customer payment behavior, prioritize collections efforts, and personalize communication with customers. By harnessing the power of AI-driven insights, FinFloh helps businesses optimize their collections strategy and achieve better outcomes.",
+      "FinFloh provides visibility into key collections performance indicators, including Days Sales Outstanding (DSO), Collection Effectiveness Index (CEI), aging bucket distribution, recovery rates by segment, promise-to-pay adherence, and collector productivity and activity logs.",
+      "These insights help finance leaders measure performance, identify bottlenecks, and continuously optimize collections strategy.",
     ],
   },
   {
     uuid: "j",
     question:
-      "What level of customer support does FinFloh offer for its collections software?",
+      "How does FinFloh improve manpower utilization in collections teams?",
     answer: [
-      "FinFloh is committed to providing exceptional customer support to its users. Our dedicated support team is available to assist you with any questions, issues, or technical challenges you may encounter while using our collections software. We strive to ensure that you have a seamless experience with FinFloh and achieve your collections goals effectively.",
+      "Manual collections often require time spent sorting spreadsheets, drafting reminders, and tracking responses.",
+      "FinFloh automates prioritization, follow-ups, and activity tracking while generating AI-driven worklists for collectors.",
+      "This allows teams to manage larger receivables portfolios without increasing headcount and improves productivity per collector.",
+    ],
+  },
+  {
+    uuid: "k",
+    question: "How does FinFloh help managers monitor collections performance?",
+    answer: [
+      "FinFloh tracks collector activities, follow-ups, escalations, and recovery outcomes through structured logs and real-time dashboards.",
+      "Managers gain visibility into workload distribution, response effectiveness, and performance trends to improve accountability and optimize team efficiency.",
+    ],
+  },
+  {
+    uuid: "l",
+    question:
+      "Can customers access invoices and statements during collections?",
+    answer: [
+      "Yes. FinFloh enables structured access to invoices, ledger statements, and payment details during the collections process.",
+      "Providing visibility to customers reduces back-and-forth communication, clarifies outstanding balances, and supports faster resolution of payment delays.",
+    ],
+  },
+  {
+    uuid: "m",
+    question: "How can I get started with FinFloh’s AI-Driven Collections?",
+    answer: [
+      "You can begin by scheduling a demo or discovery session with our team.",
+      "We will assess your current collections workflows, DSO trends, CEI performance, and escalation processes.",
+      "FinFloh’s onboarding approach includes configuring dunning workflows, AI-driven prioritization, internal alerts, and CRM/ERP integration.",
+      "With structured implementation and minimal IT dependency, organizations can quickly transition from manual chasing to data-driven collections execution.",
     ],
   },
 ];
