@@ -15,7 +15,7 @@ import Link from "next/link";
 const utmURLs = generateUtmUrls("podcast");
 export const PRODUCT_INFO_MAP_podcast = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
     url_otherProducts: utmURLs.integrationsAndInvoiceVerification_otherProducts,

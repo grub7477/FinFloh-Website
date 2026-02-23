@@ -10,7 +10,7 @@ const utmURLs = generateUtmUrls("book_a_demo");
 import { PRODUCT } from "../components/Common/ProductArea";
 export const PRODUCT_INFO_MAP_book_a_demo = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
   },

@@ -41,7 +41,7 @@ const Navbar = ({ currentNavbar, scrollToSection }) => {
             }}
             onClick={(e) => e.preventDefault()}
           >
-            Invoice Validation Automation{" "}
+            Invoice Automation{" "}
           </a>
           <img src="images/right-arrow.svg" />
         </li>

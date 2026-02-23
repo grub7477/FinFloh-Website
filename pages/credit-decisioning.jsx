@@ -11,7 +11,7 @@ import CompaniesLogo from "../components/Common/CompaniesLogo";
 const utmURLs = generateUtmUrls("credit");
 export const PRODUCT_INFO_MAP_credit = {
   [PRODUCT.Integration]: {
-    title: "Invoice Validation Automation",
+    title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
     url_otherProducts: utmURLs.integrationsAndInvoiceVerification_otherProducts,
@@ -63,84 +63,108 @@ const productBanner = {
 };
 
 const staticBannerContent = {
-  heading: "AI-Powered Pricing, Credit & Contract Decisions in CRM",
+  heading: "AI-Powered Credit Scoring & Onboarding Decisions in CRM",
   spanHeading: "",
   paragraph:
-    "Onboard customers faster & negotiate better terms with real-time credit risk monitoring",
+    "Onboard faster with intelligent terms and credit scoring powered by market/receivables data",
 };
 
 const FAQ_CONTENT = [
   {
     uuid: "a",
-    question: "What is Credit Decisioning and how does it work at FinFloh?",
+    question:
+      "What is AI-powered pricing, credit, and contract decisioning in CRM?",
     answer: [
-      "Credit decisioning is the process of evaluating the creditworthiness of potential customers or clients before extending credit or entering into contracts. FinFloh's Credit Decisioning leverages advanced algorithms and real-time data analysis to assess credit risk and make informed decisions.",
+      "AI-powered decisioning in CRM enables organizations to evaluate customer credit risk, pricing terms, and contract conditions directly within sales workflows.",
+      "FinFloh integrates ML-driven credit scoring and risk intelligence into CRM systems, allowing sales and finance teams to negotiate pricing, payment terms, and exposure limits based on real-time data.",
     ],
   },
   {
     uuid: "b",
-    question:
-      "How can FinFloh's Credit Decisioning Software benefit my business?",
+    question: "How does FinFloh enable AI-powered credit decisions inside CRM?",
     answer: [
-      "Credit decisioning software automates and streamlines the credit evaluation process, helping businesses make informed decisions faster and with greater accuracy. With FinFloh's Credit Decisioning Software, you can gain insights into buyer behavior, mitigate credit risk, and improve cash flow management.",
+      "FinFloh embeds ML-based credit scoring directly within CRM platforms such as Salesforce.",
+      "When a new opportunity, renewal, or expansion project is initiated, the system evaluates risk parameters in real time and recommends credit limits, payment terms, or escalation paths.",
+      "This ensures credit decisions are data-driven and aligned with company risk policies before contracts are finalized.",
     ],
   },
   {
     uuid: "c",
-    question:
-      "Why should I consider implementing FinFloh's Credit Decisioning?",
+    question: "How does ML-driven credit scoring improve accuracy?",
     answer: [
-      "Implementing credit decisioning can help businesses reduce bad debt, improve cash flow forecasting, and mitigate credit risk, leading to more sustainable growth. With FinFloh's Credit Decisioning, you can make smarter credit decisions and optimize your working capital.",
+      "FinFloh leverages machine learning models that analyze payment behavior, historical delinquency patterns, exposure levels, and market intelligence signals.",
+      "Instead of relying on static spreadsheets, ML models continuously refine scoring logic based on portfolio performance, improving predictive accuracy and reducing bad debt exposure.",
     ],
   },
   {
     uuid: "d",
-    question: "What factors are considered in FinFloh's Credit Decisioning?",
+    question:
+      "How does FinFloh support better pricing and contract negotiations?",
     answer: [
-      "Factors such as past payment behavior, credit history, financial stability, and market trends are typically considered in credit decisioning. With FinFloh's Credit Decisioning, you can customize the evaluation criteria based on your business needs and market insights.",
+      "By providing real-time credit risk insights within CRM, FinFloh enables sales teams to negotiate pricing, payment terms, and contract structures with data-backed confidence.",
+      "Higher-risk customers may require adjusted terms or tighter exposure controls, while low-risk customers can be offered competitive terms to accelerate deal closure without increasing portfolio risk.",
     ],
   },
   {
     uuid: "e",
-    question: "How does the ML-driven Dynamic Credit Scoring work?",
+    question: "How does FinFloh accelerate buyer onboarding in CRM?",
     answer: [
-      "ML-driven dynamic credit scoring uses machine learning algorithms to analyze real-time buyer behavior and market data to generate adaptive credit scores. With FinFloh's ML-driven Dynamic Credit Scoring, you can accurately assess credit risk and tailor credit terms to individual customers.",
+      "FinFloh automates credit evaluation and approval workflows directly within CRM systems during new opportunities, renewals, and expansion deals.",
+      "This eliminates offline approvals, manual spreadsheet reviews, and fragmented communication, significantly reducing onboarding cycle time.",
     ],
   },
   {
     uuid: "f",
-    question:
-      "Can FinFloh's Credit Decisioning Software help with cash flow forecasts?",
+    question: "How does FinFloh save time for sales, finance, and legal teams?",
     answer: [
-      "Yes, credit decisioning software can help businesses forecast cash flows more accurately by providing insights into customer payment behaviors and patterns. FinFloh's Credit Decisioning Software offers advanced forecasting capabilities, enabling you to anticipate cash flow fluctuations and manage liquidity effectively.",
+      "Manual onboarding often requires collecting financial data, reviewing spreadsheets, coordinating approvals, and managing back-and-forth communication across departments.",
+      "FinFloh centralizes ML-driven scoring, policy enforcement, and approval workflows within CRM, reducing administrative effort and improving collaboration between sales, sales operations, finance, and legal teams.",
     ],
   },
   {
     uuid: "g",
-    question: "What are the benefits of real-time alerts and predictions?",
+    question:
+      "Can FinFloh determine and track ARR targets and sales incentives?",
     answer: [
-      "Real-time alerts and predictions provide businesses with proactive insights into buyer behavior, allowing them to anticipate payment delays and manage credit risk more effectively. FinFloh's Credit Decisioning offers real-time alerts and predictions, helping you stay ahead of potential credit issues and make timely decisions.",
+      "Yes. FinFloh enables visibility into Annual Recurring Revenue (ARR) targets and sales incentives aligned with risk-adjusted growth strategies.",
+      "By combining CRM opportunity data with credit intelligence, organizations can pursue revenue growth while maintaining disciplined risk exposure.",
     ],
   },
   {
     uuid: "h",
-    question: "How does AI-powered Credit Risk Management work?",
+    question: "How does FinFloh provide real-time credit risk monitoring?",
     answer: [
-      "AI-powered credit risk management leverages advanced algorithms to assess credit risk based on a comprehensive analysis of buyer data and market trends. With FinFloh's AI-powered Credit Risk Management, you can identify high-risk customers, mitigate potential losses, and optimize your credit strategy.",
+      "FinFloh continuously monitors payment behavior, credit limit utilization, exposure changes, and market intelligence indicators.",
+      "If a customer’s risk profile deteriorates or exposure thresholds are breached, the system generates alerts to enable proactive risk management.",
     ],
   },
   {
     uuid: "i",
-    question: "What are the key features of Credit Decisioning software?",
+    question:
+      "How does FinFloh identify risky customers and recommend action plans?",
     answer: [
-      "Key features of credit decisioning software include dynamic credit scoring, real-time monitoring, buyer intelligence, and customizable credit terms and contracts. FinFloh's Credit Decisioning Software offers all these features and more, empowering you to make informed credit decisions and drive business growth.",
+      "Using ML-driven analytics, FinFloh detects anomalies in buyer behavior, worsening payment patterns, or concentration risks.",
+      "When risk thresholds are triggered, the system can recommend actions such as adjusting credit limits, revising payment terms, escalating approvals, or initiating proactive collections engagement.",
     ],
   },
   {
     uuid: "j",
-    question: "How can I get started with FinFloh's Credit Decisioning?",
+    question:
+      "What types of alerts does FinFloh generate for credit and contract risk?",
     answer: [
-      "To get started with credit decisioning, simply reach out to us to schedule a demo or consultation. Our team will guide you through the process and answer any questions you may have. With FinFloh's Credit Decisioning, you can unlock the power of data-driven credit management and transform your business.",
+      "FinFloh generates real-time alerts for credit limit utilization breaches, risk score deterioration, exposure concentration risks, payment behavior anomalies, and policy threshold violations.",
+      "These alerts help organizations respond quickly to emerging risks and protect portfolio quality.",
+    ],
+  },
+  {
+    uuid: "k",
+    question:
+      "How can I get started with FinFloh’s AI-powered Credit Decisioning?",
+    answer: [
+      "To get started, you can schedule a demo or consultation with our team.",
+      "We will assess your current credit evaluation process, CRM workflows, and risk policies, and demonstrate how ML-driven credit scoring and automated decisioning can be embedded directly into your onboarding process.",
+      "FinFloh’s implementation approach focuses on rapid CRM integration, configurable policy setup, and minimal disruption to sales workflows.",
+      "By adopting AI-powered credit decisioning, organizations can accelerate onboarding, standardize approvals, and strengthen risk-adjusted revenue growth.",
     ],
   },
 ];
