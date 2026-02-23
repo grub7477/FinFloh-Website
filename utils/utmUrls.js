@@ -12,6 +12,8 @@ const generateUtmUrls = (pageName) => ({
   logo_footer: `/`,
   about_us_navbar: `/about-us`,
 
+  invoice_to_cash: `/invoice-to-cash`,
+
   accountsReceivableCollections_navbar: `/accounts-receivable-collections`,
   accountsReceivableCollections_otherProducts: `/accounts-receivable-collections`,
   accountsReceivableCollections_footer: `/accounts-receivable-collections`,
@@ -43,6 +45,8 @@ export const generatehomeUtmUrls = (pageName) => ({
   homePage_bookDemo_header: `/demo-request-successful`,
   homePage_bookDemo_newsLetter: `/demo-request-successful`,
   homePage_bookDemo_footer: `/book-a-demo`,
+
+  homepage_invoice_to_cash: `/invoice-to-cash`,
 
   homePage_accountsReceivableCollections_navbar: `/accounts-receivable-collections`,
   homePage_accountsReceivableCollections_central: `/accounts-receivable-collections`,
