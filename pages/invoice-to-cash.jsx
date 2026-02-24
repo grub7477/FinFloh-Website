@@ -108,7 +108,7 @@ const Simple_Features_CONTENT = [
     ],
     btnTxt: "Know More",
     btnLink:
-      "https://finfloh.com/invoice-validation-automation?utm_source=homepage_central&utm_medium=finfloh_website",
+      "https://finfloh.com/invoice-automation?utm_source=homepage_central&utm_medium=finfloh_website",
     imgSrc: "/images/invoice-home.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
