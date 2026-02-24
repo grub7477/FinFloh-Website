@@ -8,7 +8,7 @@ const ProductsDropdown = () => {
         title: "Invoice Automation",
         subtitle: "Invoice generation, validation & sending",
         icon: "/images/file_export.svg",
-        url: "/invoice-validation-automation",
+        url: "/invoice-automation",
       },
       {
         title: "Collections",

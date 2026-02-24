@@ -279,7 +279,7 @@ const BookADemo = () => {
                   <p>FinFloh easily integrates with software you use</p>
                   <LinkButton
                     openInNewTab={true}
-                    href="https://finfloh.com/invoice-validation-automation?utm_source=book_a_demo_page_ctar&utm_medium=finfloh_website"
+                    href="https://finfloh.com/invoice-automation?utm_source=book_a_demo_page_ctar&utm_medium=finfloh_website"
                     style={{ backgroundColor: "#00954A", color: "#fff" }}
                   >
                     Integrate now

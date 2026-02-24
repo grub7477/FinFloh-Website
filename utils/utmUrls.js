@@ -26,9 +26,9 @@ const generateUtmUrls = (pageName) => ({
   automatedCashApplication_otherProducts: `/automated-cash-application-software`,
   automatedCashApplication_footer: `/automated-cash-application-software`,
 
-  integrationsAndInvoiceVerification_navbar: `/invoice-validation-automation`,
-  integrationsAndInvoiceVerification_otherProducts: `/invoice-validation-automation`,
-  integrationsAndInvoiceVerification_footer: `/invoice-validation-automation`,
+  integrationsAndInvoiceVerification_navbar: `/invoice-automation`,
+  integrationsAndInvoiceVerification_otherProducts: `/invoice-automation`,
+  integrationsAndInvoiceVerification_footer: `/invoice-automation`,
 
   collaborativeCommunication_navbar: `/collaborative-communication`,
   collaborativeCommunication_otherProducts: `/collaborative-communication`,
@@ -60,9 +60,9 @@ export const generatehomeUtmUrls = (pageName) => ({
   homePage_automatedCashApplication_central: `/automated-cash-application-software`,
   homePage_automatedCashApplication_footer: `/automated-cash-application-software`,
 
-  homePage_integrationsAndInvoiceVerification_navbar: `/invoice-validation-automation`,
-  homePage_integrationsAndInvoiceVerification_central: `/invoice-validation-automation`,
-  homePage_integrationsAndInvoiceVerification_footer: `/invoice-validation-automation`,
+  homePage_integrationsAndInvoiceVerification_navbar: `/invoice-automation`,
+  homePage_integrationsAndInvoiceVerification_central: `/invoice-automation`,
+  homePage_integrationsAndInvoiceVerification_footer: `/invoice-automation`,
 
   homePage_collaborativeCommunication_navbar: `/collaborative-communication`,
   homePage_collaborativeCommunication_central: `/collaborative-communication`,

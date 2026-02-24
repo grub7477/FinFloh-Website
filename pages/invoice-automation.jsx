@@ -243,7 +243,7 @@ const Integration = () => {
       <HeadComponent
         title="Invoice Validation & Automation | FinFloh"
         description="Validate & generate your customer invoices with quotes, orders and actuals with automated sending"
-        canonicalUrl="https://finfloh.com/invoice-validation-automation"
+        canonicalUrl="https://finfloh.com/invoice-automation"
         includeIsPartOf
         includeAbout
         aboutProps={{

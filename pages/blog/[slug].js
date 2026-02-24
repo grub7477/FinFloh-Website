@@ -98,7 +98,7 @@ const Post = ({ post }) => {
       "cookie-policy",
       "credit-decisioning",
       "collaborative-communication",
-      "invoice-validation-automation",
+      "invoice-automation",
       "accounts-receivable-collections",
       "flohsense-ai-agent",
       "product-hunt",
