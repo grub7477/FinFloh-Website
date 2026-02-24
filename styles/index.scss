@@ -1,3 +1,5 @@
+// New Component css start here
+
 .second-fold {
   min-height: 385px;
   background: #f6f7f2;
@@ -429,7 +431,8 @@
   line-height: 22px;
   margin-bottom: 20px;
   color: #00381c !important;
-  font-family: "Satoshi", sans-serif; /* Replace 'Satoshi' with your desired font name */
+  font-family:
+    "Satoshi", sans-serif; /* Replace 'Satoshi' with your desired font name */
 }
 
 .image-container {
@@ -480,7 +483,8 @@
     margin-bottom: 20px;
     text-align: center;
     color: #00381c !important;
-    font-family: "Satoshi", sans-serif; /* Replace 'Satoshi' with your desired font name */
+    font-family:
+      "Satoshi", sans-serif; /* Replace 'Satoshi' with your desired font name */
   }
 }
 
@@ -643,7 +647,8 @@
   gap: 10px;
   border-radius: 8px;
   color: #ffffff;
-  font-family: "Anonymous Pro", monospace; /* Corrected font family declaration */
+  font-family:
+    "Anonymous Pro", monospace; /* Corrected font family declaration */
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5; /* Changed line height to 1.5 */
@@ -1836,6 +1841,7 @@
   gap: 48px;
   align-items: center;
   padding: 48px;
+  width: 100%;
 }
 
 .feature-content {

@@ -22,19 +22,19 @@ const Simple_Features_CONTENT = [
   {
     icon: "images/collect-icon.svg",
     text: "Floh <strong>Collect</strong> AI",
-    title: "Reduce DSO by Automating A/R Collections",
+    title: "Reduce DSO and Optimize Collections Efficiency",
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Automate collection reminders",
+        description: "Automate reminders as per payment aging",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Aggressive reminders for overdue invoices",
+        description: "Internal alerts & escalations for payment delays",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Assign & audit collectors' worklists",
+        description: "Collectors performance tracking & worklist",
       },
       {
         icon: "images/CheckIcon.svg",
@@ -48,29 +48,30 @@ const Simple_Features_CONTENT = [
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
     flohsenseAI: {
-      description: "Auto Send Invoices, Ledger Statements On Request",
+      description:
+        "Close queries and issues during collections & record Promise-to-Pay",
     },
   },
   {
     icon: "images/recon-icon.svg",
     text: "Floh <strong>Recon</strong> AI",
-    title: "Optimize the timeliness and accuracy of Cash Application",
+    title: "Optimize Cash Application Speed and Accuracy",
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Auto-capture payments info from banks, advices",
+        description: "OCR on bank statements to retrieve customers",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Extract remittance data from buyer emails/portals",
+        description: "Recon amongst payment-customer-invoices",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Smart payment application with invoice/customer",
+        description: "Adjustment of tax and other charges",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Dynamic Cash Posting into ERP",
+        description: "Automate cash posting in ERP",
       },
     ],
     btnTxt: "Know More",
@@ -86,23 +87,23 @@ const Simple_Features_CONTENT = [
   {
     icon: "images/invoice-icon.svg",
     text: "Floh <strong>Invoice</strong> AI",
-    title: "Cut Manual Overheads & Errors in Generating & Sending Invoices",
+    title: "Automate Invoice Generation and Delivery",
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Auto-Sync with CRM/Order/Contract for Invoicing",
+        description: "Send invoices via email and buyer portal uploads",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Track invoice timelines and flag discrepancies",
+        description: "Generate invoices aligned with orders and contracts",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Deliver invoices to buyer inboxes or AP portals",
+        description: "Configure invoice email templates with attachments",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Convert cancelled invoices into credit memos",
+        description: "Monitor invoice delivery status and failures",
       },
     ],
     btnTxt: "Know More",
@@ -113,43 +114,43 @@ const Simple_Features_CONTENT = [
 
     flohsenseAI: {
       description:
-        "Auto-respond to customer queries for invoices, balances, and statements",
+        "Auto-revert to customer queries & data requests for invoice details & statements",
     },
   },
-  //   {
-  //     icon: "images/dispute-icon.svg",
-  //     text: "Floh <strong>Dispute</strong> AI",
-  //     title: "Resolve Disputes Faster with Automated Resolution and Detection",
+  {
+    icon: "images/dispute-icon.svg",
+    text: "Floh <strong>Dispute</strong> AI",
+    title: "Resolve Disputes Faster with Better Predictability",
 
-  //     featurePoints: [
-  //       {
-  //         icon: "images/CheckIcon.svg",
-  //         description: "Automate dispute resolution workflows",
-  //       },
-  //       {
-  //         icon: "images/CheckIcon.svg",
-  //         description: "Spot disputes even before they happen",
-  //       },
-  //       {
-  //         icon: "images/CheckIcon.svg",
-  //         description: "Centralize buyer-seller communication",
-  //       },
-  //       {
-  //         icon: "images/CheckIcon.svg",
-  //         description: "Predict and eliminate root-cause of disputes",
-  //       },
-  //     ],
-  //     btnTxt: "Know More",
-  //     btnLink:
-  //       "https://finfloh.com/integrations-and-invoice-verification?utm_source=homepage_central&utm_medium=finfloh_website",
-  //     imgSrc: "/images/competitors-page/dispute-loop-workflow.svg",
-  //     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+    featurePoints: [
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Automate dispute resolution workflows",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Track dispute status and predicted closure timelines",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Auto-route disputes to the right POC",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Prevent recurring disputes with RCA analysis",
+      },
+    ],
+    btnTxt: "Know More",
+    btnLink:
+      "https://finfloh.com/integrations-and-invoice-verification?utm_source=homepage_central&utm_medium=finfloh_website",
+    imgSrc: "/images/competitors-page/dispute-loop-workflow.svg",
+    alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
-  //     flohsenseAI: {
-  //       description:
-  //         "Auto-respond to disputes and customer queries in real time.",
-  //     },
-  //   },
+    flohsenseAI: {
+      description:
+        "Read and auto-resolve customer disputes/issues sent over emails",
+    },
+  },
 ];
 
 const invoicetocash = () => {
