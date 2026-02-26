@@ -8,33 +8,38 @@ import { CategoryDate, parsePost } from ".";
 import { useEffect, useState } from "react";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
 
-const utmURLs = generateUtmUrls("blog");
+const utmURLs = generateUtmUrls("blog_page");
 export const PRODUCT_INFO_MAP_blog = {
   [PRODUCT.Integration]: {
     title: "Invoice Automation",
     url_navbar: utmURLs.integrationsAndInvoiceVerification_navbar,
     url_footer: utmURLs.integrationsAndInvoiceVerification_footer,
+    url_otherProducts: utmURLs.integrationsAndInvoiceVerification_otherProducts,
   },
   [PRODUCT.CollaborativeCommunication]: {
     title: "Dispute Resolution",
     url_navbar: utmURLs.collaborativeCommunication_navbar,
     url_footer: utmURLs.collaborativeCommunication_footer,
+    url_otherProducts: utmURLs.collaborativeCommunication_otherProducts,
   },
   [PRODUCT.AIDrivenCollections]: {
     title: "Collections",
     url_navbar: utmURLs.accountsReceivableCollections_navbar,
     url_footer: utmURLs.accountsReceivableCollections_footer,
+    url_otherProducts: utmURLs.accountsReceivableCollections_otherProducts,
   },
   [PRODUCT.BuyerIntelligence]: {
     title: "Credit Scoring & Decisions",
     url_navbar: utmURLs.creditdecisioning_navbar,
     url_footer: utmURLs.creditdecisioning_footer,
+    url_otherProducts: utmURLs.creditdecisioning_otherProducts,
   },
 
   [PRODUCT.AutomatedCashApp]: {
     title: "Cash Application",
     url_navbar: utmURLs.automatedCashApplication_navbar,
     url_footer: utmURLs.automatedCashApplication_footer,
+    url_otherProducts: utmURLs.automatedCashApplication_otherProducts,
   },
 };
 
@@ -264,10 +269,12 @@ const Post = ({ post }) => {
         text="Stay updated with the latest Invoice-to-Cash insights, best practices & trends"
         type="blogSubscribe"
       /> */}
-      {/* <ProductArea
+
+      {/* todo: Fix the product Area */}
+      <ProductArea
         currentProduct={PRODUCT.blog}
         PRODUCT_INFO_MAP={PRODUCT_INFO_MAP_blog}
-      /> */}
+      />
       <NewNewsLetter
         heading="Subscribe to FinFloh's Blog"
         text="Stay updated with the latest Invoice-to-Cash insights, best practices & trends"
