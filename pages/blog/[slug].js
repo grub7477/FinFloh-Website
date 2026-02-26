@@ -264,6 +264,10 @@ const Post = ({ post }) => {
         text="Stay updated with the latest Invoice-to-Cash insights, best practices & trends"
         type="blogSubscribe"
       /> */}
+      <ProductArea
+        currentProduct={PRODUCT.blog}
+        PRODUCT_INFO_MAP={PRODUCT_INFO_MAP_blog}
+      />
       <NewNewsLetter
         heading="Subscribe to FinFloh's Blog"
         text="Stay updated with the latest Invoice-to-Cash insights, best practices & trends"
