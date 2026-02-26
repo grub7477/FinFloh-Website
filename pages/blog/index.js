@@ -353,10 +353,10 @@ const Blog = ({ initialPosts, totalPosts }) => {
           )}
         </div>
       </div>
-      <ProductArea
+      {/* <ProductArea
         currentProduct={PRODUCT.blog}
         PRODUCT_INFO_MAP={PRODUCT_INFO_MAP_blog}
-      />
+      /> */}
     </WebsiteLayout>
   );
 };
