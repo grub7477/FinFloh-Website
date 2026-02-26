@@ -5,6 +5,7 @@ import Image from "next/image";
 import BookDemoButton from "../components/Common/BookDemoButton";
 import CommonButton from "../components/Common/CommonButton";
 import NewNewsLetter from "../components/Common/NewNewsLetter";
+import FaqContent from "../components/Faq/FaqContent_New";
 
 const Simple_Features_CONTENT = [
   {
@@ -26,6 +27,97 @@ const Simple_Features_CONTENT = [
     ],
     imgSrc: "/images/AIhighlight.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+  },
+];
+const FAQ_CONTENT = [
+  {
+    uuid: "a",
+    question: "What is FlohSense AI Agent?",
+    answer: [
+      "FlohSense AI Agent is an intelligent, always-on assistant designed for B2B finance teams to manage customer communication and resolution workflows.",
+      "It reads customer emails and chats, understands context, sends automated responses, and triggers resolution workflows directly within ERP and CRM systems.",
+    ],
+  },
+  {
+    uuid: "b",
+    question: "How is FlohSense different from a chatbot?",
+    answer: [
+      "Unlike traditional chatbots that provide scripted replies, FlohSense AI understands finance-specific context such as invoices, disputes, payment proofs, and ledger requests.",
+      "It triggers real workflows inside ERP systems, including dispute creation, collections updates, and cash posting, rather than simply responding with predefined answers.",
+    ],
+  },
+  {
+    uuid: "c",
+    question: "What problems does FlohSense AI solve?",
+    answer: [
+      "FlohSense AI eliminates manual email responses, delayed collection follow-ups, prolonged invoice disputes, and slow cash application caused by manual payment data capture.",
+      "It converts customer communication into automated Order-to-Cash (O2C) actions, improving efficiency and resolution speed.",
+    ],
+  },
+  {
+    uuid: "d",
+    question: "Which communication channels does FlohSense support?",
+    answer: [
+      "FlohSense AI works across multiple channels including email and chat platforms.",
+      "It can also process attachments such as PDFs, remittance files, and screenshots, extracting and understanding data to trigger appropriate actions.",
+    ],
+  },
+  {
+    uuid: "e",
+    question: "What workflows can FlohSense trigger?",
+    answer: [
+      "Based on configuration, FlohSense can auto-respond with account statements or payment proofs and detect and log invoice disputes.",
+      "It can capture promise-to-pay commitments, extract remittance and UTR data, post payment details to ERP systems, and escalate high-risk credit signals when necessary.",
+    ],
+  },
+  {
+    uuid: "f",
+    question: "Does FlohSense integrate with ERP and CRM systems?",
+    answer: [
+      "Yes. FlohSense integrates with leading ERP and CRM platforms to update records, trigger workflows, and post transactions in real time.",
+      "This ensures communication-driven actions are immediately reflected across financial and customer systems.",
+    ],
+  },
+  {
+    uuid: "g",
+    question: "Does the AI improve over time?",
+    answer: [
+      "Yes. FlohSense continuously learns from recurring communication patterns, dispute reasons, and customer behavior.",
+      "This enables increasingly accurate responses, smarter automation, and proactive alerts over time.",
+    ],
+  },
+  {
+    uuid: "h",
+    question: "How does FlohSense help improve collections?",
+    answer: [
+      "FlohSense reduces manual follow-ups, speeds up query resolution, and captures payment commitments automatically.",
+      "By preventing disputes and communication delays from slowing payments, it helps organizations reduce Days Sales Outstanding (DSO).",
+    ],
+  },
+  {
+    uuid: "i",
+    question: "Is human intervention still required?",
+    answer: [
+      "FlohSense autonomously handles repetitive and structured interactions such as payment queries and document requests.",
+      "Complex or sensitive cases are routed to finance teams with full context and recommended actions for faster resolution.",
+    ],
+  },
+  {
+    uuid: "j",
+    question: "How is FlohSense AI priced?",
+    answer: [
+      "FlohSense AI follows a per-prompt pricing model aligned with actual customer engagement.",
+      "A prompt is defined as an inbound email from customers, buyers, or users responding to an invoice or reminder email.",
+      "Invoice emails and reminder emails sent by FinFloh are not counted as prompts.",
+    ],
+  },
+  {
+    uuid: "k",
+    question: "How long does it take to go live?",
+    answer: [
+      "FlohSense AI follows a phase-wise implementation approach, with go-live typically completed within 2 to 6 months depending on scope, integrations, and workflow complexity.",
+      "Organizations can begin with high-impact use cases such as collections or dispute management and expand progressively across the O2C lifecycle.",
+    ],
   },
 ];
 
@@ -383,6 +475,13 @@ const FlohSenseAi = () => {
             </div>
           </div>
         </div>
+        <FaqContent
+          bgColor="#ffffff"
+          title="Frequently asked questions"
+          subTitle="FAQ about FinFloh's Credit Decisioning Software"
+          questions={FAQ_CONTENT}
+          addContactButton={true}
+        />
         {/* new-newsletter section */}
         <NewNewsLetter
           heading="Super-charge your finance Inbox and transform your Invoice-to-Cash"
