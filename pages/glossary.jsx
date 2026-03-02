@@ -126,6 +126,22 @@ const terms = {
       url: "https://finfloh.com/blog/ai-in-revenue-recognition",
     },
     {
+      keyword: "AI Collections vs Dunning",
+      url: "https://finfloh.com/blog/ai-collections-agents-vs-traditional-dunning",
+    },
+    {
+      keyword: "AI Dispute Management",
+      url: "https://finfloh.com/blog/ai-dispute-management",
+    },
+    {
+      keyword: "AI in Deductions",
+      url: "https://finfloh.com/blog/ai-in-deductions",
+    },
+    {
+      keyword: "AI Lockbox & Remittance Automation",
+      url: "https://finfloh.com/blog/ai-powered-lockbox-and-remittance-automation",
+    },
+    {
       keyword: "AR Accounting",
       url: "https://finfloh.com/blog/ar-accounting",
     },
@@ -158,6 +174,10 @@ const terms = {
       url: "https://finfloh.com/blog/at-risk-account",
     },
     {
+      keyword: "Allowance for Doubtful Accounts Automation",
+      url: "https://finfloh.com/blog/automating-allowance-for-doubtful-accounts",
+    },
+    {
       keyword: "Automated Billing",
       url: "https://finfloh.com/blog/automated-billing-system",
     },
@@ -169,19 +189,19 @@ const terms = {
       keyword: "Automated Correspondence",
       url: "https://finfloh.com/blog/automated-correspondence",
     },
-    // {
-    //   keyword: "Average Collection Period",
-    //   url: "https://finfloh.com/blog/average-collection-period-formula-cash-flow-optimization",
-    // },
-    // {
-    //   keyword: "Average Days Delinquent",
-    //   url: "https://finfloh.com/blog/master-average-days-delinquent",
-    // },
+    {
+      keyword: "Automated Credit & Debit Offsets",
+      url: "https://finfloh.com/blog/automated-credit-debit-offset-ar-automation-dso-reduction",
+    },
   ],
   B: [
     {
       keyword: "B2B Collections",
       url: "https://finfloh.com/blog/b2b-collections",
+    },
+    {
+      keyword: "B2B GST in India",
+      url: "https://finfloh.com/blog/b2b-taxes-in-india-gst",
     },
     {
       keyword: "Bad Debt Expense",
@@ -201,6 +221,10 @@ const terms = {
       url: "https://finfloh.com/blog/banking-partner",
     },
     {
+      keyword: "Big Data in AR",
+      url: "https://finfloh.com/blog/big-data-analytics-ar",
+    },
+    {
       keyword: "Bill of Lading",
       url: "https://finfloh.com/blog/bill-of-lading",
     },
@@ -217,12 +241,20 @@ const terms = {
       url: "https://finfloh.com/blog/blocked-orders",
     },
     {
+      keyword: "Build Finance AI Agents",
+      url: "https://finfloh.com/blog/build-finance-ai-agents-in-4-easy-steps",
+    },
+    {
       keyword: "Budgeting",
       url: "https://finfloh.com/blog/budgeting",
     },
     {
       keyword: "Business Accounting",
       url: "https://finfloh.com/blog/what-is-business-accounting",
+    },
+    {
+      keyword: "Business Account Definition",
+      url: "https://finfloh.com/blog/what-does-an-account-mean-in-business-finance",
     },
     {
       keyword: "Business Credit Score",
@@ -233,6 +265,10 @@ const terms = {
     {
       keyword: "Cash Application",
       url: "https://finfloh.com/blog/cash-application-guide",
+    },
+    {
+      keyword: "Cash Application Automation Europe",
+      url: "https://finfloh.com/blog/cash-application-automation-europe",
     },
     // {
     //   keyword: "Cash Conversion",
@@ -253,6 +289,10 @@ const terms = {
     {
       keyword: "Cash Flow Projection",
       url: "https://finfloh.com/blog/cash-flow-projection-guide-template",
+    },
+    {
+      keyword: "Cash Flow Forecasting Essentials",
+      url: "https://finfloh.com/blog/essentials-of-cash-flow-forecasting-model",
     },
     {
       keyword: "Cash Forecasting",
@@ -278,6 +318,10 @@ const terms = {
     {
       keyword: "Cash Surrender Value (CSV)",
       url: "https://finfloh.com/blog/cash-surrender-value-csv",
+    },
+    {
+      keyword: "Cashflow Forecasting AI/ML",
+      url: "https://finfloh.com/blog/cashflow-forecasting-aiml",
     },
     {
       keyword: "CEI",
@@ -326,6 +370,10 @@ const terms = {
     {
       keyword: "Controllership",
       url: "https://finfloh.com/blog/controllership-department-essential-function",
+    },
+    {
+      keyword: "CPQ Optimization",
+      url: "https://finfloh.com/blog/cpq-optimization-for-the-future-of-sales",
     },
     {
       keyword: "Credit Hold",
@@ -406,6 +454,10 @@ const terms = {
       url: "https://finfloh.com/blog/depreciation-in-accounting",
     },
     {
+      keyword: "Digital B2B Credit Risk",
+      url: "https://finfloh.com/blog/digital-b2b-credit-risk",
+    },
+    {
       keyword: "Disclosure Management",
       url: "https://finfloh.com/blog/disclosure-management",
     },
@@ -466,6 +518,14 @@ const terms = {
       url: "https://finfloh.com/blog/accounts-receivable-factoring-a-guide",
     },
     {
+      keyword: "Finance & Sales Alignment for AR",
+      url: "https://finfloh.com/blog/finance-and-sales-alignment-for-ar-and-customer-success",
+    },
+    {
+      keyword: "Finance Productivity with IDP",
+      url: "https://finfloh.com/blog/finance-productivity-intelligent-document-processing",
+    },
+    {
       keyword: "Financial Bubble",
       url: "https://finfloh.com/blog/financial-bubble",
     },
@@ -514,6 +574,10 @@ const terms = {
     {
       keyword: "IFRS 15",
       url: "https://finfloh.com/blog/ifrs15",
+    },
+    {
+      keyword: "IDP for Accounts Receivable",
+      url: "https://finfloh.com/blog/intelligent-document-processing-ar",
     },
     {
       keyword: "Invoice recon with Payment Gateway",
@@ -586,6 +650,10 @@ const terms = {
       url: "https://finfloh.com/blog/near-term-applications",
     },
     {
+      keyword: "Not Sufficient Funds (NSF)",
+      url: "https://finfloh.com/blog/not-sufficient-funds-explained",
+    },
+    {
       keyword: "Non-paying Customers",
       url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
     },
@@ -606,6 +674,22 @@ const terms = {
     {
       keyword: "Order Management",
       url: "https://finfloh.com/blog/order-management",
+    },
+    {
+      keyword: "On-Time Customer Payments",
+      url: "https://finfloh.com/blog/on-time-customer-initiated-payments-accelerate-cash-flows",
+    },
+    {
+      keyword: "Optimize O2C During Crisis",
+      url: "https://finfloh.com/blog/optimize-order-to-cash-during-crisis",
+    },
+    {
+      keyword: "Oracle Fusion AR Automation",
+      url: "https://finfloh.com/blog/oracle-fusion-ar-automation",
+    },
+    {
+      keyword: "Oracle NetSuite AR Automation",
+      url: "https://finfloh.com/blog/oracle-netsuite-ar-automation",
     },
     {
       keyword: "Order to Cash Process",
@@ -653,6 +737,10 @@ const terms = {
     {
       keyword: "Payment Terms",
       url: "https://finfloh.com/blog/payment-terms",
+    },
+    {
+      keyword: "Payment Forwarding",
+      url: "https://finfloh.com/blog/payment-forwarding",
     },
     {
       keyword: "Payments Service Directive 2 (PSD2)",
@@ -721,6 +809,14 @@ const terms = {
       url: "https://finfloh.com/blog/revenue-forecasting",
     },
     {
+      keyword: "Revenue Automation",
+      url: "https://finfloh.com/blog/revenue-automation-explained",
+    },
+    {
+      keyword: "SaaS Revenue Recognition",
+      url: "https://finfloh.com/blog/revenue-recognition-methods-in-saas",
+    },
+    {
       keyword: "Robotic Process Automation",
       url: "https://finfloh.com/blog/rpa-ar-automation",
     },
@@ -737,6 +833,14 @@ const terms = {
     {
       keyword: "Shared Services",
       url: "https://finfloh.com/blog/shared-services-department",
+    },
+    {
+      keyword: "Short-Term Cash Forecast",
+      url: "https://finfloh.com/blog/short-term-cash-forecasting",
+    },
+    {
+      keyword: "SOX 404 Compliance (AP)",
+      url: "https://finfloh.com/blog/sox-404-compliance-accounts-payable",
     },
     {
       keyword: "Ship to Process",
@@ -763,6 +867,10 @@ const terms = {
     {
       keyword: "Trade Receivables",
       url: "https://finfloh.com/blog/trade-receivables-formula-calculation-management",
+    },
+    {
+      keyword: "TDS Impact on Receivables",
+      url: "https://finfloh.com/blog/tds-impact-on-accounts-receivable",
     },
     {
       keyword: "Trade References",
