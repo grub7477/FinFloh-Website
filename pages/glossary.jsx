@@ -49,10 +49,7 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const terms = {
   A: [
-    {
-      keyword: "ACH Payment",
-      url: "https://finfloh.com/blog/ach-payment",
-    },
+    { keyword: "ACH Payment", url: "https://finfloh.com/blog/ach-payment" },
     {
       keyword: "Account Audit",
       url: "https://finfloh.com/blog/accounting-audit-process",
@@ -73,6 +70,15 @@ const terms = {
       keyword: "Accounting Automation",
       url: "https://finfloh.com/blog/accounting-automation",
     },
+
+    {
+      keyword: "Accounts Receivable: Asset or Liability",
+      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
+    },
+    {
+      keyword: "Accounts Receivable Best Practices",
+      url: "https://finfloh.com/blog/accounts-receivable-best-practices",
+    },
     {
       keyword: "Accounts Receivable Collections",
       url: "https://finfloh.com/blog/accounts-receivable-collections",
@@ -80,6 +86,10 @@ const terms = {
     {
       keyword: "Accounts Receivable Days",
       url: "https://finfloh.com/blog/accounts-receivable-days",
+    },
+    {
+      keyword: "Accounts Receivable Days Outstanding",
+      url: "https://finfloh.com/blog/accounts-receivable-days-outstanding",
     },
     {
       keyword: "Accounts Receivable Management",
@@ -94,29 +104,66 @@ const terms = {
       url: "https://finfloh.com/blog/accounts-receivable-reports",
     },
     {
+      keyword: "Accounts Receivable Strategy Europe",
+      url: "https://finfloh.com/blog/accounts-receivable-strategy-europe",
+    },
+    {
       keyword: "Accounts Receivable Technology",
       url: "https://finfloh.com/blog/accounts-receivable-technology",
     },
     {
-      keyword: "Accounts receivable Kpis",
+      keyword: "Accounts Receivable KPIs",
       url: "https://finfloh.com/blog/accounts-receivable-kpis",
     },
+
     {
       keyword: "Advance Billing",
       url: "https://finfloh.com/blog/advance-billing",
     },
     {
-      keyword: "Aging Report",
-      url: "https://finfloh.com/blog/aging-report",
+      keyword:
+        "Advantages of Cognitive Document Processing Over Traditional Bots",
+      url: "https://finfloh.com/blog/advantages-of-cognitive-document-processing-over-traditional-bots",
+    },
+    { keyword: "Aging Report", url: "https://finfloh.com/blog/aging-report" },
+
+    {
+      keyword: "Agentic AI Finance",
+      url: "https://finfloh.com/blog/agentic-ai-finance",
     },
     {
-      keyword: "AR Accounting",
-      url: "https://finfloh.com/blog/ar-accounting",
+      keyword: "Agentic AI in Enterprise Finance",
+      url: "https://finfloh.com/blog/agentic-ai-in-enterprise-finance",
     },
     {
-      keyword: "ASC 606",
-      url: "https://finfloh.com/blog/asc606",
+      keyword: "Agentic AI vs Generative AI in O2C",
+      url: "https://finfloh.com/blog/agenticai-vs-generativeai-o2c",
     },
+
+    {
+      keyword: "AI Collections Agents vs Traditional Dunning",
+      url: "https://finfloh.com/blog/ai-collections-agents-vs-traditional-dunning",
+    },
+    {
+      keyword: "AI Dispute Management",
+      url: "https://finfloh.com/blog/ai-dispute-management",
+    },
+    {
+      keyword: "AI in Deductions",
+      url: "https://finfloh.com/blog/ai-in-deductions",
+    },
+    {
+      keyword: "AI in Revenue Recognition",
+      url: "https://finfloh.com/blog/ai-in-revenue-recognition",
+    },
+    {
+      keyword: "AI-Powered Lockbox and Remittance Automation",
+      url: "https://finfloh.com/blog/ai-powered-lockbox-and-remittance-automation",
+    },
+
+    { keyword: "AR Accounting", url: "https://finfloh.com/blog/ar-accounting" },
+    { keyword: "AR Teams", url: "https://finfloh.com/blog/ar-teams" },
+    { keyword: "ASC 606", url: "https://finfloh.com/blog/asc606" },
     {
       keyword: "Asset Based Lending",
       url: "https://finfloh.com/blog/asset-based-lending",
@@ -125,26 +172,23 @@ const terms = {
       keyword: "At Risk Account",
       url: "https://finfloh.com/blog/at-risk-account",
     },
+
     {
       keyword: "Automated Billing",
       url: "https://finfloh.com/blog/automated-billing-system",
     },
-    // {
-    //   keyword: "Automated Billing System",
-    //   url: "https://finfloh.com/blog/automated-billing-system-your-key-to-efficiency-and-growth",
-    // },
     {
       keyword: "Automated Correspondence",
       url: "https://finfloh.com/blog/automated-correspondence",
     },
-    // {
-    //   keyword: "Average Collection Period",
-    //   url: "https://finfloh.com/blog/average-collection-period-formula-cash-flow-optimization",
-    // },
-    // {
-    //   keyword: "Average Days Delinquent",
-    //   url: "https://finfloh.com/blog/master-average-days-delinquent",
-    // },
+    {
+      keyword: "Automated Credit & Debit Offset AR Automation DSO Reduction",
+      url: "https://finfloh.com/blog/automated-credit-debit-offset-ar-automation-dso-reduction",
+    },
+    {
+      keyword: "Automating Allowance for Doubtful Accounts",
+      url: "https://finfloh.com/blog/automating-allowance-for-doubtful-accounts",
+    },
   ],
   B: [
     {
@@ -152,8 +196,16 @@ const terms = {
       url: "https://finfloh.com/blog/b2b-collections",
     },
     {
+      keyword: "B2B Taxes in India GST",
+      url: "https://finfloh.com/blog/b2b-taxes-in-india-gst",
+    },
+    {
       keyword: "Bad Debt Expense",
       url: "https://finfloh.com/blog/bad-debt-formula-master-calculation-management-tips",
+    },
+    {
+      keyword: "Balance of Payment",
+      url: "https://finfloh.com/blog/balance-of-payment",
     },
     {
       keyword: "Balance Reconciliation",
@@ -164,12 +216,12 @@ const terms = {
       url: "https://finfloh.com/blog/balance-sheet-reconciliation-guide",
     },
     {
-      keyword: "Balance of Payment",
-      url: "https://finfloh.com/blog/balance-of-payment",
-    },
-    {
       keyword: "Banking Partner",
       url: "https://finfloh.com/blog/banking-partner",
+    },
+    {
+      keyword: "Big Data Analytics in AR",
+      url: "https://finfloh.com/blog/big-data-analytics-ar",
     },
     {
       keyword: "Bill of Lading",
@@ -179,18 +231,16 @@ const terms = {
       keyword: "Biller Service Provider",
       url: "https://finfloh.com/blog/biller-service-provider-bsp",
     },
-    {
-      keyword: "Billing Cycle",
-      url: "https://finfloh.com/blog/billing-cycle",
-    },
+    { keyword: "Billing Cycle", url: "https://finfloh.com/blog/billing-cycle" },
     {
       keyword: "Blocked Orders",
       url: "https://finfloh.com/blog/blocked-orders",
     },
     {
-      keyword: "Budgeting",
-      url: "https://finfloh.com/blog/budgeting",
+      keyword: "Build Finance AI Agents in 4 Easy Steps",
+      url: "https://finfloh.com/blog/build-finance-ai-agents-in-4-easy-steps",
     },
+    { keyword: "Budgeting", url: "https://finfloh.com/blog/budgeting" },
     {
       keyword: "Business Accounting",
       url: "https://finfloh.com/blog/what-is-business-accounting",
@@ -200,14 +250,15 @@ const terms = {
       url: "https://finfloh.com/blog/business-credit-score",
     },
   ],
+
   C: [
-    {
-      keyword: "CEI",
-      url: "https://finfloh.com/blog/master-collection-effectiveness-index",
-    },
     {
       keyword: "Cash Application",
       url: "https://finfloh.com/blog/cash-application-guide",
+    },
+    {
+      keyword: "Cash Application Automation Europe",
+      url: "https://finfloh.com/blog/cash-application-automation-europe",
     },
     {
       keyword: "Cash Conversion",
@@ -247,10 +298,6 @@ const terms = {
     },
     {
       keyword: "Cash Posting",
-      url: "https://finfloh.com/blog/cash-posting-from-receipts-to-records",
-    },
-    {
-      keyword: "Cash Posting",
       url: "https://finfloh.com/blog/zero-touch-cash-posting",
     },
     {
@@ -260,6 +307,10 @@ const terms = {
     {
       keyword: "Cash Variance",
       url: "https://finfloh.com/blog/variance-analysis-comprehensive-guide",
+    },
+    {
+      keyword: "Cashflow Forecasting AI/ML",
+      url: "https://finfloh.com/blog/cashflow-forecasting-aiml",
     },
     {
       keyword: "Certified Treasury Professional (CTP)",
@@ -291,10 +342,6 @@ const terms = {
     },
     {
       keyword: "Collection Policy",
-      url: "https://finfloh.com/blog/build-a-winning-collection-policy",
-    },
-    {
-      keyword: "Collection Policy",
       url: "https://finfloh.com/blog/collection-policy",
     },
     {
@@ -304,6 +351,10 @@ const terms = {
     {
       keyword: "Controllership",
       url: "https://finfloh.com/blog/controllership-department-essential-function",
+    },
+    {
+      keyword: "CPQ Optimization for the Future of Sales",
+      url: "https://finfloh.com/blog/cpq-optimization-for-the-future-of-sales",
     },
     {
       keyword: "Credit Hold",
@@ -325,18 +376,12 @@ const terms = {
       keyword: "Credit Scoring Models",
       url: "https://finfloh.com/blog/credit-scoring-models-explained",
     },
-    {
-      keyword: "Credit Union",
-      url: "https://finfloh.com/blog/credit-union",
-    },
+    { keyword: "Credit Union", url: "https://finfloh.com/blog/credit-union" },
     {
       keyword: "Credit Worthiness",
       url: "https://finfloh.com/blog/creditworthiness-assessment-master-your-profits",
     },
-    {
-      keyword: "Current Yield",
-      url: "https://finfloh.com/blog/current-yield",
-    },
+    { keyword: "Current Yield", url: "https://finfloh.com/blog/current-yield" },
     {
       keyword: "Customer Master",
       url: "https://finfloh.com/blog/customer-master",
@@ -347,16 +392,9 @@ const terms = {
     },
   ],
   D: [
-    {
-      keyword: "Day Sales Outstanding",
-      url: "https://finfloh.com/blog/dso",
-    },
+    { keyword: "Day Sales Outstanding", url: "https://finfloh.com/blog/dso" },
     {
       keyword: "Days Inventory Outstanding",
-      url: "https://finfloh.com/blog/days-inventory-outstanding-formula",
-    },
-    {
-      keyword: "Days Inventory Outstanding (DIO)",
       url: "https://finfloh.com/blog/days-inventory-outstanding-formula",
     },
     {
@@ -367,10 +405,7 @@ const terms = {
       keyword: "Deal Sheet",
       url: "https://finfloh.com/blog/understanding-deal-sheets-explained",
     },
-    {
-      keyword: "Deal Sheets",
-      url: "https://finfloh.com/blog/deal-sheets",
-    },
+    { keyword: "Deal Sheets", url: "https://finfloh.com/blog/deal-sheets" },
     {
       keyword: "Debt Collection Agency",
       url: "https://finfloh.com/blog/debt-collection-agency-dca",
@@ -384,6 +419,10 @@ const terms = {
       url: "https://finfloh.com/blog/depreciation-in-accounting",
     },
     {
+      keyword: "Digital B2B Credit Risk",
+      url: "https://finfloh.com/blog/digital-b2b-credit-risk",
+    },
+    {
       keyword: "Disclosure Management",
       url: "https://finfloh.com/blog/disclosure-management",
     },
@@ -392,16 +431,8 @@ const terms = {
       url: "https://finfloh.com/blog/accounts-receivable-dispute-management",
     },
     {
-      keyword: "Double entry Accounting",
+      keyword: "Double Entry Accounting",
       url: "https://finfloh.com/blog/double-entry-accounting-system",
-    },
-    {
-      keyword: "DSO - Best Possible DSO",
-      url: "https://finfloh.com/blog/best-possible-dso",
-    },
-    {
-      keyword: "DSO - Best Possible DSO vs Standard DSO",
-      url: "https://finfloh.com/blog/best-possible-dso-vs-standard-dso",
     },
     {
       keyword: "DSO Optimization",
@@ -412,15 +443,13 @@ const terms = {
       url: "https://finfloh.com/blog/dunning-letters",
     },
   ],
+
   E: [
     {
-      keyword: "eChecks vs ACH payments",
+      keyword: "eChecks vs ACH Payments",
       url: "https://finfloh.com/blog/echecks-vs-ach-payments",
     },
-    {
-      keyword: "e-Lockbox",
-      url: "https://finfloh.com/blog/e-lockbox",
-    },
+    { keyword: "e-Lockbox", url: "https://finfloh.com/blog/e-lockbox" },
     {
       keyword: "Earned Discounts",
       url: "https://finfloh.com/blog/earned-discount",
@@ -429,9 +458,10 @@ const terms = {
       keyword: "Electronic Benefits Transfer (EBT)",
       url: "https://finfloh.com/blog/electronic-benefits-transfer-ebt",
     },
+    { keyword: "Email Parsing", url: "https://finfloh.com/blog/email-parsing" },
     {
-      keyword: "Email Parsing",
-      url: "https://finfloh.com/blog/email-parsing",
+      keyword: "Essentials of Cash Flow Forecasting Model",
+      url: "https://finfloh.com/blog/essentials-of-cash-flow-forecasting-model",
     },
     {
       keyword: "Excel for Accounting",
@@ -442,6 +472,14 @@ const terms = {
     {
       keyword: "Factoring Accounts Receivable",
       url: "https://finfloh.com/blog/accounts-receivable-factoring-a-guide",
+    },
+    {
+      keyword: "Finance and Sales Alignment for AR and Customer Success",
+      url: "https://finfloh.com/blog/finance-and-sales-alignment-for-ar-and-customer-success",
+    },
+    {
+      keyword: "Finance Productivity with Intelligent Document Processing",
+      url: "https://finfloh.com/blog/finance-productivity-intelligent-document-processing",
     },
     {
       keyword: "Financial Bubble",
@@ -489,9 +527,10 @@ const terms = {
     },
   ],
   I: [
+    { keyword: "IFRS 15", url: "https://finfloh.com/blog/ifrs15" },
     {
-      keyword: "IFRS 15",
-      url: "https://finfloh.com/blog/ifrs15",
+      keyword: "Intelligent Document Processing for AR",
+      url: "https://finfloh.com/blog/intelligent-document-processing-ar",
     },
     {
       keyword: "Invoice recon with Payment Gateway",
@@ -568,18 +607,28 @@ const terms = {
       url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
     },
     {
-      keyword: "Not required - Ignore",
-      url: "https://finfloh.com/blog/finfloh-wins-best-ar-software-usa-2024-wealth_and_finance_international",
+      keyword: "Not Sufficient Funds Explained",
+      url: "https://finfloh.com/blog/not-sufficient-funds-explained",
     },
-    {
-      keyword: "NSF Checks",
-      url: "https://finfloh.com/blog/nsf-checks",
-    },
+    { keyword: "NSF Checks", url: "https://finfloh.com/blog/nsf-checks" },
   ],
   O: [
     {
-      keyword: "Open item",
-      url: "https://finfloh.com/blog/open-item",
+      keyword: "On-Time Customer-Initiated Payments Accelerate Cash Flows",
+      url: "https://finfloh.com/blog/on-time-customer-initiated-payments-accelerate-cash-flows",
+    },
+    { keyword: "Open Item", url: "https://finfloh.com/blog/open-item" },
+    {
+      keyword: "Optimize Order-to-Cash During Crisis",
+      url: "https://finfloh.com/blog/optimize-order-to-cash-during-crisis",
+    },
+    {
+      keyword: "Oracle Fusion AR Automation",
+      url: "https://finfloh.com/blog/oracle-fusion-ar-automation",
+    },
+    {
+      keyword: "Oracle NetSuite AR Automation",
+      url: "https://finfloh.com/blog/oracle-netsuite-ar-automation",
     },
     {
       keyword: "Order Management",
@@ -590,19 +639,30 @@ const terms = {
       url: "https://finfloh.com/blog/order-to-cash-process-optimization-boost-revenue",
     },
     {
-      keyword: "Over Payments",
-      url: "https://finfloh.com/blog/over-payments",
-    },
-    {
       keyword: "Outstanding Invoices",
       url: "https://finfloh.com/blog/outstanding-invoices",
     },
+    { keyword: "Over Payments", url: "https://finfloh.com/blog/over-payments" },
   ],
   P: [
     {
-      keyword: "Past Due",
-      url: "https://finfloh.com/blog/past-due",
+      keyword: "Payment Discounts",
+      url: "https://finfloh.com/blog/payment-discounts",
     },
+    {
+      keyword: "Payment Forwarding",
+      url: "https://finfloh.com/blog/payment-forwarding",
+    },
+    {
+      keyword: "Payment Penalty",
+      url: "https://finfloh.com/blog/payment-penalty",
+    },
+    { keyword: "Payment Terms", url: "https://finfloh.com/blog/payment-terms" },
+    {
+      keyword: "Payments Service Directive 2 (PSD2)",
+      url: "https://finfloh.com/blog/payments-service-directive-2-psd2",
+    },
+    { keyword: "Past Due", url: "https://finfloh.com/blog/past-due" },
     {
       keyword: "Past Due Accounts Receivable",
       url: "https://finfloh.com/blog/past-due-accounts-receivable-management",
@@ -618,23 +678,6 @@ const terms = {
     {
       keyword: "Past Due Invoice Emails",
       url: "https://finfloh.com/blog/past-due-invoice-email-templates",
-    },
-    {
-      keyword: "Payment discounts",
-      url: "https://finfloh.com/blog/payment-discounts",
-    },
-    {
-      keyword: "Payment Penalty",
-      url: "https://finfloh.com/blog/payment-penalty",
-    },
-
-    {
-      keyword: "Payment Terms",
-      url: "https://finfloh.com/blog/payment-terms",
-    },
-    {
-      keyword: "Payments Service Directive 2 (PSD2)",
-      url: "https://finfloh.com/blog/payments-service-directive-2-psd2",
     },
     {
       keyword: "Pledging Receivable",
@@ -660,32 +703,19 @@ const terms = {
       keyword: "Promise to Pay",
       url: "https://finfloh.com/blog/promise-to-pay-for-debt-recovery",
     },
-    {
-      keyword: "Pay to the Order of checks",
-      url: "https://finfloh.com/blog/pay-to-the-order-of-checks",
-    },
-    {
-      keyword: "Profit Center",
-      url: "https://finfloh.com/blog/profit-center",
-    },
-    {
-      keyword: "Proof of Debt",
-      url: "https://finfloh.com/blog/proof-of-debt",
-    },
+    { keyword: "Proof of Debt", url: "https://finfloh.com/blog/proof-of-debt" },
+    { keyword: "Profit Center", url: "https://finfloh.com/blog/profit-center" },
   ],
   R: [
-    {
-      keyword: "Reconciliation",
-      url: "https://finfloh.com/blog/reconciliation-process",
-    },
     {
       keyword: "Receivables Balance",
       url: "https://finfloh.com/blog/receivables-balance-management-strategies",
     },
     {
-      keyword: "Refinancing",
-      url: "https://finfloh.com/blog/refinancing",
+      keyword: "Reconciliation",
+      url: "https://finfloh.com/blog/reconciliation-process",
     },
+    { keyword: "Refinancing", url: "https://finfloh.com/blog/refinancing" },
     {
       keyword: "Remittance Advice",
       url: "https://finfloh.com/blog/remittance-advice-a-comprehensive-guide-for-efficient-management",
@@ -695,8 +725,16 @@ const terms = {
       url: "https://finfloh.com/blog/remote-deposit-capture-rdc",
     },
     {
+      keyword: "Revenue Automation Explained",
+      url: "https://finfloh.com/blog/revenue-automation-explained",
+    },
+    {
       keyword: "Revenue Forecasting",
       url: "https://finfloh.com/blog/revenue-forecasting",
+    },
+    {
+      keyword: "Revenue Recognition Methods in SaaS",
+      url: "https://finfloh.com/blog/revenue-recognition-methods-in-saas",
     },
     {
       keyword: "Robotic Process Automation",
@@ -708,10 +746,7 @@ const terms = {
       keyword: "SAGE AR Automation",
       url: "https://finfloh.com/blog/sage-accounts-receivable-automation",
     },
-    {
-      keyword: "Security Role",
-      url: "https://finfloh.com/blog/security-role",
-    },
+    { keyword: "Security Role", url: "https://finfloh.com/blog/security-role" },
     {
       keyword: "Shared Services",
       url: "https://finfloh.com/blog/shared-services-department",
@@ -721,8 +756,13 @@ const terms = {
       url: "https://finfloh.com/blog/ship-to-process",
     },
     {
-      keyword: "Sight Draft",
-      url: "https://finfloh.com/blog/sight-draft-sd",
+      keyword: "Short-Term Cash Forecasting",
+      url: "https://finfloh.com/blog/short-term-cash-forecasting",
+    },
+    { keyword: "Sight Draft", url: "https://finfloh.com/blog/sight-draft-sd" },
+    {
+      keyword: "SOX 404 Compliance Accounts Payable",
+      url: "https://finfloh.com/blog/sox-404-compliance-accounts-payable",
     },
     {
       keyword: "SOX Compliance",
@@ -734,6 +774,10 @@ const terms = {
     },
   ],
   T: [
+    {
+      keyword: "TDS Impact on Accounts Receivable",
+      url: "https://finfloh.com/blog/tds-impact-on-accounts-receivable",
+    },
     {
       keyword: "Third Party Collections",
       url: "https://finfloh.com/blog/third-party-collection-agencies-explained",
@@ -754,10 +798,7 @@ const terms = {
       keyword: "Treasury Operations",
       url: "https://finfloh.com/blog/guide-to-treasury-operations",
     },
-    {
-      keyword: "Trust Account",
-      url: "https://finfloh.com/blog/trust-account",
-    },
+    { keyword: "Trust Account", url: "https://finfloh.com/blog/trust-account" },
   ],
   U: [
     {
@@ -789,7 +830,11 @@ const terms = {
   ],
   W: [
     {
-      keyword: "Workflows at FinFloh",
+      keyword: "What Does an Account Mean in Business Finance",
+      url: "https://finfloh.com/blog/what-does-an-account-mean-in-business-finance",
+    },
+    {
+      keyword: "Workflow at FinFloh",
       url: "https://finfloh.com/blog/workflow-at-finfloh",
     },
     {
@@ -912,7 +957,7 @@ const GlossarySection = ({ posts: postList }) => {
     alphabet.reduce((acc, letter) => {
       acc[letter] = React.createRef();
       return acc;
-    }, {})
+    }, {}),
   );
   // Step 1: Get the available letters from the terms object keys
   const availableLetters = Object.keys(terms);
@@ -951,7 +996,7 @@ const GlossarySection = ({ posts: postList }) => {
   const filteredTerms = searchQuery
     ? Object.entries(terms).reduce((acc, [letter, termList]) => {
         const matchedTerms = termList.filter((term) =>
-          term.keyword.toLowerCase().includes(searchQuery)
+          term.keyword.toLowerCase().includes(searchQuery),
         );
         if (matchedTerms.length > 0) acc[letter] = matchedTerms;
         return acc;
@@ -1373,10 +1418,10 @@ const GlossarySection = ({ posts: postList }) => {
                 src={
                   AiInFinancePlayingVideoId
                     ? AiInFinanceData.find(
-                        (podcast) => podcast.id === AiInFinancePlayingVideoId
+                        (podcast) => podcast.id === AiInFinancePlayingVideoId,
                       )?.video_url
                     : podcastData.find(
-                        (podcast) => podcast.id === playingVideoId
+                        (podcast) => podcast.id === playingVideoId,
                       )?.video_url
                 }
                 title="Podcast Video"
