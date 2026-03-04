@@ -50,6 +50,30 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const terms = {
   A: [
     {
+      keyword: "Accounts Receivable Best Practices",
+      url: "https://finfloh.com/blog/accounts-receivable-best-practices",
+    },
+    {
+      keyword: "AI in Credit Decisions",
+      url: "https://finfloh.com/blog/ai-in-credit-decisions",
+    },
+    {
+      keyword: "AI in Credit Scoring",
+      url: "https://finfloh.com/blog/ai-in-credit-scoring",
+    },
+    {
+      keyword: "AI in Cash Application",
+      url: "https://finfloh.com/blog/ai-in-cash-application",
+    },
+    {
+      keyword: "AI in Invoice Automation",
+      url: "https://finfloh.com/blog/ai-in-invoice-automation",
+    },
+    {
+      keyword: "AI in Collections",
+      url: "https://finfloh.com/blog/ai-in-collections",
+    },
+    {
       keyword: "ACH Payment",
       url: "https://finfloh.com/blog/ach-payment",
     },
@@ -145,10 +169,7 @@ const terms = {
       keyword: "AR Accounting",
       url: "https://finfloh.com/blog/ar-accounting",
     },
-    {
-      keyword: "AR Asset or Liability",
-      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
-    },
+
     {
       keyword: "AR Days Outstanding",
       url: "https://finfloh.com/blog/accounts-receivable-days-outstanding",
@@ -196,11 +217,19 @@ const terms = {
   ],
   B: [
     {
+      keyword: "B2B Taxes in Europe",
+      url: "https://finfloh.com/blog/b2b-taxes-in-europe-guide",
+    },
+    {
+      keyword: "B2B Taxes in United States",
+      url: "https://finfloh.com/blog/b2b-taxes-in-united-states-guide",
+    },
+    {
       keyword: "B2B Collections",
       url: "https://finfloh.com/blog/b2b-collections",
     },
     {
-      keyword: "B2B GST in India",
+      keyword: "B2B Taxes in India",
       url: "https://finfloh.com/blog/b2b-taxes-in-india-gst",
     },
     {
@@ -356,7 +385,7 @@ const terms = {
       url: "https://finfloh.com/blog/collection-letters-guide",
     },
     {
-      keyword: "Collection Policy",
+      keyword: "Collection Policy Guide",
       url: "https://finfloh.com/blog/build-a-winning-collection-policy",
     },
     {
@@ -417,6 +446,10 @@ const terms = {
     },
   ],
   D: [
+    {
+      keyword: "Deductions",
+      url: "https://finfloh.com/blog/what-are-deductions",
+    },
     {
       keyword: "Day Sales Outstanding",
       url: "https://finfloh.com/blog/dso",
@@ -562,7 +595,7 @@ const terms = {
   ],
   H: [
     {
-      keyword: "High Intereste Debt",
+      keyword: "High Interest Debt",
       url: "https://finfloh.com/blog/high-interest-debt",
     },
     {
@@ -620,6 +653,10 @@ const terms = {
   ],
   M: [
     {
+      keyword: "Master Accounts Receivable Management",
+      url: "https://finfloh.com/blog/master-accounts-receivable-management",
+    },
+    {
       keyword: "Machine Learning for Credit Scoring",
       url: "https://finfloh.com/blog/machine-learning-for-credit-scoring",
     },
@@ -646,6 +683,10 @@ const terms = {
   ],
   N: [
     {
+      keyword: "Non Trade Deductions",
+      url: "https://finfloh.com/blog/non-trade-deductions",
+    },
+    {
       keyword: "Near-Term Applications",
       url: "https://finfloh.com/blog/near-term-applications",
     },
@@ -657,16 +698,17 @@ const terms = {
       keyword: "Non-paying Customers",
       url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
     },
-    {
-      keyword: "Not Sufficient Funds",
-      url: "https://finfloh.com/blog/not-sufficient-funds-explained",
-    },
+
     {
       keyword: "NSF Checks",
       url: "https://finfloh.com/blog/nsf-checks",
     },
   ],
   O: [
+    {
+      keyword: "Oracle Cloud AR Automation",
+      url: "https://finfloh.com/blog/oracle-cloud-ar-automation",
+    },
     {
       keyword: "Open item",
       url: "https://finfloh.com/blog/open-item",
@@ -705,6 +747,18 @@ const terms = {
     },
   ],
   P: [
+    {
+      keyword: "Profitability Analysis",
+      url: "https://finfloh.com/blog/profitability-analysis",
+    },
+    {
+      keyword: "Profit and Loss Statement",
+      url: "https://finfloh.com/blog/profit-and-loss-statement",
+    },
+    {
+      keyword: "Prepaid Reconciliation",
+      url: "https://finfloh.com/blog/prepaid-reconciliation",
+    },
     {
       keyword: "Past Due",
       url: "https://finfloh.com/blog/past-due",
@@ -783,6 +837,13 @@ const terms = {
       url: "https://finfloh.com/blog/proof-of-debt",
     },
   ],
+  Q: [
+    {
+      keyword: "QuickBooks AR Automation",
+      url: "https://finfloh.com/blog/quickbooks-ar-automation",
+    },
+  ],
+
   R: [
     {
       keyword: "Reconciliation",
@@ -822,6 +883,10 @@ const terms = {
     },
   ],
   S: [
+    {
+      keyword: "Signs You Have Outgrown QuickBooks",
+      url: "https://finfloh.com/blog/outgrowing-quickbooks-9-signs-to-upgrade",
+    },
     {
       keyword: "SAGE AR Automation",
       url: "https://finfloh.com/blog/sage-accounts-receivable-automation",
