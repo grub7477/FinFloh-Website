@@ -926,16 +926,12 @@ const terms = {
   ],
   T: [
     {
-      keyword: "Top 12 Accounts Receivable Automation Providers",
-      url: "https://finfloh.com/blog/top-12-accounts-receivable-automation-providers-in-2026",
+      keyword: "Trade Receivables",
+      url: "https://finfloh.com/blog/trade-receivables-formula-calculation-management",
     },
     {
       keyword: "Third Party Collections",
       url: "https://finfloh.com/blog/third-party-collection-agencies-explained",
-    },
-    {
-      keyword: "Trade Receivables",
-      url: "https://finfloh.com/blog/trade-receivables-formula-calculation-management",
     },
     {
       keyword: "TDS Impact on Receivables",
@@ -1019,6 +1015,17 @@ const terms = {
     },
   ],
 };
+
+// Sort the keywords alphabetically within each letter category
+for (const key in terms) {
+  terms[key] = terms[key].sort((a, b) =>
+    a.keyword.localeCompare(b.keyword, undefined, {
+      sensitivity: "base",
+      numeric: true,
+    }),
+  );
+}
+
 const podcastData = [
   {
     id: 1,
