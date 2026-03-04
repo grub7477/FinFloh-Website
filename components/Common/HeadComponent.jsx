@@ -44,7 +44,7 @@ const authorSchema = ({ datePublished = "", dateModified = "" } = {}) => ({
 const MainEntitySchema = (
   entityType = "WebPage",
   articleSection,
-  headline
+  headline,
 ) => ({
   "@type": entityType,
   headline,
@@ -79,6 +79,13 @@ const offerSchema = () => ({
   url: "https://finfloh.com/free-trial",
 });
 
+// FAQ Schema
+const faqSchema = (FAQProps = []) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQProps,
+});
+
 // define webpageSchema outside of HeadComponent
 const webpageSchema = ({
   pageType = "WebPage",
@@ -106,6 +113,8 @@ const webpageSchema = ({
   includeHasPart = false,
   hasPartProps = [],
   publisher = null,
+  includeFAQ = false,
+  FAQProps = [],
 }) => {
   const schema = {
     "@context": "https://schema.org",
@@ -118,6 +127,10 @@ const webpageSchema = ({
     keywords,
     mainEntityOfPage,
   };
+
+  if (includeFAQ) {
+    schema.faq = faqSchema(FAQProps);
+  }
 
   if (includePublisher) {
     schema.publisher = publisher || publisherSchema();
@@ -153,8 +166,8 @@ const webpageSchema = ({
           v !== null &&
           v !== "" &&
           !(Array.isArray(v) && v.length === 0) &&
-          v !== false
-      )
+          v !== false,
+      ),
     );
 
   return cleanObject(schema);

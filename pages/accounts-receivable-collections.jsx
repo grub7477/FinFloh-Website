@@ -260,6 +260,81 @@ const Collections = () => {
             item: "https://finfloh.com/accounts-receivable-collections",
           },
         ]}
+        includeFAQ
+        FAQProps={[
+          {
+            "@type": "Question",
+            name: "What is AI-driven collections software?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "AI-driven collections software helps finance teams recover receivables by automating follow-ups, prioritizing high-risk accounts, and structuring workflows based on real-time data. FinFloh analyzes aging, invoice value, and customer behavior to guide collectors toward highest-impact actions.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FinFloh prioritize customers and invoices for collections?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh evaluates invoices based on overdue days, amount, historical trends, and risk signals. It generates a prioritized worklist so collectors focus on accounts with the greatest recovery potential, shortening collection cycles.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is an AI-driven collector’s worklist?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "An AI-driven collector’s worklist is a dynamically generated task list that ranks action items based on urgency, risk, and recovery value. FinFloh provides collectors with clear next-best actions, eliminating manual spreadsheet sorting.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FinFloh automate collection follow-ups?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh automates follow-ups through configurable dunning workflows triggered by overdue days, invoice value, or risk category. Organizations can define communication frequency, escalation paths, and professional templates.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FlohSense AI accelerate customer communications during dunning?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FlohSense AI reads incoming customer responses to extract promise-to-pay commitments, payment references, and dispute details. It parses unstructured email replies and routes them to appropriate teams, accelerating response handling and reducing manual inbox monitoring.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can FinFloh record promise-to-pay and customer payment commitments?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Collectors can log promise-to-pay commitments directly, and FlohSense AI can automatically extract these details from customer emails, ensuring commitments are captured accurately and tracked for follow-up.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FinFloh help reduce DSO and improve CEI?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh reduces Days Sales Outstanding (DSO) and improves Collection Effectiveness Index (CEI) by prioritizing high-risk accounts, automating timely follow-ups, and enforcing structured escalation workflows with real-time visibility.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What collections performance metrics can be tracked in FinFloh?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh tracks key indicators including DSO, CEI, aging bucket distribution, recovery rates by segment, promise-to-pay adherence, and collector productivity logs to help finance leaders optimize collections strategy.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FinFloh improve manpower utilization in collections teams?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "By automating prioritization and follow-ups, FinFloh allows teams to manage larger receivables portfolios without increasing headcount. It eliminates time spent sorting spreadsheets and manual drafting, improving productivity per collector.",
+            },
+          },
+        ]}
       />
       <WebsiteLayout
         utmURLs={utmURLs}
