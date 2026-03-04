@@ -50,6 +50,10 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const terms = {
   A: [
     {
+      keyword: "Accounts Receivable Strategy in Europe",
+      url: "https://finfloh.com/blog/accounts-receivable-strategy-europe",
+    },
+    {
       keyword: "Accounts Receivable Best Practices",
       url: "https://finfloh.com/blog/accounts-receivable-best-practices",
     },
@@ -547,16 +551,17 @@ const terms = {
   ],
   F: [
     {
+      keyword:
+        "Finance Productivity with Intelligent Document Processing (IDP)",
+      url: "https://finfloh.com/blog/finance-productivity-intelligent-document-processing",
+    },
+    {
       keyword: "Factoring Accounts Receivable",
       url: "https://finfloh.com/blog/accounts-receivable-factoring-a-guide",
     },
     {
       keyword: "Finance & Sales Alignment for AR",
       url: "https://finfloh.com/blog/finance-and-sales-alignment-for-ar-and-customer-success",
-    },
-    {
-      keyword: "Finance Productivity with IDP",
-      url: "https://finfloh.com/blog/finance-productivity-intelligent-document-processing",
     },
     {
       keyword: "Financial Bubble",
@@ -925,6 +930,10 @@ const terms = {
     },
   ],
   T: [
+    {
+      keyword: "Top 12 Accounts Receivable Automation Providers",
+      url: "https://finfloh.com/blog/top-12-accounts-receivable-automation-providers-in-2026",
+    },
     {
       keyword: "Trade Receivables",
       url: "https://finfloh.com/blog/trade-receivables-formula-calculation-management",
