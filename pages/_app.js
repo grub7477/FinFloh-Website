@@ -161,7 +161,7 @@ const MyApp = ({ Component, pageProps }) => {
               }}
             />
 
-            {/* RB2B Tracking Code */}
+            {/* RB2B Tracking Code
             <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
@@ -196,7 +196,7 @@ const MyApp = ({ Component, pageProps }) => {
                   }();
                 `,
               }}
-            />
+            /> */}
           </Head>
 
           <Component {...pageProps} />
