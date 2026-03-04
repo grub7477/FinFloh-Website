@@ -619,6 +619,73 @@ const FinFlohHome = () => {
         canonicalUrl="https://finfloh.com/"
         includePublisher
         includeBreadcrumbs
+        includeFAQ
+        FAQProps={[
+          {
+            "@type": "Question",
+            name: "What does FinFloh do?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh is an AI-native B2B accounts receivable automation and credit decisioning platform built for finance teams managing postpaid billing. It automates the entire invoice-to-cash process — including invoice generation, invoice sending, collections, cash application, credit risk scoring, and credit onboarding decisions.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FlohSense AI Agent automate and enable the invoice-to-cash process?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FlohSense AI Agent acts as the intelligence layer across FinFloh’s invoice-to-cash workflows. It reads and interprets operational data and customer communications to automate actions across invoice generation, invoice sending, collections reminders, cash application, and dispute handling.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is accounts receivable automation, and how does FinFloh support it?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Accounts receivable automation software digitizes and automates invoice-to-cash workflows such as invoice distribution, collections follow-ups, dispute tracking, cash application, and reconciliation. FinFloh automates these processes end-to-end while adding structured prioritization, performance visibility, and AI-driven credit intelligence.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FinFloh reduce DSO (Days Sales Outstanding)?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh reduces DSO by automating collections workflows, enabling risk-based prioritization, embedding structured credit controls directly within CRM systems, and triggering internal alerts and escalations for delayed payments. This improves working capital efficiency and accelerates cash recovery.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How is FinFloh different from ERP accounts receivable modules?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "ERP systems primarily record accounting transactions. FinFloh works alongside ERP systems to automate invoice-to-cash operations, apply AI-based cash application, and enable structured credit decisioning within CRM workflows. It adds operational automation, performance tracking, and decision intelligence on top of accounting systems.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does FinFloh integrate with ERP and CRM systems such as Oracle NetSuite, Oracle Fusion, Microsoft Dynamics 365, and SAP S/4HANA?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. FinFloh integrates with leading ERP systems such as Oracle NetSuite, Oracle Fusion, Microsoft Dynamics 365, and SAP S/4HANA. By synchronizing receivables data, it eliminates manual reconciliation, improves cross-functional visibility, and ensures structured credit controls within customer onboarding workflows.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is automated credit risk scoring and decisioning in FinFloh?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Automated credit risk scoring evaluates customers using financial data, behavioral signals, and predefined risk parameters. FinFloh translates risk scores into actionable credit onboarding recommendations directly within CRM workflows, standardizing approvals and reducing bad debt exposure.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does FinFloh accelerate collections?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FinFloh accelerates collections by automating follow-ups, prioritizing high-impact accounts based on aging and risk signals, and providing structured visibility into disputes and payment behavior. It triggers internal alerts and escalation workflows to shorten collection cycles.",
+            },
+          },
+        ]}
       />
 
       <WebsiteLayout
