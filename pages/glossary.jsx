@@ -1035,99 +1035,99 @@ for (const key in terms) {
   );
 }
 
-const podcastData = [
-  {
-    id: 1,
-    title:
-      "How can CFOs unify Business, Finance, AR, AP, FP&A & Controllership functions?",
-    author: "Alyssa Shadinger",
-    position: "CFO, Sisense",
-    episode: 6,
-    isNew: true,
-    thumbnail: "/images/alyssa-ep6-banner.svg",
-    thumbnail_mobile: "/images/alyssa-ep6-banner-mobile.svg",
-    video_url:
-      "https://www.youtube.com/embed?v=3k4xsfzrL7I&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=1&autoplay=1",
-  },
-  {
-    id: 2,
-    title: "Need for CFO Leadership at Small & Mid-sized Firms",
-    author: "Darren Farry",
-    position: "CEO, The Thoughtful CFO",
-    episode: 5,
-    isNew: false,
-    thumbnail: "/images/darren-ep5-banner.svg",
-    thumbnail_mobile: "/images/darren-ep5-banner-mobile.svg",
-    video_url:
-      "https://www.youtube.com/embed?v=XFBnARwf9QI&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=2&autoplay=1",
-  },
-  {
-    id: 3,
-    title: "Bridging the gaps between finance, revenue & operations",
-    author: "Ruchi Kasliwal",
-    position: "Finance Leader at MongoDB, Confluent & Telenav",
-    episode: 4,
-    isNew: false,
-    thumbnail: "/images/Ruchi_Kasliwal-ep4-banner.svg",
-    thumbnail_mobile: "/images/Ruchi_Kasliwal-ep4-banner-mobile.svg",
+// const podcastData = [
+//   {
+//     id: 1,
+//     title:
+//       "How can CFOs unify Business, Finance, AR, AP, FP&A & Controllership functions?",
+//     author: "Alyssa Shadinger",
+//     position: "CFO, Sisense",
+//     episode: 6,
+//     isNew: true,
+//     thumbnail: "/images/alyssa-ep6-banner.svg",
+//     thumbnail_mobile: "/images/alyssa-ep6-banner-mobile.svg",
+//     video_url:
+//       "https://www.youtube.com/embed?v=3k4xsfzrL7I&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=1&autoplay=1",
+//   },
+//   {
+//     id: 2,
+//     title: "Need for CFO Leadership at Small & Mid-sized Firms",
+//     author: "Darren Farry",
+//     position: "CEO, The Thoughtful CFO",
+//     episode: 5,
+//     isNew: false,
+//     thumbnail: "/images/darren-ep5-banner.svg",
+//     thumbnail_mobile: "/images/darren-ep5-banner-mobile.svg",
+//     video_url:
+//       "https://www.youtube.com/embed?v=XFBnARwf9QI&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=2&autoplay=1",
+//   },
+//   {
+//     id: 3,
+//     title: "Bridging the gaps between finance, revenue & operations",
+//     author: "Ruchi Kasliwal",
+//     position: "Finance Leader at MongoDB, Confluent & Telenav",
+//     episode: 4,
+//     isNew: false,
+//     thumbnail: "/images/Ruchi_Kasliwal-ep4-banner.svg",
+//     thumbnail_mobile: "/images/Ruchi_Kasliwal-ep4-banner-mobile.svg",
 
-    video_url:
-      "https://www.youtube.com/embed?v=IFXqk-lmUT0&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=3&autoplay=1",
-  },
-  {
-    id: 4,
-    title: "Scaling Finance Functions At High Growth Software Companies",
-    author: "Josh Troy",
-    position: "CFO, PatchRx",
-    episode: 3,
-    isNew: false,
-    thumbnail: "/images/Josh_Troy-ep3-banner.svg",
-    thumbnail_mobile: "/images/Josh_Troy-ep3-banner-mobile.svg",
+//     video_url:
+//       "https://www.youtube.com/embed?v=IFXqk-lmUT0&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=3&autoplay=1",
+//   },
+//   {
+//     id: 4,
+//     title: "Scaling Finance Functions At High Growth Software Companies",
+//     author: "Josh Troy",
+//     position: "CFO, PatchRx",
+//     episode: 3,
+//     isNew: false,
+//     thumbnail: "/images/Josh_Troy-ep3-banner.svg",
+//     thumbnail_mobile: "/images/Josh_Troy-ep3-banner-mobile.svg",
 
-    video_url:
-      "https://www.youtube.com/embed?v=UxF1GUju16s&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=4&autoplay=1",
-  },
-  {
-    id: 5,
-    title: "Navigating The Finance, Sales & Strategy Conundrum",
-    author: "Dustin Walsted",
-    position: "VP of Finance Tech, Strategy & HR Smart City Apartment",
-    episode: 2,
-    isNew: false,
-    thumbnail: "/images/Dustin-ep2-banner.svg",
-    thumbnail_mobile: "/images/Dustin-ep2-banner-mobile.svg",
+//     video_url:
+//       "https://www.youtube.com/embed?v=UxF1GUju16s&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=4&autoplay=1",
+//   },
+//   {
+//     id: 5,
+//     title: "Navigating The Finance, Sales & Strategy Conundrum",
+//     author: "Dustin Walsted",
+//     position: "VP of Finance Tech, Strategy & HR Smart City Apartment",
+//     episode: 2,
+//     isNew: false,
+//     thumbnail: "/images/Dustin-ep2-banner.svg",
+//     thumbnail_mobile: "/images/Dustin-ep2-banner-mobile.svg",
 
-    video_url:
-      "https://www.youtube.com/embed?v=AjgzwfOTL8o&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=5&autoplay=1",
-  },
-  {
-    id: 6,
-    title: "Journey Beyond Balance Sheets",
-    author: "Rachel C.",
-    position: "Head of F&A, Filson",
-    episode: 1,
-    isNew: false,
-    thumbnail: "/images/racheal-ep1-banner.svg",
-    thumbnail_mobile: "/images/racheal-ep1-banner-mobile.svg",
+//     video_url:
+//       "https://www.youtube.com/embed?v=AjgzwfOTL8o&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=5&autoplay=1",
+//   },
+//   {
+//     id: 6,
+//     title: "Journey Beyond Balance Sheets",
+//     author: "Rachel C.",
+//     position: "Head of F&A, Filson",
+//     episode: 1,
+//     isNew: false,
+//     thumbnail: "/images/racheal-ep1-banner.svg",
+//     thumbnail_mobile: "/images/racheal-ep1-banner-mobile.svg",
 
-    video_url:
-      "https://www.youtube.com/embed?v=OukEygEM7R8&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=6&autoplay=1",
-  },
-];
-const AiInFinanceData = [
-  {
-    id: 11,
-    title: "Applications of AI in CFOTech & why should CFOs care?",
-    author: "Amartya Singh",
-    position: "Co-Founder & CEO, FinFloh",
-    episode: 1,
-    isNew: true,
-    thumbnail: "/images/Amartya_Sing-ep1-banner.svg",
-    thumbnail_mobile: "/images/Amartya_Sing-ep1-banner-mobile.svg",
-    video_url:
-      "https://www.youtube.com/embed/-6t_6lsaZ9A?si=lxqUDNsHdQ6dIEWN&mute=1&autoplay=1",
-  },
-];
+//     video_url:
+//       "https://www.youtube.com/embed?v=OukEygEM7R8&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=6&autoplay=1",
+//   },
+// ];
+// const AiInFinanceData = [
+//   {
+//     id: 11,
+//     title: "Applications of AI in CFOTech & why should CFOs care?",
+//     author: "Amartya Singh",
+//     position: "Co-Founder & CEO, FinFloh",
+//     episode: 1,
+//     isNew: true,
+//     thumbnail: "/images/Amartya_Sing-ep1-banner.svg",
+//     thumbnail_mobile: "/images/Amartya_Sing-ep1-banner-mobile.svg",
+//     video_url:
+//       "https://www.youtube.com/embed/-6t_6lsaZ9A?si=lxqUDNsHdQ6dIEWN&mute=1&autoplay=1",
+//   },
+// ];
 
 const GlossarySection = ({ posts: postList }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -1183,37 +1183,37 @@ const GlossarySection = ({ posts: postList }) => {
       }, {})
     : terms;
 
-  const [playingVideoId, setPlayingVideoId] = useState(null);
-  const [AiInFinancePlayingVideoId, setAiInFinancePlayingVideoId] =
-    useState(false);
+  // const [playingVideoId, setPlayingVideoId] = useState(null);
+  // const [AiInFinancePlayingVideoId, setAiInFinancePlayingVideoId] =
+  //   useState(false);
 
-  const handleVideoClick = (id) => {
-    setPlayingVideoId(id);
-    setAiInFinancePlayingVideoId(false); // Close AI video if the podcast is played
-  };
+  // const handleVideoClick = (id) => {
+  //   setPlayingVideoId(id);
+  //   setAiInFinancePlayingVideoId(false); // Close AI video if the podcast is played
+  // };
 
-  const handleAiInFinanceVideoClick = (id) => {
-    setAiInFinancePlayingVideoId(id);
-  };
-  const handleClose = () => {
-    setPlayingVideoId(null);
-    setAiInFinancePlayingVideoId(false);
-  };
-  // Handle scrolling visibility for the back-to-top button
-  useEffect(() => {
-    const handleScrollVisibility = () => {
-      setShowBackToTop(window.scrollY > 300); // Show button after 300px scroll
-    };
+  // const handleAiInFinanceVideoClick = (id) => {
+  //   setAiInFinancePlayingVideoId(id);
+  // };
+  // const handleClose = () => {
+  //   setPlayingVideoId(null);
+  //   setAiInFinancePlayingVideoId(false);
+  // };
+  // // Handle scrolling visibility for the back-to-top button
+  // useEffect(() => {
+  //   const handleScrollVisibility = () => {
+  //     setShowBackToTop(window.scrollY > 300); // Show button after 300px scroll
+  //   };
 
-    window.addEventListener("scroll", handleScrollVisibility);
-    return () => window.removeEventListener("scroll", handleScrollVisibility);
-  }, []);
+  //   window.addEventListener("scroll", handleScrollVisibility);
+  //   return () => window.removeEventListener("scroll", handleScrollVisibility);
+  // }, []);
 
-  const handleBackToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const latestPodcast = podcastData[0];
-  const latestAiInFinancePodcast = AiInFinanceData[0];
+  // const handleBackToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
+  // const latestPodcast = podcastData[0];
+  // const latestAiInFinancePodcast = AiInFinanceData[0];
 
   return (
     <>
@@ -1477,140 +1477,8 @@ const GlossarySection = ({ posts: postList }) => {
                 </div>
               </div>
             </div>
-            {/* <div className="latest-blog-section">
-              <section>
-                <div className="row g-sm-5 g-4 blog-home-articles">
-                  {postList?.map((post) => (
-                    <Article post={post} key={post.id} />
-                  ))}
-                </div>
-              </section>
-            </div> */}
-            <div>
-              <h3 className="latest-podcast-heading">Our Latest Episodes</h3>
-            </div>
-            <div
-              className="latest-podcast-section"
-              style={{ marginBottom: "120px" }}
-            >
-              <div className="latest-podcast-container">
-                <div
-                  className="latest-podcast-episode"
-                  onClick={() => handleVideoClick(latestPodcast.id)}
-                >
-                  <div className="thumbnail-container">
-                    <img
-                      src={latestPodcast.thumbnail}
-                      alt={latestPodcast.title}
-                      className="latest-podcast-episode-thumbnail"
-                    />
-                    <img
-                      src={latestPodcast.thumbnail_mobile}
-                      alt={latestPodcast.title}
-                      className="latest-podcast-episode-thumbnail-mobile"
-                    />
-                    <img
-                      src="images/play_circle.svg"
-                      alt="Play"
-                      className="latest-play-circle"
-                    />
-                  </div>
-                  <div className="podcast-common-content">
-                    <div className="podcast-info">
-                      <span>{`EPISODE ${latestPodcast.episode}`}</span>
-                      {latestPodcast.isNew && (
-                        <span className="new-episode green-text">
-                          NEW EPISODE
-                        </span>
-                      )}
-                    </div>
-                    <div className="latest-podcast-title">
-                      How can CFOs unify Business, Finance, AR, AP, FP&A...
-                      {/* {latestPodcast.title} */}
-                    </div>
-                    <div className="latest-podcast-author">
-                      {latestPodcast.author}
-                    </div>
-                    <div className="latest-podcast-position">
-                      {latestPodcast.position}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="latest-podcast-container">
-                <div
-                  className="latest-podcast-episode"
-                  onClick={() =>
-                    handleAiInFinanceVideoClick(latestAiInFinancePodcast.id)
-                  }
-                >
-                  <div className="thumbnail-container">
-                    <img
-                      src={latestAiInFinancePodcast.thumbnail}
-                      alt={latestAiInFinancePodcast.title}
-                      className="latest-podcast-episode-thumbnail"
-                    />
-                    <img
-                      src={latestAiInFinancePodcast.thumbnail_mobile}
-                      alt={latestAiInFinancePodcast.title}
-                      className="latest-podcast-episode-thumbnail-mobile"
-                    />
-                    <img
-                      src="images/play_circle.svg"
-                      alt="Play"
-                      className="latest-play-circle"
-                    />
-                  </div>
-                  <div className="podcast-common-content">
-                    <div className="podcast-info">
-                      <span>{`EPISODE ${latestAiInFinancePodcast.episode}`}</span>
-                      {latestAiInFinancePodcast.isNew && (
-                        <span className="new-episode green-text">
-                          NEW EPISODE
-                        </span>
-                      )}
-                    </div>
-                    <div className="latest-podcast-title">
-                      {latestAiInFinancePodcast.title}
-                    </div>
-                    <div className="latest-podcast-author">
-                      {latestAiInFinancePodcast.author}
-                    </div>
-                    <div className="latest-podcast-position">
-                      {latestAiInFinancePodcast.position}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* latest podcast and blog section end here */}
           </div>
         </div>
-        {/* Conditional rendering of the iframe */}
-        {(playingVideoId !== null || AiInFinancePlayingVideoId !== false) && (
-          <div className="iframe-overlay" onClick={handleClose}>
-            <div
-              className="iframe-container"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <iframe
-                src={
-                  AiInFinancePlayingVideoId
-                    ? AiInFinanceData.find(
-                        (podcast) => podcast.id === AiInFinancePlayingVideoId,
-                      )?.video_url
-                    : podcastData.find(
-                        (podcast) => podcast.id === playingVideoId,
-                      )?.video_url
-                }
-                title="Podcast Video"
-                allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        )}
       </WebsiteLayout>
     </>
   );

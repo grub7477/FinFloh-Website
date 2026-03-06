@@ -45,9 +45,9 @@ export const PRODUCT_INFO_MAP_blog = {
 
 const RelatedPost = ({ post }) => (
   <div className="related-post-container">
-    <div className="related-post-img">
+    {/* <div className="related-post-img">
       {post?.img && <img src={post?.img} loading="lazy" alt={post?.title} />}
-    </div>
+    </div> */}
     <div className="related-post-content">
       <CategoryDate category={post?.context} date={post?.date} />
 
