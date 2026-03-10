@@ -35,18 +35,18 @@ const WebsiteLayout = (props) => {
           defer
           src="//js-na1.hs-scripts.com/43524322.js"
         ></script> */}
-         <script
-              type="text/javascript"
-              dangerouslySetInnerHTML={{
-                __html: `
+        {/* <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
                   window.$zoho=window.$zoho || {};
                   $zoho.salesiq=$zoho.salesiq||{ready:function(){}};
                 `,
-              }}
-            />
+          }}
+        /> */}
 
         {/* End of HubSpot Embed Code */}
-        <script
+        {/* <script
           type="text/javascript"
           data-cookiescript="accepted"
           data-cookiecategory="targeting"
@@ -57,15 +57,15 @@ const WebsiteLayout = (props) => {
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "irxd5ric3w");
   `}
-        </script>
-        <script
+        </script> */}
+        {/* <script
           type="text/javascript"
           data-cookiescript="accepted"
           data-cookiecategory="targeting"
         >
           {`window.faitracker=window.faitracker||function(){this.q=[];var t=new CustomEvent("FAITRACKER_QUEUED_EVENT");return this.init=function(t,e,a){this.TOKEN=t,this.INIT_PARAMS=e,this.INIT_CALLBACK=a,window.dispatchEvent(new CustomEvent("FAITRACKER_INIT_EVENT"))},this.call=function(){var e={k:"",a:[]};if(arguments&&arguments.length>=1){for(var a=1;a<arguments.length;a++)e.a.push(arguments[a]);e.k=arguments[0]}this.q.push(e),window.dispatchEvent(t)},this.message=function(){window.addEventListener("message",function(t){"faitracker"===t.data.origin&&this.call("message",t.data.type,t.data.message)})},this.message(),this.init("jjwg34bck0pk86epb6iqf81krhy94la7",{host:"https://api.dyh8ken8pc.com"}),this}(),function(){var t=document.createElement("script");t.type="text/javascript",t.src="https://asset.dyh8ken8pc.com/dyh8ken8pc.js",t.async=!0,(d=document.getElementsByTagName("script")[0]).parentNode.insertBefore(t,d)}();`}
-        </script>
-        <script
+        </script> */}
+        {/* <script
           type="text/javascript"
           data-cookiescript="accepted"
           data-cookiecategory="targeting"
@@ -84,15 +84,15 @@ const WebsiteLayout = (props) => {
           page_path: window.location.pathname,
           });
         `}
-        </script>
+        </script> */}
         {/* Google Tag Manager */}
-        <script type="text/javascript">
+        {/* <script type="text/javascript">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-P8D62VM6');`}
-        </script>
+        </script> */}
         {/* End Google Tag Manager */}
       </Head>
       {/* Google Tag Manager (noscript) */}
@@ -119,7 +119,7 @@ const WebsiteLayout = (props) => {
           noNavbar={noNavbar}
           utmURLs={utmURLs}
           PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_url}
-          showMainBannerTop ={showMainBannerTop}
+          showMainBannerTop={showMainBannerTop}
         />
       )}
 

@@ -34,6 +34,9 @@ import { Analytics } from "@vercel/analytics/react";
 import Custom404 from "./404";
 import "../styles/finfloh-vs-tesorio.scss";
 import "../styles/journal-entries.scss";
+import AnalyticsScripts from "../components/Scripts/AnalyticsScripts";
+import MarketingScripts from "../components/Scripts/MarketingScripts";
+import SupportScripts from "../components/Scripts/SupportScripts";
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -52,11 +55,11 @@ const MyApp = ({ Component, pageProps }) => {
         <>
           <Head>
             {/* elfsight embded code */}
-            <script
+            {/* <script
               src="https://static.elfsight.com/platform/platform.js"
               data-use-service-core
               defer
-            ></script>
+            ></script> */}
             {/* HubSpot Embed Code */}
             {/* <script
               type="text/javascript"
@@ -67,7 +70,7 @@ const MyApp = ({ Component, pageProps }) => {
             ></script> */}
 
             {/* Zoho SalesIQ Script */}
-            <script
+            {/* <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
@@ -75,15 +78,15 @@ const MyApp = ({ Component, pageProps }) => {
                   $zoho.salesiq=$zoho.salesiq||{ready:function(){}};
                 `,
               }}
-            />
-            <script
+            /> */}
+            {/* <script
               id="zsiqscript"
               src="https://salesiq.zohopublic.in/widget?wc=siq8f739920962a0b57f7d897da6b1c5ad67822153e7e8e3bb158e0242f201cfe8d"
               defer
-            ></script>
+            ></script> */}
 
             {/* Clarity Analytics Script */}
-            <script
+            {/* <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
@@ -94,10 +97,10 @@ const MyApp = ({ Component, pageProps }) => {
                   })(window, document, "clarity", "script", "irxd5ric3w");
                 `,
               }}
-            />
+            /> */}
 
             {/* Faitracker Script */}
-            <script
+            {/* <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
@@ -125,10 +128,10 @@ const MyApp = ({ Component, pageProps }) => {
                   }();
                 `,
               }}
-            />
+            /> */}
 
             {/* Google Ads Script */}
-            <script
+            {/* <script
               type="text/javascript"
               async
               src="https://www.googletagmanager.com/gtag/js?id=AW-11394427563"
@@ -145,10 +148,10 @@ const MyApp = ({ Component, pageProps }) => {
                   });
                 `,
               }}
-            />
+            /> */}
 
             {/* Google Tag Manager */}
-            <script
+            {/* <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
@@ -159,7 +162,7 @@ const MyApp = ({ Component, pageProps }) => {
                   })(window,document,'script','dataLayer','GTM-P8D62VM6');
                 `,
               }}
-            />
+            /> */}
 
             {/* RB2B Tracking Code
             <script
@@ -198,6 +201,11 @@ const MyApp = ({ Component, pageProps }) => {
               }}
             /> */}
           </Head>
+
+          {/* External Scripts */}
+          <AnalyticsScripts />
+          <MarketingScripts />
+          <SupportScripts />
 
           <Component {...pageProps} />
 

@@ -889,6 +889,7 @@ const FinFlohHome = () => {
                   src="https://app.supademo.com/embed/cm7hjoqdj00o7zv0iwha4cj7g?embed_v=2"
                   title="Demo Video"
                   frameBorder="0"
+                  loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
