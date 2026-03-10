@@ -11,7 +11,7 @@
   display: flex;
   gap: 24px;
   padding: 80px 115px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   justify-content: center;
 }
 .book-a-demo-left {
@@ -210,7 +210,8 @@
   gap: 4px;
 }
 
-.podcast-heading-slider-author-position-container .podcast-heading-slider-author {
+.podcast-heading-slider-author-position-container
+  .podcast-heading-slider-author {
   color: #111827;
   font-size: 20px;
   font-style: normal;
@@ -219,7 +220,8 @@
   margin: 0px;
   text-transform: none;
 }
-.podcast-heading-slider-author-position-container .podcast-heading-slider-position {
+.podcast-heading-slider-author-position-container
+  .podcast-heading-slider-position {
   color: #374151;
   font-size: 16px;
   font-style: normal;
@@ -228,7 +230,6 @@
   margin: 0px;
   text-transform: none;
 }
-
 
 @media (min-width: 768px) and (max-width: 1080px) {
   .certificate-banners {
