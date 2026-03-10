@@ -71,12 +71,13 @@ const BookADemo = () => {
                 <div className="book-a-demo-left-first">
                   <div className="book-a-demo-content">
                     <h2 className="book-a-demo-title">
-                      Automated Accounts Receivable  & Credit Decisions
+                      Automated Accounts Receivable & Credit Decisions
                       for Modern Finance Teams
                     </h2>
                     <p className="book-a-demo-subtitle">
-                      Schedule a brief call to see the platform live-in-action
-                      and understand how it aligns with your business needs.
+                      Start your free trial to see how FinFloh streamlines AR,
+                      improves credit decisions, accelerates collections, and
+                      enhances cash flow visibility.
                     </p>
                   </div>
                   <div className="book-a-demo-icons">
@@ -123,117 +124,6 @@ const BookADemo = () => {
 
             {/* use components here */}
             <CompaniesLogo />
-          </div>
-
-          {/* <div className="why-user-love-us container-main">
-            <div className="us-container1">
-              <div>
-                <span>
-                  Why Users <br />
-                  Love Us
-                </span>
-              </div>
-
-              <div className="certificate-banners">
-                <img src="/images/SoftwareTopTrending2024.svg" />
-                <img src="/images/AccountsReceivable_1.svg" />
-                <img src="/images/AccountsReceivable_4.svg" />
-                <img src="/images/AccountsReceivable_3.svg" />
-              </div>
-            </div>
-            <div className="us-container">
-              <div className="us-container-content">
-                <img src="/images/“icon.svg" />
-                <p>
-                  I think the platform's ability to establish automated
-                  follow-ups, tailored to distinct workflows defined by customer
-                  risk segments has led our team to never miss a payment
-                  reminder.”
-                </p>
-              </div>
-            </div>
-            <div className="us-container">
-              <div className="us-container-content">
-                <img src="/images/“icon.svg" />
-                <p>
-                  “I am able to manage all my receivables data under a single
-                  solution. It has completely removed our team's need to switch
-                  between tools to arrive at a particular conclusion or
-                  decision.”
-                </p>
-              </div>
-            </div>
-          </div> */}
-          <div className="container-main">
-            <TestimonialsWhyTrust />
-          </div>
-
-          <div
-            className="collection-cont lending-fold2"
-            style={{ flexDirection: "column" }}
-          >
-            <h2
-              className="titleStyle"
-              style={{
-                maxWidth: "800px",
-                fontFamily: "Satoshi",
-                color: "#404040",
-              }}
-            >
-              Tailored for Cash Flow Efficiency
-            </h2>
-
-            <div
-              className="container-main autoPilot"
-              style={{ gap: "10px", padding: "0px" }}
-            >
-              {AR_MANAGEMENT?.map((data) => (
-                <div className="card-container">
-                  <p
-                    style={{
-                      color: "#00954A",
-                      fontSize: "48px",
-                      fontWeight: "600",
-                    }}
-                  >
-                    {data?.title}
-                  </p>
-                  <p
-                    style={{
-                      color: "#000000",
-                      fontSize: "20px",
-                      fontWeight: "500",
-                      maxWidth: "200px",
-                    }}
-                  >
-                    {data?.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="container-main book-demo-newsLetter-mb">
-            <div className="book-demo-newsLetter">
-              <div className="book-demo-newsLetter-content">
-                <div className="newsLetter-content-left">
-                  <p>FinFloh easily integrates with software you use</p>
-                  <LinkButton
-                    openInNewTab={true}
-                    href="https://finfloh.com/invoice-automation?utm_source=book_a_demo_page_ctar&utm_medium=finfloh_website"
-                    style={{ backgroundColor: "#00954A", color: "#fff" }}
-                  >
-                    Integrate now
-                  </LinkButton>
-                </div>
-                <div className="newsLetter-img newsLetter-content-right">
-                  <img
-                    src="images/Rectangle 517.svg"
-                    alt="newsletter finfloh"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </WebsiteLayout>

@@ -8,7 +8,7 @@ const CompaniesLogo = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: "60px",
+          marginTop: "40px",
           marginBottom: "24px",
         }}
       >
