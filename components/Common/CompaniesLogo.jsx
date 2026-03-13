@@ -40,6 +40,7 @@ const CompaniesLogo = () => {
               <img alt="Waylit" src="/images/company-logos/waylift.svg" />
 
               <img alt="finbox" src="/images/company-logos/finbox.svg" />
+              <img alt="finbox" src="/images/company-logos/biomerica.svg" />
               {/* Logo Repeat */}
               <img alt="gupshup-icon" src="/images/company-logos/Gupshup.svg" />
               <img alt="yellow_ai" src="/images/company-logos/yellow_ai.svg" />
@@ -60,6 +61,7 @@ const CompaniesLogo = () => {
               <img alt="Waylit" src="/images/company-logos/waylift.svg" />
 
               <img alt="finbox" src="/images/company-logos/finbox.svg" />
+              <img alt="finbox" src="/images/company-logos/biomerica.svg" />
             </div>
           </div>
         </div>
