@@ -302,6 +302,11 @@ const CashApplication = () => {
               <h4>FLOHSENSE AI AGENT</h4>
               <p>Auto-extract payment info from customer emails</p>
             </div>
+            <img
+              className="flohsense-arrow"
+              src="images/ArrowRight.svg"
+              alt="Right Icon"
+            ></img>
           </div>
         </div>
         <div className="bg-container">

@@ -18,7 +18,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/images/competitors-page/comparison-pattern.svg"),
+  background:
+    url("/images/competitors-page/comparison-pattern.svg"),
     linear-gradient(180deg, #006331 45%, #002f17 100%);
   border-radius: 8px;
   overflow: hidden;
@@ -314,6 +315,20 @@
   padding: 16px 24px;
   gap: 8px;
   border-radius: 8px;
+
+  .flohsense-arrow {
+    width: 24px;
+    height: auto;
+  }
+}
+
+.flohsenseAI-container:hover {
+  transform: scale(1) translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  transition-timing-function: ease-in-out;
+  transition: 200ms;
+  cursor: pointer;
 }
 
 .flohsenseAI-container img {
@@ -324,7 +339,7 @@
 .flohsenseAI-content {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   gap: 4px;
 }
 
