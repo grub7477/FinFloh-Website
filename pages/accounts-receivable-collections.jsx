@@ -349,21 +349,23 @@ const Collections = () => {
         />
 
         <div className="flohsenseAI-wrapper">
-          <div className="flohsenseAI-container-alt">
-            <img src="/images/fAI.svg" alt="FlohSense AI Logo" />
-            <div className="flohsenseAI-content">
-              <h4>FLOHSENSE AI AGENT</h4>
-              <p>
-                Auto-revert to customer queries and requests for invoices,
-                balances, ledger statements
-              </p>
+          <a href="/flohsense-ai-agent">
+            <div className="flohsenseAI-container-alt">
+              <img src="/images/fAI.svg" alt="FlohSense AI Logo" />
+              <div className="flohsenseAI-content">
+                <h4>FLOHSENSE AI AGENT</h4>
+                <p>
+                  Auto-revert to customer queries and requests for invoices,
+                  balances, ledger statements
+                </p>
+              </div>
+              <img
+                className="flohsense-arrow"
+                src="images/ArrowRight.svg"
+                alt="Right Icon"
+              ></img>
             </div>
-            <img
-              className="flohsense-arrow"
-              src="images/ArrowRight.svg"
-              alt="Right Icon"
-            ></img>
-          </div>
+          </a>
         </div>
         <div className="bg-container">
           <div className="container-main">

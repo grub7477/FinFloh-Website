@@ -251,18 +251,23 @@ const invoicetocash = () => {
 
                       {/* FlohSense AI Agent */}
                       {feature.flohsenseAI && (
-                        <div className="flohsenseAI-container" key={i}>
-                          <img src="/images/fAI.svg" alt="FlohSense AI Logo" />
-                          <div className="flohsenseAI-content">
-                            <h4>FLOHSENSE AI AGENT</h4>
-                            <p>{feature.flohsenseAI.description}</p>
+                        <a href="/flohsense-ai-agent">
+                          <div className="flohsenseAI-container" key={i}>
+                            <img
+                              src="/images/fAI.svg"
+                              alt="FlohSense AI Logo"
+                            />
+                            <div className="flohsenseAI-content">
+                              <h4>FLOHSENSE AI AGENT</h4>
+                              <p>{feature.flohsenseAI.description}</p>
+                            </div>
+                            <img
+                              className="flohsense-arrow"
+                              src="images/ArrowRight.svg"
+                              alt="Right Icon"
+                            ></img>
                           </div>
-                          <img
-                            className="flohsense-arrow"
-                            src="images/ArrowRight.svg"
-                            alt="Right Icon"
-                          ></img>
-                        </div>
+                        </a>
                       )}
                     </div>
 
