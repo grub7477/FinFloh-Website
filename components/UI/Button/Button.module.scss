@@ -1,3 +1,21 @@
 .btn {
-  color: aqua;
+  background-color: white;
+  text-align: center;
+  color: white;
+}
+
+.btn--primary {
+  background-color: green;
+}
+
+.btn--primary:hover {
+  color: green;
+}
+
+.btn--secondary {
+  color: greenyellow;
+}
+
+.btn--full {
+  width: 100%;
 }

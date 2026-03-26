@@ -1,34 +1,31 @@
 import React from "react";
 import style from "./Button.module.scss";
-import "./Button.module.scss";
 
-const Button = ({
-  children,
+const ButtonCommon = ({
+  label = "Placeholder",
+  href,
   variant = "primary",
+  fullWidth = false,
+  disabled = false,
   leftIcon,
   rightIcon,
-  disabled = false,
-  fullWidth = false,
-  href,
   target = "_self",
   onClick,
-  style = {},
 }) => {
   const classes = [
-    "btn",
-    `btn--${variant}`,
-    fullWidth && "btn--full",
-    disabled && "btn--disabled",
-    className,
+    style.btn,
+    style[`btn--${variant}`],
+    fullWidth && style["btn--full"],
+    disabled && style["btn--disabled"],
   ]
     .filter(Boolean)
     .join(" ");
 
   const content = (
     <>
-      {leftIcon && <span className="btn__icon">{leftIcon}</span>}
-      <span className="btn__text">{children}</span>
-      {rightIcon && <span className="btn__icon">{rightIcon}</span>}
+      {leftIcon && <span className={style["btn--icon"]}>{leftIcon}</span>}
+      <span className={style["btn--label"]}>{label}</span>
+      {rightIcon && <span className={style["btn--icon"]}>{rightIcon}</span>}
     </>
   );
 
@@ -39,7 +36,6 @@ const Button = ({
         target={target}
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
         className={classes}
-        style={style}
         onClick={disabled ? (e) => e.preventDefault() : onClick}
         aria-disabled={disabled}
       >
@@ -51,14 +47,13 @@ const Button = ({
   return (
     <button
       type="button"
-      className={variant}
+      className={classes}
       disabled={disabled}
       onClick={onClick}
-      style={style}
     >
       {content}
     </button>
   );
 };
 
-export default Button;
+export default ButtonCommon;

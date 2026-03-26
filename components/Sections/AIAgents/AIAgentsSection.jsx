@@ -2,8 +2,11 @@ import styles from "./AIAgentsSection.module.scss";
 import Lottie from "lottie-react";
 import aiAnimation from "../../../public/images/AIinFinFloh_v4.json";
 import { Button } from "react-bootstrap";
+import Buttons from "../../UI/Button/Button";
+import ButtonCommon from "../../UI/Button/Button";
+import { captureOwnerStack } from "react";
 
-const AIAgentsSection = () => {
+const AIAgentsSection = ({ cta = "/flohsense-ai-agent" }) => {
   return (
     <div className={`padding-block ${styles.sectionWrapper}`}>
       <div className={styles.headerWrapper}>
@@ -16,7 +19,10 @@ const AIAgentsSection = () => {
             outcomes to guide actions across the entire Order-to-Cash process.
           </p>
         </div>
-        <Button className="btn btn--disabled">Get Started</Button>
+
+        <ButtonCommon href={cta} rightIcon={"./images/rightarrow.svg"}>
+          Button
+        </ButtonCommon>
       </div>
       <div className={styles.animationWrapper}>
         <Lottie
