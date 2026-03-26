@@ -358,6 +358,11 @@ const Collections = () => {
                 balances, ledger statements
               </p>
             </div>
+            <img
+              className="flohsense-arrow"
+              src="images/ArrowRight.svg"
+              alt="Right Icon"
+            ></img>
           </div>
         </div>
         <div className="bg-container">

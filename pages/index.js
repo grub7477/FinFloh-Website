@@ -974,6 +974,11 @@ const FinFlohHome = () => {
                             <h4>FLOHSENSE AI AGENT</h4>
                             <p>{feature.flohsenseAI.description}</p>
                           </div>
+                          <img
+                            className="flohsense-arrow"
+                            src="images/ArrowRight.svg"
+                            alt="Right Icon"
+                          ></img>
                         </div>
                       )}
                     </div>

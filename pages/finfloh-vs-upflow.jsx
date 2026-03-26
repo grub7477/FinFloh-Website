@@ -404,16 +404,22 @@ const upflowAlternative = () => {
                           </table>
                         </div>
                         {set.flohsenseAI?.description && (
-                          <div className="flohsenseAI-container">
-                            <img
-                              src="/images/fAI.svg"
-                              alt="FlohSense AI Logo"
-                            />
-                            <div className="flohsenseAI-content">
-                              <h4>FLOHSENSE AI AGENT</h4>
-                              <p>{set.flohsenseAI.description}</p>
+                          <a href="/flohsense-ai-agent">
+                            <div className="flohsenseAI-container">
+                              <img
+                                src="/images/fAI.svg"
+                                alt="FlohSense AI Logo"
+                              />
+                              <div className="flohsenseAI-content">
+                                <h4>FLOHSENSE AI AGENT</h4>
+                                <p>{set.flohsenseAI.description}</p>
+                              </div>
+                              <img
+                                className="flohsense-arrow"
+                                src="images/ArrowRight.svg"
+                              ></img>
                             </div>
-                          </div>
+                          </a>
                         )}
                       </div>
 
