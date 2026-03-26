@@ -8,6 +8,7 @@ import "../styles/pe-icon-7-stroke.css";
 import "../node_modules/react-modal-video/css/modal-video.min.css";
 import "react-accessible-accordion/dist/fancy-example.css";
 import "react-image-lightbox/style.css";
+
 import "../styles/style.css";
 import "../styles/responsive.css";
 import "../styles/pcc.scss";
@@ -37,6 +38,18 @@ import "../styles/journal-entries.scss";
 import AnalyticsScripts from "../components/Scripts/AnalyticsScripts";
 import MarketingScripts from "../components/Scripts/MarketingScripts";
 import SupportScripts from "../components/Scripts/SupportScripts";
+
+// Foundation CSS
+import "../styles/foundation/_variables.scss";
+import "../styles/foundation/_typography.scss";
+import "../styles/foundation/_breakpoint.scss";
+import "../styles/foundation/_reset.scss";
+
+// Main CSS
+import "../styles/globals.scss"; // --> This is ideally styles.scss alternative replace with variables
+
+// UI components
+import "../components/UI/Button/Button.module.scss";
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {

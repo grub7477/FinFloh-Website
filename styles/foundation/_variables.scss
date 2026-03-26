@@ -1,0 +1,35 @@
+@use "../foundation/breakpoint" as b;
+
+// Global CSS
+:root {
+  // Colors
+  --bg-black: #090a09; //one time purpose color change when you get time
+
+  // Font Styles
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
+
+  //  Font Color
+  --font-color: #111827;
+  --font-color-inverse: #ffffff;
+  --font-color-inverse-80: #ffffffe0;
+
+  // Spacing
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-72: 72px;
+
+  .padding-block {
+    width: 100%;
+    padding-block: var(--spacing-24);
+
+    @include b.respond(desktop) {
+      padding-block: var(--spacing-72);
+    }
+  }
+
+  // Background based text change
+  .background-dark {
+    color: var(--font-color-inverse-80);
+  }
+}

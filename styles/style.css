@@ -126,7 +126,7 @@ section css
 body {
   padding: 0;
   margin: 0;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #2f3a35;
 }
@@ -143,11 +143,11 @@ h1 {
   text-transform: capitalize;
 }
 
-h2 {
+/* h2 {
   font-family: "Satoshi", sans-serif;
   color: #0c1612;
   font-weight: bold;
-}
+} */
 
 h3 {
   font-family: "Satoshi", sans-serif;
@@ -4902,14 +4902,20 @@ h-100 {
 
 @keyframes glow {
   0% {
-    box-shadow: 5px 5px 20px #ffffff79, -5px -5px 20px #ffffff79;
+    box-shadow:
+      5px 5px 20px #ffffff79,
+      -5px -5px 20px #ffffff79;
   }
 
   50% {
-    box-shadow: 5px 5px 20px #e22b26, -5px -5px 20px #e22b26;
+    box-shadow:
+      5px 5px 20px #e22b26,
+      -5px -5px 20px #e22b26;
   }
   100% {
-    box-shadow: 5px 5px 20px #ffffff79, -5px -5px 20px #ffffff79;
+    box-shadow:
+      5px 5px 20px #ffffff79,
+      -5px -5px 20px #ffffff79;
   }
 }
 

@@ -1,0 +1,21 @@
+h2 {
+  font-size: clamp(2rem, 3vw, 36px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+p {
+  font-size: clamp(1.5rem, 2.5vw, 16px);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+em {
+  background: linear-gradient(90deg, #ad5bff 0%, #ffd200 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+}

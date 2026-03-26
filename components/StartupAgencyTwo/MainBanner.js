@@ -75,12 +75,12 @@ const MainBanner = ({ utmURLs }) => {
 
   const sendEmailMain = (e) => {
     e.preventDefault();
-  
+
     // Always revalidate before submitting
     const isEmailNowValid = validateEmail(userEmail);
-  
+
     setIsValidEmail(isEmailNowValid);
-  
+
     if (!isEmailNowValid) {
       setErrorMsg("Please enter a valid business email.");
       return;
@@ -92,7 +92,7 @@ const MainBanner = ({ utmURLs }) => {
         "service_duwcr2b",
         "template_mf4qcim",
         mainForm.current,
-        "eYpYIaQsGFViF3_LO"
+        "eYpYIaQsGFViF3_LO",
       )
       .then(() => {
         setUserEmail(""); // Reset email input field
@@ -102,10 +102,12 @@ const MainBanner = ({ utmURLs }) => {
         router.push(
           homePage_bookDemo_header ||
             homePage_bookDemo_newsLetter ||
-            "/demo-request-successful"
+            "/demo-request-successful",
         );
       })
-      .catch(() => setErrorMsg("Failed to send email. Please try again later."));
+      .catch(() =>
+        setErrorMsg("Failed to send email. Please try again later."),
+      );
   };
 
   const handleEmailBlur = () => {
