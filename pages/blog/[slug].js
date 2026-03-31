@@ -1,9 +1,9 @@
 import axios from "axios";
+import Link from "next/link";
 import HeadComponent from "../../components/Common/HeadComponent";
 import WebsiteLayout from "../../components/Layouts/WebsiteLayout";
 import generateUtmUrls from "../../utils/utmUrls";
-import ProductArea, { PRODUCT } from "../../components/Common/ProductArea";
-import Newsletter from "../../components/Common/Newsletter";
+import { PRODUCT } from "../../components/Common/ProductArea";
 import { CategoryDate, parsePost } from ".";
 import { useEffect, useState } from "react";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
@@ -42,6 +42,55 @@ export const PRODUCT_INFO_MAP_blog = {
     url_otherProducts: utmURLs.automatedCashApplication_otherProducts,
   },
 };
+
+const BLOG_PRODUCTS_SIDEBAR_ORDER = [
+  PRODUCT.Integration,
+  PRODUCT.AIDrivenCollections,
+  PRODUCT.AutomatedCashApp,
+  PRODUCT.BuyerIntelligence,
+];
+
+const BlogProductsSidebar = () => (
+  <aside className="blog-products-sidebar" aria-label="FinFloh products">
+    <div className="blog-products-sidebar-card">
+      <header className="blog-products-sidebar-header">
+        <span className="blog-products-sidebar-eyebrow">Solutions</span>
+        <p className="blog-products-sidebar-lede">
+          Explore the FinFloh order-to-cash platform
+        </p>
+      </header>
+      <nav className="blog-products-sidebar-nav" aria-label="Product pages">
+        {BLOG_PRODUCTS_SIDEBAR_ORDER.map((key) => {
+          const info = PRODUCT_INFO_MAP_blog[key];
+          if (!info) return null;
+          return (
+            <Link key={key} href={info.url_navbar}>
+              <a className="blog-products-sidebar-link">
+                <span className="blog-products-sidebar-link-text">
+                  {info.title}
+                </span>
+                <span className="blog-products-sidebar-chevron" aria-hidden="true">
+                  ›
+                </span>
+              </a>
+            </Link>
+          );
+        })}
+      </nav>
+      <div className="blog-products-sidebar-highlight">
+        <Link href="/flohsense-ai-agent">
+          <a className="blog-products-sidebar-link blog-products-sidebar-link--flohsense">
+            <span className="blog-products-sidebar-link-text">FlohSense AI</span>
+            <span className="blog-products-sidebar-badge">New</span>
+            <span className="blog-products-sidebar-chevron" aria-hidden="true">
+              ›
+            </span>
+          </a>
+        </Link>
+      </div>
+    </div>
+  </aside>
+);
 
 const RelatedPost = ({ post }) => (
   <div className="related-post-container">
@@ -221,13 +270,14 @@ const Post = ({ post }) => {
               <img src={post?.imgURL} loading="lazy" alt="blog post finfloh" />
             </div>
           </div>
-          <div className="blog-imgAndContents">
-            <div
-              className="blog-post-content-all"
-              dangerouslySetInnerHTML={{
-                __html: rewriteContentUrls(post?.content),
-              }}
-            ></div>
+          <div className="blog-post-body-with-sidebar">
+            <div className="blog-imgAndContents">
+              <div
+                className="blog-post-content-all"
+                dangerouslySetInnerHTML={{
+                  __html: rewriteContentUrls(post?.content),
+                }}
+              ></div>
 
             <RelatedPosts posts={post?.relatedPosts} />
 
@@ -261,20 +311,10 @@ const Post = ({ post }) => {
               </div>
             </div>
           </div>
+            <BlogProductsSidebar />
+          </div>
         </div>
       </div>
-
-      {/* <Newsletter
-        heading="Subscribe to FinFloh's Blog"
-        text="Stay updated with the latest Invoice-to-Cash insights, best practices & trends"
-        type="blogSubscribe"
-      /> */}
-
-      {/* todo: Fix the product Area */}
-      <ProductArea
-        currentProduct={PRODUCT.blog}
-        PRODUCT_INFO_MAP={PRODUCT_INFO_MAP_blog}
-      />
       <NewNewsLetter
         heading="Subscribe to FinFloh's Blog"
         text="Stay updated with the latest Invoice-to-Cash insights, best practices & trends"
@@ -282,7 +322,6 @@ const Post = ({ post }) => {
     </WebsiteLayout>
   );
 };
-
 export async function getServerSideProps({ req, query }) {
   const { data: post } = await axios.get(
     `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/posts?slug=${query.slug}`,
