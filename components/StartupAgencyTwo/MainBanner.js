@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import emailjs from "@emailjs/browser";
 import Marquee from "../Common/Marque";
 import { validateBusinessEmail } from "../../utils/emailValidation";
+import CompaniesLogo from "../Common/CompaniesLogo";
 
 const INVOICE_TYPE = [
   {
@@ -154,8 +155,8 @@ const MainBanner = ({ utmURLs }) => {
               Quicker Recon.
             </p>
             <p className="lending-description">
-              Autonomous Order-to-Cash with AI Agents <br /> that think & act
-              like your finance team
+              Autonomous Order-to-Cash with AI Agents that think & act like your
+              finance team
             </p>
           </div>
 
@@ -219,7 +220,11 @@ const MainBanner = ({ utmURLs }) => {
             </form>
           </>
         </div>
-
+        <div className="book-a-demo-container bg-container">
+          <div className="container-main EnterpriseIcons">
+            <CompaniesLogo />
+          </div>
+        </div>
         {/* <p className="video-link">
           Why FinFloh?{" "}
           <a
@@ -236,7 +241,7 @@ const MainBanner = ({ utmURLs }) => {
             Check our video
           </a>{" "}
         </p> */}
-        <div className="container-main">
+        {/* <div className="container-main">
           <div className="capsule-container">
             {INVOICE_TYPE?.map((item, index) => (
               <div key={index} className="invoice-type">
@@ -245,7 +250,7 @@ const MainBanner = ({ utmURLs }) => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

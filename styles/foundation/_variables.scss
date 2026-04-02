@@ -2,22 +2,97 @@
 
 // Global CSS
 :root {
-  // Colors
-  --bg-black: #090a09; //one time purpose color change when you get time
+  // ------------------ //
+  // Primitive Colors
+  // ------------------ //
+
+  // Neutrals
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  // Green
+  --color-green-500: #00954a; //Brand Color
+
+  // Grey
+  --color-grey-900: #111827;
+
+  // Alpha Colors
+  --color-white-16: #ffffff26;
 
   // Font Styles
-  --font-family: "Inter", system-ui, -apple-system, sans-serif;
-
-  //  Font Color
-  --font-color: #111827;
-  --font-color-inverse: #ffffff;
-  --font-color-inverse-80: #ffffffe0;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 
   // Spacing
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
   --spacing-16: 16px;
   --spacing-20: 20px;
   --spacing-24: 24px;
+  --spacing-48: 48px;
   --spacing-72: 72px;
+
+  // Border Radius
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+
+  // ------------------ //
+  // Semantic Colors
+  // ------------------ //
+
+  // Font
+  --family-primary: var(--font-sans);
+  --family-code: var(--font-mono);
+
+  // Surface Colors
+  --surface-white: var(--color-white);
+  --surface-inverse-hover: var(--color-white-16);
+  --bg-black-90: var(--black-90);
+
+  // Icon Color
+  --icon-primary-color-: var(--grey-900);
+  --icon-inverse-color: var(--color-white);
+
+  //  Font Color
+  --font-primary-color: var(--grey-900);
+  --font-inverse-color: var(--color-white);
+  --font-inverse-color-80: #ffffffbd;
+
+  // Outline Color
+  --outline-primary: #111827;
+  --outline-inverse: #ffffff;
+
+  // Padding block for sections
+  --padding-sm: var(--spacing-12);
+  --padding-md: var(--spacing-24);
+  --padding-lg: var(--spacing-48);
+  --padding-2xl: var(--spacing-72);
+
+  // Border Radius
+  --radius-xsm: var(--radius-4);
+  --radius-sm: var(--radius-8);
+  --radius-md: var(--radius-12);
+
+  // Gap
+  --gap-xsm: var(--spacing-4);
+  --gap-sm: var(--spacing-8);
+  --gap-md: var(--spacing-12);
+  --gap-lg: var(--spacing-16);
+  --gap-xl: var(--spacing-24);
+
+  // gradient
+  --gradient-primary: linear-gradient(90deg, #ad5bff 0%, #ffd200 100%);
+  --gradient-01: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.12) 1.69%,
+    rgba(142, 41, 225, 0.12) 20.78%,
+    rgba(255, 210, 0, 0.12) 79.93%,
+    rgba(153, 153, 153, 0.12) 98.55%
+  );
+
+  // padding block for sections
 
   .padding-block {
     width: 100%;
@@ -28,8 +103,6 @@
     }
   }
 
-  // Background based text change
-  .background-dark {
-    color: var(--font-color-inverse-80);
-  }
+  // Colors
+  --black-90: #090a09; //one time purpose color change when you get time
 }

@@ -1,38 +1,37 @@
 import styles from "./AIAgentsSection.module.scss";
 import Lottie from "lottie-react";
 import aiAnimation from "../../../public/images/AIinFinFloh_v4.json";
-import { Button } from "react-bootstrap";
-import Buttons from "../../UI/Button/Button";
+import ArrowRight from "../../../public/icons/arrow_right.svg";
 import ButtonCommon from "../../UI/Button/Button";
-import { captureOwnerStack } from "react";
 
-const AIAgentsSection = ({ cta = "/flohsense-ai-agent" }) => {
+const AIAgentsSection = () => {
   return (
-    <div className={`padding-block ${styles.sectionWrapper}`}>
-      <div className={styles.headerWrapper}>
-        <div className={styles.headerWrapper__content}>
-          <h2>
-            <em>One Intelligence</em> Layer Across the O2C Journey
-          </h2>
-          <p className="background-dark">
-            FlohSense AI continuously analyzes financial signals, behaviors, and
-            outcomes to guide actions across the entire Order-to-Cash process.
-          </p>
-        </div>
+    <section className="section section--dark">
+      <div className="container stack">
+        <h2 className="stack--center text-inverse">
+          <em>One Intelligence </em> Layer Across th&nbsp;O2C&nbsp;Journey
+        </h2>
 
-        <ButtonCommon href={cta} rightIcon={"./images/rightarrow.svg"}>
-          Button
-        </ButtonCommon>
+        <div className={styles.aIAgentsSection__animation}>
+          <Lottie animationData={aiAnimation} loop={true} autoplay={true} />
+        </div>
+        <a className={styles.aIAgentsSection__card} href="/flohsense-ai-agent">
+          <div className={styles.aIAgentsSection__content}>
+            <h3>FlohSense AI Agent</h3>
+            <p>
+              FlohSense AI continuously analyzes financial signals, behaviors,
+              and outcomes to guide actions across the entire Order-to-Cash
+              process.
+            </p>
+            <ButtonCommon
+              label="Explore FlohSense AI"
+              endIcon={<ArrowRight />}
+              variant="outline"
+            ></ButtonCommon>
+          </div>
+        </a>
       </div>
-      <div className={styles.animationWrapper}>
-        <Lottie
-          animationData={aiAnimation}
-          loop={true}
-          autoplay={true}
-          style={{ width: "100%", height: "auto" }}
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 

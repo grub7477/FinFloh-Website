@@ -480,9 +480,9 @@
 /* Common styles for all screens */
 .logos {
   overflow: hidden;
-  background: white;
+
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 48px;
 }
 
 .logos-slide {
@@ -518,12 +518,12 @@
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #e8f8ee);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #e9f8ee);
 }
 
 /* Adjust animation speed on mobile screens */
@@ -537,7 +537,7 @@
   }
   .logos {
     overflow: hidden;
-    background: white;
+
     position: relative;
     margin-bottom: 50px;
     margin-top: 50px;

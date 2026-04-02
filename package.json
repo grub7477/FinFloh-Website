@@ -34,5 +34,8 @@
         "sass": "^1.43.4",
         "sweetalert2": "^11.1.10",
         "sweetalert2-react-content": "^4.2.0"
+    },
+    "devDependencies": {
+        "@svgr/webpack": "^8.1.0"
     }
 }

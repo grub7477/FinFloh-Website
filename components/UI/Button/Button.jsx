@@ -2,37 +2,39 @@ import React from "react";
 import style from "./Button.module.scss";
 
 const ButtonCommon = ({
-  label = "Placeholder",
-  href,
+  target = "_self",
+  label = "",
+  href = "",
   variant = "primary",
   fullWidth = false,
   disabled = false,
-  leftIcon,
-  rightIcon,
-  target = "_self",
-  onClick,
+  Inverse = false,
+  startIcon,
+  endIcon,
+  onClick = () => {},
 }) => {
   const classes = [
     style.btn,
     style[`btn--${variant}`],
     fullWidth && style["btn--full"],
     disabled && style["btn--disabled"],
+    Inverse && style["btn--inverse"],
   ]
     .filter(Boolean)
     .join(" ");
 
   const content = (
     <>
-      {leftIcon && <span className={style["btn--icon"]}>{leftIcon}</span>}
-      <span className={style["btn--label"]}>{label}</span>
-      {rightIcon && <span className={style["btn--icon"]}>{rightIcon}</span>}
+      {startIcon && <span className={style["btn__icon"]}>{startIcon}</span>}
+      <span className={style["btn__label"]}>{label}</span>
+      {endIcon && <span className={style["btn__icon"]}>{endIcon}</span>}
     </>
   );
 
   if (href) {
     return (
       <a
-        href={disabled ? undefined : href}
+        href={href}
         target={target}
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
         className={classes}

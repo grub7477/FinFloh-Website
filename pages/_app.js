@@ -39,12 +39,6 @@ import AnalyticsScripts from "../components/Scripts/AnalyticsScripts";
 import MarketingScripts from "../components/Scripts/MarketingScripts";
 import SupportScripts from "../components/Scripts/SupportScripts";
 
-// Foundation CSS
-import "../styles/foundation/_variables.scss";
-import "../styles/foundation/_typography.scss";
-import "../styles/foundation/_breakpoint.scss";
-import "../styles/foundation/_reset.scss";
-
 // Main CSS
 import "../styles/globals.scss"; // --> This is ideally styles.scss alternative replace with variables
 

@@ -1,21 +1,50 @@
 .btn {
-  background-color: white;
-  text-align: center;
-  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: fit-content;
+  width: inherit;
+  gap: var(--gap-sm);
+  border-radius: var(--radius-xsm);
+  white-space: nowrap;
+
+  .btn__label {
+    font-size: clamp(0.95rem, 0.7rem + 0.3vw, 1.2rem);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--font-inverse-color);
+  }
+
+  .btn__icon {
+    width: 20px;
+    height: 20px;
+    color: var(--icon-inverse-color);
+  }
 }
 
-.btn--primary {
-  background-color: green;
+.btn--outline {
+  padding: var(--padding-sm) var(--padding-md);
+  border: 1px solid var(--outline-inverse);
+
+  &:hover {
+    background-color: var(--surface-inverse-hover);
+    transition: 400ms ease-in-out;
+  }
 }
 
-.btn--primary:hover {
-  color: green;
-}
+.btn--link {
+  background: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+  gap: 0;
 
-.btn--secondary {
-  color: greenyellow;
-}
+  .btn__label {
+    color: var(--font-primary-color);
+  }
 
-.btn--full {
-  width: 100%;
+  .btn__icon {
+    color: var(--icon-primary-color);
+  }
 }
