@@ -19,6 +19,7 @@ h6,
 p {
   font-family: var(--family-primary);
   color: var(--font-primary-color);
+  text-align: inherit;
 }
 
 // How to use Clamp:
@@ -27,6 +28,12 @@ p {
 //   base + viewport influence,
 //   max size
 // )
+
+h1 {
+  font-size: clamp(2.25rem, 1.6rem + 1vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
 
 h2 {
   font-size: clamp(2rem, 1.6rem + 1vw, 2.25rem);
@@ -41,10 +48,11 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.025rem);
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
   font-weight: 400;
   line-height: 1.6;
   margin: 0;
+  max-width: 680px;
 }
 
 em {
@@ -57,6 +65,22 @@ em {
   color: transparent;
 }
 
+// Semantic Tokens
+.heading__md {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn__label {
+  font-size: clamp(0.95rem, 0.7rem + 0.3vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
 .text-inverse {
   color: var(--font-inverse-color);
+}
+
+.text-muted {
+  color: var(--font-secondary-color);
 }

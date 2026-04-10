@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Button.module.scss";
-
 const ButtonCommon = ({
   target = "_self",
   label = "",
   href = "",
   variant = "primary",
+  color = "",
   fullWidth = false,
   disabled = false,
   Inverse = false,
@@ -26,7 +26,7 @@ const ButtonCommon = ({
   const content = (
     <>
       {startIcon && <span className={style["btn__icon"]}>{startIcon}</span>}
-      <span className={style["btn__label"]}>{label}</span>
+      <span className={"btn__label"}>{label}</span>
       {endIcon && <span className={style["btn__icon"]}>{endIcon}</span>}
     </>
   );

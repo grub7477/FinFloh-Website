@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 import Marquee from "../Common/Marque";
 import { validateBusinessEmail } from "../../utils/emailValidation";
 import CompaniesLogo from "../Common/CompaniesLogo";
+import ButtonCommon from "../UI/Button/Button";
+import Play from "../../public/icons/play.svg";
 
 const INVOICE_TYPE = [
   {
@@ -219,6 +221,12 @@ const MainBanner = ({ utmURLs }) => {
               </button>
             </form>
           </>
+          <ButtonCommon
+            label="Explore Product Demo"
+            href="/explore-product"
+            startIcon={<Play />}
+            variant="link"
+          ></ButtonCommon>
         </div>
         <div className="book-a-demo-container bg-container">
           <div className="container-main EnterpriseIcons">
