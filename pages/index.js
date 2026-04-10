@@ -874,7 +874,7 @@ const FinFlohHome = () => {
           </div>
         </div> */}
         {/* section 5 ->> Demo Video Section, dashboard walkthrough video */}
-        <div className="bg-container" style={{ margin: "120px 0px" }}>
+        {/* <div className="bg-container" style={{ margin: "120px 0px" }}>
           <div className="video-wrapper container-main">
             <div className="video-container">
               <div className="iframe-wrapper">
@@ -890,7 +890,7 @@ const FinFlohHome = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div
           className="sec-bg align-c animation-header"
           style={{ padding: "80px 0px" }}
@@ -926,7 +926,7 @@ const FinFlohHome = () => {
         </div>
         */}
         {/* section 6 ->> New simple features component */}
-        <div className="bg-container">
+        <div className="section bg-container">
           <div className="container-main">
             <div className="features-heading">
               <h2
