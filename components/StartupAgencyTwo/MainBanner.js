@@ -4,6 +4,9 @@ import dynamic from "next/dynamic";
 import emailjs from "@emailjs/browser";
 import Marquee from "../Common/Marque";
 import { validateBusinessEmail } from "../../utils/emailValidation";
+import CompaniesLogo from "../Common/CompaniesLogo";
+import ButtonCommon from "../UI/Button/Button";
+import Play from "../../public/icons/play.svg";
 
 const INVOICE_TYPE = [
   {
@@ -75,12 +78,12 @@ const MainBanner = ({ utmURLs }) => {
 
   const sendEmailMain = (e) => {
     e.preventDefault();
-  
+
     // Always revalidate before submitting
     const isEmailNowValid = validateEmail(userEmail);
-  
+
     setIsValidEmail(isEmailNowValid);
-  
+
     if (!isEmailNowValid) {
       setErrorMsg("Please enter a valid business email.");
       return;
@@ -92,7 +95,7 @@ const MainBanner = ({ utmURLs }) => {
         "service_duwcr2b",
         "template_mf4qcim",
         mainForm.current,
-        "eYpYIaQsGFViF3_LO"
+        "eYpYIaQsGFViF3_LO",
       )
       .then(() => {
         setUserEmail(""); // Reset email input field
@@ -102,10 +105,12 @@ const MainBanner = ({ utmURLs }) => {
         router.push(
           homePage_bookDemo_header ||
             homePage_bookDemo_newsLetter ||
-            "/demo-request-successful"
+            "/demo-request-successful",
         );
       })
-      .catch(() => setErrorMsg("Failed to send email. Please try again later."));
+      .catch(() =>
+        setErrorMsg("Failed to send email. Please try again later."),
+      );
   };
 
   const handleEmailBlur = () => {
@@ -152,8 +157,8 @@ const MainBanner = ({ utmURLs }) => {
               Quicker Recon.
             </p>
             <p className="lending-description">
-              Autonomous Order-to-Cash with AI Agents <br /> that think & act
-              like your finance team
+              Autonomous Order-to-Cash with AI Agents that think & act like your
+              finance team
             </p>
           </div>
 
@@ -216,8 +221,18 @@ const MainBanner = ({ utmURLs }) => {
               </button>
             </form>
           </>
+          <ButtonCommon
+            label="Explore Product Demo"
+            href="/explore-product"
+            startIcon={<Play />}
+            variant="link"
+          ></ButtonCommon>
         </div>
-
+        <div className="book-a-demo-container bg-container">
+          <div className="container-main EnterpriseIcons">
+            <CompaniesLogo />
+          </div>
+        </div>
         {/* <p className="video-link">
           Why FinFloh?{" "}
           <a
@@ -234,7 +249,7 @@ const MainBanner = ({ utmURLs }) => {
             Check our video
           </a>{" "}
         </p> */}
-        <div className="container-main">
+        {/* <div className="container-main">
           <div className="capsule-container">
             {INVOICE_TYPE?.map((item, index) => (
               <div key={index} className="invoice-type">
@@ -243,7 +258,7 @@ const MainBanner = ({ utmURLs }) => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

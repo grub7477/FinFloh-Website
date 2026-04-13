@@ -1,0 +1,44 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  padding: var(--padding-sm) var(--padding-md);
+  gap: var(--gap-sm);
+  border-radius: var(--radius-xs);
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.btn--primary {
+  background-color: green;
+  color: white;
+}
+
+.btn--outline {
+  border: 1px solid var(--stroke-primary-color);
+
+  &:hover {
+    background-color: var(--surface-inverse-hover);
+    transition: 400ms ease-in-out;
+  }
+}
+
+.btn--link {
+  background: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+// Color Modifier
+.btn--inverse {
+  color: white;
+  border: 1.5px solid var(--stroke-inverse-color);
+}

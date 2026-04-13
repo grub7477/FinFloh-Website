@@ -1,0 +1,140 @@
+@use "../foundation/breakpoint" as b;
+
+// Global CSS
+:root {
+  // ------------------ //
+  // Primitive Colors
+  // ------------------ //
+
+  // Neutrals
+  --white: #ffffff;
+
+  // Green
+  --green-500: #00954a; //Brand Color
+
+  // Grey
+  --grey-100: #f3f4f6;
+  --grey-200: #e5e7eb;
+  --grey-500: #6b7280;
+  --grey-700: #4f5667;
+  --grey-900: #111827;
+
+  // Alpha Colors
+  --white-16: #ffffff26;
+  --white-20: #ffffff33;
+  --white-80: #ffffffcc;
+
+  // Brand Color
+  --brand-color: var(--color-green-500);
+
+  // ------------------ //
+  // Font
+  // ------------------ //
+
+  // Font Styles
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  // Font
+  --family-primary: var(--font-sans);
+  --family-code: var(--font-mono);
+
+  // Font Color
+  --font-primary-color: var(--grey-900);
+  --font-secondary-color: var(--grey-700);
+  --font-inverse-color: var(--white);
+  --font-inverse-color-alpha: var(--white-80);
+  --font-brand-color: var(--brand-color);
+
+  // ------------------ //
+  // Background Color
+  // ------------------ //
+
+  // Surface Colors
+  --surface-primary: var(--color-green-500);
+  --surface-white: var(--color-white);
+  --surface-hover: var(--color-grey-100);
+  --surface-inverse-hover: var(--white-16);
+  --bg-black-90: var(--black-90);
+
+  // gradient
+  --gradient-primary: linear-gradient(90deg, #ad5bff 0%, #ffd200 100%);
+  --gradient-01: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.12) 1.69%,
+    rgba(142, 41, 225, 0.12) 20.78%,
+    rgba(255, 210, 0, 0.12) 79.93%,
+    rgba(153, 153, 153, 0.12) 98.55%
+  );
+  --off-White-gradient: linear-gradient(
+    360deg,
+    #f3f4f6 -0.16%,
+    #ffffff 100.19%
+  );
+  --off-green-gradient: linear-gradient(
+    360deg,
+    #a1e8bb -0.16%,
+    #ffffff 100.19%
+  );
+
+  // ------------------ //
+  // Spacing
+  // ------------------ //
+
+  // Padding block for sections
+  --padding-sm: var(--spacing-12);
+  --padding-md: var(--spacing-24);
+  --padding-lg: var(--spacing-40);
+  --padding-xl: var(--spacing-48);
+  --padding-2xl: var(--spacing-72);
+
+  // Border Radius
+  --radius-xs: var(--radius-4);
+  --radius-sm: var(--radius-8);
+  --radius-md: var(--radius-12);
+
+  // Gap
+  --gap-xs: var(--spacing-4);
+  --gap-sm: var(--spacing-8);
+  --gap-md: var(--spacing-16);
+  --gap-lg: var(--spacing-24);
+  --gap-xl: var(--spacing-48);
+
+  // Spacing
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-72: 72px;
+  --spacing-120: 120px;
+
+  // Border Radius
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+
+  // Icon Color
+  --icon-primary-color-: var(--grey-900);
+  --icon-inverse-color: var(--white);
+
+  // Outline Color
+  --stroke-primary-color: var(--grey-200);
+  --stroke-inverse-color: var(--white);
+
+  // Box Shadow
+  --shadow--default: 0px 4px 30px rgba(255, 255, 255, 0.1);
+
+  //sections
+  .padding-block {
+    width: 100%;
+    padding-block: var(--spacing-24);
+    @include b.respond(desktop) {
+      padding-block: var(--spacing-72);
+    }
+  } // Colors
+  --black-90: #090a09; //one time purpose color change when you get time
+}

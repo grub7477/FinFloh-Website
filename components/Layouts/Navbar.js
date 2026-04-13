@@ -80,131 +80,7 @@ const Navbar = (props) => {
             </a>
           </Link>
           <ul className="dropdown-menu dropdown-menu1">
-            {/* <div className="products-dropdown">
-              <div className="products-dropdown-left">
-                <div className="products-dropdown-left-heading">
-                  Get Paid Faster
-                </div>
-                <Link href="/products/credit-decisioning-ai">
-                  <a>
-                    <div className="products-dropdown-left-content">
-                      <div className="products-dropdown-left-icon">
-                        <img src="/images/file_export.svg" />
-                      </div>
-                      <div className="products-dropdown-left-content-main">
-                        <div className="products-dropdown-left-title">
-                          Invoice Verification & Delivery
-                        </div>
-                        <div className="products-dropdown-left-subtitle">
-                          Auto verify invoices & deliver
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </Link>
-
-                <div className="products-dropdown-left-content">
-                  <div className="products-dropdown-left-icon">
-                    <img src="/images/attach_email.svg" />
-                  </div>
-                  <div className="products-dropdown-left-content-main">
-                    <div className="products-dropdown-left-title">
-                      Invoice Verification & Delivery
-                    </div>
-                    <div className="products-dropdown-left-subtitle">
-                      Auto verify invoices & deliver
-                    </div>
-                  </div>
-                </div>
-                <div className="products-dropdown-left-content">
-                  <div className="products-dropdown-left-icon">
-                    <img src="/images/quick_phrases.svg" />
-                  </div>
-                  <div className="products-dropdown-left-content-main">
-                    <div className="products-dropdown-left-title">
-                      Invoice Verification & Delivery
-                    </div>
-                    <div className="products-dropdown-left-subtitle">
-                      Auto verify invoices & deliver
-                    </div>
-                  </div>
-                </div>
-                <div className="products-dropdown-left-content">
-                  <div className="products-dropdown-left-icon">
-                    <img src="/images/credit_score.svg" />
-                  </div>
-                  <div className="products-dropdown-left-content-main">
-                    <div className="products-dropdown-left-title">
-                      Invoice Verification & Delivery
-                    </div>
-                    <div className="products-dropdown-left-subtitle">
-                      Auto verify invoices & deliver
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="products-dropdown-right">
-                <div>
-                  <div className="products-dropdown-left-heading">
-                    Make Better Decisions
-                  </div>
-                  <div className="products-dropdown-right-content">
-                    <div className="products-dropdown-left-icon">
-                      <img src="/images/file_export.svg" />
-                    </div>
-                    <div className="products-dropdown-left-content-main">
-                      <div className="products-dropdown-left-title">
-                        Invoice Verification & Delivery
-                      </div>
-                      <div className="products-dropdown-left-subtitle">
-                        Auto verify invoices & deliver
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="products-dropdown-left-heading">
-                    Integrate with Ease
-                  </div>
-                  <div className="products-dropdown-right-content">
-                    <div className="products-dropdown-left-icon">
-                      <img src="/images/file_export.svg" />
-                    </div>
-                    <div className="products-dropdown-left-content-main">
-                      <div className="products-dropdown-left-title">
-                        Invoice Verification & Delivery
-                      </div>
-                      <div className="products-dropdown-left-subtitle">
-                        Auto verify invoices & deliver
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="products-dropdown-right-content-para">
-                  Still not sure on what product is best for your businesss
-                  contact our <span>customer support</span>
-                </div>
-              </div>
-            </div> */}
             <ProductsDropdown />
-            {/* {Object.values(PRODUCT).map((product) => {
-              return (
-                <li key={product}>
-                  <Link
-                    href={
-                      PRODUCT_INFO_MAP_url[product]?.url_navbar ||
-                      PRODUCT_INFO_MAP[product]?.url
-                    }
-                    activeClassName="active"
-                  >
-                    <a className="nav-link">
-                      {PRODUCT_INFO_MAP[product].title}
-                    </a>
-                  </Link>
-                </li>
-              );
-            })} */}
           </ul>
         </li>
 
@@ -232,29 +108,6 @@ const Navbar = (props) => {
           </Link>
 
           <ul className="dropdown-menu dropdown-menu1">
-            {/* <li>
-              <a className="nav-link" href="/blog" onClick={props.onClickClose}>
-                Blog
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link"
-                href="/roi-calculator"
-                onClick={props.onClickClose}
-              >
-                ROI Calculator
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link"
-                href="/podcast"
-                onClick={props.onClickClose}
-              >
-                Podcast
-              </a>
-            </li> */}
             <ResourcesDropdown />
           </ul>
         </li>
@@ -368,7 +221,7 @@ const Navbar = (props) => {
         //     target="_blank"
         //   >
         //     <div className="banner-middle">
-              
+
         //       <p className="banner-middle-title">
         //       FinFloh is now the Most Trending Accounts Receivable Automation Software on G2
         //       </p>
@@ -534,7 +387,7 @@ const Navbar = (props) => {
                         Try For Free
                       </LinkButton>
                     )}
-                    {noNavbar && (
+                    {/* {noNavbar && (
                       <div className="try-for-free-btn">
                         <LinkButton
                           href={
@@ -548,7 +401,7 @@ const Navbar = (props) => {
                           Try For Free
                         </LinkButton>
                       </div>
-                    )}
+                    )} */}
                     <LinkButton
                       type={LinkBtnType.SECONDARY}
                       theme={!isScrolled ? props.theme : "Light"}

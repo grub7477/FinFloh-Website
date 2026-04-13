@@ -1,0 +1,46 @@
+// Remove all margins/padding
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// HTML & Body Normilasation
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+}
+
+// Media Elements
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Form Elements
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Links Reset
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Button Reset
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

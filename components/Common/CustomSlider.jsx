@@ -17,7 +17,6 @@ const CustomSlider = ({ min, max, step, value, onChange, label, unit }) => {
         value={value}
         onChange={handleChange}
       />
-     
     </div>
   );
 };

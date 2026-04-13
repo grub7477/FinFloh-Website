@@ -16,6 +16,7 @@ import CommonButton from "../components/Common/CommonButton";
 import { podcastData } from "../data/podcastData";
 import PodcastSlider from "../components/Common/PodcastSlider.jsx";
 import NewNewsLetter from "../components/Common/NewNewsLetter";
+import AIAgentsSection from "../components/Sections/AIAgents/AIAgentsSection";
 const utmURLs = generatehomeUtmUrls("homepage");
 export const PRODUCT_INFO_MAP_homePage = {
   [PRODUCT.Integration]: {
@@ -699,19 +700,15 @@ const FinFlohHome = () => {
       >
         {/* section 1 ->> main banner */}
         <MainBanner handleFn={handleButtonClick} utmURLs={utmURLs} />
-
         {/* section 2 ->> companies logo */}
-        <div
-          className="book-a-demo-container bg-container"
-          style={{ marginTop: "86px" }}
-        >
+        {/* <div className="book-a-demo-container bg-container">
           <div className="container-main EnterpriseIcons">
             <CompaniesLogo />
           </div>
-        </div>
-
+        </div> */}
         {/* section 2 ->> Invoice-to-Cash Journey section */}
-        <div
+        <AIAgentsSection />
+        {/* <div
           className="bg-container"
           style={{
             marginTop: "86px",
@@ -748,8 +745,7 @@ const FinFlohHome = () => {
               />
             </div>
           </div>
-        </div>
-
+        </div> */}
         {/* section 3 ->> new section added */}
         {/* <div className="bg-container" style={{ background: "#F6F7F2" }}>
           <div
@@ -831,7 +827,6 @@ const FinFlohHome = () => {
             </div>
           </div>
         </div> */}
-
         {/* section 4 ->> Accounts Receivable Management*/}
         {/* <div className="bg-container" style={{ background: "#F6F7F2" }}>
           <div
@@ -878,9 +873,8 @@ const FinFlohHome = () => {
             </div>
           </div>
         </div> */}
-
         {/* section 5 ->> Demo Video Section, dashboard walkthrough video */}
-        <div className="bg-container" style={{ margin: "120px 0px" }}>
+        {/* <div className="bg-container" style={{ margin: "120px 0px" }}>
           <div className="video-wrapper container-main">
             <div className="video-container">
               <div className="iframe-wrapper">
@@ -896,8 +890,7 @@ const FinFlohHome = () => {
               </div>
             </div>
           </div>
-        </div>
-
+        </div> */}
         {/* <div
           className="sec-bg align-c animation-header"
           style={{ padding: "80px 0px" }}
@@ -909,7 +902,6 @@ const FinFlohHome = () => {
             </span>
           </div>
         </div> */}
-
         {/* Commented out dynamic features component
         <div id="component">
           {VERIFICATION_CONTENT.map((data, index) => (
@@ -933,9 +925,8 @@ const FinFlohHome = () => {
           ))}
         </div>
         */}
-
         {/* section 6 ->> New simple features component */}
-        <div className="bg-container">
+        <div className="section bg-container">
           <div className="container-main">
             <div className="features-heading">
               <h2
@@ -1010,7 +1001,6 @@ const FinFlohHome = () => {
             </div>
           </div>
         </div>
-
         {/* section 7 New ->> Get Paid Faster with FinFloh */}
         <div
           className="bg-container"
@@ -1056,7 +1046,6 @@ const FinFlohHome = () => {
             />
           </div>
         </div> */}
-
         {/* section 8 ->>  Why Top Businesses Trust FinFloh, awards section */}
         <div
           className="bg-container second-fold"
@@ -1077,7 +1066,6 @@ const FinFlohHome = () => {
             <PodcastSlider podcastData={podcastData} />
           </div>
         </div>
-
         {/* section 9 ->> Integrate with your ERP/Accounting Software, Payments, CRM, Communications & other tools in just a few simple steps */}
         <section
           className="pt-100 grey_bg w-100 min-h100vh"
@@ -1135,7 +1123,6 @@ const FinFlohHome = () => {
             />
           </div>
         </section>
-
         {/* section 10 ->> Your data is secure with us */}
         <div
           className="bg-container"
@@ -1176,10 +1163,8 @@ const FinFlohHome = () => {
             </div>
           </div>
         </div>
-
         {/* section 11 ->> FAQ section */}
         <FaqContent />
-
         {/* section 12 ->> Newsletter */}
         <NewNewsLetter
           type="email"
@@ -1190,7 +1175,6 @@ const FinFlohHome = () => {
             "Talk to our finance experts and begin your AR transformation journey today"
           }
         />
-
         {success && <ThanksPopup open={success} handleClose={handelclosefn} />}
       </WebsiteLayout>
     </>

@@ -1,0 +1,86 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: var(--family-primary);
+  color: var(--font-primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--family-primary);
+  color: var(--font-primary-color);
+  text-align: inherit;
+}
+
+// How to use Clamp:
+// clamp(
+//   base size,
+//   base + viewport influence,
+//   max size
+// )
+
+h1 {
+  font-size: clamp(2.25rem, 1.6rem + 1vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: clamp(2rem, 1.6rem + 1vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.25rem + 0.6vw, 1.75rem);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+p {
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 680px;
+}
+
+em {
+  background: linear-gradient(90deg, #ad5bff 0%, #ffd200 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+}
+
+// Semantic Tokens
+.heading__md {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn__label {
+  font-size: clamp(0.95rem, 0.7rem + 0.3vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.text-inverse {
+  color: var(--font-inverse-color);
+}
+
+.text-muted {
+  color: var(--font-secondary-color);
+}

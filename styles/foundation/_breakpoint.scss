@@ -1,0 +1,14 @@
+@use "sass:map";
+
+$breakpoint: (
+  sm: 768px,
+  // tablet
+  md: 1024px,
+  lg: 1280px,
+);
+
+@mixin respond($point) {
+  @media (min-width: map.get($breakpoint,$point)) {
+    @content;
+  }
+}

@@ -851,7 +851,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  margin: 24px;
 }
 
 .lending-title-container {
@@ -936,6 +935,7 @@
   padding: 12px 24px;
   border: none;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 // .lending-title {
@@ -961,6 +961,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 180%; /* 32.4px */
+  max-width: 400px;
 }
 
 .newBook-demo-mobile {
@@ -1176,10 +1177,7 @@
   border-radius: 8px;
   background: #fff;
 }
-.testimonial_arrow_left:hover,
-.testimonial_arrow_right:hover {
-  // background-color: #f6f7f2;
-}
+
 .testimonial_slide_active {
   display: flex;
   justify-content: center;
