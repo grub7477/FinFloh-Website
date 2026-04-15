@@ -128,7 +128,7 @@ margin: 0px;
 .about-calculate-container {
   display: flex;
   gap: 24px;
-  margin: 48px;
+  margin-bottom: 48px;
   padding: 48px;
   border-radius: 8px;
   justify-content: space-between;
@@ -139,7 +139,7 @@ margin: 0px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 714px;
+  max-width: 600px;
   width: 100%;
 }
 .about-calculate-heading {
