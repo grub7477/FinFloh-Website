@@ -169,12 +169,13 @@ section {
   width: 20px;
   height: 100%;
 }
-.icon--dark {
-  color: var(--grey-700);
+
+.icon--lg{
+  width: 36px;
 }
-.icon--dark {
-  color: var(--white);
-}
+
+.icon--dark {color: var(--grey-700);}
+.icon--dark {color: var(--white);}
 
 .card-wrapper {
   display: grid;

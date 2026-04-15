@@ -7,6 +7,7 @@ import { PRODUCT } from "../../components/Common/ProductArea";
 import { CategoryDate, parsePost } from ".";
 import { useEffect, useState } from "react";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
+import ProductSidebar from "../../components/Sections/ProductSidebar/productSidebar";
 
 const utmURLs = generateUtmUrls("blog_page");
 export const PRODUCT_INFO_MAP_blog = {
@@ -43,54 +44,54 @@ export const PRODUCT_INFO_MAP_blog = {
   },
 };
 
-const BLOG_PRODUCTS_SIDEBAR_ORDER = [
-  PRODUCT.Integration,
-  PRODUCT.AIDrivenCollections,
-  PRODUCT.AutomatedCashApp,
-  PRODUCT.BuyerIntelligence,
-];
+// const BLOG_PRODUCTS_SIDEBAR_ORDER = [
+//   PRODUCT.Integration,
+//   PRODUCT.AIDrivenCollections,
+//   PRODUCT.AutomatedCashApp,
+//   PRODUCT.BuyerIntelligence,
+// ];
 
-const BlogProductsSidebar = () => (
-  <aside className="blog-products-sidebar" aria-label="FinFloh products">
-    <div className="blog-products-sidebar-card">
-      <header className="blog-products-sidebar-header">
-        <span className="blog-products-sidebar-eyebrow">Solutions</span>
-        <p className="blog-products-sidebar-lede">
-          Explore the FinFloh order-to-cash platform
-        </p>
-      </header>
-      <nav className="blog-products-sidebar-nav" aria-label="Product pages">
-        {BLOG_PRODUCTS_SIDEBAR_ORDER.map((key) => {
-          const info = PRODUCT_INFO_MAP_blog[key];
-          if (!info) return null;
-          return (
-            <Link key={key} href={info.url_navbar}>
-              <a className="blog-products-sidebar-link">
-                <span className="blog-products-sidebar-link-text">
-                  {info.title}
-                </span>
-                <span className="blog-products-sidebar-chevron" aria-hidden="true">
-                  ›
-                </span>
-              </a>
-            </Link>
-          );
-        })}
-      </nav>
-      <div className="blog-products-sidebar-highlight">
-        <Link href="/flohsense-ai-agent">
-          <a className="blog-products-sidebar-link blog-products-sidebar-link--flohsense">
-            <span className="blog-products-sidebar-link-text">FlohSense AI</span>
-            <span className="blog-products-sidebar-badge">New</span>
-            <span className="blog-products-sidebar-chevron" aria-hidden="true">
-              ›
-            </span>
-          </a>
-        </Link>
-      </div>
-    </div>
-  </aside>
-);
+// const BlogProductsSidebar = () => (
+//   <aside className="blog-products-sidebar" aria-label="FinFloh products">
+//     <div className="blog-products-sidebar-card">
+//       <header className="blog-products-sidebar-header">
+//         <span className="blog-products-sidebar-eyebrow">Solutions</span>
+//         <p className="blog-products-sidebar-lede">
+//           Explore the FinFloh order-to-cash platform
+//         </p>
+//       </header>
+//       <nav className="blog-products-sidebar-nav" aria-label="Product pages">
+//         {BLOG_PRODUCTS_SIDEBAR_ORDER.map((key) => {
+//           const info = PRODUCT_INFO_MAP_blog[key];
+//           if (!info) return null;
+//           return (
+//             <Link key={key} href={info.url_navbar}>
+//               <a className="blog-products-sidebar-link">
+//                 <span className="blog-products-sidebar-link-text">
+//                   {info.title}
+//                 </span>
+//                 <span className="blog-products-sidebar-chevron" aria-hidden="true">
+//                   ›
+//                 </span>
+//               </a>
+//             </Link>
+//           );
+//         })}
+//       </nav>
+//       <div className="blog-products-sidebar-highlight">
+//         <Link href="/flohsense-ai-agent">
+//           <a className="blog-products-sidebar-link blog-products-sidebar-link--flohsense">
+//             <span className="blog-products-sidebar-link-text">FlohSense AI</span>
+//             <span className="blog-products-sidebar-badge">New</span>
+//             <span className="blog-products-sidebar-chevron" aria-hidden="true">
+//               ›
+//             </span>
+//           </a>
+//         </Link>
+//       </div>
+//     </div>
+//   </aside>
+// );
 
 const RelatedPost = ({ post }) => (
   <div className="related-post-container">
@@ -250,11 +251,13 @@ const Post = ({ post }) => {
                 ></div>
               </div>
               <div className="blog-header-middle">
+            
                 <h1
                   style={{ color: "#fff" }}
                   dangerouslySetInnerHTML={{ __html: post?.title }}
                 ></h1>
               </div>
+              
               <div className="blog-header-end">
                 <img
                   src={post?.authorDetail?.avatarURL}
@@ -311,7 +314,7 @@ const Post = ({ post }) => {
               </div>
             </div>
           </div>
-            <BlogProductsSidebar />
+            {<ProductSidebar/>}
           </div>
         </div>
       </div>

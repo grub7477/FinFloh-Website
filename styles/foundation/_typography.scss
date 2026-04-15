@@ -55,7 +55,14 @@ p {
   max-width: 680px;
 }
 
-em {
+
+// Semantic Tokens
+.heading__md {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.highlighed__text{
   background: linear-gradient(90deg, #ad5bff 0%, #ffd200 100%);
 
   -webkit-background-clip: text;
@@ -63,12 +70,6 @@ em {
 
   background-clip: text;
   color: transparent;
-}
-
-// Semantic Tokens
-.heading__md {
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .btn__label {
