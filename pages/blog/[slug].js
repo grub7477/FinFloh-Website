@@ -259,17 +259,6 @@ const Post = ({ post }) => {
                   dangerouslySetInnerHTML={{ __html: post?.title }}
                 ></h1>
               </div>
-              
-              <div className="blog-header-end">
-                <img
-                  src={post?.authorDetail?.avatarURL}
-                  alt="blog post finfloh"
-                />
-                <p
-                  style={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{ __html: post?.authorDetail?.name }}
-                ></p>
-              </div>
             </div>
             <div className="blog-header-img">
               <img src={post?.imgURL} loading="lazy" alt="blog post finfloh" />
@@ -277,6 +266,18 @@ const Post = ({ post }) => {
           </div>
           <div className="blog-post-body-with-sidebar">
             <div className="blog-imgAndContents">
+            <div className="blog-header-end">
+                <img
+                  src={post?.authorDetail?.avatarURL}
+                  alt="blog post finfloh"
+                />
+                <div class="blog-author">
+                  <p className="blog-author__highlight">Author</p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: post?.authorDetail?.name }}
+                  ></p>
+                </div>
+              </div>
               <div
                 className="blog-post-content-all"
                 dangerouslySetInnerHTML={{
