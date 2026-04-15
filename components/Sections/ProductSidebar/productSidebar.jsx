@@ -17,7 +17,7 @@ const ProductSidebar = () => {
           <div>
             <Link href="/flohsense-ai-agent">
               <a className="blog-products-sidebar-link blog-products-sidebar-highlight">
-              <img className="icon--lg blog-products-sidebar-chevron" src="/images/fai.svg" />
+              <img className="icon--lg blog-products-sidebar-chevron" src="/images/fAI.svg" />
                 <span className="blog-products-sidebar-link-text">FlohSense AI</span>
                 <span className="blog-products-sidebar-badge">New</span>
                 <span className="blog-products-sidebar-chevron--white" aria-hidden="true">
