@@ -99,11 +99,13 @@ const RelatedPost = ({ post }) => (
       {post?.img && <img src={post?.img} loading="lazy" alt={post?.title} />}
     </div> */}
     <div className="related-post-content">
-      <CategoryDate category={post?.context} date={post?.date} />
+      <CategoryDate category={post?.context} />
 
       <a href={`/blog/${post?.slug}`}>
         <h4 dangerouslySetInnerHTML={{ __html: post?.title }}></h4>
       </a>
+      <div>{post?.date}</div>
+      
       {/* <div
         className="related-post-excerpt"
         dangerouslySetInnerHTML={{ __html: post?.excerpt }}
@@ -115,7 +117,7 @@ const RelatedPost = ({ post }) => (
 const RelatedPosts = ({ posts }) => {
   if (!posts?.length) return null;
 
-  const limitedPosts = posts.slice(0, 3);
+  const limitedPosts = posts.slice(0, 2);
 
   return (
     <div className="related-posts-grid">
@@ -288,7 +290,6 @@ const Post = ({ post }) => {
 
             <div
               className="about-calculate-container"
-              style={{ margin: "86px 0px" }}
             >
               <div className="about-calculate-content">
                 <p
