@@ -9,7 +9,7 @@ const AIAgentsSection = () => {
     <section className="section section--dark">
       <div className="container stack">
         <h2 className="text-center text-inverse">
-          <em>One Intelligence </em> Layer&nbsp;Across the&nbsp;O2C&nbsp;Journey
+          <em className="highlighed__text">One Intelligence </em> Layer&nbsp;Across the&nbsp;O2C&nbsp;Journey
         </h2>
         <div>
           <Lottie animationData={aiAnimation} loop={true} autoplay={true} />

@@ -12,6 +12,7 @@ export const info_map = {
     description:
       "Automate invoice generation, validation & sending with the least errors the right contacts & audit trails",
     url: "/invoice-automation",
+    icon:"/images/invoice-icon.svg",
   },
 
   [PRODUCT.Collections]: {
@@ -19,6 +20,7 @@ export const info_map = {
     description:
       "Reduce DSO & increase collections efficiency with automated collections workflows & prioritized worklists as per buyer's credit risk",
     url: "/accounts-receivable-collections",
+    icon: "/images/collect-icon.svg",
   },
 
   [PRODUCT.CashApp]: {
@@ -26,6 +28,7 @@ export const info_map = {
     description:
       "Automate invoice-payment matching with auto-extraction of remittance data using an OCR engine & ML-based algorithms",
     url: "/automated-cash-application-software",
+    icon: "/images/cashapp.svg",
   },
 
   [PRODUCT.BuyerIntelligence]: {
@@ -33,6 +36,7 @@ export const info_map = {
     description:
       "Take faster & more accurate credit decisions with ML-driven credit scoring model & AI-based suggestions",
     url: "/credit-decisioning",
+    icon: "/images/credit-icon.svg",
   },
 
   //   [PRODUCT.Disputes]: {
@@ -40,5 +44,6 @@ export const info_map = {
   //     description:
   //       "Break the silos, close disputes & get paid faster with collaborative workflows, clear owners, TATs & KRAs",
   //     url: "/dispute-resolution",
+  //     icon: "/images/invoice2.png",
   //   },
 };
