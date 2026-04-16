@@ -1451,6 +1451,10 @@ link_btn_light {
 }
 
 .feature-area-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 30px;
 }
