@@ -957,28 +957,30 @@ const FinFlohHome = () => {
                         </div>
                       ))}
 
-                      {/* FlohSense AI Agent */}
-                      {feature.flohsenseAI && (
+                      
+                    </div>
+                    {/* FlohSense AI Agent */}
+                    {feature.flohsenseAI && (
                         <a href="/flohsense-ai-agent">
                           <div className="flohsenseAI-container" key={i}>
+                          <div className="flohsenseAI-content">
                             <img
                               src="/images/fAI.svg"
                               alt="FlohSense AI Logo"
                             />
-                            <div className="flohsenseAI-content">
-                              <h4>FLOHSENSE AI AGENT</h4>
-                              <p>{feature.flohsenseAI.description}</p>
-                            </div>
-                            <img
+                          <h4>FLOHSENSE AI AGENT</h4>
+                          <img
                               className="flohsense-arrow"
                               src="images/ArrowRight.svg"
                               alt="Right Icon"
                             ></img>
                           </div>
+                          <div class="flohsense-para">
+                            <p style={{ color: "#e2fcee" }}>{feature.flohsenseAI.description}</p>
+                          </div>
+                          </div>
                         </a>
                       )}
-                    </div>
-
                     <CommonButton
                       text={feature.btnTxt}
                       type={"primary"}
@@ -986,6 +988,7 @@ const FinFlohHome = () => {
                       openInNewTab={true}
                       iconSrc="images/ArrowRight.svg"
                       iconPosition="right"
+                      width="100%"
                     />
                   </div>
 
