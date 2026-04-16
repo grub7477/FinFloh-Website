@@ -310,6 +310,7 @@
 
 .flohsenseAI-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #002f17;
   padding: 16px 24px;
@@ -332,16 +333,19 @@
 }
 
 .flohsenseAI-container img {
-  width: 62px;
+  width: 40px;
   height: auto;
 }
 
 .flohsenseAI-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   gap: 4px;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .flohsenseAI-content h4 {
   margin: 0;
@@ -354,6 +358,12 @@
   color: transparent; /* Fallback */
   line-height: 120%;
   font-weight: 500;
+  flex: 1;
+}
+
+.flohsense-para{
+  max-width: 560px;
+  width: 100%;
 }
 
 .flohsenseAI-content p {
