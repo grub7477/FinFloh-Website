@@ -1,5 +1,26 @@
 export const podcastData = [
   {
+    id: 26,
+    slug: "rpa-in-fpa",
+    title: "RPA in FP&A",
+    author: "Aaron Zhou",
+    position: "Global Finance Transformation Director at ALS",
+    position_without_company: "Global Finance Transformation Director",
+    quote:
+      "As a Finance Leader, you’ve got to have the foundation of strategic thinking — how you want to tell that story to the board and the outside world.",
+    podcast_logo: "/images/podcast/speakerBrandLogos/ep26-als-limited.png", // add if available
+    episode: 26,
+    isNew: true,
+    date: "23 April 2026",
+    author_profile_pic: "/images/podcast/speakerProfile/aaron-zhou.png",
+    hosted_by: "Valerius Dcunha",
+    hosted_position: "Head of Business and Strategy",
+    hosted_profile_pic: "/images/podcast/speakerProfile/valerius-dcuhna.png",
+    thumbnail: "/images/podcast/thumbnails/ep26-aaron_zhou-thumbnail.png",
+    thumbnail_mobile: "/images/podcast/thumbnails/ep26-aaron_zhou.png",
+    video_url: "https://www.youtube.com/embed/oP62FtpF50s?list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&autoplay=1", // add YouTube embed link
+  },
+  {
     id: 24,
     slug: "the-all-round-cfo",
     title: "The All-Round CFO",
@@ -10,7 +31,7 @@ export const podcastData = [
       "As a Finance Leader, you’ve got to have the foundation of strategic thinking — how you want to tell that story to the board and the outside world.",
     podcast_logo: "/images/podcast/speakerBrandLogos/ep24-sauce-labs.png",
     episode: 24,
-    isNew: true,
+    isNew: false,
     date: "19 February 2026",
     author_profile_pic: "/images/podcast/speakerProfile/vinod-hariharan.png",
     hosted_by: "Amartya Singh",
