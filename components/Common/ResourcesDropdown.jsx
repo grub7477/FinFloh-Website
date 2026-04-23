@@ -35,10 +35,10 @@ const ResourcesDropdown = () => {
       // latest podcast content manuaaly added
       {
         heading: "Podcast",
-        title: "The All-Round CFO",
-        subtitle: "With Vinod Hariharan",
-        image: "/images/podcast/thumbnails/ep24-vinod_hariharan.png",
-        url: "/podcast/the-all-round-cfo?type=inside-the-cfo-office",
+        title: "RPA in FP&A",
+        subtitle: "With Aaron Zhou",
+        image: "/images/podcast/thumbnails/ep26-aaron_zhou.png",
+        url: "/podcast/rpa-in-fpa?type=inside-the-cfo-office",
       },
 
       // latest blog content manually added

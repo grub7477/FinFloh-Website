@@ -1,5 +1,77 @@
 export const podcastContent = {
   "inside-the-cfo-office": {
+    "rpa-in-fpa": {
+  transcript: `
+Valerius Dcunha (Intro): Welcome to the 26th episode of Inside the CFO’s Office, where we go beyond the numbers with today’s leading finance professionals.
+
+Valerius Dcunha: Today’s theme is RPA in FP&A — using software bots to automate repetitive and rule-based finance tasks.
+
+Valerius Dcunha: Aaron brings deep experience in leading global finance transformation initiatives and modernizing finance functions.
+
+Aaron Zhou: My career spans 20 years across corporate finance, accounting, and FP&A, which helped me transition into global leadership roles.
+
+Valerius Dcunha: How has FP&A evolved since the start of your career?
+
+Aaron Zhou: FP&A initially focused on traditional reporting, budgeting, and variance analysis.
+
+Aaron Zhou: With technology, much of the reporting is now automated using RPA, significantly reducing manual effort.
+
+Aaron Zhou: RPA plays a pivotal role in preparing reports efficiently as soon as data becomes available.
+
+Aaron Zhou: Standard, rule-based, high-volume processes like reporting are ideal candidates for RPA.
+
+Aaron Zhou: AI enhances forecasting by incorporating broader datasets and improving model-driven insights.
+
+Aaron Zhou: FP&A will evolve into a “superhuman” business partner role, driven by stronger data insights.
+
+Valerius Dcunha: How should teams prioritize what to automate first?
+
+Aaron Zhou: Focus on initiatives with the highest benefit and lowest complexity to generate quick wins.
+
+Aaron Zhou: Prioritization should also consider scalability and long-term business impact.
+
+Valerius Dcunha: How can professionals transition into a tech-enabled finance role?
+
+Aaron Zhou: Stay aware of emerging technologies and continuously build relevant skill sets.
+
+Aaron Zhou: Understand your current capabilities and define a roadmap toward your future role.
+
+Aaron Zhou: Finance professionals need to evolve from reporting to insight generation and true business partnership.
+
+Valerius Dcunha: Automation is shifting finance from reporting toward driving strategic insights and decision-making.
+
+Valerius Dcunha (Closing): Thanks Aaron for sharing your insights on how RPA and AI are transforming FP&A.
+`,
+  keyTakeaways: [
+    "RPA is transforming FP&A from reporting to insight generation by automating repetitive, rule-based tasks and freeing teams to focus on analysis and strategic decision-making.",
+
+    "FP&A is evolving into a strategic business partner role, where finance professionals actively influence business outcomes using richer data and insights.",
+
+    "Automation initiatives should be driven by business value — prioritizing ROI, scalability, and measurable impact such as revenue uplift, cost reduction, and efficiency gains.",
+
+    "Human judgment remains critical — while RPA and AI improve efficiency, interpretation, context, and stakeholder alignment still require human oversight.",
+
+    "Successful transformation depends on people as much as technology — stakeholder alignment, communication, quick wins, and continuous upskilling drive adoption.",
+  ],
+
+  chapters: [
+    { time: "00:00", title: "Teaser" },
+    { time: "04:00", title: "Introduction & Context Setting" },
+    { time: "06:20", title: "Finance Leadership Journey" },
+    { time: "08:40", title: "Defining Moments & Role of RPA" },
+    { time: "11:30", title: "Evolution of FP&A" },
+    { time: "14:30", title: "Finance Transformation & Business Value" },
+    { time: "17:30", title: "Implementation Challenges" },
+    { time: "23:00", title: "RPA Use Cases & Limitations" },
+    { time: "25:30", title: "Automation Prioritization Framework" },
+    { time: "28:00", title: "Change Management & Mindset Shift" },
+    { time: "30:00", title: "Leadership, Governance & Decision-Making" },
+    { time: "32:30", title: "AI vs RPA vs Analytics" },
+    { time: "35:00", title: "Future of Forecasting with AI" },
+    { time: "37:30", title: "Career Advice" },
+    { time: "40:00", title: "Closing" },
+  ],
+},
     "the-all-round-cfo": {
       transcript: `
 Amartya Singh (Intro): Vinod, you’ve had the opportunity to work across public companies, private growth environments, and multiple finance and operating roles — it’s great to have you on the show.
