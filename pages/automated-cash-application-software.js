@@ -64,11 +64,29 @@ const mainFeatures = [
   {
     content: (
       <div>
-        <h2>ML Based OCR Engine with Multi Format Support</h2>
+        <h2 style={{ paddingBottom: "24px" }}>
+          Intelligent 3-Way Reconciliation Across Payments, Customers & Invoices
+        </h2>
         <p>
-          Utilize ML-based OCR to process diverse formats of bank statements and
-          remittance advices from multiple sources including email bodies,
-          attachments, and buyer portals
+          Automatically match payments to the right customers and invoices with
+          accurate accounting logic, while handling multi-currency transactions
+          with precise conversion.
+        </p>
+      </div>
+    ),
+    imgUrl: "/images/cash-application/Real-Time-ERP-Update.svg",
+    alt: "Real-time ERP update and audit trail tracking FinFloh",
+  },
+  {
+    content: (
+      <div>
+        <h2 style={{ paddingBottom: "24px" }}>
+          ML-Driven OCR & Bank Data Extraction Across Formats
+        </h2>
+        <p>
+          Extract structured data from bank account statements, MT940 files, and
+          APIs to identify customers, payment references, and remittance details
+          across sources, with lockbox processing.
         </p>
       </div>
     ),
@@ -78,15 +96,16 @@ const mainFeatures = [
   {
     content: (
       <div>
-        <h2>Minimize Manual Effort, Capture Audit Trails & Auto-Update ERP</h2>
+        <h2 style={{ paddingBottom: "24px" }}>
+          Automated Adjustments for Taxes & Deductions
+        </h2>
         <p>
-          Ensure real-time update of your invoice status (paid/partially paid)
-          into your ERP with minimal manual intervention, while tracking audit
-          trails with date & time stamps
+          Process tax deductions, bank charges, and short payments using rules
+          and customer history for accurate cash application
         </p>
       </div>
     ),
-    imgUrl: "/images/cash-application/Real-Time-ERP-Update.svg",
+    imgUrl: "/images/cash-application/adjustments_cash Application.png",
     alt: "Real-time ERP update and audit trail tracking FinFloh",
   },
 ];

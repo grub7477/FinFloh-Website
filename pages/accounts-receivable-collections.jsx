@@ -191,51 +191,52 @@ const productBanner = {
 const mainFeatures = [
   {
     content: (
-      <div className="creditMainContent">
-        <h2>Customized Collection Workflows & Follow-ups</h2>
+      <div>
+        <h2 style={{ paddingBottom: "24px" }}>
+          Dynamic Dunning Reminders & Internal Alerts
+        </h2>
         <p>
-          Implement collections workflows as per customer priority, amount and
-          overdue days
-        </p>
-        <p>Automated Collection follow-ups</p>
-        <p>Use varying dunning templates and frequency as per requirement</p>
-      </div>
-    ),
-    imgUrl: "/images/actual_collection1.svg",
-    alt: "Customized collection workflows and follow-ups FinFloh",
-  },
-  {
-    content: (
-      <div className="creditMainContent">
-        <h2>AI-Driven Prioritized Collector's Worklist</h2>
-
-        <p>
-          Leverage AI-driven Collectors worklist with priority of action items
-        </p>
-        <p>
-          Accelerate efficiency of collections/revenue assurance/sales teams
-        </p>
-        <p>Track activity and logs of action items for manager review</p>
-      </div>
-    ),
-    imgUrl: "/images/actual_collection2.svg",
-    alt: "AI-driven prioritized collector's worklist FinFloh",
-  },
-  {
-    content: (
-      <div className="creditMainContent">
-        <h2>Internal/External Communications during Collections</h2>
-
-        <p>
-          Raise alerts/notifications to internal teams for better communication
-        </p>
-        <p>Record payment details and promise-to-pay from customers</p>
-        <p>
-          Enable customer access to invoices, ledger statements and payments
+          Trigger automated reminders and internal alerts based on customer
+          category, aging delays, and payment patterns. Configure multiple 
+          collection templates with dynamic messaging, frequency and escalation
+          workflows.
         </p>
       </div>
     ),
     imgUrl: "/images/actual_collection3.svg",
+    alt: "Customized collection workflows and follow-ups FinFloh",
+  },
+  {
+    content: (
+      <div>
+        <h2 style={{ paddingBottom: "24px" }}>
+          AI-Driven Collector Worklist & Collections Performance Tracking
+        </h2>
+        <p>
+          Enable collectors with dynamic, prioritized worklists while capturing
+          notes, comments, and call logs. Track collections performance through
+          detailed reports and analytics across company, customer, and
+          individual collector levels with actionable insights.
+        </p>
+      </div>
+    ),
+    imgUrl: "/images/collections/collectorsPerformance.png",
+    alt: "AI-driven prioritized collector's worklist FinFloh",
+  },
+  {
+    content: (
+      <div>
+        <h2 style={{ paddingBottom: "24px" }}>
+          Promise-to-Pay Management & Collections Forecasting
+        </h2>
+        <p>
+          Record and track promise-to-pay commitments with visibility into
+          delays and variances. Generate accurate collections forecasts for cash
+          flow predictability.
+        </p>
+      </div>
+    ),
+    imgUrl: "/images/collections/forecasting.png",
     alt: "Collections communication and alerts FinFloh",
   },
 ];
