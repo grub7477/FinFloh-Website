@@ -44,6 +44,14 @@ section {
   margin-inline: auto;
   padding-inline: var(--padding-md);
 }
+
+.container--dark {
+  background-color: var(--surface-dark);
+}
+
+.container--no-padding {
+  padding: 0px;
+}
 // -------- //
 
 // -------- //
@@ -102,6 +110,7 @@ section {
 // -------- //
 
 // -------- //
+
 // Text Align
 .text-center {
   text-align: center;
@@ -116,11 +125,10 @@ section {
 }
 .grid--2 {
   grid-template-columns: repeat(1, 1fr);
-  
+
   @include b.respond(sm) {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 // -------- //
 
@@ -145,6 +153,24 @@ section {
 // -------- //
 
 // -------- //
+
+// Icons
+.icon {
+  width: 20px;
+  height: 100%;
+}
+
+.icon--lg {
+  width: 36px;
+}
+
+.icon--dark {
+  color: var(--grey-700);
+}
+.icon--dark {
+  color: var(--white);
+}
+
 // Card
 .card {
   display: flex;
@@ -170,20 +196,6 @@ section {
   padding: var(--padding-sm);
 }
 
-// -------- //
-// Icons
-.icon {
-  width: 20px;
-  height: 100%;
-}
-
-.icon--lg{
-  width: 36px;
-}
-
-.icon--dark {color: var(--grey-700);}
-.icon--dark {color: var(--white);}
-
 .card-wrapper {
   display: grid;
   border: 0px;
@@ -197,3 +209,9 @@ section {
     }
   }
 }
+// -------- //
+// -- Padding -- //
+.padding-2xl {
+  padding: var(--padding-2xl);
+}
+// -------- //

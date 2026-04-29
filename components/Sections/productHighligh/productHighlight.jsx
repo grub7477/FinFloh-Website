@@ -1,0 +1,30 @@
+import ButtonCommon from "../../UI/Button/Button";
+
+const productHighlight = ({
+  title = "",
+  description = "",
+  image = "",
+  ctaText = "",
+  ctaLink = "",
+}) => {
+  return (
+    <section className="section ">
+      <div className="container container--dark inline border-radius--lg container--no-padding">
+        <div className="stack padding-2xl">
+          <h3 className="text-inverse">{title}</h3>
+          <p className="text-d-muted">{description}</p>
+          <ButtonCommon
+            type="button"
+            label={ctaText}
+            href={ctaLink}
+            variant="secondary"
+            endIcon
+          />
+        </div>
+        <img src={image} alt={title} />
+      </div>
+    </section>
+  );
+};
+
+export default productHighlight;

@@ -20,6 +20,10 @@
   background-color: green;
   color: white;
 }
+.btn--secondary {
+  background-color: white;
+  color: var(--font-primary-color);
+}
 
 .btn--outline {
   border: 1px solid var(--stroke-primary-color);

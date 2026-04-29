@@ -19,6 +19,9 @@
   --grey-700: #4f5667;
   --grey-900: #111827;
 
+  // Blue
+  --grey-200: #b8eaf9;
+
   // Alpha Colors
   --white-16: #ffffff26;
   --white-20: #ffffff33;
@@ -52,6 +55,7 @@
 
   // Surface Colors
   --surface-primary: var(--color-green-500);
+  --surface-dark: var(--grey-900);
   --surface-white: var(--color-white);
   --surface-hover: var(--color-grey-100);
   --surface-inverse-hover: var(--white-16);
