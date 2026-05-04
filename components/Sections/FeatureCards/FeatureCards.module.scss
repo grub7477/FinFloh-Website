@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.card_wrapper {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid #dfedea;
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.icon {
+  width: 20px;
+}
+
+.heading_5 {
+  margin: 0px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}

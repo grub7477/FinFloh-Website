@@ -4,84 +4,77 @@ import { Navbar } from "react-bootstrap";
 import { flohsensePage } from "./flohsense/flohsense-ai.data";
 import ButtonCommon from "../components/UI/Button/Button";
 import ProductSection from "../components/Sections/ProductSection/productSection";
-import ProductShowcase from "../components/Sections/productHighligh/productHighlight";
-import ProductFeatureSection from "../components/Sections/UseCases/ProductFeatureSection";
-
-console.log("data", flohsensePage.featureSection);
+import CompaniesLogo from "../components/Common/CompaniesLogo";
+import KeyFeature from "../components/Sections/KeyFeature/KeyFeature";
+import ValueAddFeature from "../components/Sections/ValueAddFeature/ValueAddFeature";
+import FeatureSection from "../components/Sections/FeatureSection/FeatureSection";
+import FeatureCards from "../components/Sections/FeatureCards/FeatureCards";
+import FocusSection from "../components/Sections/FocusSection/FocusSection";
+import HeroSection from "../components/Sections/HeroSection/HeroSection";
+import SpotlightSection from "../components/Sections/SpotlightSection/SpotlightSection";
 
 const flohsense = () => {
   return (
     <WebsiteLayout>
       <div>
-        <section className="section">
-          <div className="container">
-            <h2 className="kicker">FlohSense AI Agent</h2>
-            <h1>Turns Conversations into Actions</h1>
-            <p>
-              Turn every customer email and chat into automated actions,
-              responses, resolutions, and ERP updates.
-            </p>
-            <ButtonCommon type="button" label="Book a Flohsense AI demo" />
-          </div>
-        </section>
-        {/* Add Customer Logo Outside the section */}
-        <section className="section">
-          <h2>Where Your Customer Communication Breaks in O2C</h2>
-          <div className="">
-            <img src="" alt="Customer Communication Gap in O2C" />
-            <div>
-              <div>
-                <h3>Lack Of Insights</h3>
-                <p>
-                  Unaware of exact status of the invoice. Tracking performance
-                  of users depends on users action updates.
-                </p>
+        <HeroSection
+          title={flohsensePage.heroSection.title}
+          subTitle={flohsensePage.heroSection.subTitle}
+          description={flohsensePage.heroSection.description}
+          btnText={flohsensePage.heroSection.btnText}
+          btnLink={flohsensePage.heroSection.btnLink}
+          image={flohsensePage.heroSection.image}
+        />
+        {/* <CompaniesLogo /> */}
+        <div className="container main-container">
+          <FocusSection
+            title={flohsensePage.focusSection.title}
+            description={flohsensePage.focusSection.description}
+            image={flohsensePage.focusSection.image}
+            features={flohsensePage.focusSection.features}
+          />
+
+          <SpotlightSection
+            title={flohsensePage.spotlightSection.title}
+            kicker={flohsensePage.spotlightSection.kicker}
+            image={flohsensePage.spotlightSection.image}
+          />
+
+          <FeatureCards features={flohsensePage.featureCards.features} />
+
+          {/* Feature Section */}
+          <FeatureSection sections={flohsensePage.featureSection.sections} />
+
+          <KeyFeature
+            title={flohsensePage.keyFeature.title}
+            description={flohsensePage.keyFeature.description}
+            ctaText={flohsensePage.keyFeature.ctaText}
+            ctaLink={flohsensePage.keyFeature.ctaLink}
+            image={flohsensePage.keyFeature.image}
+          />
+
+          <section className="section">
+            <div className="container stack stack--extra-loose">
+              <h2 className="text-center">
+                Powering FinFloh Products with{" "}
+                <span className="ai-highlight">FlohSense AI</span>
+              </h2>
+              <div className="grid grid--3">
+                {flohsensePage.valueAddFeature.features.map((item, index) => {
+                  return (
+                    <ValueAddFeature
+                      key={index}
+                      icon={item.icon}
+                      productName={item.productName}
+                      title={item.title}
+                      description={item.description}
+                    />
+                  );
+                })}
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <div>
-            <h3 className="kicker">A New Era of Communication</h3>
-            <h2>Transform Insights into Actionable Strategies</h2>
-          </div>
-          <img src="" alt="FlohSense Dashboard" />
-        </section>
-        <section>
-          <div className="4cards">
-            {/* Create the below section has component */}
-            <div>
-              <span>
-                <img src="" alt="" />
-                <h3>Email/Chat Capture</h3>
-              </span>
-              <p>
-                Turns your emails into O2C-focused messages for faster reviews.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="section">
-          <h3 className="kicker">The FinFloh Way</h3>
-          <h2>Clear Communication to Streamlined Action</h2>
-          {/* <ProductFeatureSection title={flohsensePage} /> */}
-        </section>
-
-        <ProductShowcase
-        // title={flohsensePage[productShowcase].title}
-        // description={flohsensePage[productShowcase].description}
-        // ctaText={flohsensePage[productShowcase].ctaText}
-        // ctaLink={flohsensePage[productShowcase].ctaLink}
-        // image={flohsensePage[productShowcase].image}
-        />
-
-        <section className="section">
-          <h2>
-            Powering FinFloh Products with{" "}
-            <span className="ai-highlight">FlohSense AI</span>
-          </h2>
-          <div className="3card">{/* component simple card */}</div>
-        </section>
+          </section>
+        </div>
         <ProductSection />
       </div>
     </WebsiteLayout>

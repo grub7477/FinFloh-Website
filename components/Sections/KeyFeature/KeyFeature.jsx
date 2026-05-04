@@ -1,6 +1,6 @@
 import ButtonCommon from "../../UI/Button/Button";
 
-const productHighlight = ({
+const KeyFeature = ({
   title = "",
   description = "",
   image = "",
@@ -27,4 +27,4 @@ const productHighlight = ({
   );
 };
 
-export default productHighlight;
+export default KeyFeature;
