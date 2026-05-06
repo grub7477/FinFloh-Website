@@ -1,3 +1,5 @@
+@use "/styles/foundation/breakpoint" as b;
+
 .main_container {
   display: grid;
   justify-content: center;
@@ -11,9 +13,18 @@
   gap: 8px;
 }
 
-.content_wrapper {
+.features_container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr 1.5fr);
+  gap: 24px;
+
+  @include b.respond(md) {
+    grid-template-columns: repeat(1, 1fr 1.5fr);
+  }
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 

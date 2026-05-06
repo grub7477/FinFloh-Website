@@ -91,6 +91,29 @@ export const flohsensePage = {
           },
         ],
       },
+      {
+        title: "Automated Responses to Customer Data Requests",
+        description:
+          "A customer asks for invoice / ledger / proof System instantly understands the request. Relevant document/data is fetched automatically. Response is sent back without human involvement",
+
+        image: "/images/flohsense_ai/Feature_dataRequest.png",
+        ctaLink: "/book-a-demo",
+        ctaText: "Book A Flohsense AI Demo",
+        features: [
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Priority Based Categorisation",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "O2C Based Categorisation",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "O2C Based Categorisation",
+          },
+        ],
+      },
     ],
   },
 

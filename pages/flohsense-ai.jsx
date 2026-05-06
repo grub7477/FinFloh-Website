@@ -53,27 +53,7 @@ const flohsense = () => {
             image={flohsensePage.keyFeature.image}
           />
 
-          {/* <section className="section">
-            <div className="container stack stack--extra-loose">
-              <h2 className="text-center">
-                Powering FinFloh Products with{" "}
-                <span className="ai-highlight">FlohSense AI</span>
-              </h2>
-              <div className="grid grid--3">
-                {flohsensePage.valueAddFeature.features.map((item, index) => {
-                  return (
-                    <ValueAddFeature
-                      key={index}
-                      icon={item.icon}
-                      productName={item.productName}
-                      title={item.title}
-                      description={item.description}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          </section> */}
+          <ValueAddFeature features={flohsensePage.valueAddFeature.features} />
         </div>
         <ProductSection />
       </div>

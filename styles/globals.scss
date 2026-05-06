@@ -202,7 +202,14 @@ section {
   border-radius: 4px;
 }
 
+.icon--container--loose {
+  padding: 8px;
+  border: 1px solid #dfedea;
+  border-radius: 4px;
+}
+
 // Card
+
 .card {
   display: flex;
   flex-direction: column;
@@ -212,6 +219,7 @@ section {
   transition: 400ms ease-in-out;
   height: 100%;
   background-color: white;
+  gap: 12px;
 
   &:hover {
     top: -8px;
@@ -240,10 +248,26 @@ section {
     }
   }
 }
+
+.card--noHover {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--stroke-primary-color);
+  padding: var(--padding-md);
+  border-radius: var(--radius-8);
+  transition: 400ms ease-in-out;
+  height: 100%;
+  background-color: white;
+  gap: 12px;
+}
+
 // -------- //
 // -- Padding -- //
 .padding-2xl {
-  padding: var(--padding-2xl);
+  padding: var(--padding-lg);
+  @include b.respond(sm) {
+    padding: var(--padding-2xl);
+  }
 }
 // -------- //
 
@@ -270,4 +294,15 @@ section {
 ul,
 li {
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
+
+// .unordered-list {
+//   padding: 0;
+// }
+
+// .list-items {
+//   padding: 0;
+//   margin: 0;
+// }
