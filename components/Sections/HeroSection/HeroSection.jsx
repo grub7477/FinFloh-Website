@@ -17,15 +17,17 @@ const HeroSection = ({
 
   return (
     <section className={classes}>
-      <div className={style.wrapper}>
-        <div className={style.header}>
-          <h2 className={style.kicker}>{subTitle}</h2>
-          <h1 className={style.heading}>{title}</h1>
+      <div className={style.container}>
+        <div className={style.wrapper}>
+          <div className={style.header}>
+            <h2 className={style.kicker}>{subTitle}</h2>
+            <h1 className={style.heading}>{title}</h1>
+          </div>
+          <p className={style.para}>{description}</p>
+          <ButtonCommon label={btnText} href={btnLink} variant={btnVariant} />
         </div>
-        <p className={style.para}>{description}</p>
-        <ButtonCommon label={btnText} href={btnLink} variant={btnVariant} />
+        <img className={style.hero__image} src={image} alt={title} />
       </div>
-      <img className={style.hero__image} src={image} alt={title} />
     </section>
   );
 };

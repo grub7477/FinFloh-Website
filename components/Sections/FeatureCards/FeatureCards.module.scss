@@ -1,38 +1,28 @@
-.section {
-  display: flex;
-  gap: 24px;
-  padding-block: 24px;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
+@use "/styles/foundation/breakpoint" as b;
 
 .card_wrapper {
-  display: flex;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 16px;
+
+  @include b.respond(md) {
+    gap: 24px;
+    grid-auto-flow: column;
+  }
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  align-content: space-evenly;
+  gap: 12px;
   padding: 24px;
-  border: 1px solid #dfedea;
   border-radius: 8px;
-  gap: 8px;
+  border: 1px solid #dfedea;
 }
 
-.icon {
-  width: 20px;
-}
-
-.heading_5 {
-  margin: 0px;
-  color: #000;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%; /* 32px */
+.title_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

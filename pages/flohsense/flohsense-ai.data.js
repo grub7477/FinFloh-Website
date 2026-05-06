@@ -43,7 +43,7 @@ export const flohsensePage = {
         icon: "/icons/arrow_right.svg",
         title: "Email/Chat Capture",
         description:
-          "A customer asks for invoice / ledger / proof System instantly understands the request.",
+          "Turns your emails into O2C-focused messages for faster reviews.",
       },
       {
         icon: "/icons/arrow_right.svg",

@@ -7,7 +7,9 @@ const ProductSection = () => {
     <section className="section section--off-white">
       <div className="container stack stack--loose">
         <div className="stack stack--tight stack--center">
-          <h2>Explore the Full Potential&nbsp;of&nbsp;FinFloh</h2>
+          <h2 className="text-center">
+            Explore the Full Potential&nbsp;of&nbsp;FinFloh
+          </h2>
           <p className="text-muted">
             Supercharge Your Receivables&nbsp;Performance
           </p>

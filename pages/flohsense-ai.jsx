@@ -12,6 +12,7 @@ import FeatureCards from "../components/Sections/FeatureCards/FeatureCards";
 import FocusSection from "../components/Sections/FocusSection/FocusSection";
 import HeroSection from "../components/Sections/HeroSection/HeroSection";
 import SpotlightSection from "../components/Sections/SpotlightSection/SpotlightSection";
+import CustomerLogos from "../components/Sections/CustomerLogos/CustomerLogos";
 
 const flohsense = () => {
   return (
@@ -25,7 +26,7 @@ const flohsense = () => {
           btnLink={flohsensePage.heroSection.btnLink}
           image={flohsensePage.heroSection.image}
         />
-        {/* <CompaniesLogo /> */}
+        <CustomerLogos />
         <div className="container main-container">
           <FocusSection
             title={flohsensePage.focusSection.title}
@@ -38,9 +39,8 @@ const flohsense = () => {
             title={flohsensePage.spotlightSection.title}
             kicker={flohsensePage.spotlightSection.kicker}
             image={flohsensePage.spotlightSection.image}
+            features={flohsensePage.featureCards.features}
           />
-
-          <FeatureCards features={flohsensePage.featureCards.features} />
 
           {/* Feature Section */}
           <FeatureSection sections={flohsensePage.featureSection.sections} />
@@ -53,7 +53,7 @@ const flohsense = () => {
             image={flohsensePage.keyFeature.image}
           />
 
-          <section className="section">
+          {/* <section className="section">
             <div className="container stack stack--extra-loose">
               <h2 className="text-center">
                 Powering FinFloh Products with{" "}
@@ -73,7 +73,7 @@ const flohsense = () => {
                 })}
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
         <ProductSection />
       </div>
