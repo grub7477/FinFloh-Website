@@ -281,39 +281,6 @@ const Simple_Features_CONTENT = [
         "Close queries and issues during collections & record Promise-to-Pay",
     },
   },
-
-  {
-    icon: "images/credit-icon.svg",
-    text: "Floh <strong>Credit</strong> AI",
-    title: "Onboard Faster with Smart Credit & Pricing Terms",
-    featurePoints: [
-      {
-        icon: "images/CheckIcon.svg",
-        description: "Track buyer's market data and A/R aging data",
-      },
-      {
-        icon: "images/CheckIcon.svg",
-        description: "Generate dynamic ML-based credit scoring",
-      },
-      {
-        icon: "images/CheckIcon.svg",
-        description: "Apply AI-driven onboarding decisions in CRM",
-      },
-      {
-        icon: "images/CheckIcon.svg",
-        description: "Drive post-go-live decisions using credit scores",
-      },
-    ],
-    btnTxt: "Know More",
-    btnLink:
-      "https://finfloh.com/credit-decisioning?utm_source=homepage_central&utm_medium=finfloh_website",
-    imgSrc: "/images/Credit-home.svg",
-    alt: "AI based Credit integrations-and-invoice-verification FinFloh",
-
-    flohsenseAI: {
-      description: "Analyze buyer emails and responses for credit scoring",
-    },
-  },
   {
     icon: "images/recon-icon.svg",
     text: "Floh <strong>Recon</strong> AI",
@@ -377,6 +344,38 @@ const Simple_Features_CONTENT = [
     flohsenseAI: {
       description:
         "Auto-revert to customer queries & data requests for invoice details & statements",
+    },
+  },
+  {
+    icon: "images/credit-icon.svg",
+    text: "Floh <strong>Credit</strong> AI",
+    title: "Onboard Faster with Smart Credit & Pricing Terms",
+    featurePoints: [
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Track buyer's market data and A/R aging data",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Generate dynamic ML-based credit scoring",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Apply AI-driven onboarding decisions in CRM",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Drive post-go-live decisions using credit scores",
+      },
+    ],
+    btnTxt: "Know More",
+    btnLink:
+      "https://finfloh.com/credit-decisioning?utm_source=homepage_central&utm_medium=finfloh_website",
+    imgSrc: "/images/Credit-home.svg",
+    alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+
+    flohsenseAI: {
+      description: "Analyze buyer emails and responses for credit scoring",
     },
   },
   // {
@@ -956,31 +955,31 @@ const FinFlohHome = () => {
                           <p>{point.description}</p>
                         </div>
                       ))}
-
-                      
                     </div>
                     {/* FlohSense AI Agent */}
                     {feature.flohsenseAI && (
-                        <a href="/flohsense-ai-agent">
-                          <div className="flohsenseAI-container" key={i}>
+                      <a href="/flohsense-ai-agent">
+                        <div className="flohsenseAI-container" key={i}>
                           <div className="flohsenseAI-content">
                             <img
                               src="/images/fAI.svg"
                               alt="FlohSense AI Logo"
                             />
-                          <h4>FLOHSENSE AI AGENT</h4>
-                          <img
+                            <h4>FLOHSENSE AI AGENT</h4>
+                            <img
                               className="flohsense-arrow"
                               src="images/ArrowRight.svg"
                               alt="Right Icon"
                             ></img>
                           </div>
                           <div class="flohsense-para">
-                            <p style={{ color: "#e2fcee" }}>{feature.flohsenseAI.description}</p>
+                            <p style={{ color: "#e2fcee" }}>
+                              {feature.flohsenseAI.description}
+                            </p>
                           </div>
-                          </div>
-                        </a>
-                      )}
+                        </div>
+                      </a>
+                    )}
                     <CommonButton
                       text={feature.btnTxt}
                       type={"primary"}
