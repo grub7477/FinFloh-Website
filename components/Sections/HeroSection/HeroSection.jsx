@@ -21,7 +21,7 @@ const HeroSection = ({
         <div className={style.wrapper}>
           <div className={style.header}>
             <h2 className="kicker ai-highlight">{kicker}</h2>
-            <h1 className={style.heading}>{title}</h1>
+            <h1 className={`ch20 ${style.heading}`}>{title}</h1>
           </div>
           <p className={style.para}>{description}</p>
           <ButtonCommon label={btnText} href={btnLink} variant={btnVariant} />

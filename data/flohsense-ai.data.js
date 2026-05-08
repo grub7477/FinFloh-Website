@@ -4,7 +4,7 @@ export const flohsensePage = {
     title: "Turn Conversations into Actions & Outcomes",
     description:
       "Turn every customer email and chat into automated actions, resolutions and ultimately faster receivables and cashflow conversions.",
-    btnText: "Book A FlohSense AI Demo",
+    btnText: "Book a Demo for FlohSense AI",
     btnLink: "/book-a-demo",
     image: "/images/flohsense_ai/hero_section-flohsenseAi-2x.png",
   },
@@ -80,7 +80,7 @@ export const flohsensePage = {
 
         image: "/images/flohsense_ai/email-automation.jpg",
         ctaLink: "/book-a-demo",
-        ctaText: "Book A Flohsense AI Demo",
+        ctaText: "Book a Demo for FlohSense AI",
         features: [
           {
             icon: "/icons/arrow_right.svg",
