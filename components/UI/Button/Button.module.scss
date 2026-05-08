@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+  width: fit-content;
 
   padding: var(--padding-sm) var(--padding-md);
   gap: var(--gap-sm);
@@ -19,6 +20,10 @@
 .btn--primary {
   background-color: green;
   color: white;
+}
+.btn--secondary {
+  background-color: white;
+  color: var(--font-primary-color);
 }
 
 .btn--outline {

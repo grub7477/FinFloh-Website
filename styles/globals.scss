@@ -25,6 +25,10 @@ section {
   padding-block: var(--spacing-120);
 }
 
+.sub--section {
+  padding-block: var(--padding-md);
+}
+
 // THEME
 .section--dark {
   background-color: var(--bg-black-90);
@@ -40,9 +44,17 @@ section {
 // -------- //
 // Container
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
   margin-inline: auto;
   padding-inline: var(--padding-md);
+}
+
+.container--dark {
+  background-color: var(--surface-dark);
+}
+
+.container--no-padding {
+  padding: 0px;
 }
 // -------- //
 
@@ -58,6 +70,10 @@ section {
 }
 .stack--loose {
   gap: var(--gap-lg);
+}
+
+.stack--extra-loose {
+  gap: var(--gap-2xl);
 }
 .stack--center {
   align-items: center;
@@ -102,6 +118,7 @@ section {
 // -------- //
 
 // -------- //
+
 // Text Align
 .text-center {
   text-align: center;
@@ -116,12 +133,20 @@ section {
 }
 .grid--2 {
   grid-template-columns: repeat(1, 1fr);
-  
+
   @include b.respond(sm) {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
+
+.grid--3 {
+  grid-template-columns: repeat(1, 1fr);
+
+  @include b.respond(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 // -------- //
 
 // -------- //
@@ -145,7 +170,46 @@ section {
 // -------- //
 
 // -------- //
+
+// Icons
+.icon {
+  width: 24px;
+  height: 100%;
+
+  @include b.respond(md) {
+    width: 20px;
+  }
+}
+
+.icon--md {
+  width: 32px;
+}
+
+.icon--lg {
+  width: 36px;
+}
+
+.icon--dark {
+  color: var(--grey-700);
+}
+.icon--dark {
+  color: var(--white);
+}
+
+.icon--container {
+  padding: 4px;
+  border: 1px solid #dfedea;
+  border-radius: 4px;
+}
+
+.icon--container--loose {
+  padding: 8px;
+  border: 1px solid #dfedea;
+  border-radius: 4px;
+}
+
 // Card
+
 .card {
   display: flex;
   flex-direction: column;
@@ -155,6 +219,7 @@ section {
   transition: 400ms ease-in-out;
   height: 100%;
   background-color: white;
+  gap: 12px;
 
   &:hover {
     top: -8px;
@@ -170,20 +235,6 @@ section {
   padding: var(--padding-sm);
 }
 
-// -------- //
-// Icons
-.icon {
-  width: 20px;
-  height: 100%;
-}
-
-.icon--lg{
-  width: 36px;
-}
-
-.icon--dark {color: var(--grey-700);}
-.icon--dark {color: var(--white);}
-
 .card-wrapper {
   display: grid;
   border: 0px;
@@ -196,4 +247,79 @@ section {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+}
+
+.card--noHover {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--stroke-primary-color);
+  padding: var(--padding-md);
+  border-radius: var(--radius-8);
+  transition: 400ms ease-in-out;
+  height: 100%;
+  background-color: white;
+  gap: 12px;
+}
+
+// -------- //
+// -- Padding -- //
+.padding-2xl {
+  padding: var(--padding-lg);
+  @include b.respond(sm) {
+    padding: var(--padding-2xl);
+  }
+}
+// -------- //
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.center-all {
+  align-items: center;
+  justify-content: center;
+}
+
+.ch25 {
+  max-width: 25ch;
+}
+.ch20 {
+  max-width: 20ch;
+}
+
+ul,
+li {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+// .unordered-list {
+//   padding: 0;
+// }
+
+// .list-items {
+//   padding: 0;
+//   margin: 0;
+// }
+
+.dot-pattern {
+  background-image: url("/images/flohsense_ai/dot-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-fill {
+  width: 100%; /* Image scales to container width */
+  max-height: 450px;
+  height: 100%; /* Maintains aspect ratio */
+  object-fit: cover;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

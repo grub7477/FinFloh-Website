@@ -1,0 +1,40 @@
+@use "/styles/foundation/breakpoint" as b;
+
+.focusContainer {
+  display: grid;
+  gap: 48px;
+}
+
+.inline {
+  display: grid;
+  width: 100%;
+  gap: 16px;
+
+  @include b.respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/flohsense_ai/bg--green.jpg");
+  border-radius: 8px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #dfedea;
+}

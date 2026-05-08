@@ -1,0 +1,28 @@
+@use "/styles/foundation/breakpoint" as b;
+
+.card_wrapper {
+  display: grid;
+  gap: 16px;
+
+  @include b.respond(md) {
+    gap: 16px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #dfedea;
+}
+
+.title_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

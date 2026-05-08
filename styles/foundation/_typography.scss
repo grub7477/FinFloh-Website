@@ -20,6 +20,11 @@ p {
   font-family: var(--family-primary);
   color: var(--font-primary-color);
   text-align: inherit;
+  margin: 0;
+}
+
+p {
+  color: var(--font-secondary-color);
 }
 
 // How to use Clamp:
@@ -51,18 +56,19 @@ p {
   font-size: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
   font-weight: 400;
   line-height: 1.6;
-  margin: 0;
   max-width: 680px;
 }
 
-
 // Semantic Tokens
-.heading__md {
-  font-size: 20px;
-  font-weight: 400;
+
+.heading_md {
+  font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
 }
 
-.highlighed__text{
+.highlighed__text {
   background: linear-gradient(90deg, #ad5bff 0%, #ffd200 100%);
 
   -webkit-background-clip: text;
@@ -82,6 +88,48 @@ p {
   color: var(--font-inverse-color);
 }
 
+.text-d-muted {
+  color: var(--grey-200);
+}
+
+.text--darkblue-muted {
+  color: var(--blue-200);
+}
+
 .text-muted {
   color: var(--font-secondary-color);
+}
+
+.kicker {
+  font-family: "IBM Plex Mono";
+  font-size: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.heading_xs {
+  font-family: "IBM Plex Mono";
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.ai-highlight {
+  background: linear-gradient(
+    122deg,
+    #34ccff 0.67%,
+    #ae78ff 61.43%,
+    #ff7300 92.05%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-highlight--brand {
+  color: var(--brand-color);
 }

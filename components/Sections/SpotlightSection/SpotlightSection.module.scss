@@ -1,0 +1,25 @@
+.main_wrapper {
+  display: grid;
+  background:
+    url("/images/flohsense_ai/spotlight_pattern.svg"),
+    radial-gradient(
+      66.48% 85.07% at 50.92% 100.71%,
+      #b8eaf9 0%,
+      rgba(184, 234, 249, 0) 86.54%
+    ),
+    #111827;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-block: 48px;
+}
