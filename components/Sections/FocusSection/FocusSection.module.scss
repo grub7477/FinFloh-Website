@@ -16,9 +16,14 @@
 }
 
 .image_wrapper {
-  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/flohsense_ai/bg--green.jpg");
   border-radius: 8px;
   object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_wrapper {

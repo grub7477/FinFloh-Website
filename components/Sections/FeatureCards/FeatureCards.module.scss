@@ -2,12 +2,12 @@
 
 .card_wrapper {
   display: grid;
-  grid-auto-flow: row;
   gap: 16px;
 
   @include b.respond(md) {
-    gap: 24px;
+    gap: 16px;
     grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -16,7 +16,7 @@
   flex-direction: column;
   align-content: space-evenly;
   gap: 12px;
-  padding: 24px;
+  padding: 16px;
   border-radius: 8px;
   border: 1px solid #dfedea;
 }

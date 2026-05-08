@@ -306,3 +306,20 @@ li {
 //   padding: 0;
 //   margin: 0;
 // }
+
+.dot-pattern {
+  background-image: url("/images/flohsense_ai/dot-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-fill {
+  width: 100%; /* Image scales to container width */
+  max-height: 450px;
+  height: 100%; /* Maintains aspect ratio */
+  object-fit: cover;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

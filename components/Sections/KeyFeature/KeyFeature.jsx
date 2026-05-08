@@ -9,7 +9,7 @@ const KeyFeature = ({
 }) => {
   return (
     <section className="section ">
-      <div className="container container--dark inline--responsive border-radius--lg container--no-padding">
+      <div className="container container--dark inline--responsive border-radius--lg container--no-padding overflow-hidden">
         <div className="stack stack--loose padding-2xl">
           <h3 className="text-inverse">{title}</h3>
           <p className="text--darkblue-muted">{description}</p>
@@ -21,7 +21,7 @@ const KeyFeature = ({
             endIcon
           />
         </div>
-        <img src={image} alt={title} />
+        <img className="dot-pattern image-fill" src={image} alt={title} />
       </div>
     </section>
   );

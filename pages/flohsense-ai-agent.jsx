@@ -20,7 +20,7 @@ const flohsense = () => {
       <div>
         <HeroSection
           title={flohsensePage.heroSection.title}
-          subTitle={flohsensePage.heroSection.subTitle}
+          kicker={flohsensePage.heroSection.kicker}
           description={flohsensePage.heroSection.description}
           btnText={flohsensePage.heroSection.btnText}
           btnLink={flohsensePage.heroSection.btnLink}
@@ -53,7 +53,7 @@ const flohsense = () => {
             image={flohsensePage.keyFeature.image}
           />
 
-          <ValueAddFeature features={flohsensePage.valueAddFeature.features} />
+          {/* <ValueAddFeature features={flohsensePage.valueAddFeature.features} /> */}
         </div>
         <ProductSection />
       </div>
