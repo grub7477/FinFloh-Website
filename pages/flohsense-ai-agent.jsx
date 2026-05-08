@@ -1,14 +1,9 @@
 import React from "react";
 import WebsiteLayout from "../components/Layouts/WebsiteLayout";
-import { Navbar } from "react-bootstrap";
-import { flohsensePage } from "./flohsense/flohsense-ai.data";
-import ButtonCommon from "../components/UI/Button/Button";
+import { flohsensePage } from "../data/flohsense-ai.data";
 import ProductSection from "../components/Sections/ProductSection/productSection";
-import CompaniesLogo from "../components/Common/CompaniesLogo";
 import KeyFeature from "../components/Sections/KeyFeature/KeyFeature";
-import ValueAddFeature from "../components/Sections/ValueAddFeature/ValueAddFeature";
 import FeatureSection from "../components/Sections/FeatureSection/FeatureSection";
-import FeatureCards from "../components/Sections/FeatureCards/FeatureCards";
 import FocusSection from "../components/Sections/FocusSection/FocusSection";
 import HeroSection from "../components/Sections/HeroSection/HeroSection";
 import SpotlightSection from "../components/Sections/SpotlightSection/SpotlightSection";

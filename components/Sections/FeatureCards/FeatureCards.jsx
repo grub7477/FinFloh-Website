@@ -1,4 +1,4 @@
-import { flohsensePage } from "../../../pages/flohsense/flohsense-ai.data";
+import { flohsensePage } from "../../../data/flohsense-ai.data";
 import styles from "./FeatureCards.module.scss";
 
 const FeatureCards = ({ features = [] }) => {

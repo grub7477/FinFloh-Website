@@ -1,5 +1,5 @@
 import styles from "./SpotlightSection.module.scss";
-import { flohsensePage } from "../../../pages/flohsense/flohsense-ai.data";
+import { flohsensePage } from "../../../data/flohsense-ai.data";
 import FeatureCards from "../FeatureCards/FeatureCards";
 
 const SpotlightSection = ({ title, kicker, image, features }) => {
