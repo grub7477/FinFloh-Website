@@ -78,7 +78,7 @@ export const flohsensePage = {
         description:
           "AI Agent reads customer emails and chats to understand and capture intent, context and meaning.",
 
-        image: "/images/flohsense_ai/email-automation.jpg",
+        image: "/images/flohsense_ai/feature-autoCapture.jpg",
         ctaLink: "/book-a-demo",
         ctaText: "Book a Demo for FlohSense AI",
         features: [
@@ -102,7 +102,7 @@ export const flohsensePage = {
         description:
           "AI automatically triggers actions, tags users, and executes workflows based on customer communication.",
 
-        image: "/images/flohsense_ai/smart-automation.jpg",
+        image: "/images/flohsense_ai/feature-automation.jpg",
         ctaLink: "/book-a-demo",
         ctaText: "Book A Flohsense AI Demo",
         features: [
@@ -127,7 +127,7 @@ export const flohsensePage = {
         description:
           "Finance leaders gain AI-driven visibility into customer communication, intent, sentiment and behavior.",
 
-        image: "/images/flohsense_ai/insight.jpg",
+        image: "/images/flohsense_ai/feature-x-factor.jpg",
         ctaLink: "/book-a-demo",
         ctaText: "Book A Flohsense AI Demo",
         features: [
@@ -154,7 +154,7 @@ export const flohsensePage = {
         description:
           "Convert customer communication into actionable worklists that finance teams can track, prioritize, and resolve efficiently.",
 
-        image: "/images/flohsense_ai/worklist.jpg",
+        image: "/images/flohsense_ai/feature-worklist.jpg",
         ctaLink: "/book-a-demo",
         ctaText: "Book A Flohsense AI Demo",
         features: [
@@ -184,7 +184,7 @@ export const flohsensePage = {
       "Connect FlohSense seamlessly with existing communication channels without changing current workflows.",
     ctaText: "Book A Flohsense AI Demo",
     ctaLink: "/book-a-demo",
-    image: "/images/flohsense_ai/finfloh--add-on-2x.png",
+    image: "/images/flohsense_ai/finfloh-add-on.png",
   },
 
   // valueAddFeature: {
