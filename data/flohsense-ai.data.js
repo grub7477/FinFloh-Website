@@ -1,7 +1,8 @@
 export const flohsensePage = {
   heroSection: {
     kicker: "FlohSense AI Agent",
-    title: "Turn Conversations into Actions & Outcomes",
+    title:
+      "Intelligent Customer Communication. Clear Actions. Autonomous Workflows",
     description:
       "Turn every customer email and chat into automated actions, resolutions and ultimately faster receivables and cashflow conversions.",
     btnText: "Book a Demo for FlohSense AI",
@@ -37,8 +38,8 @@ export const flohsensePage = {
     ],
   },
   spotlightSection: {
-    kicker: "A New Era of Communication",
-    title: "Transform Insights into Actionable Strategies",
+    kicker: "The Future of Customer Communication",
+    title: "Respond to All Customer Emails Quickly & Effectively",
     image: "/images/flohsense_ai/spotlight_section.png",
   },
 
@@ -122,10 +123,9 @@ export const flohsensePage = {
       },
 
       {
-        title:
-          "The FinFloh X-factor: Customer Communications Analytics & Insights",
+        title: "The X-factor: Customer Communications Analytics & Insights",
         description:
-          "Finance leaders gain AI-driven visibility into customer communication, intent, sentiment and behavior.",
+          "Finance teams get visibility and analysis of intent, behavior and responses to customer emails.",
 
         image: "/images/flohsense_ai/feature-x-factor.jpg",
         ctaLink: "/book-a-demo",
@@ -133,18 +133,15 @@ export const flohsensePage = {
         features: [
           {
             icon: "/icons/arrow_right.svg",
-            point:
-              "Decodes customer intent, sentiment, and behavior to drive smarter actions",
+            point: "Converts customer intent and behavior into actions",
           },
           {
             icon: "/icons/arrow_right.svg",
-            point:
-              "Visibility into % of emails pending response and delay days",
+            point: "Visibility of emails pending response and delay days",
           },
           {
             icon: "/icons/arrow_right.svg",
-            point:
-              "Track communication delays for A/R person, customers and BUs",
+            point: "Monitors response delays to customer emails",
           },
         ],
       },
@@ -152,7 +149,7 @@ export const flohsensePage = {
       {
         title: "Communication-to-Worklist Automation",
         description:
-          "Convert customer communication into actionable worklists that finance teams can track, prioritize, and resolve efficiently.",
+          "Convert customer communication into actionable worklists that finance teams can track, prioritize, and resolve.",
 
         image: "/images/flohsense_ai/feature-worklist.jpg",
         ctaLink: "/book-a-demo",
@@ -160,18 +157,15 @@ export const flohsensePage = {
         features: [
           {
             icon: "/icons/arrow_right.svg",
-            point:
-              "Automatically converts emails and chats into actionable receivables tasks",
+            point: "Turns communications into an actionable worklist",
           },
           {
             icon: "/icons/arrow_right.svg",
-            point:
-              "Tracks ownership, status, pending actions, and resolution timelines",
+            point: "Tracks status, pending actions, and timelines",
           },
           {
             icon: "/icons/arrow_right.svg",
-            point:
-              "Prioritizes collection activities based on urgency, risk, and customer commitments",
+            point: "Prioritizes tasks based on urgency.",
           },
         ],
       },
@@ -179,44 +173,11 @@ export const flohsensePage = {
   },
 
   keyFeature: {
-    title: "Built Directly Into Your Inbox",
+    title: "Embed FlohSense AI Agent Into Your Inbox",
     description:
-      "Connect FlohSense seamlessly with existing communication channels without changing current workflows.",
+      "Connect FlohSense seamlessly with your communication channels and without changing current workflows.",
     ctaText: "Book A Flohsense AI Demo",
     ctaLink: "/book-a-demo",
     image: "/images/flohsense_ai/finfloh-add-on.png",
   },
-
-  // valueAddFeature: {
-  //   features: [
-  //     {
-  //       icon: "/icons/arrow_right.svg",
-  //       productName: "Collection",
-  //       title: "Collection Worklist",
-  //       description:
-  //         "Auto create worklist based on the customer responses and once the user completes the task the worklist is auto updated on top of exiting worklist item.",
-  //     },
-  //     {
-  //       icon: "/icons/arrow_right.svg",
-  //       productName: "Collection",
-  //       title: "User Performance Metric",
-  //       description:
-  //         "Now Track your collectors performance better and more accurate based on the worklist completion and live updated performance at it best.",
-  //     },
-  //     {
-  //       icon: "/icons/arrow_right.svg",
-  //       productName: "Collection",
-  //       title: "User Performance Metric",
-  //       description:
-  //         "Now Track your collectors performance better and more accurate based on the worklist completion and live updated performance at it best.",
-  //     },
-  //     {
-  //       icon: "/icons/arrow_right.svg",
-  //       productName: "Collection",
-  //       title: "User Performance Metric",
-  //       description:
-  //         "Now Track your collectors performance better and more accurate based on the worklist completion and live updated performance at it best.",
-  //     },
-  //   ],
-  // },
 };
