@@ -4,7 +4,7 @@ export const flohsensePage = {
     title:
       "Intelligent Customer Communication. Clear Actions. Autonomous Workflows",
     description:
-      "Turn every customer email and chat into automated actions, resolutions and ultimately faster receivables and cashflow conversions.",
+      "FlohSense AI Agent transforms customer emails and chats across accounts receivable into automated actions, workflows, and faster cashflow outcomes.",
     btnText: "Book a Demo for FlohSense AI",
     btnLink: "/book-a-demo",
     image: "/images/flohsense_ai/hero_section-flohsenseAi-2x.png",
@@ -38,7 +38,7 @@ export const flohsensePage = {
     ],
   },
   spotlightSection: {
-    kicker: "The Future of Customer Communication",
+    kicker: "The Future of Receivables Communication",
     title: "Respond to All Customer Emails Quickly & Effectively",
     image: "/images/flohsense_ai/spotlight_section.png",
   },
@@ -59,9 +59,9 @@ export const flohsensePage = {
       },
       {
         icon: "/icons/flohsense-ai/ai-intelligence.svg",
-        title: "AI Teammate",
+        title: "AI Agent for Finance Teams",
         description:
-          "Continuously monitors conversations and triggers actions without manual intervention.",
+          "Continuously monitors communication, triggers workflows, and executes receivables actions without manual intervention.",
       },
       {
         icon: "/icons/flohsense-ai/insight.svg",
@@ -99,7 +99,7 @@ export const flohsensePage = {
       },
 
       {
-        title: "Smart Automation",
+        title: "Autonomous Workflow Automation",
         description:
           "AI automatically triggers actions, tags users, and executes workflows based on customer communication.",
 
