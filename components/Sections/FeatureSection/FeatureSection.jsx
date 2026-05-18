@@ -6,9 +6,9 @@ const FeatureSection = ({ sections = [] }) => {
     <section className="section--lg">
       <div className={styles.main_container}>
         <div className={styles.head_wrapper}>
-          <h3 className="kicker ai-highlight">The FinFloh Way</h3>
-          <h2 className="text-center ch25">
-            Clear Communication to Streamlined Action
+          <h3 className="kicker ai-highlight">Introducing FlohSense AI</h3>
+          <h2 className="text-center ch30">
+            AI That Understands Communication and Drives Execution
           </h2>
         </div>
         {sections.map((section, index) => (
