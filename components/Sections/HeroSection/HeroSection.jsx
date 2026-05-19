@@ -20,7 +20,7 @@ const HeroSection = ({
       <div className={style.container}>
         <div className={style.wrapper}>
           <div className={style.header}>
-            <h2 className="kicker ai-highlight">{kicker}</h2>
+            <h2 style={{ display: "none" }}>{kicker}</h2>
             <h1 className={`ch30 ${style.heading}`}>{title}</h1>
           </div>
           <p className={style.para}>{description}</p>

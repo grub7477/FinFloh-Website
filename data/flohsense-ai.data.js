@@ -1,10 +1,9 @@
 export const flohsensePage = {
   heroSection: {
-    kicker: "FlohSense AI Agent",
-    title:
-      "Intelligent Customer Communication. Clear Actions. Autonomous Workflows",
+    kicker: "AI Agent for A/R Communication and Workflow Automation",
+    title: "Automate your Responses to Customer Emails with FlohSense AI Agent",
     description:
-      "FlohSense AI Agent transforms customer emails and chats across accounts receivable into automated actions, workflows, and faster cashflow outcomes.",
+      "Transform customer emails and chats across accounts receivable into automated reverts, actions, closures, and faster cashflow outcomes.",
     btnText: "Book a Demo for FlohSense AI",
     btnLink: "/book-a-demo",
     image: "/images/flohsense_ai/hero_section-flohsenseAi-2x.png",
