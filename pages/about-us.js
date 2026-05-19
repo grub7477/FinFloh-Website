@@ -360,7 +360,7 @@ const AboutUs = () => {
                 From inception to ideation to demonstration to a live product
                 with multiple customers, and advise and guidance from CFOs and
                 finance partners across the world, it has been a wonderful
-                journey. We are off to a great start, and ee believe that this
+                journey. We are off to a great start, and we believe that this
                 is just the beginning of a something that could transform the
                 entire finance ecosystem.
               </p>
