@@ -18,7 +18,6 @@ const KeyFeature = ({
             label={ctaText}
             href={ctaLink}
             variant="secondary"
-            endIcon
           />
         </div>
         <img className="dot-pattern image-fill" src={image} alt={title} />

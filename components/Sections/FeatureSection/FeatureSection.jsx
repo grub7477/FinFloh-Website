@@ -1,7 +1,7 @@
 import ButtonCommon from "../../UI/Button/Button";
 import styles from "./FeatureSection.module.scss";
 
-const FeatureSection = ({ sections = [] }) => {
+const FeatureSection = ({ sections = [], icon }) => {
   return (
     <section className="section--lg">
       <div className={styles.main_container}>
@@ -31,7 +31,11 @@ const FeatureSection = ({ sections = [] }) => {
                 ))}
               </ul>
 
-              <ButtonCommon label={section.ctaText} href={section.ctaLink} />
+              <ButtonCommon
+                label={section.ctaText}
+                href={section.ctaLink}
+                endIcon={icon}
+              />
             </div>
 
             <div className="img_wrapper">
