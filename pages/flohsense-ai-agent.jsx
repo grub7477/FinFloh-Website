@@ -10,6 +10,7 @@ import SpotlightSection from "../components/Sections/SpotlightSection/SpotlightS
 import CustomerLogos from "../components/Sections/CustomerLogos/CustomerLogos";
 import HeadComponent from "../components/Common/HeadComponent";
 import FaqContent from "../components/Faq/FaqContent_New";
+import RightArrow from "../public/icons/arrow_right.svg";
 
 const FAQ_CONTENT = [
   {
@@ -145,6 +146,7 @@ const flohsense = () => {
             btnText={flohsensePage.heroSection.btnText}
             btnLink={flohsensePage.heroSection.btnLink}
             image={flohsensePage.heroSection.image}
+            icon={<RightArrow />}
           />
           <CustomerLogos />
           <div className="container main-container">
@@ -163,7 +165,10 @@ const flohsense = () => {
             />
 
             {/* Feature Section */}
-            <FeatureSection sections={flohsensePage.featureSection.sections} />
+            <FeatureSection
+              sections={flohsensePage.featureSection.sections}
+              icon={<RightArrow />}
+            />
 
             <KeyFeature
               title={flohsensePage.keyFeature.title}
