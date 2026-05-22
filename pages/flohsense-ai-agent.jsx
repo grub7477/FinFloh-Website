@@ -144,7 +144,7 @@ const flohsense = () => {
             kicker={flohsensePage.heroSection.kicker}
             description={flohsensePage.heroSection.description}
             btnText={flohsensePage.heroSection.btnText}
-            btnLink={flohsensePage.heroSection.btnLink}
+            utmURLs={flohsensePage.heroSection.btnLink}
             image={flohsensePage.heroSection.image}
             icon={<RightArrow />}
           />
