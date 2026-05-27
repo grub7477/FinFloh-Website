@@ -6,7 +6,7 @@ export const flohsensePage = {
       "Transform customer emails and chats across accounts receivable into automated reverts, actions, closures, and faster cashflow outcomes.",
     btnText: "Book a Demo for FlohSense AI",
     btnLink:
-      "/book-a-demo?utm_source=flohsense_ai_agent&utm_medium=website&utm_campaign=flohsense_ai_launch",
+      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
     image: "/images/flohsense_ai/hero_section-flohsenseAi-2x.png",
   },
 
@@ -81,7 +81,7 @@ export const flohsensePage = {
 
         image: "/images/flohsense_ai/feature-autoCapture.jpg",
         ctaLink:
-          "/book-a-demo?utm_source=flohsense_ai_agent&utm_medium=website&utm_campaign=flohsense_ai_launch",
+          "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
         ctaText: "Book a Demo for FlohSense AI",
         features: [
           {
@@ -106,7 +106,7 @@ export const flohsensePage = {
 
         image: "/images/flohsense_ai/feature-automation.jpg",
         ctaLink:
-          "/book-a-demo?utm_source=flohsense_ai_agent&utm_medium=website&utm_campaign=flohsense_ai_launch",
+          "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
         ctaText: "Book A Flohsense AI Demo",
         features: [
           {
@@ -131,7 +131,7 @@ export const flohsensePage = {
 
         image: "/images/flohsense_ai/feature-x-factor.jpg",
         ctaLink:
-          "/book-a-demo?utm_source=flohsense_ai_agent&utm_medium=website&utm_campaign=flohsense_ai_launch",
+          "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
         ctaText: "Book A Flohsense AI Demo",
         features: [
           {
@@ -156,7 +156,7 @@ export const flohsensePage = {
 
         image: "/images/flohsense_ai/feature-worklist.jpg",
         ctaLink:
-          "/book-a-demo?utm_source=flohsense_ai_agent&utm_medium=website&utm_campaign=flohsense_ai_launch",
+          "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
         ctaText: "Book A Flohsense AI Demo",
         features: [
           {
@@ -182,7 +182,7 @@ export const flohsensePage = {
       "Connect FlohSense seamlessly with your communication channels and without changing current workflows.",
     ctaText: "Book A Flohsense AI Demo",
     ctaLink:
-      "/book-a-demo?utm_source=flohsense_ai_agent&utm_medium=website&utm_campaign=flohsense_ai_launch",
+      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
     image: "/images/flohsense_ai/finfloh-add-on.png",
   },
 };
