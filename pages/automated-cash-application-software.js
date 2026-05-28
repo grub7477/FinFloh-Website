@@ -231,76 +231,56 @@ const CashApplication = () => {
         includeFAQ
         FAQProps={[
           {
-            "@type": "Question",
-            name: "What is automated cash application?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Automated cash application is the process of matching incoming customer payments to open invoices without manual reconciliation. FinFloh reconciles payments using structured data and intelligent matching logic, improving accuracy and reducing processing time.",
-            },
+            question: "What is automated cash application?",
+            answer:
+              "Automated cash application is the process of matching incoming customer payments to open invoices without manual reconciliation. FinFloh reconciles payments using structured data and intelligent matching logic, improving accuracy and reducing processing time.",
           },
           {
-            "@type": "Question",
-            name: "How does FinFloh automate cash application?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "FinFloh ingests bank statement data and open invoice data from ERP systems, then applies configurable matching rules and intelligent algorithms. Payments are matched using invoice numbers, customer identifiers, amounts, and remittance details.",
-            },
+            question: "How does FinFloh automate cash application?",
+            answer:
+              "FinFloh ingests bank statement data and open invoice data from ERP systems, then applies configurable matching rules and intelligent algorithms. Payments are matched using invoice numbers, customer identifiers, amounts, and remittance details.",
           },
           {
-            "@type": "Question",
-            name: "Can FinFloh handle partial payments, short payments, and consolidated remittances?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes. FinFloh supports complex reconciliation scenarios including partial payments, short payments, overpayments, bulk remittances, and multi-invoice settlements while maintaining structured exception handling and full audit visibility.",
-            },
+            question:
+              "Can FinFloh handle partial payments, short payments, and consolidated remittances?",
+            answer:
+              "Yes. FinFloh supports complex reconciliation scenarios including partial payments, short payments, overpayments, bulk remittances, and multi-invoice settlements while maintaining structured exception handling and full audit visibility.",
           },
           {
-            "@type": "Question",
-            name: "What happens when payments cannot be automatically matched?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "If a payment cannot be matched with high confidence, FinFloh routes it into a structured exception workflow. The system provides suggested matches and contextual information to help finance teams resolve discrepancies quickly.",
-            },
+            question:
+              "What happens when payments cannot be automatically matched?",
+            answer:
+              "If a payment cannot be matched with high confidence, FinFloh routes it into a structured exception workflow. The system provides suggested matches and contextual information to help finance teams resolve discrepancies quickly.",
           },
           {
-            "@type": "Question",
-            name: "How does automated cash application reduce unapplied cash?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "FinFloh reduces unapplied cash by combining intelligent matching logic, configurable allocation rules, and real-time visibility into unmatched payments. This improves ledger accuracy and strengthens financial reporting reliability.",
-            },
+            question:
+              "How does automated cash application reduce unapplied cash?",
+            answer:
+              "FinFloh reduces unapplied cash by combining intelligent matching logic, configurable allocation rules, and real-time visibility into unmatched payments. This improves ledger accuracy and strengthens financial reporting reliability.",
           },
           {
-            "@type": "Question",
-            name: "How does FinFloh integrate with ERP and banking systems?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "FinFloh integrates with ERP systems such as Oracle NetSuite, Oracle Fusion, Microsoft Dynamics 365, and SAP S/4HANA. It connects with banking data feeds or imported bank statements to reconcile payments directly within the ERP environment.",
-            },
+            question:
+              "How does FinFloh integrate with ERP and banking systems?",
+            answer:
+              "FinFloh integrates with ERP systems such as Oracle NetSuite, Oracle Fusion, Microsoft Dynamics 365, and SAP S/4HANA. It connects with banking data feeds or imported bank statements to reconcile payments directly within the ERP environment.",
           },
           {
-            "@type": "Question",
-            name: "How does FlohSense AI Agent accelerate straight-through cash posting from customer emails?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "FlohSense AI Agent parses incoming customer emails to extract payment references and remittance details. It matches the extracted data with open invoices in the ERP, validates the allocation, and posts the payment when confidence thresholds are met.",
-            },
+            question:
+              "How does FlohSense AI Agent accelerate straight-through cash posting from customer emails?",
+            answer:
+              "FlohSense AI Agent parses incoming customer emails to extract payment references and remittance details. It matches the extracted data with open invoices in the ERP, validates the allocation, and posts the payment when confidence thresholds are met.",
           },
           {
-            "@type": "Question",
-            name: "How does automated cash application improve month-end closing?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "By reducing manual reconciliation and accelerating payment allocation, FinFloh shortens reconciliation cycles and improves ledger accuracy. This enables finance teams to close books faster with fewer manual adjustments.",
-            },
+            question:
+              "How does automated cash application improve month-end closing?",
+            answer:
+              "By reducing manual reconciliation and accelerating payment allocation, FinFloh shortens reconciliation cycles and improves ledger accuracy. This enables finance teams to close books faster with fewer manual adjustments.",
           },
           {
-            "@type": "Question",
-            name: "How does FinFloh ensure auditability and financial control?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Every payment allocation, adjustment, and ERP posting is logged with a detailed audit trail. FinFloh provides visibility into matching logic, user approvals, and posting history, ensuring compliance and strong internal financial controls.",
-            },
+            question:
+              "How does FinFloh ensure auditability and financial control?",
+            answer:
+              "Every payment allocation, adjustment, and ERP posting is logged with a detailed audit trail. FinFloh provides visibility into matching logic, user approvals, and posting history, ensuring compliance and strong internal financial controls.",
           },
         ]}
       />
