@@ -1,5 +1,9 @@
 import Head from "next/head";
 
+// -----------------------------
+// Helper Schemas
+// -----------------------------
+
 const publisherSchema = () => ({
   "@type": "Organization",
   name: "FinFloh",
@@ -27,7 +31,7 @@ const aboutSchema = ({
   },
 });
 
-const ispartofSchema = () => ({
+const isPartOfSchema = () => ({
   "@type": "WebSite",
   name: "FinFloh",
   url: "https://finfloh.com",
@@ -41,19 +45,17 @@ const authorSchema = ({ datePublished = "", dateModified = "" } = {}) => ({
   dateModified,
 });
 
-const MainEntitySchema = (
+const mainEntitySchema = ({
   entityType = "WebPage",
-  articleSection,
-  headline,
-) => ({
+  articleSection = "",
+  headline = "",
+} = {}) => ({
   "@type": entityType,
   headline,
   articleSection,
 });
 
-const hasPartSchema = (hasPart = []) => ({
-  hasPart,
-});
+const hasPartSchema = (hasPart = []) => hasPart;
 
 const breadcrumbsSchema = (items = []) => ({
   "@type": "BreadcrumbList",
@@ -64,7 +66,7 @@ const breadcrumbsSchema = (items = []) => ({
       name: "Home",
       item: "https://finfloh.com/",
     },
-    items.map((item, index) => ({
+    ...items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 2,
       name: item.name,
@@ -79,25 +81,48 @@ const offerSchema = () => ({
   url: "https://finfloh.com/free-trial",
 });
 
-// FAQ Schema
-const faqSchema = (FAQProps = []) => ({
+const faqSchema = (faqItems = []) => ({
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: FAQProps,
+  mainEntity: faqItems.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
 });
 
-// define webpageSchema outside of HeadComponent
+// -----------------------------
+// Clean Object Helper
+// -----------------------------
+
+const cleanObject = (obj) =>
+  Object.fromEntries(
+    Object.entries(obj).filter(
+      ([, v]) =>
+        v !== undefined &&
+        v !== null &&
+        v !== "" &&
+        !(Array.isArray(v) && v.length === 0) &&
+        v !== false,
+    ),
+  );
+
+// -----------------------------
+// Main Webpage Schema Generator
+// -----------------------------
+
 const webpageSchema = ({
   pageType = "WebPage",
   url = "",
-  canonicalUrl = url,
   title = "",
   description = "",
   mainEntityOfPage = null,
-  isPartOf = null,
-  about = null,
   headline = "",
   keywords = [],
+
   includePublisher = false,
   includeOffer = false,
   includeIsPartOf = false,
@@ -105,32 +130,30 @@ const webpageSchema = ({
   includeMainEntity = false,
   includeBreadcrumbs = false,
   includeAbout = false,
+  includeHasPart = false,
+  includeFAQ = false,
+
   aboutProps = {},
   offerProps = {},
   authorProps = {},
-  MainEntityProps = {},
+  mainEntityProps = {},
   breadcrumbItems = [],
-  includeHasPart = false,
   hasPartProps = [],
   publisher = null,
-  includeFAQ = false,
   FAQProps = [],
 }) => {
+  const schemas = [];
+
   const schema = {
     "@context": "https://schema.org",
     "@type": pageType,
     name: title,
+    headline: headline || title,
     description,
-    url,
-    canonicalUrl,
-    headline,
-    keywords,
+    url, // ✅ only "url" goes into JSON-LD — "canonicalUrl" is intentionally excluded
     mainEntityOfPage,
+    keywords,
   };
-
-  if (includeFAQ) {
-    schema.faq = faqSchema(FAQProps);
-  }
 
   if (includePublisher) {
     schema.publisher = publisher || publisherSchema();
@@ -139,63 +162,74 @@ const webpageSchema = ({
   if (includeOffer) {
     schema.offers = offerSchema(offerProps);
   }
+
   if (includeIsPartOf) {
-    schema.isPartOf = ispartofSchema();
+    schema.isPartOf = isPartOfSchema();
   }
+
   if (includeAuthor) {
     schema.author = authorSchema(authorProps);
   }
+
   if (includeMainEntity) {
-    schema.MainEntity = MainEntitySchema(MainEntityProps);
+    schema.mainEntity = mainEntitySchema(mainEntityProps);
   }
+
   if (includeHasPart) {
     schema.hasPart = hasPartSchema(hasPartProps);
   }
+
   if (includeAbout) {
     schema.about = aboutSchema(aboutProps);
   }
+
   if (includeBreadcrumbs) {
     schema.breadcrumb = breadcrumbsSchema(breadcrumbItems);
   }
 
-  const cleanObject = (obj) =>
-    Object.fromEntries(
-      Object.entries(obj).filter(
-        ([, v]) =>
-          v !== undefined &&
-          v !== null &&
-          v !== "" &&
-          !(Array.isArray(v) && v.length === 0) &&
-          v !== false,
-      ),
-    );
+  schemas.push(cleanObject(schema));
 
-  return cleanObject(schema);
+  // ✅ FAQ is pushed as a separate schema object, not nested inside WebPage
+  if (includeFAQ && FAQProps.length > 0) {
+    schemas.push(cleanObject(faqSchema(FAQProps)));
+  }
+
+  return schemas;
 };
 
+// -----------------------------
+// Head Component
+// -----------------------------
+
 function HeadComponent(props) {
+  // ✅ canonicalUrl is destructured out and never passed into webpageSchema
   const { title, description, canonicalUrl, ...schemaProps } = props;
 
-  // Ensure title, description, and url are passed for schema correctly
-  const schema = webpageSchema({
+  const schemas = webpageSchema({
     title,
     description,
-    url: canonicalUrl,
+    url: canonicalUrl, // mapped to the valid "url" property
     ...schemaProps,
   });
-
-  if (!schema) return null;
 
   return (
     <Head>
       <title>{title}</title>
+
       <meta name="description" content={description} />
+
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        key="ldjson"
-      />
+
+      {/* ✅ Each schema is rendered as its own <script> tag, not a combined array */}
+      {schemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
+      ))}
     </Head>
   );
 }
