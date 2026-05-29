@@ -14,9 +14,9 @@ const CookiePolicy = () => (
         <p>
           The Cookies Notice details FinFloh's utilization of cookies and akin
           technologies within our business operations via our website,{" "}
-          <a href="www.finfloh.com">www.finfloh.com</a>. It explains what these
-          technologies are, and why we use them, as well as your rights to
-          control our use of them.
+          <a href="https://www.finfloh.com/">www.finfloh.com</a>. It explains
+          what these technologies are, and why we use them, as well as your
+          rights to control our use of them.
         </p>
         <p>
           Please note that we may periodically update this Cookie Policy to
