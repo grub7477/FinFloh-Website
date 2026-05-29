@@ -14,9 +14,15 @@ const CookiePolicy = () => (
         <p>
           The Cookies Notice details FinFloh's utilization of cookies and akin
           technologies within our business operations via our website,{" "}
-          <a href="www.finfloh.com">www.finfloh.com</a>. It explains what these
-          technologies are, and why we use them, as well as your rights to
-          control our use of them.
+          <a
+            href="https://www.finfloh.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.finfloh.com
+          </a>
+          . It explains what these technologies are, and why we use them, as
+          well as your rights to control our use of them.
         </p>
         <p>
           Please note that we may periodically update this Cookie Policy to
@@ -31,10 +37,17 @@ const CookiePolicy = () => (
           save on the user's system/device, when a user visits the website, in
           order to remember the user's device upon revisiting the website or
           during the session. Cookies set up by the domain{" "}
-          <a href="https://finfloh.com/">FinFloh</a>, are called first-party
-          cookies and cookies set by other domain(s) than the website(s) you are
-          visiting are termed as third-party cookies. Third-party cookies are
-          generally used for marketing and advertising purposes.
+          <a
+            href="https://finfloh.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FinFloh
+          </a>
+          , are called first-party cookies and cookies set by other domain(s)
+          than the website(s) you are visiting are termed as third-party
+          cookies. Third-party cookies are generally used for marketing and
+          advertising purposes.
         </p>
 
         <h2>Purpose of using cookies?</h2>

@@ -4,6 +4,23 @@ module.exports = {
   generateRobotsTxt: true,
   sitemapSize: 1000,
 
+  exclude: [
+    "/demo-request-successful",
+    "/free-trial-successful",
+    "/homePage-pricing",
+    "/testing",
+    "/journal-entries",
+    "/roi-report-requested",
+    "/refer",
+    "/quote-request-successful",
+    "/free-credit-score-request-successful",
+    "/free-credit-score",
+    "/awards",
+    "/cookie-policy",
+    "/lp/*",
+    "/product-hunt/*",
+  ],
+
   transform: async (config, path) => {
     // Give homepage priority 1
     if (path === "/") {
