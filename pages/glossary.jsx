@@ -1,1304 +1,338 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import HeadComponent from "../components/Common/HeadComponent";
 import WebsiteLayout from "../components/Layouts/WebsiteLayout";
 import axios from "axios";
-import { Article, parsePost } from "./blog";
 
-// const parsePostList = (posts) => {
-//   return posts?.map(parsePost);
-// };
-// export async function getServerSideProps({ req }) {
-//   const { data: postList } = await axios.get(
-//     "https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/posts?per_page=3"
-//   );
-//   const { data: authorsUnparsed } = await axios.get(
-//     "https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/users"
-//   );
-//   const { data: media } = await axios.get(
-//     `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/media?per_page=100`
-//   );
-
-//   const { data: categories } = await axios.get(
-//     `https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/categories`
-//   );
-//   // console.log("post", postList[0]);
-//   const postListWithAuthor = postList.map((post) => ({
-//     ...post,
-//     authorDetail: authorsUnparsed?.filter(
-//       (author) => author.id === post.author
-//     )[0],
-//     media:
-//       media?.filter((m) => m?.post === post?.id)?.length > 0
-//         ? media?.filter((m) => m?.post === post?.id)[0]
-//         : "",
-//     category:
-//       categories?.filter((catg) => post?.categories?.includes(catg?.id))[0]
-//         ?.name || "",
-//   }));
-
-//   const posts = parsePostList(postListWithAuthor);
-
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// }
+// ─────────────────────────────────────────────────────────────────────────────
+// Helpers
+// ─────────────────────────────────────────────────────────────────────────────
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-const terms = {
-  A: [
-    {
-      keyword: "Accounts Receivable Strategy in Europe",
-      url: "https://finfloh.com/blog/accounts-receivable-strategy-europe",
-    },
-    {
-      keyword: "Accounts Receivable Best Practices",
-      url: "https://finfloh.com/blog/accounts-receivable-best-practices",
-    },
-    {
-      keyword: "AI in Credit Decisions",
-      url: "https://finfloh.com/blog/ai-in-credit-decisions",
-    },
-    {
-      keyword: "AI in Credit Scoring",
-      url: "https://finfloh.com/blog/ai-in-credit-scoring",
-    },
-    {
-      keyword: "AI in Cash Application",
-      url: "https://finfloh.com/blog/ai-in-cash-application",
-    },
-    {
-      keyword: "AI in Invoice Automation",
-      url: "https://finfloh.com/blog/ai-in-invoice-automation",
-    },
-    {
-      keyword: "AI in Collections",
-      url: "https://finfloh.com/blog/ai-in-collections",
-    },
-    {
-      keyword: "ACH Payment",
-      url: "https://finfloh.com/blog/ach-payment",
-    },
-    {
-      keyword: "ACH Credit vs ACH Debit",
-      url: "https://finfloh.com/blog/ach-credit-vs-ach-debit",
-    },
-    {
-      keyword: "Account Audit",
-      url: "https://finfloh.com/blog/accounting-audit-process",
-    },
-    {
-      keyword: "Account Receivable Process",
-      url: "https://finfloh.com/blog/account-receivable-process",
-    },
-    {
-      keyword: "Account Reconciliation",
-      url: "https://finfloh.com/blog/account-reconciliation",
-    },
-    {
-      keyword: "Accounting Accuracy",
-      url: "https://finfloh.com/blog/accounting-accuracy",
-    },
-    {
-      keyword: "Accounting Automation",
-      url: "https://finfloh.com/blog/accounting-automation",
-    },
-    {
-      keyword: "Accounts Receivable Collections",
-      url: "https://finfloh.com/blog/accounts-receivable-collections",
-    },
-    {
-      keyword: "Accounts Receivable Financing",
-      url: "https://finfloh.com/blog/accounts-receivable-financing",
-    },
-    {
-      keyword: "Accounts Receivable Days",
-      url: "https://finfloh.com/blog/accounts-receivable-days",
-    },
-    {
-      keyword: "Accounts Receivable Insurance",
-      url: "https://finfloh.com/blog/accounts-receivable-insurance-guide",
-    },
-    {
-      keyword: "Accounts Receivable Management",
-      url: "https://finfloh.com/blog/manage-accounts-receivable",
-    },
-    {
-      keyword: "Adjusted Cash Balance Formula",
-      url: "https://finfloh.com/blog/adjusted-cash-balance-formula",
-    },
-    {
-      keyword: "Accounts Receivable Process",
-      url: "https://finfloh.com/blog/accounts-receivable-process",
-    },
-    {
-      keyword: "Accounts Receivable Report",
-      url: "https://finfloh.com/blog/accounts-receivable-reports",
-    },
-    {
-      keyword: "Accounts Receivable Technology",
-      url: "https://finfloh.com/blog/accounts-receivable-technology",
-    },
-    {
-      keyword: "Accounts Receivable KPIS",
-      url: "https://finfloh.com/blog/accounts-receivable-kpis",
-    },
-    {
-      keyword: "Advance Billing",
-      url: "https://finfloh.com/blog/advance-billing",
-    },
-    {
-      keyword: "Agentic AI in Enterprise Finance",
-      url: "https://finfloh.com/blog/agentic-ai-in-enterprise-finance",
-    },
-    {
-      keyword: "Agentic AI in Finance",
-      url: "https://finfloh.com/blog/agentic-ai-finance",
-    },
-    {
-      keyword: "Agentic AI vs Generative AI",
-      url: "https://finfloh.com/blog/agenticai-vs-generativeai-o2c",
-    },
-    {
-      keyword: "Aging Report",
-      url: "https://finfloh.com/blog/aging-report",
-    },
-    {
-      keyword: "AI in Revenue Recognition",
-      url: "https://finfloh.com/blog/ai-in-revenue-recognition",
-    },
-    {
-      keyword: "AI Collections vs Dunning",
-      url: "https://finfloh.com/blog/ai-collections-agents-vs-traditional-dunning",
-    },
-    {
-      keyword: "AI Blocked Order Management",
-      url: "https://finfloh.com/blog/ai-blocked-order-management",
-    },
-    {
-      keyword: "AI Dispute Management",
-      url: "https://finfloh.com/blog/ai-dispute-management",
-    },
-    {
-      keyword: "AI in Deductions",
-      url: "https://finfloh.com/blog/ai-in-deductions",
-    },
-    {
-      keyword: "AI Lockbox & Remittance Automation",
-      url: "https://finfloh.com/blog/ai-powered-lockbox-and-remittance-automation",
-    },
-    {
-      keyword: "AR Accounting",
-      url: "https://finfloh.com/blog/ar-accounting",
-    },
-    {
-      keyword: "Applications of OCR in AR",
-      url: "https://finfloh.com/blog/applications-ocr-in-ar",
-    },
-    {
-      keyword: "AR Days Outstanding",
-      url: "https://finfloh.com/blog/accounts-receivable-days-outstanding",
-    },
-    {
-      keyword: "AR Teams",
-      url: "https://finfloh.com/blog/ar-teams",
-    },
-    {
-      keyword: "ASC 606",
-      url: "https://finfloh.com/blog/asc606",
-    },
-    {
-      keyword: "AR Asset or Liability",
-      url: "https://finfloh.com/blog/accounts-receivable-asset-or-liability",
-    },
-    {
-      keyword: "Asset Based Lending",
-      url: "https://finfloh.com/blog/asset-based-lending",
-    },
-    {
-      keyword: "At Risk Account",
-      url: "https://finfloh.com/blog/at-risk-account",
-    },
-    {
-      keyword: "Allowance for Doubtful Accounts Automation",
-      url: "https://finfloh.com/blog/automating-allowance-for-doubtful-accounts",
-    },
-    {
-      keyword: "Automated Billing",
-      url: "https://finfloh.com/blog/automated-billing-system",
-    },
-    // {
-    //   keyword: "Automated Billing System",
-    //   url: "https://finfloh.com/blog/automated-billing-system-your-key-to-efficiency-and-growth",
-    // },
-    {
-      keyword: "Automated Correspondence",
-      url: "https://finfloh.com/blog/automated-correspondence",
-    },
-    {
-      keyword: "Automated Credit & Debit Offsets",
-      url: "https://finfloh.com/blog/automated-credit-debit-offset-ar-automation-dso-reduction",
-    },
-  ],
-  B: [
-    {
-      keyword: "B2B Taxes in Europe",
-      url: "https://finfloh.com/blog/b2b-taxes-in-europe-guide",
-    },
-    {
-      keyword: "B2B Taxes in United States",
-      url: "https://finfloh.com/blog/b2b-taxes-in-united-states-guide",
-    },
-    {
-      keyword: "B2B Collections",
-      url: "https://finfloh.com/blog/b2b-collections",
-    },
-    {
-      keyword: "B2B Taxes in India",
-      url: "https://finfloh.com/blog/b2b-taxes-in-india-gst",
-    },
-    {
-      keyword: "Bad Debt Expense",
-      url: "https://finfloh.com/blog/bad-debt-formula-master-calculation-management-tips",
-    },
-    {
-      keyword: "Bad Debt Expense Tracking",
-      url: "https://finfloh.com/blog/bad-debt-expense-tracking-calculation-improvement",
-    },
-    {
-      keyword: "Balance Sheet Reconciliation",
-      url: "https://finfloh.com/blog/balance-sheet-reconciliation-guide",
-    },
-    {
-      keyword: "Balance of Payment",
-      url: "https://finfloh.com/blog/balance-of-payment",
-    },
-    {
-      keyword: "Banking Partner",
-      url: "https://finfloh.com/blog/banking-partner",
-    },
-    {
-      keyword: "Big Data in AR",
-      url: "https://finfloh.com/blog/big-data-analytics-ar",
-    },
-    {
-      keyword: "Bill of Lading",
-      url: "https://finfloh.com/blog/bill-of-lading",
-    },
-    {
-      keyword: "Biller Service Provider",
-      url: "https://finfloh.com/blog/biller-service-provider-bsp",
-    },
-    {
-      keyword: "Billing Cycle",
-      url: "https://finfloh.com/blog/billing-cycle",
-    },
-    {
-      keyword: "Blocked Orders",
-      url: "https://finfloh.com/blog/blocked-orders",
-    },
-    {
-      keyword: "Build Finance AI Agents",
-      url: "https://finfloh.com/blog/build-finance-ai-agents-in-4-easy-steps",
-    },
-    {
-      keyword: "Budgeting",
-      url: "https://finfloh.com/blog/budgeting",
-    },
-    {
-      keyword: "Business Accounting",
-      url: "https://finfloh.com/blog/what-is-business-accounting",
-    },
-    {
-      keyword: "Business Account Definition",
-      url: "https://finfloh.com/blog/what-does-an-account-mean-in-business-finance",
-    },
-    {
-      keyword: "Business Credit Score",
-      url: "https://finfloh.com/blog/business-credit-score",
-    },
-  ],
-  C: [
-    {
-      keyword: "Cash Application",
-      url: "https://finfloh.com/blog/cash-application-guide",
-    },
-    {
-      keyword: "Cash Application Automation Europe",
-      url: "https://finfloh.com/blog/cash-application-automation-europe",
-    },
-    // {
-    //   keyword: "Cash Conversion",
-    //   url: "https://finfloh.com/blog/cash-conversion-cycle",
-    // },
-    {
-      keyword: "Cash Conversion Cycle",
-      url: "https://finfloh.com/blog/cash-conversion-cycle",
-    },
-    {
-      keyword: "Cash Flow Modeling",
-      url: "https://finfloh.com/blog/cash-flow-modeling-business-guide",
-    },
-    {
-      keyword: "Cash Flow Optimization",
-      url: "https://finfloh.com/blog/cash-flow-optimization-for-business-growth",
-    },
-    {
-      keyword: "Cash Flow Projection",
-      url: "https://finfloh.com/blog/cash-flow-projection-guide-template",
-    },
-    {
-      keyword: "Cash Flow Forecasting Essentials",
-      url: "https://finfloh.com/blog/essentials-of-cash-flow-forecasting-model",
-    },
-    {
-      keyword: "Cash Forecasting",
-      url: "https://finfloh.com/blog/cash-forecast",
-    },
-    {
-      keyword: "Cash Management",
-      url: "https://finfloh.com/blog/mastering-cash-flow-for-financial-success",
-    },
-    {
-      keyword: "Cash Management Bill",
-      url: "https://finfloh.com/blog/cash-management-bills-explained",
-    },
-    {
-      keyword: "Cash Positioning",
-      url: "https://finfloh.com/blog/cash-positioning-understanding-your-financial-lifeblood",
-    },
-    {
-      keyword: "Cash Runway",
-      url: "https://finfloh.com/blog/cash-runway-explained",
-    },
-    {
-      keyword: "Cash Posting",
-      url: "https://finfloh.com/blog/cash-posting-from-receipts-to-records",
-    },
+/**
+ * Decodes common HTML entities returned by the WP REST API.
+ * e.g. "&#8220;" → """ | "&amp;" → "&" | "&#8211;" → "–"
+ */
+const decodeHtmlEntities = (str) =>
+  str
+    .replace(/&#8220;/g, "\u201C") // "
+    .replace(/&#8221;/g, "\u201D") // "
+    .replace(/&#8216;/g, "\u2018") // '
+    .replace(/&#8217;/g, "\u2019") // '
+    .replace(/&#8211;/g, "\u2013") // –
+    .replace(/&#8212;/g, "\u2014") // —
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)));
 
-    {
-      keyword: "Cash Surrender Value (CSV)",
-      url: "https://finfloh.com/blog/cash-surrender-value-csv",
-    },
-    {
-      keyword: "Cashflow Forecasting AI/ML",
-      url: "https://finfloh.com/blog/cashflow-forecasting-aiml",
-    },
-    {
-      keyword: "CFO's AR Checklist 2026",
-      url: "https://finfloh.com/blog/cfos-ar-checklist-2026",
-    },
-    {
-      keyword: "CEI",
-      url: "https://finfloh.com/blog/master-collection-effectiveness-index",
-    },
-    {
-      keyword: "Certified Treasury Professional (CTP)",
-      url: "https://finfloh.com/blog/certified-treasury-professional",
-    },
-    {
-      keyword: "Check Lockbox",
-      url: "https://finfloh.com/blog/cost-savings-with-lockbox-payment",
-    },
-    {
-      keyword: "Close Management",
-      url: "https://finfloh.com/blog/close-management",
-    },
-    {
-      keyword: "Collection Call Scripts",
-      url: "https://finfloh.com/blog/collection-call-scripts-ethical-effective",
-    },
-    {
-      keyword: "Collection Dispute Letter",
-      url: "https://finfloh.com/blog/collection-dispute-letters",
-    },
-    {
-      keyword: "Collection Effectiveness Index (CEI)",
-      url: "https://finfloh.com/blog/collection-effectiveness-index-cei",
-    },
-    {
-      keyword: "Collection Letters",
-      url: "https://finfloh.com/blog/collection-letters-guide",
-    },
-    {
-      keyword: "Collection Policy Guide",
-      url: "https://finfloh.com/blog/build-a-winning-collection-policy",
-    },
-    {
-      keyword: "Collection Policy",
-      url: "https://finfloh.com/blog/collection-policy",
-    },
-    {
-      keyword: "Connected Systems",
-      url: "https://finfloh.com/blog/how-to-untangle-complex-finance-hairball-infrastructure-build-connected-systems",
-    },
-    {
-      keyword: "Convenience Fee",
-      url: "https://finfloh.com/blog/convenience-fee-explained-how-to-avoid",
-    },
-    {
-      keyword: "Controllership",
-      url: "https://finfloh.com/blog/controllership-department-essential-function",
-    },
-    {
-      keyword: "CPQ Optimization",
-      url: "https://finfloh.com/blog/cpq-optimization-for-the-future-of-sales",
-    },
-    {
-      keyword: "Credit Card Processing Fees",
-      url: "https://finfloh.com/blog/credit-card-processing-fees-explained",
-    },
-    {
-      keyword: "Credit Hold",
-      url: "https://finfloh.com/blog/dealing-with-credit-holds",
-    },
-    {
-      keyword: "Credit Limit Request",
-      url: "https://finfloh.com/blog/requested-credit-limit",
-    },
-    {
-      keyword: "Credit Memo",
-      url: "https://finfloh.com/blog/mastering-credit-memos-a-complete-guide",
-    },
-    {
-      keyword: "Credit Risk Management",
-      url: "https://finfloh.com/blog/credit-risk-management-guide-challenges-benefits-best-practices",
-    },
-    {
-      keyword: "Credit Scoring Models",
-      url: "https://finfloh.com/blog/credit-scoring-models-explained",
-    },
-    {
-      keyword: "Credit Union",
-      url: "https://finfloh.com/blog/credit-union",
-    },
-    {
-      keyword: "Credit Worthiness",
-      url: "https://finfloh.com/blog/creditworthiness-assessment-master-your-profits",
-    },
-    {
-      keyword: "Current Yield",
-      url: "https://finfloh.com/blog/current-yield",
-    },
-    {
-      keyword: "Customer Master",
-      url: "https://finfloh.com/blog/customer-master",
-    },
-    {
-      keyword: "Customer Onboarding in Salesforce",
-      url: "https://finfloh.com/blog/ai-customer-onboarding-salesforce",
-    },
-  ],
-  D: [
-    {
-      keyword: "Deductions",
-      url: "https://finfloh.com/blog/what-are-deductions",
-    },
-    {
-      keyword: "Day Sales Outstanding",
-      url: "https://finfloh.com/blog/dso",
-    },
-    {
-      keyword: "Days Inventory Outstanding",
-      url: "https://finfloh.com/blog/days-inventory-outstanding-formula",
-    },
-    {
-      keyword: "Days Inventory Outstanding (DIO)",
-      url: "https://finfloh.com/blog/days-inventory-outstanding-formula",
-    },
-    {
-      keyword: "Days Payable Outstanding",
-      url: "https://finfloh.com/blog/days-payable-outstanding-benchmark",
-    },
-    {
-      keyword: "Deal Sheet",
-      url: "https://finfloh.com/blog/understanding-deal-sheets-explained",
-    },
-    {
-      keyword: "Deal Sheets",
-      url: "https://finfloh.com/blog/deal-sheets",
-    },
-    {
-      keyword: "Debt Collection Agency",
-      url: "https://finfloh.com/blog/debt-collection-agency-dca",
-    },
-    {
-      keyword: "Debtor Days Formula",
-      url: "https://finfloh.com/blog/debtor-days-formula-reduction",
-    },
-    {
-      keyword: "Delinquent Invoices",
-      url: "https://finfloh.com/blog/delinquent-invoices-definition-causes-and-collection-strategies",
-    },
-    {
-      keyword: "Direct vs Indirect Cash Flow Methods",
-      url: "https://finfloh.com/blog/direct-vs-indirect-cash-flow-methods",
-    },
-    {
-      keyword: "Depreciation in Accounting",
-      url: "https://finfloh.com/blog/depreciation-in-accounting",
-    },
-    {
-      keyword: "Digital B2B Credit Risk",
-      url: "https://finfloh.com/blog/digital-b2b-credit-risk",
-    },
-    {
-      keyword: "Disclosure Management",
-      url: "https://finfloh.com/blog/disclosure-management",
-    },
-    {
-      keyword: "Dispute Management",
-      url: "https://finfloh.com/blog/accounts-receivable-dispute-management",
-    },
-    {
-      keyword: "Double entry Accounting",
-      url: "https://finfloh.com/blog/double-entry-accounting-system",
-    },
-    {
-      keyword: "DSO - Best Possible DSO",
-      url: "https://finfloh.com/blog/best-possible-dso",
-    },
-    {
-      keyword: "DSO - Best Possible DSO vs Standard DSO",
-      url: "https://finfloh.com/blog/best-possible-dso-vs-standard-dso",
-    },
-    {
-      keyword: "DSO Optimization",
-      url: "https://finfloh.com/blog/dso-optimization",
-    },
-    {
-      keyword: "Dunning Letters",
-      url: "https://finfloh.com/blog/dunning-letters",
-    },
-  ],
-  E: [
-    {
-      keyword: "eChecks vs ACH payments",
-      url: "https://finfloh.com/blog/echecks-vs-ach-payments",
-    },
-    {
-      keyword: "e-Lockbox",
-      url: "https://finfloh.com/blog/e-lockbox",
-    },
-    {
-      keyword: "Earned Discounts",
-      url: "https://finfloh.com/blog/earned-discount",
-    },
-    {
-      keyword: "Electronic Benefits Transfer (EBT)",
-      url: "https://finfloh.com/blog/electronic-benefits-transfer-ebt",
-    },
-    {
-      keyword: "EDI in Accounts Receivable",
-      url: "https://finfloh.com/blog/edi-in-accounts-receivable",
-    },
-    {
-      keyword: "Email Parsing",
-      url: "https://finfloh.com/blog/email-parsing",
-    },
-    {
-      keyword: "Effective SMS Payment Reminders",
-      url: "https://finfloh.com/blog/effective-sms-payment-reminders",
-    },
-    {
-      keyword: "Epicor AR Automation",
-      url: "https://finfloh.com/blog/epicor-ar-automation",
-    },
-    {
-      keyword: "Excel for Accounting",
-      url: "https://finfloh.com/blog/excel-for-accountants-essential-skills-and-best-practices",
-    },
-  ],
-  F: [
-    {
-      keyword:
-        "Finance Productivity with Intelligent Document Processing (IDP)",
-      url: "https://finfloh.com/blog/finance-productivity-intelligent-document-processing",
-    },
-    {
-      keyword: "Factoring Accounts Receivable",
-      url: "https://finfloh.com/blog/accounts-receivable-factoring-a-guide",
-    },
-    {
-      keyword: "Finance & Sales Alignment for AR",
-      url: "https://finfloh.com/blog/finance-and-sales-alignment-for-ar-and-customer-success",
-    },
-    {
-      keyword: "Financial Bubble",
-      url: "https://finfloh.com/blog/financial-bubble",
-    },
-    {
-      keyword: "Financial Consolidation",
-      url: "https://finfloh.com/blog/financial-consolidation",
-    },
-    {
-      keyword: "Financial Ratios",
-      url: "https://finfloh.com/blog/financial-ratio",
-    },
-    {
-      keyword: "FlohSense AI",
-      url: "https://finfloh.com/blog/flohsense-ai-agent-blog",
-    },
-    {
-      keyword: "FMCG",
-      url: "https://finfloh.com/blog/fast-moving-consumer-goods-fmcg",
-    },
-    {
-      keyword: "Fractional CFOs",
-      url: "https://finfloh.com/blog/fractional-cfo",
-    },
-    {
-      keyword: "Fractional CFO Role & Cost",
-      url: "https://finfloh.com/blog/fractional-cfo-role-cost-2026",
-    },
-  ],
-  G: [
-    {
-      keyword: "GAAP impact",
-      url: "https://finfloh.com/blog/gaap-impact-on-o2c-2025",
-    },
-    {
-      keyword: "Goods Receipt Note (GRN)",
-      url: "https://finfloh.com/blog/grn-goods-receipt-note",
-    },
-  ],
-  H: [
-    {
-      keyword: "High Interest Debt",
-      url: "https://finfloh.com/blog/high-interest-debt",
-    },
-    {
-      keyword: "Holdback",
-      url: "https://finfloh.com/blog/holdback",
-    },
-    {
-      keyword: "How to Write Termination Emails",
-      url: "https://finfloh.com/blog/how-to-write-termination-emails",
-    },
-  ],
-  I: [
-    {
-      keyword: "IFRS 15",
-      url: "https://finfloh.com/blog/ifrs15",
-    },
-    {
-      keyword: "IND AS 115 Revenue Recognition",
-      url: "https://finfloh.com/blog/ind-as-115-revenue-recognition-guide",
-    },
-    {
-      keyword: "IDP for Accounts Receivable",
-      url: "https://finfloh.com/blog/intelligent-document-processing-ar",
-    },
-    {
-      keyword: "Invoice recon with Payment Gateway",
-      url: "https://finfloh.com/blog/invoice-reconciliation-payment-gateways",
-    },
-    {
-      keyword: "Intercompany Accounting",
-      url: "https://finfloh.com/blog/intercompany-accounting-explained",
-    },
-  ],
-  J: [
-    {
-      keyword: "Journal Entry",
-      url: "https://finfloh.com/blog/journal-entry",
-    },
-    {
-      keyword: "JD Edwards AR Automation",
-      url: "https://finfloh.com/blog/jd-edwards-ar-automation",
-    },
-  ],
-  K: [
-    {
-      keyword: "Key Accounts",
-      url: "https://finfloh.com/blog/key-account",
-    },
-    {
-      keyword: "Key Rate Duration",
-      url: "https://finfloh.com/blog/key-rate-duration",
-    },
-  ],
-  L: [
-    {
-      keyword: "Late Payment",
-      url: "https://finfloh.com/blog/late-payment",
-    },
-    {
-      keyword: "Liquidity Forecasting",
-      url: "https://finfloh.com/blog/liquidity-forecast",
-    },
-    {
-      keyword: "Loan Journal Entry Automation ",
-      url: "https://finfloh.com/blog/automate-loan-journal-entries-in-erp",
-    },
-    {
-      keyword: "Lockbox",
-      url: "https://finfloh.com/blog/lockbox-payment-automation",
-    },
-  ],
-  M: [
-    {
-      keyword: "Master Accounts Receivable Management",
-      url: "https://finfloh.com/blog/master-accounts-receivable-management",
-    },
-    {
-      keyword: "Machine Learning for Credit Scoring",
-      url: "https://finfloh.com/blog/machine-learning-for-credit-scoring",
-    },
-    {
-      keyword: "Market Risk",
-      url: "https://finfloh.com/blog/market-risk",
-    },
-    {
-      keyword: "Microsoft Dynamics 365 AR Automation",
-      url: "https://finfloh.com/blog/msd365-ar-automation",
-    },
-    {
-      keyword: "Microsoft Dynamics NAV AR Automation",
-      url: "https://finfloh.com/blog/microsoft-dynamics-nav-ar-automation",
-    },
-    {
-      keyword: "Modern Finance Teams",
-      url: "https://finfloh.com/blog/modern-finance-teams",
-    },
-    {
-      keyword: "Month End Close",
-      url: "https://finfloh.com/blog/month-end-close-guide",
-    },
-    {
-      keyword: "Month End Closure Process",
-      url: "https://finfloh.com/blog/month-end-closure-process-explained",
-    },
-    {
-      keyword: "Month-End Reconciliation",
-      url: "https://finfloh.com/blog/month-end-reconciliation-guide",
-    },
-  ],
-  N: [
-    {
-      keyword: "Non Trade Deductions",
-      url: "https://finfloh.com/blog/non-trade-deductions",
-    },
-    {
-      keyword: "Near-Term Applications",
-      url: "https://finfloh.com/blog/near-term-applications",
-    },
-    {
-      keyword: "Net 30 Payment Terms",
-      url: "https://finfloh.com/blog/net-30-payment-terms-explained",
-    },
-    {
-      keyword: "Not Sufficient Funds (NSF)",
-      url: "https://finfloh.com/blog/not-sufficient-funds-explained",
-    },
-    {
-      keyword: "Non-paying Customers",
-      url: "https://finfloh.com/blog/managing-non-paying-b2b-customers",
-    },
+/**
+ * Words that should always appear in a fixed casing.
+ * Key   = lowercase version (what comes out of the slug)
+ * Value = the display form you want shown in the glossary
+ */
+const WORD_CASING_MAP = {
+  // Acronyms — always uppercase
+  ar: "AR",
+  ap: "AP",
+  ai: "AI",
+  ml: "ML",
+  cfo: "CFO",
+  cfos: "CFOs",
+  vp: "VP",
+  erp: "ERP",
+  ocr: "OCR",
+  ach: "ACH",
+  dso: "DSO",
+  cei: "CEI",
+  kpi: "KPI",
+  kpis: "KPIs",
+  saas: "SaaS",
+  b2b: "B2B",
+  usa: "USA",
+  gaap: "GAAP",
+  ifrs: "IFRS",
+  asc: "ASC",
+  sox: "SOX",
+  tds: "TDS",
+  gsm: "GSM",
+  gst: "GST",
+  rpa: "RPA",
+  idp: "IDP",
+  edi: "EDI",
+  ebt: "EBT",
+  nsf: "NSF",
+  csv: "CSV",
+  cpq: "CPQ",
+  ctp: "CTP",
+  psd2: "PSD2",
+  pop: "POP",
+  pos: "POS",
+  rdc: "RDC",
+  grn: "GRN",
+  fmcg: "FMCG",
+  o2c: "O2C",
 
-    {
-      keyword: "NSF Checks",
-      url: "https://finfloh.com/blog/nsf-checks",
-    },
-  ],
-  O: [
-    {
-      keyword: "Oracle Cloud AR Automation",
-      url: "https://finfloh.com/blog/oracle-cloud-ar-automation",
-    },
-    {
-      keyword: "Open item",
-      url: "https://finfloh.com/blog/open-item",
-    },
-    {
-      keyword: "Order Management",
-      url: "https://finfloh.com/blog/order-management",
-    },
-    {
-      keyword: "On-Time Customer Payments",
-      url: "https://finfloh.com/blog/on-time-customer-initiated-payments-accelerate-cash-flows",
-    },
-    {
-      keyword: "Optimize O2C During Crisis",
-      url: "https://finfloh.com/blog/optimize-order-to-cash-during-crisis",
-    },
-    {
-      keyword: "Oracle EBS AR Automation",
-      url: "https://finfloh.com/blog/oracle-ebs-ar-automation",
-    },
-    {
-      keyword: "Oracle Fusion AR Automation",
-      url: "https://finfloh.com/blog/oracle-fusion-ar-automation",
-    },
-    {
-      keyword: "Oracle NetSuite AR Automation",
-      url: "https://finfloh.com/blog/oracle-netsuite-ar-automation",
-    },
-    {
-      keyword: "Odoo AR Automation",
-      url: "https://finfloh.com/blog/odoo-ar-automation",
-    },
-    {
-      keyword: "Order to Cash Process",
-      url: "https://finfloh.com/blog/order-to-cash-process-optimization-boost-revenue",
-    },
-    {
-      keyword: "Over Payments",
-      url: "https://finfloh.com/blog/over-payments",
-    },
-    {
-      keyword: "Outstanding Invoices",
-      url: "https://finfloh.com/blog/outstanding-invoices",
-    },
-  ],
-  P: [
-    {
-      keyword: "Profitability Analysis",
-      url: "https://finfloh.com/blog/profitability-analysis",
-    },
-    {
-      keyword: "Profit and Loss Statement",
-      url: "https://finfloh.com/blog/profit-and-loss-statement",
-    },
-    {
-      keyword: "Prepaid Reconciliation",
-      url: "https://finfloh.com/blog/prepaid-reconciliation",
-    },
-    {
-      keyword: "Past Due",
-      url: "https://finfloh.com/blog/past-due",
-    },
-    {
-      keyword: "Past Due Accounts Receivable",
-      url: "https://finfloh.com/blog/past-due-accounts-receivable-management",
-    },
-    {
-      keyword: "Past Due Collection Email Templates",
-      url: "https://finfloh.com/blog/7-proven-email-templates-for-collecting-past-due-invoices",
-    },
-    {
-      keyword: "Past Due Invoice",
-      url: "https://finfloh.com/blog/past-due-invoice-emails-recovery-strategies",
-    },
-    {
-      keyword: "Past Due Invoice Emails",
-      url: "https://finfloh.com/blog/past-due-invoice-email-templates",
-    },
-    {
-      keyword: "Payment discounts",
-      url: "https://finfloh.com/blog/payment-discounts",
-    },
-    {
-      keyword: "Payment Penalty",
-      url: "https://finfloh.com/blog/payment-penalty",
-    },
-    {
-      keyword: "Payment Remittance",
-      url: "https://finfloh.com/blog/payment-remittance-explained",
-    },
-    {
-      keyword: "Payment Terms",
-      url: "https://finfloh.com/blog/payment-terms",
-    },
-    {
-      keyword: "Payment Forwarding",
-      url: "https://finfloh.com/blog/payment-forwarding",
-    },
-    {
-      keyword: "Payments Service Directive 2 (PSD2)",
-      url: "https://finfloh.com/blog/payments-service-directive-2-psd2",
-    },
-    {
-      keyword: "Pledging Receivable",
-      url: "https://finfloh.com/blog/pledging-receivables-for-working-capital",
-    },
-    {
-      keyword: "Point of Purchase",
-      url: "https://finfloh.com/blog/point-of-purchase-pop",
-    },
-    {
-      keyword: "POS Transactions",
-      url: "https://finfloh.com/blog/pos-transactions-for-b2b-sellers",
-    },
-    {
-      keyword: "Predictive Analytics in Finance",
-      url: "https://finfloh.com/blog/finance-predictive-analytics-unlocking-future-insights",
-    },
-    {
-      keyword: "Prepaid Expense Amortization",
-      url: "https://finfloh.com/blog/prepaid-expense-amortization-explained",
-    },
-    {
-      keyword: "Promise to Pay",
-      url: "https://finfloh.com/blog/promise-to-pay-for-debt-recovery",
-    },
-    {
-      keyword: "Pay to the Order of checks",
-      url: "https://finfloh.com/blog/pay-to-the-order-of-checks",
-    },
-    {
-      keyword: "Profit Center",
-      url: "https://finfloh.com/blog/profit-center",
-    },
-    {
-      keyword: "Proof of Debt",
-      url: "https://finfloh.com/blog/proof-of-debt",
-    },
-  ],
-  Q: [
-    {
-      keyword: "QuickBooks AR Automation",
-      url: "https://finfloh.com/blog/quickbooks-ar-automation",
-    },
-  ],
-
-  R: [
-    {
-      keyword: "Reconciliation",
-      url: "https://finfloh.com/blog/reconciliation-process",
-    },
-    {
-      keyword: "Receivables Balance",
-      url: "https://finfloh.com/blog/receivables-balance-management-strategies",
-    },
-    {
-      keyword: "Refinancing",
-      url: "https://finfloh.com/blog/refinancing",
-    },
-    {
-      keyword: "Remittance Advice",
-      url: "https://finfloh.com/blog/remittance-advice-a-comprehensive-guide-for-efficient-management",
-    },
-    {
-      keyword: "Remote Desktop Capture (RDS)",
-      url: "https://finfloh.com/blog/remote-deposit-capture-rdc",
-    },
-    {
-      keyword: "Revenue Forecasting",
-      url: "https://finfloh.com/blog/revenue-forecasting",
-    },
-    {
-      keyword: "Revenue Automation",
-      url: "https://finfloh.com/blog/revenue-automation-explained",
-    },
-    {
-      keyword: "SaaS Revenue Recognition",
-      url: "https://finfloh.com/blog/revenue-recognition-methods-in-saas",
-    },
-    {
-      keyword: "Robotic Process Automation",
-      url: "https://finfloh.com/blog/rpa-ar-automation",
-    },
-  ],
-  S: [
-    {
-      keyword: "Signs You Have Outgrown QuickBooks",
-      url: "https://finfloh.com/blog/outgrowing-quickbooks-9-signs-to-upgrade",
-    },
-    {
-      keyword: "SAGE AR Automation",
-      url: "https://finfloh.com/blog/sage-accounts-receivable-automation",
-    },
-    {
-      keyword: "Sage X3 AR Automation",
-      url: "https://finfloh.com/blog/sage-x3-ar-automation",
-    },
-    {
-      keyword: "SaaS Subscription Management",
-      url: "https://finfloh.com/blog/saas-subscription-management-guide",
-    },
-    {
-      keyword: "SAP Business ByDesign AR Automation",
-      url: "https://finfloh.com/blog/sap-business-bydesign-ar-automation",
-    },
-    {
-      keyword: "SAP Business One AR Automation",
-      url: "https://finfloh.com/blog/sap-business-one-ar-automation",
-    },
-    {
-      keyword: "Sage Intacct AR Automation",
-      url: "https://finfloh.com/blog/sage-intacct-ar-automation",
-    },
-    {
-      keyword: "Security Role",
-      url: "https://finfloh.com/blog/security-role",
-    },
-    {
-      keyword: "Shared Services",
-      url: "https://finfloh.com/blog/shared-services-department",
-    },
-    {
-      keyword: "Short-Term Cash Forecast",
-      url: "https://finfloh.com/blog/short-term-cash-forecasting",
-    },
-    {
-      keyword: "SOX 404 Compliance (AP)",
-      url: "https://finfloh.com/blog/sox-404-compliance-accounts-payable",
-    },
-    {
-      keyword: "Ship to Process",
-      url: "https://finfloh.com/blog/ship-to-process",
-    },
-    {
-      keyword: "Sight Draft",
-      url: "https://finfloh.com/blog/sight-draft-sd",
-    },
-    {
-      keyword: "SOX Compliance",
-      url: "https://finfloh.com/blog/sox-compliance",
-    },
-    {
-      keyword: "Subledger Reconciliation",
-      url: "https://finfloh.com/blog/subledger-reconciliation",
-    },
-  ],
-  T: [
-    {
-      keyword: "Top 12 Accounts Receivable Automation Providers",
-      url: "https://finfloh.com/blog/top-12-accounts-receivable-automation-providers-in-2026",
-    },
-    {
-      keyword: "Trade Receivables",
-      url: "https://finfloh.com/blog/trade-receivables-formula-calculation-management",
-    },
-    {
-      keyword: "Third Party Collections",
-      url: "https://finfloh.com/blog/third-party-collection-agencies-explained",
-    },
-    {
-      keyword: "TDS Impact on Receivables",
-      url: "https://finfloh.com/blog/tds-impact-on-accounts-receivable",
-    },
-    {
-      keyword: "Trade References",
-      url: "https://finfloh.com/blog/trade-reference-guide-buyers-suppliers",
-    },
-    {
-      keyword: "Transfer Pricing",
-      url: "https://finfloh.com/blog/transferpricing",
-    },
-    {
-      keyword: "Treasury Operations",
-      url: "https://finfloh.com/blog/guide-to-treasury-operations",
-    },
-    {
-      keyword: "Trust Account",
-      url: "https://finfloh.com/blog/trust-account",
-    },
-  ],
-  U: [
-    {
-      keyword: "Unapplied Credit",
-      url: "https://finfloh.com/blog/unapplied-credit",
-    },
-    {
-      keyword: "Unmatched Payments",
-      url: "https://finfloh.com/blog/unmatched-payments",
-    },
-    {
-      keyword: "Unpaid Receivables",
-      url: "https://finfloh.com/blog/understanding-the-true-cost-of-unpaid-receivables",
-    },
-    {
-      keyword: "Unused Credits",
-      url: "https://finfloh.com/blog/unused-credits",
-    },
-    {
-      keyword: "US GAAP",
-      url: "https://finfloh.com/blog/us-gaap",
-    },
-  ],
-  V: [
-    {
-      keyword: "Variance Analysis",
-      url: "https://finfloh.com/blog/variance-analysis-comprehensive-guide",
-    },
-    {
-      keyword: "VP of Finance",
-      url: "https://finfloh.com/blog/vp-of-finance",
-    },
-  ],
-  W: [
-    {
-      keyword: "WhatsApp Payment Reminders",
-      url: "https://finfloh.com/blog/whatsapp-payment-reminders",
-    },
-    {
-      keyword: "Why Collection Agency is Not Best for Collections",
-      url: "https://finfloh.com/blog/why-collection-agency-not-best-for-collections",
-    },
-    {
-      keyword: "Workflows at FinFloh",
-      url: "https://finfloh.com/blog/workflow-at-finfloh",
-    },
-    {
-      keyword: "Working Capital",
-      url: "https://finfloh.com/blog/navigating-the-working-capital-maze-through-in-depth-receivables-management",
-    },
-  ],
-  X: [
-    {
-      keyword: "Xero Accounting Software",
-      url: "https://finfloh.com/blog/xero-accounts-receivable-automation",
-    },
-  ],
-  Y: [
-    {
-      keyword: "Year-End Closing",
-      url: "https://finfloh.com/blog/year-end-closing",
-    },
-  ],
-  Z: [
-    {
-      keyword: "Zero-Touch Cash Posting",
-      url: "https://finfloh.com/blog/zero-touch-cash-posting",
-    },
-  ],
+  // Proper product / company names — fix casing
+  jd: "JD",
+  edwards: "Edwards",
+  quickbooks: "QuickBooks",
+  netsuite: "NetSuite",
+  salesforce: "Salesforce",
+  finfloh: "FinFloh",
+  flohsense: "FlohSense",
+  microsoft: "Microsoft",
+  dynamics: "Dynamics",
+  oracle: "Oracle",
+  epicor: "Epicor",
+  sage: "Sage",
+  intacct: "Intacct",
+  odoo: "Odoo",
+  xero: "Xero",
+  sap: "SAP",
 };
 
-// Sort the keywords alphabetically within each letter category
-for (const key in terms) {
-  terms[key] = terms[key].sort((a, b) =>
-    a.keyword.localeCompare(b.keyword, undefined, {
-      sensitivity: "base",
-      numeric: true,
-    }),
+/**
+ * Applies the casing map to a single word token.
+ * Falls back to Title Case for anything not in the map.
+ */
+const applyWordCasing = (word) => {
+  const lower = word.toLowerCase();
+  return (
+    WORD_CASING_MAP[lower] ??
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
   );
-}
+};
 
-// const podcastData = [
-//   {
-//     id: 1,
-//     title:
-//       "How can CFOs unify Business, Finance, AR, AP, FP&A & Controllership functions?",
-//     author: "Alyssa Shadinger",
-//     position: "CFO, Sisense",
-//     episode: 6,
-//     isNew: true,
-//     thumbnail: "/images/alyssa-ep6-banner.svg",
-//     thumbnail_mobile: "/images/alyssa-ep6-banner-mobile.svg",
-//     video_url:
-//       "https://www.youtube.com/embed?v=3k4xsfzrL7I&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=1&autoplay=1",
-//   },
-//   {
-//     id: 2,
-//     title: "Need for CFO Leadership at Small & Mid-sized Firms",
-//     author: "Darren Farry",
-//     position: "CEO, The Thoughtful CFO",
-//     episode: 5,
-//     isNew: false,
-//     thumbnail: "/images/darren-ep5-banner.svg",
-//     thumbnail_mobile: "/images/darren-ep5-banner-mobile.svg",
-//     video_url:
-//       "https://www.youtube.com/embed?v=XFBnARwf9QI&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=2&autoplay=1",
-//   },
-//   {
-//     id: 3,
-//     title: "Bridging the gaps between finance, revenue & operations",
-//     author: "Ruchi Kasliwal",
-//     position: "Finance Leader at MongoDB, Confluent & Telenav",
-//     episode: 4,
-//     isNew: false,
-//     thumbnail: "/images/Ruchi_Kasliwal-ep4-banner.svg",
-//     thumbnail_mobile: "/images/Ruchi_Kasliwal-ep4-banner-mobile.svg",
+/**
+ * Filler words stripped from slugs before building the keyword.
+ * These are low-value words that bloat the title without adding meaning.
+ *
+ * "why-b2b-payment-automation-is-a-top-priority-for-cfos"
+ *   strip → ["b2b", "payment", "automation", "top", "priority", "cfos"]
+ *   cap 5 → "B2B Payment Automation Top Priority CFOs"
+ *
+ * We intentionally keep words like "not", "vs", "without" because
+ * they carry meaning in finance titles.
+ */
+const FILLER_WORDS = new Set([
+  // Question / sentence starters
+  "why",
+  "how",
+  "what",
+  "when",
+  "where",
+  "who",
+  "which",
+  // Linking verbs & auxiliaries
+  "is",
+  "are",
+  "was",
+  "were",
+  "be",
+  "been",
+  "being",
+  "do",
+  "does",
+  "did",
+  "will",
+  "would",
+  "can",
+  "could",
+  "should",
+  "shall",
+  "may",
+  "might",
+  "must",
+  "have",
+  "has",
+  "had",
+  // Articles & prepositions
+  "a",
+  "an",
+  "the",
+  "in",
+  "on",
+  "at",
+  "to",
+  "for",
+  "of",
+  "by",
+  "from",
+  "into",
+  "onto",
+  "per",
+  "via",
+  "with",
+  "about",
+  "as",
+  // Conjunctions
+  "and",
+  "or",
+  "but",
+  "so",
+  "yet",
+  "nor",
+  // Generic filler adjectives / adverbs
+  "your",
+  "my",
+  "our",
+  "its",
+  "their",
+  "top",
+  "best",
+  "great",
+  "good",
+  "new",
+  "right",
+  "every",
+  "all",
+  "any",
+  "some",
+  "each",
+]);
 
-//     video_url:
-//       "https://www.youtube.com/embed?v=IFXqk-lmUT0&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=3&autoplay=1",
-//   },
-//   {
-//     id: 4,
-//     title: "Scaling Finance Functions At High Growth Software Companies",
-//     author: "Josh Troy",
-//     position: "CFO, PatchRx",
-//     episode: 3,
-//     isNew: false,
-//     thumbnail: "/images/Josh_Troy-ep3-banner.svg",
-//     thumbnail_mobile: "/images/Josh_Troy-ep3-banner-mobile.svg",
+/**
+ * Converts a WordPress slug into a short, meaningful keyword.
+ *
+ * Steps:
+ *  1. Normalise slug (underscores → dashes, dashes → spaces)
+ *  2. Apply correct casing per WORD_CASING_MAP
+ *  3. Strip filler words (only when result still leaves ≥ 2 words)
+ *  4. Cap at 5 meaningful words
+ *
+ * e.g. "why-b2b-payment-automation-is-a-top-priority-for-cfos"
+ *      → "B2B Payment Automation Priority CFOs"
+ * e.g. "how-to-improve-accounts-receivable-collections"
+ *      → "Improve Accounts Receivable Collections"
+ * e.g. "jd-edwards-ar-automation"
+ *      → "JD Edwards AR Automation"  (no filler to strip)
+ * e.g. "cash-flow-analysis"
+ *      → "Cash Flow Analysis"        (no filler to strip)
+ */
+const slugToKeyword = (slug) => {
+  const allWords = slug
+    .replace(/_/g, "-")
+    .replace(/-+/g, " ")
+    .trim()
+    .split(" ")
+    .map(applyWordCasing);
 
-//     video_url:
-//       "https://www.youtube.com/embed?v=UxF1GUju16s&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=4&autoplay=1",
-//   },
-//   {
-//     id: 5,
-//     title: "Navigating The Finance, Sales & Strategy Conundrum",
-//     author: "Dustin Walsted",
-//     position: "VP of Finance Tech, Strategy & HR Smart City Apartment",
-//     episode: 2,
-//     isNew: false,
-//     thumbnail: "/images/Dustin-ep2-banner.svg",
-//     thumbnail_mobile: "/images/Dustin-ep2-banner-mobile.svg",
+  // Strip filler words, but only if at least 2 meaningful words remain
+  const meaningful = allWords.filter((w) => !FILLER_WORDS.has(w.toLowerCase()));
+  const words = meaningful.length >= 2 ? meaningful : allWords;
 
-//     video_url:
-//       "https://www.youtube.com/embed?v=AjgzwfOTL8o&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=5&autoplay=1",
-//   },
-//   {
-//     id: 6,
-//     title: "Journey Beyond Balance Sheets",
-//     author: "Rachel C.",
-//     position: "Head of F&A, Filson",
-//     episode: 1,
-//     isNew: false,
-//     thumbnail: "/images/racheal-ep1-banner.svg",
-//     thumbnail_mobile: "/images/racheal-ep1-banner-mobile.svg",
+  // Cap at 5 words for concise glossary entries
+  return words.length > 5 ? words.slice(0, 5).join(" ") + "…" : words.join(" ");
+};
 
-//     video_url:
-//       "https://www.youtube.com/embed?v=OukEygEM7R8&mute=1&list=PLSh1ycsSrby_3SuyzC9HppRHwkFo9spp3&index=6&autoplay=1",
-//   },
-// ];
-// const AiInFinanceData = [
-//   {
-//     id: 11,
-//     title: "Applications of AI in CFOTech & why should CFOs care?",
-//     author: "Amartya Singh",
-//     position: "Co-Founder & CEO, FinFloh",
-//     episode: 1,
-//     isNew: true,
-//     thumbnail: "/images/Amartya_Sing-ep1-banner.svg",
-//     thumbnail_mobile: "/images/Amartya_Sing-ep1-banner-mobile.svg",
-//     video_url:
-//       "https://www.youtube.com/embed/-6t_6lsaZ9A?si=lxqUDNsHdQ6dIEWN&mute=1&autoplay=1",
-//   },
-// ];
+/**
+ * Fetches ALL posts from the WP REST API (handles pagination automatically).
+ */
+const fetchAllPosts = async () => {
+  const BASE = "https://blogfinflohcom.wpcomstaging.com/wp-json/wp/v2/posts";
+  const perPage = 100;
+  let page = 1;
+  let allPosts = [];
 
-const GlossarySection = ({ posts: postList }) => {
+  // Get first page + total count from headers
+  const firstRes = await axios.get(BASE, {
+    params: { per_page: perPage, page, _fields: "slug,title" },
+  });
+  const totalPages = parseInt(firstRes.headers["x-wp-totalpages"] || "1", 10);
+  allPosts = [...firstRes.data];
+
+  // Fetch remaining pages in parallel
+  if (totalPages > 1) {
+    const requests = [];
+    for (let p = 2; p <= totalPages; p++) {
+      requests.push(
+        axios.get(BASE, {
+          params: { per_page: perPage, page: p, _fields: "slug,title" },
+        }),
+      );
+    }
+    const results = await Promise.all(requests);
+    results.forEach((r) => {
+      allPosts = [...allPosts, ...r.data];
+    });
+  }
+
+  return allPosts;
+};
+
+/**
+ * Given a list of WP posts, build the alphabetical `terms` map.
+ * Each entry: { keyword: string, url: string }
+ * Sorted alphabetically within each letter bucket.
+ */
+const buildTermsFromPosts = (posts) => {
+  const map = {};
+
+  posts.forEach(({ slug, title }) => {
+    // Always derive keyword from slug (already short & clean).
+    // Decode entities from WP title as a display-only fallback for very short slugs.
+    const fromSlug = slugToKeyword(slug);
+    const fromTitle = title?.rendered
+      ? decodeHtmlEntities(title.rendered.replace(/<[^>]+>/g, "").trim())
+      : null;
+
+    // Use slug keyword; if slug is too short (e.g. "asc606"), prefer the title
+    const keyword =
+      fromSlug.replace(/…/, "").trim().length <= 4 && fromTitle
+        ? fromTitle
+        : fromSlug;
+
+    const url = `https://finfloh.com/blog/${slug}`;
+    const firstLetter = keyword.trim()[0].toUpperCase();
+
+    // Only index A-Z entries
+    if (/[A-Z]/.test(firstLetter)) {
+      if (!map[firstLetter]) map[firstLetter] = [];
+      map[firstLetter].push({ keyword, url, slug });
+    }
+  });
+
+  // Sort each bucket alphabetically (case-insensitive)
+  Object.keys(map).forEach((letter) => {
+    map[letter].sort((a, b) =>
+      a.keyword.localeCompare(b.keyword, undefined, {
+        sensitivity: "base",
+        numeric: true,
+      }),
+    );
+  });
+
+  return map;
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Component
+// ─────────────────────────────────────────────────────────────────────────────
+
+const GlossarySection = ({ terms }) => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedLetter, setSelectedLetter] = useState(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
+
+  const availableLetters = Object.keys(terms).sort();
+
+  // One ref per letter
   const sectionRefs = useRef(
     alphabet.reduce((acc, letter) => {
       acc[letter] = React.createRef();
       return acc;
     }, {}),
   );
-  // Step 1: Get the available letters from the terms object keys
-  const availableLetters = Object.keys(terms);
-  // const handleScroll = (letter) => {
-  //   if (availableLetters.includes(letter)) {
-  //     setSelectedLetter(letter);
-  //     sectionRefs.current[letter].current.scrollIntoView({
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // };
-  // Define the height of any fixed elements (e.g., header or navbar)
-  const scrollOffset = 150; // Adjust this value based on your header height
 
-  const handleScroll = (letter) => {
-    if (Object.keys(sectionRefs.current).includes(letter)) {
-      setSelectedLetter(letter);
+  const scrollOffset = 150;
 
-      const targetSection = sectionRefs.current[letter].current;
-      if (targetSection) {
-        const topPosition =
-          targetSection.getBoundingClientRect().top + window.scrollY;
-
-        window.scrollTo({
-          top: topPosition - scrollOffset,
-          behavior: "smooth",
-        });
-      }
+  const handleScrollToLetter = (letter) => {
+    const targetSection = sectionRefs.current[letter]?.current;
+    if (targetSection) {
+      const topPosition =
+        targetSection.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: topPosition - scrollOffset, behavior: "smooth" });
     }
   };
 
@@ -1306,47 +340,20 @@ const GlossarySection = ({ posts: postList }) => {
     setSearchQuery(e.target.value.toLowerCase());
   };
 
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Filter terms based on search query
   const filteredTerms = searchQuery
     ? Object.entries(terms).reduce((acc, [letter, termList]) => {
-        const matchedTerms = termList.filter((term) =>
-          term.keyword.toLowerCase().includes(searchQuery),
+        const matched = termList.filter((t) =>
+          t.keyword.toLowerCase().includes(searchQuery),
         );
-        if (matchedTerms.length > 0) acc[letter] = matchedTerms;
+        if (matched.length > 0) acc[letter] = matched;
         return acc;
       }, {})
     : terms;
-
-  // const [playingVideoId, setPlayingVideoId] = useState(null);
-  // const [AiInFinancePlayingVideoId, setAiInFinancePlayingVideoId] =
-  //   useState(false);
-
-  // const handleVideoClick = (id) => {
-  //   setPlayingVideoId(id);
-  //   setAiInFinancePlayingVideoId(false); // Close AI video if the podcast is played
-  // };
-
-  // const handleAiInFinanceVideoClick = (id) => {
-  //   setAiInFinancePlayingVideoId(id);
-  // };
-  // const handleClose = () => {
-  //   setPlayingVideoId(null);
-  //   setAiInFinancePlayingVideoId(false);
-  // };
-  // // Handle scrolling visibility for the back-to-top button
-  // useEffect(() => {
-  //   const handleScrollVisibility = () => {
-  //     setShowBackToTop(window.scrollY > 300); // Show button after 300px scroll
-  //   };
-
-  //   window.addEventListener("scroll", handleScrollVisibility);
-  //   return () => window.removeEventListener("scroll", handleScrollVisibility);
-  // }, []);
-
-  // const handleBackToTop = () => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
-  // const latestPodcast = podcastData[0];
-  // const latestAiInFinancePodcast = AiInFinanceData[0];
 
   return (
     <>
@@ -1368,26 +375,19 @@ const GlossarySection = ({ posts: postList }) => {
             "@type": "WebPageElement",
             name: "Key terms and concepts in accounts receivable management",
           },
-          {
-            "@type": "WebPageElement",
-            name: "Our Latest Episodes",
-          },
-          {
-            "@type": "WebPageElement",
-            name: "Features",
-          },
+          { "@type": "WebPageElement", name: "Our Latest Episodes" },
+          { "@type": "WebPageElement", name: "Features" },
         ]}
         includeBreadcrumbs
         breadcrumbItems={[
-          {
-            name: "Glossary",
-            item: "https://finfloh.com/glossary",
-          },
+          { name: "Glossary", item: "https://finfloh.com/glossary" },
         ]}
       />
+
       <WebsiteLayout>
         <div className="bg-container">
           <div className="container-main glossary-main">
+            {/* ── Header ── */}
             <div className="glossary-header">
               <h1 className="glossary-heading">
                 Accounts Receivable <br />
@@ -1397,8 +397,9 @@ const GlossarySection = ({ posts: postList }) => {
                 Key terms and concepts in accounts receivable management
               </h2>
             </div>
+
             <div className="search-section">
-              {/* Search bar */}
+              {/* ── Search bar ── */}
               <div className="search-section-header">
                 <div className="search-bar-icon">
                   <img src="/images/search.svg" alt="search-icon" />
@@ -1412,22 +413,13 @@ const GlossarySection = ({ posts: postList }) => {
                 />
               </div>
 
-              {/* Alphabet navigation */}
+              {/* ── Alphabet navigation (hidden during search) ── */}
               {!searchQuery && (
                 <div className="alphabet-navigation">
-                  {/* {alphabet.map((letter) => (
-                    <button
-                      key={letter}
-                      onClick={() => handleScroll(letter)}
-                      className="alphabet-link"
-                    >
-                      {letter}
-                    </button>
-                  ))} */}
                   {alphabet.map((letter) => (
                     <button
                       key={letter}
-                      onClick={() => handleScroll(letter)}
+                      onClick={() => handleScrollToLetter(letter)}
                       disabled={!availableLetters.includes(letter)}
                       style={{
                         cursor: availableLetters.includes(letter)
@@ -1436,8 +428,6 @@ const GlossarySection = ({ posts: postList }) => {
                         color: availableLetters.includes(letter)
                           ? "black"
                           : "gray",
-
-                        // hover effect when hover on the alphabet
                       }}
                       className="alphabet-link"
                     >
@@ -1447,52 +437,29 @@ const GlossarySection = ({ posts: postList }) => {
                 </div>
               )}
 
-              {/* Display filtered terms if there's a search query */}
+              {/* ── Term sections ── */}
               {searchQuery ? (
+                /* Search results */
                 <div className="search-results">
                   {Object.keys(filteredTerms).length > 0 ? (
-                    Object.entries(filteredTerms).map(([letter, termList]) => (
-                      <div key={letter} className="alphabet-section">
-                        <h2>{letter}</h2>
-                        <div className="alphabet-section-main">
-                          {termList.map((term, index) => (
-                            <div
-                              key={index}
-                              className="alphabet-section-contents"
-                            >
-                              <a
-                                href={term.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {term.keyword}
-                              </a>
-                              <a
-                                href={term.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <img src="images/arrow_outward.svg" alt="" />
-                              </a>
-                            </div>
-                          ))}
+                    Object.entries(filteredTerms)
+                      .sort(([a], [b]) => a.localeCompare(b))
+                      .map(([letter, termList]) => (
+                        <div key={letter} className="alphabet-section">
+                          <h2>{letter}</h2>
+                          <div className="alphabet-section-main">
+                            {termList.map((term, index) => (
+                              <TermRow key={index} term={term} />
+                            ))}
+                          </div>
                         </div>
-                        {showBackToTop && (
-                          <button
-                            className="back-to-top-float"
-                            onClick={handleBackToTop}
-                          >
-                            ↑
-                          </button>
-                        )}
-                      </div>
-                    ))
+                      ))
                   ) : (
                     <div className="no-keywords">No Keywords Found</div>
                   )}
                 </div>
               ) : (
-                // Display alphabet sections only for letters with terms when there's no search query
+                /* Full alphabetical listing */
                 alphabet
                   .filter((letter) => terms[letter]?.length > 0)
                   .map((letter) => (
@@ -1502,29 +469,12 @@ const GlossarySection = ({ posts: postList }) => {
                       className="alphabet-section"
                     >
                       <h2>{letter}</h2>
-                      <div className="alphabet-section-main" key={letter}>
+                      <div className="alphabet-section-main">
                         {terms[letter].map((term, index) => (
-                          <div
-                            key={index}
-                            className="alphabet-section-contents"
-                          >
-                            <a
-                              href={term.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {term.keyword}
-                            </a>
-                            <a
-                              href={term.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <img src="images/arrow_outward.svg" alt="" />
-                            </a>
-                          </div>
+                          <TermRow key={index} term={term} />
                         ))}
                       </div>
+
                       {showBackToTop && (
                         <button
                           className="back-to-top-float"
@@ -1541,73 +491,28 @@ const GlossarySection = ({ posts: postList }) => {
               )}
             </div>
 
-            {/* latest podcast and blog section start here */}
+            {/* ── Featured Resources ── */}
             <div className="latest-glossary-section">
               <h2>Explore Other Resources by FinFloh</h2>
               <div className="latest-glossary-section-main">
-                <div className="latest-glossary-blog">
-                  <div className="latest-glossary-img">
-                    <img src="/images/Hairball-infrastructure-v3.svg"></img>
-                  </div>
-                  <a
-                    href="https://finfloh.com/blog/how-to-untangle-complex-finance-hairball-infrastructure-build-connected-systems"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div className="latest-glossary-content-title">
-                      How to Untangle Complex Finance Hairball Infrastructure
-                      and Build Connected Systems
-                    </div>
-                  </a>
-
-                  <div className="latest-glossary-content-subtitle">
-                    <p className="latest-glossary-content-subtitle-para1">
-                      Amartya Singh (CEO & Cofounder, FinFloh){" "}
-                    </p>
-                    <span>4 Min Read</span>
-                  </div>
-                </div>
-                <div className="latest-glossary-blog">
-                  <div className="latest-glossary-img">
-                    <img src="/images/Supercharge-ERP-Automation-V1.svg"></img>
-                  </div>
-
-                  <a
-                    href="https://finfloh.com/blog/how-to-supercharge-your-erp-with-automation"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div className="latest-glossary-content-title">
-                      How to supercharge your ERP with Automation?
-                    </div>
-                  </a>
-                  <div className="latest-glossary-content-subtitle">
-                    <p className="latest-glossary-content-subtitle-para1">
-                      Subhasis Sahoo (Founding Member - Marketing)
-                    </p>
-                    <span>4 Min Read</span>
-                  </div>
-                </div>
-                <div className="latest-glossary-blog">
-                  <div className="latest-glossary-img">
-                    <img src="images/Workflow-SM-03.svg"></img>
-                  </div>
-                  <a
-                    href="https://finfloh.com/blog/workflow-at-finfloh"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div className="latest-glossary-content-title">
-                      Workflows at FinFloh
-                    </div>
-                  </a>
-                  <div className="latest-glossary-content-subtitle">
-                    <p className="latest-glossary-content-subtitle-para1">
-                      Amartya Singh (CEO & Cofounder, FinFloh)
-                    </p>
-                    <span>4 Min Read</span>
-                  </div>
-                </div>
+                <FeaturedBlog
+                  img="/images/Hairball-infrastructure-v3.svg"
+                  href="https://finfloh.com/blog/how-to-untangle-complex-finance-hairball-infrastructure-build-connected-systems"
+                  title="How to Untangle Complex Finance Hairball Infrastructure and Build Connected Systems"
+                  author="Amartya Singh (CEO & Cofounder, FinFloh)"
+                />
+                <FeaturedBlog
+                  img="/images/Supercharge-ERP-Automation-V1.svg"
+                  href="https://finfloh.com/blog/how-to-supercharge-your-erp-with-automation"
+                  title="How to supercharge your ERP with Automation?"
+                  author="Subhasis Sahoo (Founding Member - Marketing)"
+                />
+                <FeaturedBlog
+                  img="images/Workflow-SM-03.svg"
+                  href="https://finfloh.com/blog/workflow-at-finfloh"
+                  title="Workflows at FinFloh"
+                  author="Amartya Singh (CEO & Cofounder, FinFloh)"
+                />
               </div>
             </div>
           </div>
@@ -1616,5 +521,51 @@ const GlossarySection = ({ posts: postList }) => {
     </>
   );
 };
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Sub-components
+// ─────────────────────────────────────────────────────────────────────────────
+
+const TermRow = ({ term }) => (
+  <div className="alphabet-section-contents">
+    <a href={term.url} target="_blank" rel="noopener noreferrer">
+      {term.keyword}
+    </a>
+    <a href={term.url} target="_blank" rel="noopener noreferrer">
+      <img src="images/arrow_outward.svg" alt="" />
+    </a>
+  </div>
+);
+
+const FeaturedBlog = ({ img, href, title, author }) => (
+  <div className="latest-glossary-blog">
+    <div className="latest-glossary-img">
+      <img src={img} alt={title} />
+    </div>
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <div className="latest-glossary-content-title">{title}</div>
+    </a>
+    <div className="latest-glossary-content-subtitle">
+      <p className="latest-glossary-content-subtitle-para1">{author}</p>
+      <span>4 Min Read</span>
+    </div>
+  </div>
+);
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Data fetching — runs at request time on the server
+// ─────────────────────────────────────────────────────────────────────────────
+
+export async function getServerSideProps() {
+  try {
+    const posts = await fetchAllPosts();
+    const terms = buildTermsFromPosts(posts);
+
+    return { props: { terms } };
+  } catch (error) {
+    console.error("Glossary: failed to fetch posts", error);
+    return { props: { terms: {} } };
+  }
+}
 
 export default GlossarySection;

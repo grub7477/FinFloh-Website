@@ -140,9 +140,9 @@ const Simple_Features_CONTENT = [
         description: "Prevent recurring disputes with RCA analysis",
       },
     ],
-    btnTxt: "Know More",
+    btnTxt: "Book A Demo",
     btnLink:
-      "https://finfloh.com/integrations-and-invoice-verification?utm_source=homepage_central&utm_medium=finfloh_website",
+      "https://finfloh.com/book-a-demo?utm_source=invoice_to_cash&utm_medium=website",
     imgSrc: "/images/competitors-page/dispute-loop-workflow.svg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
