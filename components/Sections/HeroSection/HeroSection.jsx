@@ -32,8 +32,27 @@ const HeroSection = ({
             <h1 className={`ch30 ${style.heading}`}>{title}</h1>
           </div>
           <p className={style.para}>{description}</p>
-          <BookDemoButton text={"Submit"} utmURLs={utmURLs} />
+          <BookDemoButton text={"Book A Demo"} utmURLs={utmURLs} />
           {/* <ButtonCommon label={btnText} href={btnLink} variant={btnVariant} /> */}
+          <div className={style.offerBanner}>
+            {/* <img src="/icons/flohsense-ai/offer_icon.svg" alt="Offer Icon" /> */}
+            <div
+              className="stack stack--extra-tight"
+              style={{ alignItems: "flex-start" }}
+            >
+              {/* <h3 className="text-inverse heading_md">
+                Start a 100-Email Pilot
+              </h3> */}
+              <p className="para_sm header">
+                <b>Start a 100-Email Pilot:</b>
+              </p>
+              <p className="para_sm">
+                Forward a customer email to flohsenseai@finfloh.com and see
+                FlohSense AI Agent in action; no ERP or email integration
+                needed.
+              </p>
+            </div>
+          </div>
         </div>
         <img className={style.hero__image} src={image} alt={title} />
       </div>

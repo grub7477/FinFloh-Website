@@ -71,6 +71,9 @@ section {
 .stack--loose {
   gap: var(--gap-lg);
 }
+.stack--extra-tight {
+  gap: 4px;
+}
 
 .stack--extra-loose {
   gap: var(--gap-2xl);

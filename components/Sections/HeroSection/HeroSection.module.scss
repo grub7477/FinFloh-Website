@@ -41,3 +41,16 @@
   width: 100vw;
   bottom: -24px;
 }
+
+.offerBanner {
+  display: flex;
+  border-radius: 4px;
+  text-align: left;
+  gap: none;
+  max-width: 520px;
+  width: auto;
+}
+
+.header {
+  white-space: no-wrap;
+}

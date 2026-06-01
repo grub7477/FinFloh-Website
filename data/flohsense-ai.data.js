@@ -7,7 +7,7 @@ export const flohsensePage = {
     btnText: "Book a Demo for FlohSense AI",
     btnLink:
       "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
-    image: "/images/flohsense_ai/hero_section-flohsenseAi-2x.png",
+    image: "/images/flohsense_ai/hero_section-flohsenseAi.png",
   },
 
   focusSection: {

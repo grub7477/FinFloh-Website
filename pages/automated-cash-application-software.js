@@ -287,6 +287,7 @@ const CashApplication = () => {
       <WebsiteLayout
         utmURLs={utmURLs}
         PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_cash_app}
+        showMainBannerTop={true}
       >
         <ProductBanner
           productBanner={productBanner}

@@ -29,7 +29,7 @@ const whyfinfloh = () => {
         ]}
       />
 
-      <WebsiteLayout>
+      <WebsiteLayout showMainBannerTop={true}>
         <div className="bg-container">
           <div className="container-main whyFinfloh-main">
             {/* Why Finfloh Header */}

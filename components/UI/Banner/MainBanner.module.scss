@@ -1,0 +1,72 @@
+@use "/styles/foundation/breakpoint" as b;
+
+.mainBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: var(--surface-dark);
+  align-items: center;
+  cursor: pointer;
+  gap: 12px;
+
+  @include b.respond(sm) {
+    flex-direction: row;
+    padding: 8px 24px;
+  }
+}
+
+.inline {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  @include b.respond(md) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  @include b.respond(sm) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.dash {
+  display: none;
+  @include b.respond(md) {
+    display: inline;
+  }
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  text-transform: none;
+}
+
+.para {
+  font-size: 14px;
+  white-space: normal;
+  color: #b8eaf9;
+  max-width: 1400px;
+  width: 100%;
+}
