@@ -264,6 +264,7 @@ const BuyerIntelligenceAndCreditDecisions = () => {
       <WebsiteLayout
         utmURLs={utmURLs}
         PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_credit}
+        showMainBannerTop={true}
       >
         {/* Hidden SEO Optimized H1 Tag */}
         <h1

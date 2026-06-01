@@ -28,6 +28,12 @@
   color: var(--font-primary-color);
 }
 
+.btn--secondary-sm {
+  padding: var(--padding-xsm) var(--padding-sm);
+  background-color: white;
+  color: var(--font-primary-color);
+}
+
 .btn:hover {
   background-color: var(--hover-primary);
   color: white;

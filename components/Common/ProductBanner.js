@@ -15,7 +15,7 @@ const ProductBanner = ({
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(
-        (prevIndex) => (prevIndex + 1) % productBanner?.words?.length
+        (prevIndex) => (prevIndex + 1) % productBanner?.words?.length,
       );
     }, 1400); // Change the interval as needed
 
@@ -42,7 +42,7 @@ const ProductBanner = ({
                   </>
                 ) : (
                   <>
-                    {productBanner.beforeWords}
+                    {productBanner?.beforeWords}
                     <div
                       style={productBanner?.wordWrapperStyle}
                       className={productBanner?.wordWrapperClassName}
@@ -84,7 +84,8 @@ const ProductBanner = ({
                         {" "}
                         <img
                           style={{ width: "36px", height: "36px" }}
-                          src="/images/Vector.png" alt="Vector finfloh"
+                          src="/images/Vector.png"
+                          alt="Vector finfloh"
                         />{" "}
                         Get a 7-day free trial
                       </a>
@@ -96,7 +97,7 @@ const ProductBanner = ({
             <div className="col-lg-6">
               {showTrial && (
                 <div className="collection-banner-img-cont">
-                  <img src={productBanner?.imgUrl} alt={productBanner?.alt}/>
+                  <img src={productBanner?.imgUrl} alt={productBanner?.alt} />
                 </div>
               )}
             </div>

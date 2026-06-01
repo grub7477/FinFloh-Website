@@ -97,7 +97,7 @@ const Podcast = () => {
           },
         ]}
       />
-      <WebsiteLayout>
+      <WebsiteLayout showMainBannerTop={true}>
         <div className="bg-container">
           <div className="podcast-container container-main">
             <div className="podcast-header">
