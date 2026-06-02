@@ -5,7 +5,7 @@ export const MainBanner = ({ bannerRef }) => {
   return (
     <div className={styles.mainBanner} ref={bannerRef}>
       <a
-        href="/flohsense-ai-agent?utm_source=website&utm_campaing=website_banner"
+        href="/flohsense-ai-agent?utm_source=website&utm_campaign=website_banner"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.bannerLink}
@@ -32,7 +32,7 @@ export const MainBanner = ({ bannerRef }) => {
         <ButtonCommon
           label="Try FlohSense AI"
           variant="secondary-sm"
-          href="/flohsense-ai-agent?utm_source=website&utm_campaing=website_banner"
+          href="/flohsense-ai-agent?utm_source=website&utm_campaign=website_banner"
         />
       </div>
     </div>
