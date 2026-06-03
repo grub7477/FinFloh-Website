@@ -152,10 +152,10 @@ const MainBanner = ({ utmURLs }) => {
         <div className="main-banner-container">
           {/* <h1 className="lending-title" style={{color:'#002211'}}>Accounts Receivable Software</h1> */}
           <div className="lending-title-container">
-            <p className="newLending-heading">
+            <h1 className="newLending-heading">
               Faster Collections. <br /> Smarter Credit Decisions. <br />{" "}
               Quicker Recon.
-            </p>
+            </h1>
             <p className="lending-description">
               Autonomous Order-to-Cash with AI Agents that think & act like your
               finance team

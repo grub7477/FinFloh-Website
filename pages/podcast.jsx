@@ -101,7 +101,7 @@ const Podcast = () => {
         <div className="bg-container">
           <div className="podcast-container container-main">
             <div className="podcast-header">
-              <div className="podcast-heading">The FinFloh Podcast</div>
+              <h1 className="podcast-heading">The FinFloh Podcast</h1>
               {/* <div className="podcast-heading-mobile">FINFLOH PODCAST</div> */}
             </div>
             <div>

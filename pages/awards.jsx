@@ -15,9 +15,9 @@ const awards = () => {
             {/* Awards Header */}
             <div className="awards-header">
               <div className="awards-header-para">
-                <p className="awards-header-main-heading">
+                <h1 className="awards-header-main-heading">
                   FinFloh Awards & Recognitions
-                </p>
+                </h1>
                 <p className="awards-header-subheading">
                   At FinFloh, we’re proud to be recognized for our innovation
                   and excellence in transforming the finance industry with AI,
@@ -29,7 +29,7 @@ const awards = () => {
                   FinFloh wins Momentum Leader Award for Credit, Collections &
                   Accounts Receivable at G2 Winter Awards
                 </p>
-                <img src="/images/awards-img.svg"  alt="award finfloh"/>
+                <img src="/images/awards-img.svg" alt="award finfloh" />
                 <div>
                   <p className="awards-main-para-content">
                     Great news! FinFloh has been named the Momentum Leader in
