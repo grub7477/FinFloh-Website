@@ -36,3 +36,7 @@ next-env.d.ts
 node_modules
 .next
 node_modules
+
+# local files
+/testing.jsx
+/homePage-pricing.jsx

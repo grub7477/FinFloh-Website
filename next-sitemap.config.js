@@ -14,7 +14,6 @@ module.exports = {
     "/refer",
     "/quote-request-successful",
     "/free-credit-score-request-successful",
-    "/free-credit-score-request-successful",
     "/free-credit-score",
     "/awards",
     "/cookie-policy",
