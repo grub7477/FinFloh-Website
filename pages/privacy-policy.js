@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
         <div className="align-c privacy-policy">
           <h1>Privacy Policy</h1>
           <p>
-            Last Updated on: <b>17 Aug 2023</b>
+            Last Updated on: <b>17 November 2025</b>
           </p>
         </div>
         <div className="privacy-policy-content">
