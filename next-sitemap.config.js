@@ -22,13 +22,16 @@ module.exports = {
   ],
 
   transform: async (config, path) => {
+    // Drop time entirely, use only date (YYYY-MM-DD) - safest for SEO sitemaps
+    const lastmod = new Date().toISOString().split('T')[0];
+
     // Give homepage priority 1
     if (path === "/") {
       return {
         loc: path,
         changefreq: "monthly",
-        priority: 1.0,
-        lastmod: new Date().toISOString(),
+        priority: "1.0",
+        lastmod: lastmod,
       };
     }
 
@@ -36,8 +39,8 @@ module.exports = {
     return {
       loc: path,
       changefreq: "monthly",
-      priority: 0.8,
-      lastmod: new Date().toISOString(),
+      priority: "0.8",
+      lastmod: lastmod,
     };
   },
 
@@ -64,7 +67,7 @@ module.exports = {
           loc: `/blog/${post.slug}`,
           changefreq: "weekly",
           priority: 0.65,
-          lastmod: post.modified,
+          lastmod: post.modified.split('T')[0],
         });
       });
 
