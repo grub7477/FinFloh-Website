@@ -123,10 +123,10 @@ const Pricing = () => {
             "@type": "WebPageElement",
             name: "Trusted by Enterprise Finance Teams Worldwide",
           },
-          {
-            "@type": "WebPageElement",
-            name: "Special Advantage Program",
-          },
+          // {
+          //   "@type": "WebPageElement",
+          //   name: "Special Advantage Program",
+          // },
           {
             "@type": "WebPageElement",
             name: "FinFloh: A Cut Above The Rest",
@@ -158,7 +158,7 @@ const Pricing = () => {
             </h2>
           </div>
 
-          <div className="container-main" style={{ marginTop: "86px" }}>
+          {/* <div className="container-main" style={{ marginTop: "86px" }}>
             <div className="special_advantage_program_container NewNewsletter-bg">
               <div
                 className="NewNewsletter-content"
@@ -184,7 +184,7 @@ const Pricing = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="container-main">
             <img
