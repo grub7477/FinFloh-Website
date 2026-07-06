@@ -21,6 +21,7 @@ const CompaniesLogo = () => {
           {/* Sliding Logos for Larger Screens */}
           <div className="logos">
             <div className="logos-slide">
+              <img alt="virtusa" src="/images/company-logos/virtusa.svg" />
               <img alt="gupshup-icon" src="/images/company-logos/Gupshup.svg" />
               <img alt="yellow_ai" src="/images/company-logos/yellow_ai.svg" />
               <img
@@ -42,6 +43,7 @@ const CompaniesLogo = () => {
               <img alt="finbox" src="/images/company-logos/finbox.svg" />
               <img alt="finbox" src="/images/company-logos/biomerica.svg" />
               {/* Logo Repeat */}
+              <img alt="gupshup-icon" src="/images/company-logos/virtusa.svg" />
               <img alt="gupshup-icon" src="/images/company-logos/Gupshup.svg" />
               <img alt="yellow_ai" src="/images/company-logos/yellow_ai.svg" />
               <img
