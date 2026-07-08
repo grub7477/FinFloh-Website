@@ -4332,6 +4332,7 @@ h-100 {
 .faq-accordion-container {
   width: 100%;
 }
+
 .faq-accordion .accordion .accordion__item .accordion__button {
   display: flex;
   padding: 10px 0px;
@@ -4344,6 +4345,11 @@ h-100 {
   font-size: 19px;
   font-weight: 500;
   font-family: "Satoshi", sans-serif;
+
+}
+
+.faq-accordion-container{
+  display: flex;
 }
 .faq-accordion .accordion .accordion__item .accordion__button:hover {
   outline: 0;

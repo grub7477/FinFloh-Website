@@ -23,3 +23,46 @@
   gap: 8px;
   padding-block: 48px;
 }
+
+.spotlight__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  background: #021427;
+  border-radius: 8px;
+}
+
+.containerLeft {
+  display: flex;
+  flex-direction: column;
+  padding: 86px 48px;
+  gap: 16px;
+}
+
+.containerLeft h5{
+  color: #A5B4FC;
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.content__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+
+
+.containerRight h3{
+  color: #A5B4FC;
+}
+
+.pattern{
+  position: relative;
+
+}
