@@ -1,7 +1,10 @@
+@use "/styles/foundation/breakpoint" as b;
+
 .hero_section {
   display: flex;
   flex-direction: row;
   padding: 100px 0 180px 0;
+
 }
 
 .hero--main {
@@ -61,20 +64,27 @@
 
 .hero__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  border: 1px solid #E5E7EB;
-  border-radius: 4px;
   background:linear-gradient(101deg, #FCFEFF 0%, #EEF6FF 100%);
-  height: 75vh;
+  
+
+   @include b.respond(sm) {
+    grid-template-columns: 1fr 1fr;
+    height: 75vh;
+    border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  }
 }
 
 .hero__contentWrapper{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  padding: 86px 48px;
+  padding: 48px 8px;
   gap: 24px;
+
+   @include b.respond(sm) {
+    padding: 86px 48px;
+  }
 }
 
 .buttonWrapper{

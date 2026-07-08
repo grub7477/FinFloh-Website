@@ -28,6 +28,9 @@ section {
 .section--off-white {
   background: var(--off-White-gradient);
 }
+.section--blue-gradient {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(238, 242, 255, 0.60) 100%);
+}
 .section--green {
   background: var(--off-green-gradient);
 }
@@ -35,7 +38,7 @@ section {
 
 
 // -------- //
-  // Grid
+  // Grid Need to fix these grid part newly added doesnt make sense to create this and not use them.
   .grid {
     display: grid;
     gap: var(--gap-md);
@@ -59,17 +62,19 @@ section {
      @include b.respond(sm) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @include b.respond(md) {
-    grid-template-columns: repeat(4, 1fr);
-  }
+ 
   }
 
   .grid--1by3{
     display: grid;
-        grid-auto-flow: column;
-    grid-template-columns: repeat(2, 35% 70%);
+    grid-auto-flow: row;
     gap: var(--gap-lg);
-    height: 580px;
+
+     @include b.respond(md) {
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2, 35% 70%);
+      height: 580px;
+  }
   }
   
   // -------- //
