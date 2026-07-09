@@ -1,3 +1,5 @@
+@use "/styles/foundation/breakpoint" as b;
+
 .main_wrapper {
   display: grid;
   background:
@@ -14,6 +16,7 @@
 
   border-radius: 16px;
   z-index: 1;
+ 
 }
 
 .header_wrapper {
@@ -22,21 +25,38 @@
   align-items: center;
   gap: 8px;
   padding-block: 48px;
+  
 }
 
 .spotlight__container {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+  padding:  48px 16px;
   background: #021427;
-  border-radius: 8px;
+  gap: 48px;
+  
+   @include b.respond(sm) {
+    grid-auto-flow: column;
+   grid-template-columns: repeat(2, 1fr);
+   border-radius: 8px;
+  }
 }
 
 .containerLeft {
   display: flex;
   flex-direction: column;
-  padding: 86px 48px;
+  text-align: center;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgb(16, 30, 89);
+  
   gap: 16px;
+  @include b.respond(sm) {
+    padding-bottom: 0;
+    border: 0;
+    text-align: left;
+  padding: 86px 48px;
+  }
+  
 }
 
 .containerLeft h5{
@@ -45,15 +65,23 @@
 
 .containerRight {
   display: flex;
+  flex-direction: column;
+   @include b.respond(sm) {
   flex-direction: row;
+  }
 }
 
 .content__wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  text-align: center;
   gap: 12px;
+@include b.respond(sm) {
+  align-items: flex-end;
+  }
+  
 }
 
 
@@ -63,6 +91,11 @@
 }
 
 .pattern{
+  display: none;
+
+  @include b.respond(sm) {
+    display: flex;
   position: relative;
+  }
 
 }

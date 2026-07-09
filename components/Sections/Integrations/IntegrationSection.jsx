@@ -10,8 +10,8 @@ const IntegrationSection = ({ btnText, btnLink, icon }) => {
         </h3>
         <h2 className="text-center">Out-Of-The-Box<br/>Seamless Integration</h2>
         <p className="para_sm text-center">
-          Integrate with your ERP/Accounting Software, Payments, CRM,<br/>
-          Communications & other tools in just a few simple steps without any<br/>
+          Integrate with your ERP/Accounting Software, Payments, CRM,
+          Communications & other tools in just a few simple steps without any
           coding efforts and start managing your accounts receivables with ease.
         </p>
         <ButtonCommon

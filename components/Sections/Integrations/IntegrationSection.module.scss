@@ -1,13 +1,26 @@
+@use "/styles/foundation/breakpoint" as b;
 
 .integration__contentWrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
-  background: url("/images/integrations-new.svg") center / 105% no-repeat,
-  linear-gradient(101deg, #fcfeff 0%, #eef6ff 100%);
+  
+  
+  background:
+    linear-gradient(101deg, #fcfeff 0%, #eef6ff 100%);
   align-items: center;
+padding: 72px 20px;
+  
+  
+
+  @include b.respond(sm) {
+    height: 70vh;
+    background:
+    url("/images/integrations-new.svg") center / 105% no-repeat,
+    linear-gradient(101deg, #fcfeff 0%, #eef6ff 100%);
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    align-items: center;
   justify-content: center;
-  height: 70vh;
+  }
 }
