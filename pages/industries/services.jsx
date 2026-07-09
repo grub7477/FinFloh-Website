@@ -9,7 +9,7 @@ import CompaniesLogo from "../../components/Common/CompaniesLogo";
 import FaqContent from "../../components/Faq/FaqContent_New";
 import ButtonCommon from "../../components/UI/Button/Button";
 import CustomerLogos from "../../components/Sections/CustomerLogos/CustomerLogos";
-import { ServiceIndustry } from "../../data/serviceIndustry.data";
+import { ServiceIndustry } from "../../data/services.data";
 import HeroSectionNew from "../../components/Sections/HeroSection/HeroSectionNew";
 import RightArrow from "../../public/icons/arrow_right.svg";
 import FeatureCards from "../../components/Sections/FeatureCards/FeatureCards";
@@ -36,7 +36,7 @@ const serviceIndustry = () => {
       <HeadComponent
         title="AI-Powered Contract-to-Cash Automation for Services Firms | FinFloh"
         description="FinFloh helps services organisations automate contract intelligence, invoice validation, invoice generation, approvals, collections, disputes and cash application."
-        canonicalUrl="https://finfloh.com/industries/service-industry"
+        canonicalUrl="https://finfloh.com/industries/service"
         includeIsPartOf
         includeAbout
         aboutProps={{
@@ -48,7 +48,7 @@ const serviceIndustry = () => {
         breadcrumbItems={[
           {
             name: "Service Industry",
-            item: "https://finfloh.com/industries/service-industry",
+            item: "https://finfloh.com/industries/service",
           },
         ]}
       />
