@@ -11,7 +11,7 @@ const SpotlightSectionV2 = ({
   icon,
 }) => {
   return (
-    <section>
+    <section className="section">
       <div className={`container ${style.spotlight__container}`}>
         <div className={style.containerLeft}>
           <h4 className="para_lg text-inverse">{quote}</h4>
@@ -22,7 +22,7 @@ const SpotlightSectionV2 = ({
           <div className={style.content__wrapper}>
               <h2 className="h4 text-inverse">{title}</h2>
               <h3 className="h5">{description}</h3>
-              <ButtonCommon label={btnText} link={btnLink} variant="secondary" endIcon={icon} />
+              <ButtonCommon label={btnText} href={btnLink} variant="secondary" endIcon={icon} />
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const InNumbers = ({
           {description && <p>{description}</p>}
           <ButtonCommon
             label={btnText}
-            link={btnLink}
+            href={btnLink}
             endIcon={icon}
             variant="primary"
           />

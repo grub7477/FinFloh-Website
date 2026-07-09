@@ -114,6 +114,10 @@ section {
   gap: 4px;
 }
 
+.stack--extra{
+  gap: var(--gap-xl);
+}
+
 .stack--extra-loose {
   gap: var(--gap-2xl);
 }

@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   border-radius: 16px;
   z-index: 1;
  
@@ -24,21 +23,23 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding-block: 48px;
+  
   
 }
 
 .spotlight__container {
   display: grid;
   grid-auto-flow: row;
-  padding:  48px 16px;
+  padding:  48px 24px;
   background: #021427;
   gap: 48px;
-  
+      
+
    @include b.respond(sm) {
     grid-auto-flow: column;
    grid-template-columns: repeat(2, 1fr);
    border-radius: 8px;
+   padding:  48px 86px;
   }
 }
 
@@ -48,13 +49,14 @@
   text-align: center;
   padding-bottom: 48px;
   border-bottom: 1px solid rgb(16, 30, 89);
+  justify-content: center;
   
   gap: 16px;
   @include b.respond(sm) {
     padding-bottom: 0;
     border: 0;
     text-align: left;
-  padding: 86px 48px;
+  
   }
   
 }
@@ -80,6 +82,7 @@
   gap: 12px;
 @include b.respond(sm) {
   align-items: flex-end;
+  text-align: right;
   }
   
 }

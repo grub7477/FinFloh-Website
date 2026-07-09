@@ -12,7 +12,7 @@ const PricingCards = ({
 }) => {
   return (
     <section className="section">
-      <div className="container stack stack--extra-loose">
+      <div className="container stack stack--extra">
         <div className="stack">
           {kicker && (
             <h3 className="heading_xs highlight-text--gradient">{kicker}</h3>
@@ -21,7 +21,7 @@ const PricingCards = ({
           {description && <p>{description}</p>}
           <ButtonCommon
             label={btnText}
-            link={btnLink}
+            href={btnLink}
             endIcon={icon}
             variant="primary"
           />

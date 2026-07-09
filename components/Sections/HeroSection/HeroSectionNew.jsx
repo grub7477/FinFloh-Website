@@ -13,10 +13,8 @@ const HeroSectionNew = ({
   title,
   kicker,
   description,
-  btnSecondaryText,
-  btnSecondaryLink,
-  btnPrimaryText,
-  btnPrimaryLink,
+ btnText,
+ btnLink,
   btnVariant,
   image,
   utmURLs,
@@ -35,17 +33,11 @@ const HeroSectionNew = ({
             <p>{description}</p>
             <div className={style.buttonWrapper}>
                <ButtonCommon
-                label={btnPrimaryText}
-                link={btnPrimaryLink}
+                label={btnText}
+                href={btnLink}
                 variant="primary"
                 endIcon={icon}
                />
-               {/* <ButtonCommon
-               label={btnSecondaryText}
-                link={btnSecondaryLink}
-                variant="outline"
-                endIcon={icon}
-               /> */}
             </div>
         </div>
         <div className={`overflow-hidden ${style.imageWrapper}`}>

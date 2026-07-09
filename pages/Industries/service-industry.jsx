@@ -21,16 +21,14 @@ import IntegrationSection from "../../components/Sections/Integrations/Integrati
 import SpotlightSectionV2 from "../../components/Sections/SpotlightSection/SpotlightSectionV2";
 import PricingCards from "../../components/Sections/AdvanceCards/PricingCards";
 import InNumbers from "../../components/Sections/AdvanceCards/InNumbers";
-import Testimonial from "../../components/Sections/Testimonials/Testimonials"
+import Testimonial from "../../components/Sections/Testimonials/Testimonials";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
 
-
 const handleButtonClick = () => {
-    setPopupVisible(true);
-    // setSuccess(true);
-    // console.log('yy')
-  };
-
+  setPopupVisible(true);
+  // setSuccess(true);
+  // console.log('yy')
+};
 
 const serviceIndustry = () => {
   return (
@@ -59,8 +57,8 @@ const serviceIndustry = () => {
           kicker={ServiceIndustry.heroSection.kicker}
           title={ServiceIndustry.heroSection.title}
           description={ServiceIndustry.heroSection.description}
-          btnPrimaryText={ServiceIndustry.heroSection.btnText}
-          btnPrimaryLink={ServiceIndustry.heroSection.btnLink}
+          btnText={ServiceIndustry.heroSection.btnText}
+          btnLink={ServiceIndustry.heroSection.btnLink}
           image={ServiceIndustry.heroSection.image}
           icon={<RightArrow />}
         />
@@ -82,7 +80,7 @@ const serviceIndustry = () => {
           description={ServiceIndustry.thePlatform.description}
           features={ServiceIndustry.thePlatform.features}
           btnText={ServiceIndustry.thePlatform.btnText}
-          btnlink={ServiceIndustry.thePlatform.btnlink}
+          btnLink={ServiceIndustry.thePlatform.btnLink}
           icon={<RightArrow />}
         />
         <div class=" container horizontal-line"></div>
@@ -100,20 +98,18 @@ const serviceIndustry = () => {
           title={ServiceIndustry.numbers.title}
           btnText={ServiceIndustry.numbers.btnText}
           btnLink={ServiceIndustry.numbers.btnLink}
-          btnLink={ServiceIndustry.numbers.btnLink}
           features={ServiceIndustry.numbers.features}
           icon={<RightArrow />}
         />
-       <Testimonial />
-       <NewNewsLetter
-                 type="email"
-                 onSuccess={handleButtonClick}
-                //  utmURLs=
-                 heading={"Supercharge your A/R with FinFloh"}
-                 text={
-                   "Talk to our finance experts and begin your AR transformation journey today"
-                 }
-               />
+        <SpotlightSectionV2 
+        title={ServiceIndustry.footerCTA.title}
+        description={ServiceIndustry.footerCTA.description}
+        quote={ServiceIndustry.footerCTA.quote}
+        speaker={ServiceIndustry.footerCTA.speaker} 
+        btnText={ServiceIndustry.footerCTA.btnText}
+        btnLink={ServiceIndustry.footerCTA.btnLink}
+          
+        />
       </WebsiteLayout>
     </>
   );

@@ -12,14 +12,14 @@ const CardsSectionV2 = ({
 }) => {
   return (
     <section className="section">
-      <div className="container stack stack--extra-loose">
+      <div className="container stack stack--extra">
         <div className="stack ">
           <h3 className="heading_xs highlight-text--gradient">{kicker}</h3>
           <h2>{title}</h2>
           <p>{description}</p>
           <ButtonCommon
             label={btnText}
-            link={btnLink}
+            href={btnLink}
             endIcon={Icon}
             variant="primary"
           />
