@@ -34,20 +34,21 @@ const serviceIndustry = () => {
   return (
     <>
       <HeadComponent
-        title="Invoice Validation & Automation | FinFloh"
-        description="Validate & generate your customer invoices with quotes, orders and actuals with automated sending"
-        canonicalUrl="https://finfloh.com/invoice-automation"
+        title="AI-Powered Contract-to-Cash Automation for Services Firms | FinFloh"
+        description="FinFloh helps services organisations automate contract intelligence, invoice validation, invoice generation, approvals, collections, disputes and cash application."
+        canonicalUrl="https://finfloh.com/industries/service-industry"
         includeIsPartOf
         includeAbout
         aboutProps={{
-          name: "Invoice Validation & Automation",
-          serviceType: "ERP-CRM Invoice Automation and Credit Management",
+          name: "Contract-to-Cash Automation for Services Firms",
+          serviceType:
+            "AI-Powered Billing, Invoicing & Accounts Receivable Automation",
         }}
         includeBreadcrumbs
         breadcrumbItems={[
           {
-            name: "Free Trial",
-            item: "https://finfloh.com/free-trial",
+            name: "Service Industry",
+            item: "https://finfloh.com/industries/service-industry",
           },
         ]}
       />
@@ -101,14 +102,13 @@ const serviceIndustry = () => {
           features={ServiceIndustry.numbers.features}
           icon={<RightArrow />}
         />
-        <SpotlightSectionV2 
-        title={ServiceIndustry.footerCTA.title}
-        description={ServiceIndustry.footerCTA.description}
-        quote={ServiceIndustry.footerCTA.quote}
-        speaker={ServiceIndustry.footerCTA.speaker} 
-        btnText={ServiceIndustry.footerCTA.btnText}
-        btnLink={ServiceIndustry.footerCTA.btnLink}
-          
+        <SpotlightSectionV2
+          title={ServiceIndustry.footerCTA.title}
+          description={ServiceIndustry.footerCTA.description}
+          quote={ServiceIndustry.footerCTA.quote}
+          speaker={ServiceIndustry.footerCTA.speaker}
+          btnText={ServiceIndustry.footerCTA.btnText}
+          btnLink={ServiceIndustry.footerCTA.btnLink}
         />
       </WebsiteLayout>
     </>
