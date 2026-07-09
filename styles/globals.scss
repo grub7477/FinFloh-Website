@@ -15,19 +15,11 @@ section {
 }
 
 // SIZES
-.section {
-  padding-block: var(--spacing-72);
-}
-.section--sm {
-  padding-block: var(--spacing-40);
-}
-.section--lg {
-  padding-block: var(--spacing-120);
-}
+.section {padding-block: var(--spacing-72);}
+.section--sm {padding-block: var(--spacing-40);}
+.section--lg {padding-block: var(--spacing-120);}
 
-.sub--section {
-  padding-block: var(--padding-md);
-}
+.sub--section {padding-block: var(--padding-md);}
 
 // THEME
 .section--dark {
@@ -36,10 +28,57 @@ section {
 .section--off-white {
   background: var(--off-White-gradient);
 }
+.section--blue-gradient {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(238, 242, 255, 0.60) 100%);
+}
 .section--green {
   background: var(--off-green-gradient);
 }
 // -------- //
+
+
+// -------- //
+  // Grid Need to fix these grid part newly added doesnt make sense to create this and not use them.
+  .grid {
+    display: grid;
+    gap: var(--gap-md);
+  }
+  .grid--2 {
+    grid-template-columns: repeat(1, 1fr);
+    @include b.respond(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .grid--3 {
+    grid-template-columns: repeat(1, 1fr);
+  
+    @include b.respond(sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .grid--4 {
+    grid-template-columns: repeat(1, 1fr);
+  
+     @include b.respond(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  }
+
+  .grid--1by3{
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--gap-lg);
+
+     @include b.respond(md) {
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2, 35% 70%);
+      height: 580px;
+  }
+  }
+  
+  // -------- //
+
 
 // -------- //
 // Container
@@ -75,6 +114,10 @@ section {
   gap: 4px;
 }
 
+.stack--extra{
+  gap: var(--gap-xl);
+}
+
 .stack--extra-loose {
   gap: var(--gap-2xl);
 }
@@ -87,8 +130,15 @@ section {
 .stack--stretch {
   align-items: stretch;
 }
+.stack--spacebetween{
+  justify-content: space-between;
+}
 .stack--full {
   width: 100%;
+}
+
+.stack--full-height{
+  height: 100%;
 }
 // -------- //
 
@@ -104,6 +154,7 @@ section {
   text-align: center;
 }
 .inline--responsive {
+  
   display: flex;
   flex-direction: column;
 
@@ -128,29 +179,6 @@ section {
 }
 // -------- //
 
-// -------- //
-// Grid
-.grid {
-  display: grid;
-  gap: var(--gap-md);
-}
-.grid--2 {
-  grid-template-columns: repeat(1, 1fr);
-
-  @include b.respond(sm) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.grid--3 {
-  grid-template-columns: repeat(1, 1fr);
-
-  @include b.respond(sm) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-// -------- //
 
 // -------- //
 // Border Radius
@@ -192,6 +220,11 @@ section {
   width: 36px;
 }
 
+.icon--xl {
+  width: 48px;
+}
+
+
 .icon--dark {
   color: var(--grey-700);
 }
@@ -212,7 +245,6 @@ section {
 }
 
 // Card
-
 .card {
   display: flex;
   flex-direction: column;
@@ -236,6 +268,10 @@ section {
 }
 .card--tight {
   padding: var(--padding-sm);
+}
+
+.card--gap-loose {
+  gap: var(--gap-xl);
 }
 
 .card-wrapper {
@@ -329,3 +365,22 @@ li {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.text--center{
+  text-align: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+  .horizontal-line {
+  border-top: 1px solid #E5E7EB;
+  width: 100%;
+}
+
+.margin-bottom {
+  margin-bottom: 16px;
+}
+

@@ -1,3 +1,5 @@
+@use "/styles/foundation/breakpoint" as b;
+
 .main_wrapper {
   display: grid;
   background:
@@ -11,9 +13,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   border-radius: 16px;
   z-index: 1;
+ 
 }
 
 .header_wrapper {
@@ -21,5 +23,82 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding-block: 48px;
+  
+  
+}
+
+.spotlight__container {
+  display: grid;
+  grid-auto-flow: row;
+  padding:  48px 24px;
+  background: #021427;
+  gap: 48px;
+      
+
+   @include b.respond(sm) {
+    grid-auto-flow: column;
+   grid-template-columns: repeat(2, 1fr);
+   border-radius: 8px;
+   padding:  48px 86px;
+  }
+}
+
+.containerLeft {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgb(16, 30, 89);
+  justify-content: center;
+  
+  gap: 16px;
+  @include b.respond(sm) {
+    padding-bottom: 0;
+    border: 0;
+    text-align: left;
+  
+  }
+  
+}
+
+.containerLeft h5{
+  color: #A5B4FC;
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+   @include b.respond(sm) {
+  flex-direction: row;
+  }
+}
+
+.content__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+@include b.respond(sm) {
+  align-items: flex-end;
+  text-align: right;
+  }
+  
+}
+
+
+
+.containerRight h3{
+  color: #A5B4FC;
+}
+
+.pattern{
+  display: none;
+
+  @include b.respond(sm) {
+    display: flex;
+  position: relative;
+  }
+
 }
