@@ -161,7 +161,7 @@ const invoicetocash = () => {
         description="Automate credit decisions, invoice generation, collections, and cash application in one unified platform integrated with ERP and CRM."
         canonicalUrl="https://finfloh.com/invoice-to-cash"
       />
-      <WebsiteLayout showMainBannerTop={true}>
+      <WebsiteLayout >
         <div className="bg-container">
           <div
             className="bg-container flohsense-ai-header"

@@ -42,7 +42,7 @@ const partnerProgram = () => {
         ]}
       />
 
-      <WebsiteLayout showMainBannerTop>
+      <WebsiteLayout >
         <HeroSectionNew
           kicker={partnerProgramData.heroSection.kicker}
           title={partnerProgramData.heroSection.title}
