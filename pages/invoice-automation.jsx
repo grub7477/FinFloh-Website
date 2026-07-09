@@ -313,7 +313,7 @@ const Integration = () => {
       <WebsiteLayout
         utmURLs={utmURLs}
         PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_integrations}
-        showMainBannerTop={true}
+        
       >
         <ProductBanner
           productBanner={productBanner}

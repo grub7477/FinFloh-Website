@@ -318,7 +318,7 @@ const Collections = () => {
       <WebsiteLayout
         utmURLs={utmURLs}
         PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_collections}
-        showMainBannerTop={true}
+        
       >
         <ProductBanner
           productBanner={productBanner}

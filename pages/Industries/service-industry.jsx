@@ -53,7 +53,7 @@ const serviceIndustry = () => {
         ]}
       />
 
-      <WebsiteLayout showMainBannerTop>
+      <WebsiteLayout>
         <HeroSectionNew
           kicker={ServiceIndustry.heroSection.kicker}
           title={ServiceIndustry.heroSection.title}

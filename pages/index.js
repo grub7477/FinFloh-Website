@@ -676,7 +676,7 @@ const FinFlohHome = () => {
         scrollToSection={scrollToSection}
         utmURLs={utmURLs}
         PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_homePage}
-        showMainBannerTop={true}
+        
       >
         {/* section 1 ->> main banner */}
         <MainBanner handleFn={handleButtonClick} utmURLs={utmURLs} />
