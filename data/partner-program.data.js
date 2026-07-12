@@ -11,7 +11,7 @@ export const partnerProgramData = {
     btnSecondaryText: "Talk to Partnerships",
     btnSecondaryLink:
       "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
-    image: "/images/partner-program/partner-program-hero.png",
+    image: "/images/partner-program/pattern-home.svg",
   },
 
   whyFinfloh: {

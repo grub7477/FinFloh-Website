@@ -3,7 +3,7 @@ export const ServiceIndustry = {
     kicker: "AI . Contract-to-cash . Service Industry",
     title: `AI-Powered Contract-to-Cash Automation for Services Firms`,
     description:
-      "FinFloh helps services organisations automate contract intelligence, invoice validation, invoice generation, approvals, collections, disputes and cash application. Accelerating billing cycles while reducing revenue leakage and manual effort.",
+      "Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R and revenue realization.",
     btnText: "Book A Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
@@ -117,7 +117,7 @@ export const ServiceIndustry = {
     title: "Everything Your Billing & AR Team Needs",
     btnText: "Book A Demo",
     btnLink:
-    "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
 
     // CFO overview card — sits above/alongside the team cards
     cfoOffice: {
@@ -136,10 +136,23 @@ export const ServiceIndustry = {
       ],
     },
 
+    // Each team card now has its own distinct description + sub-features
+    // (previously all three shared the same contract-extraction copy)
     features: [
       {
+        title: "THE CFO OFFICE",
+        description: "Complete Visibility & Workflows Across Your Contract-to-Cash Process",
+        subfeatures: [
+          "Validation across contracts, SOWs and timesheets",
+          "Revenue leakage identification",
+          "Billing cycle and DSO dashboards",
+          "Collection performance and forecast visibility",
+          "AI-driven operational insights",
+        ],
+      },
+      {
         title: "Billing Team",
-        description: "Generate accurate invoices faster.",
+        description: "Generate accurate invoices faster with higher efficiency.",
         subfeatures: [
           "AI Contract Intelligence",
           "Commercial Term Extraction",
@@ -182,7 +195,7 @@ export const ServiceIndustry = {
       "Transform Finance Operations across contract-to-cash using AI Automations",
     btnText: "Book A Demo",
     btnLink:
-     "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     features: [
       { kpi: "40%", description: "Reduction in Billing Cycle Time" },
       { kpi: "80%", description: "Reduction in Manual Invoice Validation" },
@@ -192,9 +205,11 @@ export const ServiceIndustry = {
       { kpi: "30-40%", description: "Reduction in DSO" },
     ],
   },
+
   footerCTA: {
     title: "Supercharge your A/R with FinFloh",
-    description: "Talk to our finance experts and begin your AR transformation journey today",
+    description:
+      "Talk to our finance experts and begin your AR transformation journey today",
     quote: `"FinFloh became a key part of our finance automation practice. We closed 18+ deals and built a strong recurring revenue stream."`,
     speaker: "Partner, Leading Consulting Firm",
     btnText: "Book A Demo",
