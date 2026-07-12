@@ -1,34 +1,51 @@
 @use "/styles/foundation/breakpoint" as b;
 
-.card__wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr; // mobile: single column, straight line
+  gap: 24px;
+  
 
-      @include b.respond(sm) {
-    flex-direction: row;
+  @include b.respond(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card:first-child {
+    background-color: var(--card-highlight-bg, #D1F7C6); // swap for your token/variable
+
+
+    @include b.respond(sm) {
+      grid-column: 1 / -1; // full width only once we're in the 3-col grid
+    }
   }
 }
 
-.card{
-    padding: 36px;
-    border: 1px solid #E5E7EB;
-    border-radius: 8px;
-    flex: 1;
+.card {
+  padding: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  flex: 1;
 }
 
-.card_contentWrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+.card_contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  // Featured (first) card's content: title/description side by side, but only once there's room
+  .card:first-child & {
+    @include b.respond(sm) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
 
 .subfeatures {
- display: flex;
- flex-direction: column;
- gap: 16px;
- 
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   ul {
     list-style: none;
     padding: 0;
@@ -40,10 +57,10 @@
     span {
       display: flex;
       align-items: center;
-      gap: 8px; // spacing between icon and text
+      gap: 8px;
 
       img {
-        flex-shrink: 0; // prevents icon from squishing on long text
+        flex-shrink: 0;
         width: 20px;
         height: 20px;
       }

@@ -31,8 +31,10 @@ const PricingCards = ({
           {features?.map((item, index) => (
             <div key={item?.uuid ?? index} className={styles.card}>
               <div className={styles.card_contentWrapper}>
-                {item?.title && <h4>{item.title}</h4>}
-                {item?.description && <p className="para_sm">{item.description}</p>}
+                <div className={styles}>
+                  {item?.title && <h4>{item.title}</h4>}
+                  {item?.description && <p className="para_sm">{item.description}</p>}
+                </div>
               
               {/* subsection */}
               {item?.subfeatures?.length > 0 && (
