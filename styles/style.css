@@ -2547,6 +2547,7 @@ h-100 {
   width: 100%;
 }
 
+
 .fw-30 {
   width: 30.769%;
 }
@@ -3903,6 +3904,23 @@ h-100 {
   display: block;
   min-width: 540px;
 }
+.newsletter-form.newsletter-form--stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.newsletter-form.newsletter-form--stacked .form-control {
+  width: 100%;
+  border-radius: 3px; /* base rule only rounds left corners (3px 0 0 3px), meant for the row layout */
+}
+
+.newsletter-form.newsletter-form--stacked button {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px; /* base rule only rounds right corners (0px 4px 4px 0px), meant for the row layout */
+}
+
 .hero_newsletter .newsletter-form {
   /* margin: 0 auto; */
   /* margin-top: 24px; */
@@ -3932,6 +3950,7 @@ h-100 {
   line-height: 23px;
   font-family: Satoshi;
 }
+
 
 .privacy-policy {
   /* height: 100px; */

@@ -18,7 +18,7 @@ const CardsSectionV2 = ({
           <p>{description}</p>
           <ButtonCommon
             label={btnText}
-            link={btnLink}
+            href={btnLink}
             endIcon={Icon}
             variant="primary"
           />
@@ -41,7 +41,7 @@ const CardsSectionV2 = ({
                 {item?.btnText && (
                   <ButtonCommon
                     label={item.btnText}
-                    link={item.btnLink}
+                    href={item.btnLink}
                     endIcon={item.Icon}
                     variant="tertiary"
                   />

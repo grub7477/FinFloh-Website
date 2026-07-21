@@ -16,7 +16,7 @@ const IntegrationSection = ({ btnText, btnLink, icon }) => {
         </p>
         <ButtonCommon
           label={btnText}
-          link={btnLink}
+          href={btnLink}
           endIcon={icon}
           variant="primary"
         />

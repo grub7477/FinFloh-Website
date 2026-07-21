@@ -63,7 +63,6 @@ const partnerProgram = () => {
         />
         <div class=" container horizontal-line"></div>
         <CardsSectionV2
-          // kicker={partnerProgramData.theProblem.kicker}
           title={partnerProgramData.theProblem.title}
           description={partnerProgramData.theProblem.description}
           features={partnerProgramData.theProblem.features}
@@ -77,7 +76,7 @@ const partnerProgram = () => {
           description={partnerProgramData.FeatureCards.description}
           features={partnerProgramData.FeatureCards.features}
           btnText={partnerProgramData.FeatureCards.btnText}
-          btnlink={partnerProgramData.FeatureCards.btnlink}
+          btnLink={partnerProgramData.FeatureCards.btnLink}
           icon={<RightArrow />}
         />
         <IntegrationSection

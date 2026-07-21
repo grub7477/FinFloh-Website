@@ -13,8 +13,8 @@ const HeroSectionNew = ({
   title,
   kicker,
   description,
- btnText,
- btnLink,
+  btnPrimaryText,
+  btnPrimaryLink,
   btnVariant,
   image,
   utmURLs,
@@ -25,26 +25,26 @@ const HeroSectionNew = ({
     .join(" ");
 
   return (
-   <section>
-    <div className={`container ${style.hero__container}`}>
+    <section>
+      <div className={`container ${style.hero__container}`}>
         <div className={style.hero__contentWrapper}>
-            <h2 className="heading_xs highlight-text--gradient ">{kicker}</h2>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <div className={style.buttonWrapper}>
-               <ButtonCommon
-                label={btnText}
-                href={btnLink}
-                variant="primary"
-                endIcon={icon}
-               />
-            </div>
+          <h2 className="heading_xs highlight-text--gradient ">{kicker}</h2>
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <div className={style.buttonWrapper}>
+            <ButtonCommon
+              label={btnPrimaryText}
+              href={btnPrimaryLink}
+              variant="primary"
+              endIcon={icon}
+            />
+          </div>
         </div>
         <div className={`overflow-hidden ${style.imageWrapper}`}>
-            <img src={image} alt={title} />
+          <img src={image} alt={title} />
         </div>
-    </div>
-   </section>
+      </div>
+    </section>
   );
 };
 
