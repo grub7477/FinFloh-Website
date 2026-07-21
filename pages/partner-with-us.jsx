@@ -38,9 +38,9 @@ const PartnerWithUs = (isShowMobile = false, errorClassName) => {
                 <div className="stack">
                   <PartnerWithUsButton
                     onSuccess={() => alert("Thank you for partnering with us")}
-                    templateID="template_mf4qcim"
-                    serviceID="service_duwcr2b"
-                    userID="eYpYIaQsGFViF3_LO"
+                    templateID="template_f0vluaq"
+                    serviceID="service_xfa67cp"
+                    userID="Dm5kmJgBV-xPfSDgO"
                     layout="stacked"
                   />
                 </div>
