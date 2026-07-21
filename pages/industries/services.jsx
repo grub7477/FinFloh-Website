@@ -36,7 +36,7 @@ const serviceIndustry = () => {
       <HeadComponent
         title="AI-Powered Contract-to-Cash Automation for Services Firms | FinFloh"
         description="FinFloh helps services organisations automate contract intelligence, invoice validation, invoice generation, approvals, collections, disputes and cash application."
-        canonicalUrl="https://finfloh.com/industries/service"
+        canonicalUrl="https://finfloh.com/industries/services"
         includeIsPartOf
         includeAbout
         aboutProps={{
@@ -48,7 +48,7 @@ const serviceIndustry = () => {
         breadcrumbItems={[
           {
             name: "Service Industry",
-            item: "https://finfloh.com/industries/service",
+            item: "https://finfloh.com/industries/services",
           },
         ]}
       />
@@ -58,8 +58,8 @@ const serviceIndustry = () => {
           kicker={ServiceIndustry.heroSection.kicker}
           title={ServiceIndustry.heroSection.title}
           description={ServiceIndustry.heroSection.description}
-          btnText={ServiceIndustry.heroSection.btnText}
-          btnLink={ServiceIndustry.heroSection.btnLink}
+          btnPrimaryText={ServiceIndustry.heroSection.btnPrimaryText}
+          btnPrimaryLink={ServiceIndustry.heroSection.btnPrimaryLink}
           image={ServiceIndustry.heroSection.image}
           icon={<RightArrow />}
         />

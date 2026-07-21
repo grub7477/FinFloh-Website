@@ -4,8 +4,8 @@ export const ServiceIndustry = {
     title: `AI-Powered Contract-to-Cash Automation for Services Firms`,
     description:
       "Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R and revenue realization.",
-    btnText: "Book A Demo",
-    btnLink:
+    btnPrimaryText: "Book A Demo",
+    btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     image: "/images/partner-program/pattern-home.svg",
   },
