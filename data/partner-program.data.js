@@ -6,11 +6,9 @@ export const partnerProgramData = {
     description:
       "Partner with FinFloh and help businesses automate Accounts Receivable while building a profitable, recurring revenue stream for your organization.",
     btnPrimaryText: "Become a Partner",
-    btnPrimaryLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnPrimaryLink: "/partner-with-us",
     btnSecondaryText: "Talk to Partnerships",
-    btnSecondaryLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnSecondaryLink: "/partner-with-us",
     image: "/images/partner-program/pattern-home.svg",
   },
 
@@ -18,8 +16,7 @@ export const partnerProgramData = {
     title: "Partner With FinFloh",
     description: `Choose the partnership that aligns with your business goals.`,
     btnText: "Become a Partner",
-    btnLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnLink: "/partner-with-us",
     features: [
       {
         icon: "/icons/partner-program/Technology.svg",
@@ -40,7 +37,7 @@ export const partnerProgramData = {
           "Deliver implementation, consulting and managed services to customers.",
       },
       {
-       icon: "/icons/partner-program/collectionAgency.svg",
+        icon: "/icons/partner-program/collectionAgency.svg",
         title: "Collection Agency",
         description:
           "Offer digital-first collections and improve recovery outcomes.",
@@ -53,8 +50,7 @@ export const partnerProgramData = {
     title: "Why Partner With FinFloh?",
     description: `Everything you need to grow, win and retain more customers.`,
     btnText: "Become a Partner",
-    btnLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnLink: "/partner-with-us",
     features: [
       {
         uuid: "0",
@@ -104,8 +100,7 @@ export const partnerProgramData = {
     title: "AI-Powered Invoice-to-Cash Platform",
     description: `Six intelligent modules that turn every contract into accurate, on-time, fully reconciled cash.`,
     btnText: "Become a Partner",
-    btnLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnLink: "/partner-with-us",
     features: [
       {
         uuid: "0",
@@ -165,17 +160,15 @@ export const partnerProgramData = {
   },
 
   integrations: {
-    btnLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnLink: "/partner-with-us",
     btnText: "Become A Partner",
   },
 
   joinFinFloh: {
     title: "How to Join",
     description: `A simple path to a successful partnership.`,
-    btnText: "Become A Partner",
-    btnLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnText: "Become a Partner",
+    btnLink: "/partner-with-us",
     features: [
       {
         kicker: "1",
@@ -210,7 +203,13 @@ export const partnerProgramData = {
     quote: `"FinFloh became a key part of our finance automation practice. We closed 18+ deals and built a strong recurring revenue stream."`,
     speaker: "Partner, Leading Consulting Firm",
     btnText: "Become A Partner",
-    btnLink:
-      "book-a-demo?utm_source=flohsense_main_cta&utm_medium=finfloh_website&utm_campaign=flohsense_ai_launch",
+    btnLink: "/partner-with-us",
+  },
+
+  partnerWithUs: {
+    title: `Grow Your Business
+     Transform Finance Together`,
+    description:
+      "Partner with FinFloh and help businesses automate Accounts Receivable while building a profitable, recurring revenue stream for your organization.",
   },
 };

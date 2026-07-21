@@ -42,7 +42,7 @@ const CardsSectionV2 = ({
                 {item?.btnText && (
                   <ButtonCommon
                     label={item.btnText}
-                    link={item.btnLink}
+                    href={item.btnLink}
                     endIcon={item.Icon}
                     variant="tertiary"
                   />

@@ -15,11 +15,19 @@ section {
 }
 
 // SIZES
-.section {padding-block: var(--spacing-72);}
-.section--sm {padding-block: var(--spacing-40);}
-.section--lg {padding-block: var(--spacing-120);}
+.section {
+  padding-block: var(--spacing-72);
+}
+.section--sm {
+  padding-block: var(--spacing-40);
+}
+.section--lg {
+  padding-block: var(--spacing-120);
+}
 
-.sub--section {padding-block: var(--padding-md);}
+.sub--section {
+  padding-block: var(--padding-md);
+}
 
 // THEME
 .section--dark {
@@ -29,56 +37,57 @@ section {
   background: var(--off-White-gradient);
 }
 .section--blue-gradient {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(238, 242, 255, 0.60) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(238, 242, 255, 0.6) 100%
+  );
 }
 .section--green {
   background: var(--off-green-gradient);
 }
 // -------- //
 
-
 // -------- //
-  // Grid Need to fix these grid part newly added doesnt make sense to create this and not use them.
-  .grid {
-    display: grid;
-    gap: var(--gap-md);
-  }
-  .grid--2 {
-    grid-template-columns: repeat(1, 1fr);
-    @include b.respond(sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  .grid--3 {
-    grid-template-columns: repeat(1, 1fr);
-  
-    @include b.respond(sm) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  .grid--4 {
-    grid-template-columns: repeat(1, 1fr);
-  
-     @include b.respond(sm) {
+// Grid Need to fix these grid part newly added doesnt make sense to create this and not use them.
+.grid {
+  display: grid;
+  gap: var(--gap-md);
+}
+.grid--2 {
+  grid-template-columns: repeat(1, 1fr);
+  @include b.respond(sm) {
     grid-template-columns: repeat(2, 1fr);
   }
- 
-  }
+}
+.grid--3 {
+  grid-template-columns: repeat(1, 1fr);
 
-  .grid--1by3{
-    display: grid;
-    grid-auto-flow: row;
-    gap: var(--gap-lg);
-
-     @include b.respond(md) {
-      grid-auto-flow: column;
-      grid-template-columns: repeat(2, 35% 70%);
-      height: 580px;
+  @include b.respond(sm) {
+    grid-template-columns: repeat(3, 1fr);
   }
-  }
-  
-  // -------- //
+}
+.grid--4 {
+  grid-template-columns: repeat(1, 1fr);
 
+  @include b.respond(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid--1by3 {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--gap-lg);
+
+  @include b.respond(md) {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 35% 70%);
+    height: 580px;
+  }
+}
+
+// -------- //
 
 // -------- //
 // Container
@@ -114,7 +123,7 @@ section {
   gap: 4px;
 }
 
-.stack--extra{
+.stack--extra {
   gap: var(--gap-xl);
 }
 
@@ -130,14 +139,14 @@ section {
 .stack--stretch {
   align-items: stretch;
 }
-.stack--spacebetween{
+.stack--spacebetween {
   justify-content: space-between;
 }
 .stack--full {
   width: 100%;
 }
 
-.stack--full-height{
+.stack--full-height {
   height: 100%;
 }
 // -------- //
@@ -150,20 +159,23 @@ section {
   align-items: center;
   gap: var(--gap-md);
 }
+
 .inline--center {
   text-align: center;
 }
 .inline--responsive {
-  
   display: flex;
   flex-direction: column;
 
   gap: var(--gap-md);
 
-  @include b.respond(sm) {
+  @include b.respond(md) {
     flex-direction: row;
     align-items: center;
   }
+}
+.inline--responsive--loose {
+  gap: var(--gap-xl);
 }
 .inline--space-between {
   justify-content: space-between;
@@ -178,7 +190,6 @@ section {
   text-align: center;
 }
 // -------- //
-
 
 // -------- //
 // Border Radius
@@ -223,7 +234,6 @@ section {
 .icon--xl {
   width: 48px;
 }
-
 
 .icon--dark {
   color: var(--grey-700);
@@ -293,14 +303,21 @@ section {
   flex-direction: column;
   border: 1px solid var(--stroke-primary-color);
   padding: var(--padding-md);
+  padding: var(--padding-sm);
   border-radius: var(--radius-8);
   transition: 400ms ease-in-out;
   height: 100%;
   background-color: white;
   gap: 12px;
 }
+.cardnoHover--loose {
+  padding: var(--padding-md);
+  @include b.respond(sm) {
+    padding: var(--padding-xl);
+  }
+}
 
-// -------- //
+// -------- //a
 // -- Padding -- //
 .padding-2xl {
   padding: var(--padding-lg);
@@ -366,7 +383,7 @@ li {
   overflow: hidden;
 }
 
-.text--center{
+.text--center {
   text-align: center;
 }
 
@@ -374,9 +391,8 @@ li {
   overflow: hidden;
 }
 
-
-  .horizontal-line {
-  border-top: 1px solid #E5E7EB;
+.horizontal-line {
+  border-top: 1px solid #e5e7eb;
   width: 100%;
 }
 
@@ -384,3 +400,6 @@ li {
   margin-bottom: 16px;
 }
 
+.custom-bg {
+  background-color: #eef2ff;
+}

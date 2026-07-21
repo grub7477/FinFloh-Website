@@ -19,7 +19,7 @@ const CardsSection = ({
           <p>{description}</p>
           <ButtonCommon
             label={btnText}
-            link={btnLink}
+            href={btnLink}
             endIcon={Icon}
             variant="primary"
           />
@@ -35,8 +35,8 @@ const CardsSection = ({
                 <p className="para_sm">{item?.description}</p>
                 {item?.btnText && (
                   <ButtonCommon
-                    label={item.btnText}
-                    link={item.btnLink}
+                    label={item.btnSecondaryText}
+                    href={item.btnSecondaryLink}
                     endIcon={item.Icon}
                     variant="tertiary"
                   />
