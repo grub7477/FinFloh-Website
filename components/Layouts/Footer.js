@@ -22,7 +22,7 @@ const AboutFinFloh = ({ utmURLs = {} }) => (
     <div className="footeremailsection">
       <p>
         You can contact us at{" "}
-        <a href="mailto:sales@finfloh.com">sales@finfloh.com</a>
+        <a href="mailto:hello@finfloh.com">hello@finfloh.com</a>
       </p>
     </div>
     {/* <div className="aboutFinFooterOffices">
