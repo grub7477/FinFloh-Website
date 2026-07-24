@@ -7,6 +7,7 @@ import NavBarSmallScreen from "./NavBarSmallScreen";
 import ProductsDropdown from "../Common/ProductsDropdown";
 import ResourcesDropdown from "../Common/ResourcesDropdown";
 import { MainBanner } from "../UI/Banner/MainBanner";
+import IndustriesDropdown from "../Common/industriesDropdown";
 
 const Navbar = (props) => {
   const logoURL = logoURLMap[props.theme];
@@ -82,6 +83,34 @@ const Navbar = (props) => {
           </Link>
           <ul className="dropdown-menu dropdown-menu1">
             <ProductsDropdown />
+          </ul>
+        </li>
+
+        <li className="nav-item">
+          <Link href="#">
+            <a
+              className="nav-link"
+              style={aStyle}
+              onClick={(e) => e.preventDefault()}
+            >
+              Industries{" "}
+              {props.smallerScreen ? (
+                ""
+              ) : (
+                <img
+                  src={
+                    props.theme === Theme.LIGHT
+                      ? "/images/Dropdown.svg"
+                      : "/images/Dropdown.svg"
+                  }
+                  alt="Dropdown menu icon FinFloh"
+                />
+              )}
+            </a>
+          </Link>
+
+          <ul className="dropdown-menu dropdown-menu1">
+            <IndustriesDropdown />
           </ul>
         </li>
 

@@ -139,6 +139,9 @@ const Company = () => (
       <a href="/about-us" className="footerCompanyBtn">
         About Us
       </a>
+      <a href="/partner-program" className="footerCompanyBtn">
+        Partner With Us
+      </a>
       <a href="/terms-of-use" className="footerCompanyBtn">
         Terms Of Use
       </a>

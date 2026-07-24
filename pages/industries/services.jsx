@@ -9,7 +9,7 @@ import CompaniesLogo from "../../components/Common/CompaniesLogo";
 import FaqContent from "../../components/Faq/FaqContent_New";
 import ButtonCommon from "../../components/UI/Button/Button";
 import CustomerLogos from "../../components/Sections/CustomerLogos/CustomerLogos";
-import { ServiceIndustry } from "../../data/services.data";
+import { ServiceIndustry } from "../../data/industries.data";
 import HeroSectionNew from "../../components/Sections/HeroSection/HeroSectionNew";
 import RightArrow from "../../public/icons/arrow_right.svg";
 import FeatureCards from "../../components/Sections/FeatureCards/FeatureCards";
