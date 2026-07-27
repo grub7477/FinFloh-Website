@@ -6,7 +6,7 @@ const IndustriesDropdown = () => {
     Industries: [
       {
         title: "Services",
-        subtitle: "Automate project billing and collections.",
+        /*subtitle: "Automate billing and collections.",*/
         icon: "/icons/services.svg",
         url: "/industries/services",
       },
