@@ -1,9 +1,9 @@
 export const ServiceIndustry = {
   heroSection: {
-    kicker: "AI . Contract-to-cash . Service Industry",
+    kicker: "AI . Contract-to-cash . Services Industry",
     title: `AI-Powered Contract-to-Cash Automation for Services Firms`,
     description:
-      "Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R and revenue realization.",
+      "Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.",
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
@@ -23,13 +23,13 @@ export const ServiceIndustry = {
         icon: "/icons/industry/disconnectedContracts.svg",
         title: "Disconnected Contracts",
         description:
-          "Commercial and billing terms remain buried inside contracts, making invoice generation and billing preparation manual, time-consuming and error-prone.",
+          "Commercial and billing terms remaind buried inside contracts, making invoicing and billing manual, time-consuming and error-prone.",
       },
       {
         icon: "/icons/industry/manualInvoiceValidation.svg",
         title: "Manual Invoice Validation",
         description:
-          "Finance teams manually compare contracts, billing records and timesheets before every invoice.",
+          "Finance and other teams manually compare contracts, billing records and timesheets before every invoice.",
       },
       {
         icon: "/icons/industry/leakageRevenue.svg",
@@ -47,7 +47,7 @@ export const ServiceIndustry = {
         icon: "/icons/industry/slowCollection.svg",
         title: "Slow Collections",
         description:
-          "Collection teams rely on manual follow-ups, lack prioritized worklists, have limited visibility into promise-to-pay commitments and struggle to track collections performance.",
+          "Collection teams rely on manual follow-ups, lack priority worklists, and have poor visibility into collections performance and promise-to-pay.",
       },
       {
         icon: "/icons/industry/slowCashApp.svg",
@@ -84,7 +84,7 @@ export const ServiceIndustry = {
       {
         uuid: "2",
         icon: "/images/partner-program/invoiceGeneration.jpg",
-        title: "Automated Draft Invoice Generation",
+        title: "Automated Invoice Generation",
         description:
           "Generate and send accurate, ERP-ready invoices using validated billing information, ensuring billable hours, pricing and milestones are captured correctly.",
       },
@@ -120,33 +120,33 @@ export const ServiceIndustry = {
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
 
     // CFO overview card — sits above/alongside the team cards
-    cfoOffice: {
-      title:
-        "Complete Visibility & Workflows Across Your Contract-to-Cash Process",
-      description:
-        "Give finance leaders complete visibility into billing accuracy, collections performance and cash realization—all from a single AI-powered platform.",
-      subfeatures: [
-        "Revenue assurance across contracts, SOWs and timesheets",
-        "Billing cycle and DSO dashboards",
-        "Collection performance and forecast visibility",
-        "Revenue leakage identification",
-        "AI-driven operational insights",
-        "Executive KPI dashboards",
-        "Audit-ready contract and invoice traceability",
-      ],
-    },
+    // cfoOffice: {
+    //   title:
+    //     "Complete Visibility & Control Across Contract-to-Cash Processes",
+    //   description:
+    //     "Give finance leaders complete visibility into billing accuracy, collections performance and cash realization—all from a single AI-powered platform.",
+    //   subfeatures: [
+    //     "Revenue assurance across contracts, SOWs and timesheets",
+    //     "Billing cycle and DSO dashboards",
+    //     "Collection performance and forecast visibility",
+    //     "Revenue leakage identification",
+    //     "AI-driven operational insights",
+    //     "Executive KPI dashboards",
+    //     "Audit-ready contract and invoice traceability",
+    //   ],
+    // },
 
     // Each team card now has its own distinct description + sub-features
     // (previously all three shared the same contract-extraction copy)
     features: [
       {
         title: "THE CFO OFFICE",
-        description: "Complete Visibility & Workflows Across Your Contract-to-Cash Process",
+        description: "Complete Visibility & Control Across Contract-to-Cash Processes",
         subfeatures: [
-          "Validation across contracts, SOWs and timesheets",
-          "Revenue leakage identification",
-          "Billing cycle and DSO dashboards",
+          "Revenue leakage management",
           "Collection performance and forecast visibility",
+          "Quicker invoicing & billing",
+          "Validation across contracts, SOWs and timesheets",
           "AI-driven operational insights",
         ],
       },
@@ -154,24 +154,23 @@ export const ServiceIndustry = {
         title: "Billing Team",
         description: "Generate accurate invoices faster with higher efficiency.",
         subfeatures: [
-          "AI Contract Intelligence",
+          "Contract AI Intelligence",
           "Commercial Term Extraction",
           "Invoice Validation",
           "Invoice Generation",
-          "Approval Workflows",
-          "ERP Integration",
+          "Approval Workflows"
         ],
       },
       {
         title: "Collections Team",
         description:
-          "Improve collector productivity and accelerate cash collections.",
+          "Improve collector productivity and accelerate collections.",
         subfeatures: [
           "Automated Smart Reminders",
-          "AI Collections Worklist",
+          "AI Collectors Worklist",
           "Internal Alerts",
           "Promise-to-Pay Management",
-          "Collection Performance",
+          "Collections Performance",
         ],
       },
       {
@@ -181,7 +180,6 @@ export const ServiceIndustry = {
           "Payment Matching",
           "Remittance Processing",
           "Deduction Management",
-          "Short Pay Identification",
           "Reconciliation Workbench",
           "ERP Posting",
         ],
@@ -198,11 +196,11 @@ export const ServiceIndustry = {
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     features: [
       { kpi: "40%", description: "Reduction in Billing Cycle Time" },
-      { kpi: "80%", description: "Reduction in Manual Invoice Validation" },
-      { kpi: "70%", description: "Faster Invoice Preparation" },
-      { kpi: "500+", description: "man-hours saved every month" },
-      { kpi: "50%", description: "Improvement in cash application efficiency" },
-      { kpi: "30-40%", description: "Reduction in DSO" },
+      { kpi: "75%", description: "Reduction in Manual Invoice Validation" },
+      { kpi: "70%", description: "Faster Invoice Generation" },
+      { kpi: "550+", description: "man-hours saved every month" },
+      { kpi: "60%", description: "Improvement in cash application efficiency" },
+      { kpi: "35%", description: "Reduction in DSO" },
     ],
   },
 
@@ -210,8 +208,8 @@ export const ServiceIndustry = {
     title: "Supercharge your A/R with FinFloh",
     description:
       "Talk to our finance experts and begin your AR transformation journey today",
-    quote: `"FinFloh became a key part of our finance automation practice. We closed 18+ deals and built a strong recurring revenue stream."`,
-    speaker: "Partner, Leading Consulting Firm",
+    quote: `"FinFloh automated our entire contract-to-cash process. A special mention of their invoice validation and generation process in sync with our timesheets and SOWs."`,
+    speaker: "VP Finance, Leading Global IT Services Firm",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
