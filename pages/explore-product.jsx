@@ -26,7 +26,7 @@ const ExploreDemo = () => {
               <div className="iframe-wrapper">
                 <iframe
                   className="responsive-iframe"
-                  src="https://app.supademo.com/embed/cm7hjoqdj00o7zv0iwha4cj7g?embed_v=2"
+                  src="https://app.supademo.com/embed/cm7hro9l602xu1p0i75sslj07?embed_v=2"
                   title="Demo Video"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
