@@ -222,7 +222,9 @@ export const TravelIndustry = {
   heroSection: {
     kicker: "AI . Contract-to-cash . Travel Industry",
     title: `AI-Powered Contract-to-Cash Automation for Travel Enterprises`,
-    description:["Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces."],
+    description:["Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces.",
+      "Built for travel companies, OTAs, travel marketplaces, travel management companies (TMCs), tour operators and travel aggregators.",
+    ],
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
