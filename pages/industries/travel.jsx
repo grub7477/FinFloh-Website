@@ -23,7 +23,6 @@ import PricingCards from "../../components/Sections/AdvanceCards/PricingCards";
 import InNumbers from "../../components/Sections/AdvanceCards/InNumbers";
 import Testimonial from "../../components/Sections/Testimonials/Testimonials";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
-import CardLayoutFlex from "../../components/Sections/AdvanceCards/CardLayout";
 
 const handleButtonClick = () => {
   setPopupVisible(true);
