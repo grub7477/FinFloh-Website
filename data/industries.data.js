@@ -2,8 +2,10 @@ export const ServiceIndustry = {
   heroSection: {
     kicker: "AI . Contract-to-cash . Services Industry",
     title: `AI-Powered Contract-to-Cash Automation for Services Firms`,
-    description:
-      "Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.",
+    description: [
+  `Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.`,
+  `Built for IT and digital engineering services, professional services, consulting, managed services and other services organisations.`,
+],
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
@@ -216,107 +218,77 @@ export const ServiceIndustry = {
   },
 };
 
-export const travelTech = {
+export const TravelIndustry = {
   heroSection: {
-    kicker: "Travel Tech",
-    title: `AI-Powered Partner Finance Operations for Travel Enterprises`,
-    description:
-      "FinFloh automates partner billing, settlement reconciliation and cash application across OTAs, aggregators and travel marketplaces — connecting commercial agreements, Oracle ERP, banking and payment gateways on one finance data platform.",
+    kicker: "AI . Contract-to-cash . Travel Industry",
+    title: `AI-Powered Contract-to-Cash Automation for Travel Enterprises`,
+    description:["Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces."],
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     image: "/images/partner-program/pattern-home.svg",
   },
 
+  // NEW — "Trusted by" logo strip (present in HTML hero, missing from JS)
+  trustedBy: {
+    label: "Trusted by Enterprise Finance Teams Worldwide",
+    logos: ["SkyRoute", "Voyagra", "StayHub", "Aeronix", "GlobePass", "Trippl"],
+  },
+
   theProblem: {
-    kicker: "THE TRAVEL FINANCE PROBLEM",
-    title: "Partner Finance in Travel is Fragmented, Manual and Leaking Margin",
+    kicker: "THE PROBLEM",
+    title:
+      "Why Finance Teams in Travel Struggle to Bill, Collect & Reconcile Efficiently?",
     description:
-      "Thousands of partner agreements, millions of bookings and dozens of settlement formats collide with legacy ERPs. Finance teams reconcile it by hand.",
+      "Customer and partner agreements, booking data and payments data remain disconnected, making billing, collections and payment reconciliation manual, slow and error-prone.",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     features: [
       {
-        icon: "/icons/industry/partnerAgreements.svg",
-        title: "Partner Agreements",
+        icon: "/icons/industry/disconnectedContracts.svg",
+        title: "Disconnected Agreements",
         description:
-          "Commercial terms, rate cards and revenue splits sit buried inside contracts, disconnected from billing and settlement systems.",
+          "Commercial terms and billing schedules remain buried inside customer and partner contracts, making invoicing manual and error-prone.",
       },
       {
-        icon: "/icons/industry/revenueSharing.svg",
-        title: "Revenue Sharing",
+        icon: "/icons/industry/manualInvoiceValidation.svg",
+        title: "Manual Invoice Validation",
         description:
-          "Complex, partner-specific revenue share and commission structures make every settlement calculation manual and error-prone.",
+          "Finance teams manually compare contracts and billing data before every customer and partner invoice.",
       },
       {
-        icon: "/icons/industry/hotelAirlineSettlements.svg",
-        title: "Hotel & Airline Settlements",
-        description:
-          "Inconsistent settlement formats across hotels, airlines and aggregators slow down reconciliation and increase manual effort.",
-      },
-      {
-        icon: "/icons/industry/otaPartnerInvoicing.svg",
-        title: "OTA Partner Invoicing",
-        description:
-          "High volumes of OTA and aggregator invoices make accurate, timely partner billing difficult to sustain manually.",
-      },
-      {
-        icon: "/icons/industry/highInvoiceVolumes.svg",
-        title: "High Invoice Volumes",
-        description:
-          "Millions of bookings translate into massive invoice volumes that overwhelm manual billing and validation processes.",
-      },
-      {
-        icon: "/icons/industry/cashInTransit.svg",
-        title: "Cash-in-Transit",
-        description:
-          "Funds moving across multiple partners, currencies and gateways are hard to track, delaying visibility into true cash position.",
-      },
-      {
-        icon: "/icons/industry/settlementReconciliation.svg",
-        title: "Settlement Reconciliation",
-        description:
-          "Matching payments, remittances and settlement reports across partners is a slow, manual, spreadsheet-driven process.",
-      },
-      {
-        icon: "/icons/industry/multiCurrency.svg",
-        title: "Multi-Currency",
-        description:
-          "Multiple currencies and FX conversions across global partners add complexity and risk of error to every reconciliation cycle.",
-      },
-      {
-        icon: "/icons/industry/oracleFusion.svg",
-        title: "Oracle Fusion",
-        description:
-          "Data trapped outside Oracle Fusion means finance teams lack a single, trusted source of truth for partner finance.",
-      },
-      {
-        icon: "/icons/industry/manualReconciliation.svg",
-        title: "Manual Reconciliation",
-        description:
-          "Without automation, reconciliation relies on manual matching, extending close timelines and increasing the risk of errors.",
-      },
-      {
-        icon: "/icons/industry/revenueLeakage.svg",
+        icon: "/icons/industry/leakageRevenue.svg",
         title: "Revenue Leakage",
         description:
-          "Missed commissions, incorrect rate application and unbilled revenue shares quietly erode margin every month.",
+          "Manual billing increases the risk of missed entitlements, incorrect splits and unbilled bookings across both sides of the business.",
       },
       {
-        icon: "/icons/industry/auditComplexity.svg",
-        title: "Audit Complexity",
+        icon: "/icons/industry/disputes.svg",
+        title: "Billing Disputes",
         description:
-          "Disconnected contracts, invoices and settlement records make audit trails incomplete and time-consuming to assemble.",
+          "Customers and partners dispute discounts, and pricing and quantity variances, delaying payments and increasing collection effort.",
+      },
+      {
+        icon: "/icons/industry/slowCollection.svg",
+        title: "Slow Collections",
+        description:
+          "Collection teams rely on manual follow-ups, lack priority worklists, and have poor visibility into aging.",
+      },
+      {
+        icon: "/icons/industry/slowCashApp.svg",
+        title: "Manual Cash Application",
+        description:
+          "Teams manually match remittances, invoices and deductions from customers and partners, delaying reconciliation and month-end close.",
       },
     ],
   },
 
   thePlatform: {
     kicker: "THE PLATFORM",
-    title: "One Finance Data Platform, Four Connected Pillars",
+    title: "From Agreement to Cash. Powered by AI.",
     description:
-      "From commercial agreement to posted cash — automated end to end, grounded in your Oracle ERP.",
+      "One connected platform that transforms customer and partner contracts into accurate invoices, automates collections and accelerates cash application.",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
@@ -324,174 +296,169 @@ export const travelTech = {
       {
         uuid: "0",
         icon: "/images/partner-program/contractIntelligence.jpg",
-        title: "Partner Contract Intelligence",
+        title: "Contract & SOW Intelligence",
         description:
-          "FinFloh reads contracts, SOWs and partner agreements — extracting rate cards, commissions, pricing, revenue splits and billing schedules automatically.",
-        subfeatures: [
-          "Deals & contracts",
-          "Rate cards",
-          "Commissions",
-          "Pricing",
-          "Revenue splits",
-          "Billing schedules",
-        ],
+          "AI reads customer and partner contracts and SOWs to extract commercial terms, pricing and billing schedules — creating a trusted source of truth for finance.",
       },
       {
         uuid: "1",
         icon: "/images/partner-program/invoiceValidation.jpg",
-        title: "Partner Invoice Automation",
+        title: "Intelligent Invoice Validation",
         description:
-          "Aggregate bookings, generate invoices against contract terms and handle multi-currency, rate variance and revenue assurance — built in.",
-        subfeatures: [
-          "Invoice generation",
-          "Booking aggregation",
-          "Approval workflows",
-          "Multi-currency",
-          "Rate variance handling",
-          "Revenue assurance",
-        ],
+          "Every invoice is validated against contract terms and billing data before it goes out, catching mismatches in advance.",
       },
       {
         uuid: "2",
-        icon: "/images/partner-program/aiCollection.jpg",
-        title: "Collections",
+        icon: "/images/partner-program/invoiceGeneration.jpg",
+        title: "Automated Invoice Generation",
         description:
-          "An intelligent worklist prioritizes collector effort, tracks partner promise-to-pay commitments and surfaces payment performance analytics.",
-        subfeatures: [
-          "AI worklists",
-          "Partner promise-to-pay",
-          "Collector performance",
-          "Payment history",
-          "Aging dashboards",
-          "Performance analytics",
-        ],
+          "Aggregate bookings and CIDs, apply billing rules and generate invoices directly in your ERP, multi-currency and ERP-native.",
       },
       {
         uuid: "3",
-        icon: "/images/partner-program/cashApp.jpg",
-        title: "Cash Application & Reconciliation",
+        icon: "/images/partner-program/disputeManagement.jpg",
+        title: "Dispute Management & Resolution",
         description:
-          "Bank statement OCR, payment matching and settlement reconciliation automate cash tracking, ERP reconciliation and GL posting.",
-        subfeatures: [
-          "Bank statement OCR",
-          "Payment matching",
-          "Settlement reconciliation",
-          "Cash tracking",
-          "ERP reconciliation",
-          "GL reconciliation",
-        ],
+          "Auto-categorize disputes and route them to the right owner, and track resolution workflows.",
+      },
+      {
+        uuid: "4",
+        icon: "/images/partner-program/aiCollection.jpg",
+        title: "Smart Collections",
+        description:
+          "AI-driven reminders, promise-to-pay tracking and prioritized collector worklists to accelerate collections.",
+      },
+      {
+        uuid: "5",
+        icon: "/images/partner-program/cashApp.jpg",
+        title: "Intelligent Cash Application",
+        description:
+          "ML OCR on bank statements to auto-match payments with customers, partners and invoices, followed by posting to your ERP.",
       },
     ],
   },
 
   capabilities: {
-    kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
-    title: "The Digital Finance Team Behind the Platform",
+    kicker: "CAPABILITIES",
+    title: "Everything Your Billing & AR Team Needs",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
-
-    cfoOffice: {
-      title: "DocSense AI",
-      description:
-        "DocSense understands your contracts — reading commercial and partner agreements to extract pricing, revenue splits, SOWs, commercial terms and billing schedules automatically.",
-      subfeatures: [
-        "Contracts",
-        "Partner agreements",
-        "SOWs",
-        "Pricing",
-        "Revenue splits",
-        "Billing schedules",
-        "Commercial terms",
-      ],
-    },
-
     features: [
       {
-        title: "DocSense AI",
+        title: "THE CFO OFFICE",
         description:
-          "Understands your contracts — extracting pricing, partner agreements, SOWs and billing schedules.",
+          "Complete visibility & control across contract-to-cash processes.",
         subfeatures: [
-          "Contracts",
-          "Partner agreements",
-          "SOWs",
-          "Pricing",
-          "Revenue splits",
-          "Billing schedules",
-          "Commercial terms",
+          "Revenue leakage management",
+          "Cashflow control",
+          "Collection performance with tracking",
+          "Quicker invoicing & billing",
+          "AI-driven operational insights",
         ],
       },
       {
-        title: "FlohSense AI",
-        description:
-          "Understands your partners — closing the loop on deals, payment advice, remittances and settlement queries from agreement to cash.",
+        title: "Billing Team",
+        description: "Generate accurate invoices faster with higher efficiency.",
         subfeatures: [
-          "Deals",
-          "Payment advice",
-          "Remittance",
-          "Settlement queries",
-          "Collections",
-          "Disputes",
-          "Cash application",
-          "Finance Ops",
+          "Contract AI intelligence",
+          "Commercial term extraction",
+          "Invoice validation",
+          "Invoice generation",
+          "Billing",
         ],
+      },
+      {
+        title: "Collections Team",
+        description: "Improve collector productivity and accelerate collections.",
+        subfeatures: [
+          "Automated smart reminders",
+          "AI collectors worklist",
+          "Internal alerts",
+          "Promise-to-pay management",
+          "Collector performance",
+        ],
+      },
+      {
+        title: "Cash Application Team",
+        description: "Reconcile payments faster with less manual effort.",
+        subfeatures: [
+          "Payment matching",
+          "Remittance processing",
+          "Deduction management",
+          "Reconciliation workbench",
+          "ERP posting",
+        ],
+      },
+      // NEW 
+      // {
+      //   title: "Credit Hub",
+      //   description: "Make better credit decisions.",
+      //   subfeatures: [
+      //     "ML-driven credit scoring",
+      //     "Credit limit management",
+      //     "Credit decisions",
+      //     "Monthly credit reports",
+      //     "Customer & partner analysis",
+      //   ],
+      // },
+    ],
+  },
+
+  // NEW — "Two AI Agents, One Finance Brain" section (present in HTML, missing from JS)
+  aiAgents: {
+    kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
+    title: "The digital finance team behind the platform",
+    description:
+      "DocSense reads your customer and partner contracts and bank statements. FlohSense reads customer and partner emails and takes action. Together they close the loop from agreement to cash.",
+       btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
+    agents: [
+      {
+        name: "DocSense AI",
+        tagline: "Reads and parses contracts, bank statements & SOWs",
+        reads: ["Contracts", "Customer & Partner Agreements", "SOWs", "Bank Statements"],
+        outputLabel: "EXTRACTS",
+        outputs: [
+          "Commercial Terms",
+          "Revenue Splits",
+          "Billing Schedules",
+          "Customer & Partner Info",
+        ],
+      },
+      {
+        name: "FlohSense AI",
+        tagline: "Reads customer & partner emails and takes action",
+        reads: ["Customer Emails", "Partner Emails", "Payment Advice", "Data Requests"],
+        outputLabel: "AUTOMATES",
+        outputs: ["Payment Recon", "Dispute Creation", "Contact Updates", "Auto-Reverts"],
       },
     ],
   },
 
   numbers: {
     kicker: "BUSINESS OUTCOMES",
-    title: "Finance Results the Board Can See",
-    description:
-      "Every step orchestrated on the finance data platform, grounded in Oracle Fusion.",
+    title: "Transform Travel Finance Operations with AI Automations",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     features: [
-      {
-        kpi: "↑",
-        description:
-          "Accelerate Cash Flow — collect faster with real-time, automated cash application",
-      },
-      {
-        kpi: "-70%",
-        description:
-          "Reduce Manual Finance Ops — settlement and reconciliation effort cut with AI automation",
-      },
-      {
-        kpi: "↑",
-        description: "Improve Working Capital — faster invoicing and collections",
-      },
-      {
-        kpi: "✓",
-        description: "Strengthen Controls — standardized approvals and audit trails",
-      },
-      {
-        kpi: "↓",
-        description: "Reduce Revenue Leakage — across contracts, rates and revenue splits",
-      },
-      {
-        kpi: "3x",
-        description: "Faster Financial Close",
-      },
-      {
-        kpi: "↑",
-        description: "Collection Efficiency — faster resolution and improved DSO",
-      },
-      {
-        kpi: "✓",
-        description: "Audit Readiness — complete traceability, audit-ready records",
-      },
+      { kpi: "500+", description: "Man-hours saved within first two months of go-live" },
+      { kpi: "40%", description: "Faster payment reconciliation" },
+      { kpi: "30-40%", description: "Reduction in DSO" },
+      { kpi: "40-50%", description: "Decrease in errors and anomalies" },
+      { kpi: "3×", description: "Faster financial close" },
+      { kpi: "60%", description: "Increase in audit readiness for A/R" },
     ],
   },
 
   footerCTA: {
-    title: "Modernize Your Travel Finance Operations",
+    title: "Supercharge Your Travel Finance Ops with FinFloh",
     description:
-      "Automate partner billing, collections, cash application and financial reconciliation with AI.",
-    quote:
-      "\"FinFloh turned settlement reconciliation from a two-week scramble into a daily, automated close. Our controllers finally trust the numbers in real time.\"",
-    speaker: "Reeva Kapoor",
+      "Talk to our finance experts and begin your contract-to-cash transformation journey today.",
+    quote: `"FinFloh automated our entire customer and partner contract-to-cash process. We were able to accelerate our invoicing and collections process across our customers and partners."`,
+    speaker: "Finance Lead, Leading Travel Tech Firm",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",

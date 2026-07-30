@@ -34,22 +34,20 @@ const serviceIndustry = () => {
   return (
     <>
       <HeadComponent
-        title="AI-Powered Contract-to-Cash Automation for Services Firms | FinFloh"
-        description="FinFloh helps services organisations automate contract intelligence, invoice validation, invoice generation, approvals, collections, disputes and cash application."
+        title="AI Contract-to-Cash Software for Services Firms | FinFloh"
+        description="FinFloh helps services firms automate contract intelligence, invoice validation, project billing, invoice generation, collections, disputes and cash application to improve cash flow and reduce revenue leakage."
         canonicalUrl="https://finfloh.com/industries/services"
         includeIsPartOf
         includeAbout
         aboutProps={{
-          name: "Contract-to-Cash Automation for Services Firms",
+          name: "AI Contract-to-Cash Platform for Services Firms",
           serviceType:
-            "AI-Powered Billing, Invoicing & Accounts Receivable Automation",
+            "Contract Intelligence, Project Billing, Invoice Automation & Accounts Receivable Software",
         }}
         includeBreadcrumbs
         breadcrumbItems={[
-          {
-            name: "Service Industry",
-            item: "https://finfloh.com/industries/services",
-          },
+          { name: "Industries", item: "https://finfloh.com/industries" },
+          { name: "Services", item: "https://finfloh.com/industries/services" },
         ]}
       />
 
