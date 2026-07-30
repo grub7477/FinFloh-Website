@@ -37,7 +37,7 @@ const TravelTech = () => {
       <HeadComponent
         title="AI-Powered Contract-to-Cash Automation for Services Firms | FinFloh"
         description="FinFloh helps services organisations automate contract intelligence, invoice validation, invoice generation, approvals, collections, disputes and cash application."
-        canonicalUrl="https://finfloh.com/industries/services"
+        canonicalUrl="https://finfloh.com/industries/travel"
         includeIsPartOf
         includeAbout
         aboutProps={{
@@ -48,8 +48,8 @@ const TravelTech = () => {
         includeBreadcrumbs
         breadcrumbItems={[
           {
-            name: "Service Industry",
-            item: "https://finfloh.com/industries/services",
+            name: "Travel",
+            item: "https://finfloh.com/industries/travel",
           },
         ]}
       />

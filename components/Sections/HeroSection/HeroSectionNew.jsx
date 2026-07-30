@@ -30,7 +30,9 @@ const HeroSectionNew = ({
         <div className={style.hero__contentWrapper}>
           <h2 className="heading_xs highlight-text--gradient ">{kicker}</h2>
           <h1>{title}</h1>
-          <p>{description}</p>
+          {description.map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
           <div className={style.buttonWrapper}>
             <ButtonCommon
               label={btnPrimaryText}

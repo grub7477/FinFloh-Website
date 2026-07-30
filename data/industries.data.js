@@ -2,8 +2,10 @@ export const ServiceIndustry = {
   heroSection: {
     kicker: "AI . Contract-to-cash . Services Industry",
     title: `AI-Powered Contract-to-Cash Automation for Services Firms`,
-    description:
-      "Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.",
+    description: [
+  `Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.`,
+  `Built for IT and digital engineering services, professional services, consulting, managed services and other services organisations.`,
+],
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
@@ -220,8 +222,7 @@ export const TravelIndustry = {
   heroSection: {
     kicker: "AI . Contract-to-cash . Travel Industry",
     title: `AI-Powered Contract-to-Cash Automation for Travel Enterprises`,
-    description:
-      "Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces.",
+    description:["Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces."],
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
