@@ -35,13 +35,13 @@ const TravelTech = () => {
   return (
     <>
       <HeadComponent
-        title="AI Contract-to-Cash Software for Travel Firms | FinFloh"
-        description="FinFloh helps travel firms automate contract intelligence, customer and partner billing, invoice generation, collections and cash application to improve cash flow and reduce revenue leakage."
+        title="AI Contract-to-Cash Software for Travel Companies | FinFloh"
+        description="FinFloh helps travel Companies automate contract intelligence, customer and partner billing, invoice generation, collections and cash application to improve cash flow and reduce revenue leakage."
         canonicalUrl="https://finfloh.com/industries/travel"
         includeIsPartOf
         includeAbout
         aboutProps={{
-          name: "AI Contract-to-Cash Platform for Travel Firms",
+          name: "AI Contract-to-Cash Platform for Travel Companies",
           serviceType:
             "Customer and Partner Billing, Contract Intelligence, Invoice Automation & Accounts Receivable Software",
         }}
