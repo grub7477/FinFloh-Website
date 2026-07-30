@@ -10,6 +10,12 @@ const IndustriesDropdown = () => {
         icon: "/icons/services.svg",
         url: "/industries/services",
       },
+      {
+        title: "Travel",
+        /*subtitle: "Automate billing and collections.",*/
+        icon: "/icons/travel.svg",
+        url: "/industries/travel",
+      },
     ],
   };
 
