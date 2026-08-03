@@ -4,15 +4,16 @@
   display: grid;
   grid-template-columns: 1fr; // mobile: single column, straight line
   gap: 24px;
-  
 
   @include b.respond(sm) {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .card:first-child {
-    background-color: var(--card-highlight-bg, #D1F7C6); // swap for your token/variable
-
+    background: url("/images/pattern/pattern.svg"), var(--card-highlight-bg, #d1f7c6);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @include b.respond(sm) {
       grid-column: 1 / -1; // full width only once we're in the 3-col grid

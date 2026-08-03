@@ -221,7 +221,7 @@ export const ServiceIndustry = {
 export const TravelIndustry = {
   heroSection: {
     kicker: "AI . Contract-to-cash . Travel Industry",
-    title: `AI-Powered Contract-to-Cash Automation for Travel Enterprises`,
+    title: `AI-Powered Contract-to-Cash Automation for Travel Firms`,
     description:["Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces.",
       "Built for travel companies, OTAs, travel marketplaces, travel management companies (TMCs), tour operators and travel aggregators.",
     ],
@@ -275,7 +275,7 @@ export const TravelIndustry = {
         icon: "/icons/industry/slowCollection.svg",
         title: "Slow Collections",
         description:
-          "Collection teams rely on manual follow-ups, lack priority worklists, and have poor visibility into aging.",
+          "Collection teams rely on manual follow-ups, lack priority worklists, and have poor visibility into aging and collections performance",
       },
       {
         icon: "/icons/industry/slowCashApp.svg",
@@ -420,7 +420,7 @@ export const TravelIndustry = {
       {
         name: "DocSense AI",
         tagline: "Reads and parses contracts, bank statements & SOWs",
-        reads: ["Contracts", "Customer & Partner Agreements", "SOWs", "Bank Statements"],
+        reads: ["Contracts", "SOWs", "Invoices", "Bank Statements"],
         outputLabel: "EXTRACTS",
         outputs: [
           "Commercial Terms",
@@ -459,7 +459,7 @@ export const TravelIndustry = {
     title: "Supercharge Your Travel Finance Ops with FinFloh",
     description:
       "Talk to our finance experts and begin your contract-to-cash transformation journey today.",
-    quote: `"FinFloh automated our entire customer and partner contract-to-cash process. We were able to accelerate our invoicing and collections process across our customers and partners."`,
+    quote: `"FinFloh automated our entire customer and partner contract-to-cash process. We were able to make our invoicing faster by 40% and save 2 FTE equivalent."`,
     speaker: "Finance Lead, Leading Travel Tech Firm",
     btnText: "Book a Demo",
     btnLink:
