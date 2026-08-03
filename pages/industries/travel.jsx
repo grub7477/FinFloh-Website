@@ -23,6 +23,7 @@ import PricingCards from "../../components/Sections/AdvanceCards/PricingCards";
 import InNumbers from "../../components/Sections/AdvanceCards/InNumbers";
 import Testimonial from "../../components/Sections/Testimonials/Testimonials";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
+import CardLayoutFlex from "../../components/Sections/AdvanceCards/CardLayout";
 
 const handleButtonClick = () => {
   setPopupVisible(true);
@@ -95,14 +96,15 @@ const TravelTech = () => {
           icon={<RightArrow />}
         />
         {/* Add New Section for AI */}
-        {/* <CardLayoutFlex 
+        <CardLayoutFlex 
         kicker={TravelIndustry.aiAgents.kicker}
           title={TravelIndustry.aiAgents.title}
-          agents={TravelIndustry.aiAgents.features}
+          description={TravelIndustry.aiAgents.description}
+          agents={TravelIndustry.aiAgents.agents}
           btnText={TravelIndustry.aiAgents.btnText}
           btnLink={TravelIndustry.aiAgents.btnLink}
           icon={<RightArrow />}
-        /> */}
+        />
 
         <InNumbers
           kicker={TravelIndustry.numbers.kicker}
