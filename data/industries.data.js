@@ -189,6 +189,37 @@ export const ServiceIndustry = {
     ],
   },
 
+  aiAgents: {
+    kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
+    title: "The digital finance team behind the platform",
+    description:
+      "DocSense reads your customer and partner contracts and bank statements. FlohSense reads customer and partner emails and takes action. Together they close the loop from agreement to cash.",
+       btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
+    agents: [
+      {
+        name: "DocSense AI",
+        tagline: "Reads and parses contracts, bank statements & SOWs",
+        reads: ["Contracts", "SOWs", "Invoices", "Bank Statements"],
+        outputLabel: "EXTRACTS",
+        outputs: [
+          "Commercial Terms",
+          "Revenue Splits",
+          "Billing Schedules",
+          "Customer & Partner Info",
+        ],
+      },
+      {
+        name: "FlohSense AI",
+        tagline: "Reads customer & partner emails and takes action",
+        reads: ["Customer Emails", "Partner Emails", "Payment Advice", "Data Requests"],
+        outputLabel: "AUTOMATES",
+        outputs: ["Payment Recon", "Dispute Creation", "Contact Updates", "Auto-Reverts"],
+      },
+    ],
+  },
+
   numbers: {
     kicker: "BUSINESS OUTCOMES",
     title:

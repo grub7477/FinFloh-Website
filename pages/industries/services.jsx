@@ -23,6 +23,7 @@ import PricingCards from "../../components/Sections/AdvanceCards/PricingCards";
 import InNumbers from "../../components/Sections/AdvanceCards/InNumbers";
 import Testimonial from "../../components/Sections/Testimonials/Testimonials";
 import NewNewsLetter from "../../components/Common/NewNewsLetter";
+import CardLayoutFlex from "../../components/Sections/AdvanceCards/CardLayout";
 
 const handleButtonClick = () => {
   setPopupVisible(true);
@@ -90,6 +91,16 @@ const serviceIndustry = () => {
           features={ServiceIndustry.capabilities.features}
           btnText={ServiceIndustry.capabilities.btnText}
           btnLink={ServiceIndustry.capabilities.btnLink}
+          icon={<RightArrow />}
+        />
+         {/* Add New Section for AI */}
+        <CardLayoutFlex 
+        kicker={ServiceIndustry.aiAgents.kicker}
+          title={ServiceIndustry.aiAgents.title}
+          description={ServiceIndustry.aiAgents.description}
+          agents={ServiceIndustry.aiAgents.agents}
+          btnText={ServiceIndustry.aiAgents.btnText}
+          btnLink={ServiceIndustry.aiAgents.btnLink}
           icon={<RightArrow />}
         />
         <InNumbers
