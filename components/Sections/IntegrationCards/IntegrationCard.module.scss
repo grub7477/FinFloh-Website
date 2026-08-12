@@ -1,0 +1,443 @@
+.sectionWrapper {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e5e5e5;
+}
+
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 40%;
+  padding: 36px;
+  border-right: 1px dashed #e5e5e5;
+  height: 100%;
+}
+
+.heading {
+  color: #111827;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 33.6px */
+  width: 70%;
+}
+
+.integrationLogoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    background-color: #f9fafb;
+}
+// -------------------------------------------------------
+// TechStackShowcase.module.scss
+// Mobile:  header (heading + CTA) stacks on top, centered,
+//          full width, divided by a solid line from a 2-col
+//          x 3-row logo grid below it.
+// Desktop: header sits in a fixed-width left column, divided
+//          by a solid vertical line from a 3-col x 2-row logo
+//          grid on the right — same layout as before.
+// Both breakpoints: thin grey outer border, blue corner
+// brackets, and "+" marks at the internal grid intersections.
+// -------------------------------------------------------
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+$border-color: #e5e7eb;
+$accent-blue: #2f5bea;
+$text-heading: #0f172a;
+$blue: #2f5bea;
+$blue-hover: #2447c4;
+$transition-ms: 550ms;
+
+.section {
+  width: 100%;
+  background: #fff;
+  padding: 2.5rem 1.25rem;
+}
+
+.card {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+}
+
+// Blue corner brackets on the outer card.
+.corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $accent-blue;
+  z-index: 3;
+
+  &.topLeft {
+    top: -1px;
+    left: -1px;
+    border-right: none;
+    border-bottom: none;
+  }
+  &.topRight {
+    top: -1px;
+    right: -1px;
+    border-left: none;
+    border-bottom: none;
+  }
+  &.bottomLeft {
+    bottom: -1px;
+    left: -1px;
+    border-right: none;
+    border-top: none;
+  }
+  &.bottomRight {
+    bottom: -1px;
+    right: -1px;
+    border-left: none;
+    border-top: none;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include mq(md) {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+// ---------- Header ----------
+
+.headerCell {
+  padding: 2.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  border-bottom: 1px solid $border-color;
+
+  @include mq(md) {
+    align-items: flex-start;
+    text-align: left;
+    padding: 2.5rem;
+    border-bottom: none;
+    border-right: 1px solid $border-color;
+  }
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $text-heading;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.primaryButton {
+  display: inline-block;
+  text-decoration: none;
+  background: $blue;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 200ms ease, transform 150ms ease;
+  min-width: 15rem;
+
+  &:hover {
+    background: $blue-hover;
+    transform: translateY(-1px);
+  }
+}
+
+a.primary {
+  color: #fff;
+}
+
+// ---------- Logo grid ----------
+
+.gridOuter {
+  position: relative;
+}
+
+// "+" marks at the internal grid intersections. Position swaps
+// between mobile (2 cols x 3 rows -> marks stacked along the
+// single vertical divider) and desktop (3 cols x 2 rows -> marks
+// spread along the single horizontal divider).
+.plusMark {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  color: $accent-blue;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+  }
+  &::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    transform: translateY(-50%);
+  }
+  &::after {
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 1.5px;
+    transform: translateX(-50%);
+  }
+
+  &.plusOne {
+    left: 50%;
+    top: 33.3333%;
+
+    @include mq(md) {
+      left: 33.3333%;
+      top: 50%;
+    }
+  }
+  &.plusTwo {
+    left: 50%;
+    top: 66.6666%;
+
+    @include mq(md) {
+      left: 66.6666%;
+      top: 50%;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridCell {
+  border-bottom: 1px dashed $border-color;
+
+  &:nth-child(odd) {
+    border-right: 1px dashed $border-color;
+  }
+  &:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  @include mq(md) {
+    border-bottom: none;
+
+    &:nth-child(odd) {
+      border-right: none;
+    }
+    &:not(:nth-child(3n)) {
+      border-right: 1px dashed $border-color;
+    }
+    &:nth-child(n + 4) {
+      border-top: 1px solid $border-color;
+    }
+  }
+}
+
+.logoCellWrap {
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoCell {
+  position: relative;
+  height: 3.5rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoTrack {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0%);
+
+  &.animating {
+    transform: translateY(-100%);
+    transition: transform $transition-ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+}
+
+.logoSlot {
+  height: 3.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+// ---------- Placeholder logo marks ----------
+// Swap for real logo <img>/SVG assets.
+
+.logoSap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.1rem;
+  padding: 0 0.7rem;
+  border-radius: 2px;
+  background: linear-gradient(to bottom right, #38bdf8, #1d4ed8);
+  color: #fff;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.integrationLogo {
+  display: inline-flex;
+  align-items: center;
+ width: 200px;
+
+  span {
+    color: #3b82f6;
+  }
+}
+
+.logoBilldesk {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+
+  .mark {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 2px solid #f97316;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f97316;
+    font-size: 0.65rem;
+  }
+
+  .bill {
+    color: #334155;
+  }
+
+  .desk {
+    color: #64748b;
+  }
+}
+
+.logoNetsuite {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1e293b;
+
+  .mark {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 2px;
+    background: #1e293b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+  }
+
+  .suite {
+    font-weight: 400;
+  }
+}
+
+.logoQuickbooks {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #334155;
+
+  .mark {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: #2ca01c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+}
+
+.logoStripe {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #635bff;
+}
+
+.logoSalesforce {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #0ea5e9;
+
+  .mark {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: #0ea5e9;
+  }
+}
+
+.logoHubspot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #ea580c;
+
+  .mark {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 4px solid #f97316;
+  }
+}
