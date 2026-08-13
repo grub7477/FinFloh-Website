@@ -210,7 +210,7 @@ export default function HeroSection() {
         </h1>
         <p className={styles.body}>
           Help businesses transform Accounts Receivable, Credit Risk,
-          Collections and Cash Application with AI-powered automation. While
+          Collections and Cash Application with AI-powered automation, while
           unlocking new revenue opportunities and creating greater value for
           your customers.
         </p>
