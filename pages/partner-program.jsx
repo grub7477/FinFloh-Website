@@ -8,7 +8,7 @@ import IntegrationCard from "../components/Sections/IntegrationCards/Integration
 import WhyPartner from "../components/Sections/WhyPartner/WhyPartner";
 import PartnerShipModels from "../components/Sections/PartnerShipModel/PartnerShipModels";
 import PartnerBenefits from "../components/Sections/PartnerBenefits/PartnerBenefits";
-import FinalCta from "../components/Sections/FinalCta/FinalCta";
+import FinalCta from "../components/Sections/FinalCTA/FinalCta";
 import HeroSection from "../components/Sections/HeroSection/Hero";
 
 const partnerProgram = () => {

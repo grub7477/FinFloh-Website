@@ -845,12 +845,8 @@
   }
 }
 .mainBannerContainer {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
 }
 
 .lending-title-container {
@@ -1239,8 +1235,6 @@
   // }
   .mainBannerContainer {
     margin: 0;
-    padding: 0;
-    height: 100%;
   }
   .capsule-container {
     display: flex;

@@ -1,0 +1,263 @@
+.root {
+  --hero-green-deep: #006333;
+  --hero-green-brand: #00954a;
+  --hero-green-bright: #00b35c;
+  --hero-mint: #6ecf9a;
+  --hero-mint-soft: #a8e6c3;
+  --hero-mint-pale: #d4f2e3;
+  --hero-mint-glow: #e8f9f0;
+
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.glowCenter {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  width: min(680px, 88vw);
+  height: min(680px, 88vw);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 149, 74, 0.12) 0%,
+    rgba(110, 207, 154, 0.22) 28%,
+    rgba(212, 242, 227, 0.35) 52%,
+    transparent 72%
+  );
+  animation: centerGlow 10s ease-in-out infinite;
+}
+
+@keyframes centerGlow {
+  0%,
+  100% {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.07);
+  }
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.orb--back {
+  background: radial-gradient(
+    circle at 36% 30%,
+    rgba(0, 99, 51, 0.1) 0%,
+    rgba(0, 149, 74, 0.16) 28%,
+    rgba(168, 230, 195, 0.28) 52%,
+    transparent 72%
+  );
+  filter: blur(10px);
+}
+
+.orb--mid {
+  background: radial-gradient(
+    circle at 40% 36%,
+    rgba(0, 179, 92, 0.22) 0%,
+    rgba(110, 207, 154, 0.45) 38%,
+    rgba(212, 242, 227, 0.3) 58%,
+    transparent 74%
+  );
+  filter: blur(5px);
+}
+
+.orb--front {
+  background: radial-gradient(
+    circle at 44% 42%,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(168, 230, 195, 0.7) 26%,
+    rgba(0, 149, 74, 0.18) 48%,
+    transparent 68%
+  );
+  filter: blur(1px);
+  box-shadow: 0 0 48px rgba(0, 149, 74, 0.14);
+}
+
+.orb--motiona {
+  animation: driftA var(--dur, 24s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.orb--motionb {
+  animation: driftB var(--dur, 26s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.orb--motionc {
+  animation: driftC var(--dur, 22s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes driftA {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(36px, -28px) scale(1.06);
+  }
+  50% {
+    transform: translate(14px, 22px) scale(0.96);
+  }
+  75% {
+    transform: translate(-28px, -10px) scale(1.03);
+  }
+}
+
+@keyframes driftB {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-32px, 24px) scale(1.05);
+  }
+  66% {
+    transform: translate(26px, -20px) scale(0.94);
+  }
+}
+
+@keyframes driftC {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(18px, 16px) scale(1.04);
+  }
+  40% {
+    transform: translate(-22px, 8px) scale(0.98);
+  }
+  60% {
+    transform: translate(-10px, -24px) scale(1.02);
+  }
+  80% {
+    transform: translate(20px, -12px) scale(0.97);
+  }
+}
+
+.paths {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.arc {
+  stroke-dasharray: 5 10;
+  animation: arcFlow 20s linear infinite;
+  animation-delay: calc(var(--i) * -2.5s);
+}
+
+@keyframes arcFlow {
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+
+.traveler {
+  filter: drop-shadow(0 0 10px rgba(0, 179, 92, 0.55));
+}
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ringOne {
+  width: min(720px, 92vw);
+  height: min(720px, 92vw);
+  border: 1px solid rgba(0, 149, 74, 0.16);
+  box-shadow: 0 0 60px rgba(110, 207, 154, 0.12);
+  animation: ringSpin 48s linear infinite, ringFade 8s ease-in-out infinite;
+}
+
+.ringTwo {
+  width: min(560px, 76vw);
+  height: min(560px, 76vw);
+  border: 1px solid rgba(0, 99, 51, 0.1);
+  animation: ringSpin 36s linear infinite reverse, ringFade 10s ease-in-out infinite 2s;
+}
+
+.ringThree {
+  width: min(400px, 58vw);
+  height: min(400px, 58vw);
+  border: 1px dashed rgba(0, 179, 92, 0.28);
+  animation: ringSpin 28s linear infinite, ringFade 7s ease-in-out infinite 4s;
+}
+
+@keyframes ringSpin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes ringFade {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
+
+@media (max-width: 767px) {
+  .orb--back,
+  .orb--mid {
+    opacity: 0.85;
+  }
+
+  .paths {
+    opacity: 0.6;
+  }
+
+  .ringOne {
+    width: min(520px, 115vw);
+    height: min(520px, 115vw);
+  }
+
+  .ringTwo {
+    width: min(400px, 95vw);
+    height: min(400px, 95vw);
+  }
+
+  .ringThree {
+    width: min(280px, 72vw);
+    height: min(280px, 72vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glowCenter,
+  .orb,
+  .arc,
+  .ring {
+    animation: none !important;
+  }
+
+  .glowCenter {
+    opacity: 0.85;
+  }
+
+  .traveler,
+  .paths circle {
+    visibility: hidden;
+  }
+}
