@@ -27,7 +27,7 @@ const PARTNER_TYPES = [
     tabLabel: "Referral",
     title: "Referral Partner",
     description:
-      "Recommend FinFloh to your clients and earn recurring incentives for every successful referral.",
+      "Create new revenue opportunities by connecting your clients with FinFloh.",
     suitedFor: [
       "Finance Consultants",
       "Fractional CFOs",
@@ -37,25 +37,25 @@ const PARTNER_TYPES = [
       "CAs",
     ],
   },
-  {
-    id: "strategic-alliance",
-    tabLabel: "Strategic Alliance",
-    title: "Strategic Alliance Partner",
-    description:
-      "Collaborate on enterprise opportunities, joint go-to-market initiatives, and industry solutions.",
-    suitedFor: [
-      "Consulting Firms",
-      "BPO Providers",
-      "Global System Integrators",
-      "Industry Associations",
-    ],
-  },
+  // {
+  //   id: "strategic-alliance",
+  //   tabLabel: "Strategic Alliance",
+  //   title: "Strategic Alliance Partner",
+  //   description:
+  //     "Collaborate on enterprise opportunities, joint go-to-market initiatives, and industry solutions.",
+  //   suitedFor: [
+  //     "Consulting Firms",
+  //     "BPO Providers",
+  //     "Global System Integrators",
+  //     "Industry Associations",
+  //   ],
+  // },
   {
     id: "technology",
     tabLabel: "Technology",
     title: "Technology Partner",
     description:
-      "Build integrations that create additional value for mutual customers.",
+      "Connect your technology with FinFloh through integrations and APIs to deliver a more connected finance ecosystem for mutual customers.",
     suitedFor: [
       "ERP Providers",
       "Accounting Software",
@@ -69,7 +69,7 @@ const PARTNER_TYPES = [
     tabLabel: "Implementation",
     title: "Implementation Partner",
     description:
-      "Help enterprise customers deploy, configure, and adopt FinFloh across their finance organization.",
+      "Help enterprise customers implement, configure, and adopt FinFloh across their finance organization, ensuring a smooth and successful rollout.",
     suitedFor: [
       "System Integrators",
       "Implementation Consultants",

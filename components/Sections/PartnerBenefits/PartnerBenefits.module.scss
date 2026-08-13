@@ -1,8 +1,9 @@
 // -------------------------------------------------------
 // PartnerBenefits.module.scss
-// Desktop: 3x2 grid, dashed vertical dividers, solid mid
-//          horizontal divider, small "+" marks at the two
-//          internal intersections, blue corner brackets.
+// Desktop: 2x2 grid — dashed vertical divider between the two
+//          columns, solid horizontal divider between the two
+//          rows, a single "+" mark at the center intersection,
+//          blue corner brackets on the outer grid.
 // Mobile:  single-column stacked list, dashed dividers
 //          between items only.
 // -------------------------------------------------------
@@ -84,8 +85,6 @@ a.action {
   position: relative;
 }
 
-// Blue corner brackets, echoing the "selection handle" accent
-// used elsewhere on the site.
 .corner {
   position: absolute;
   width: 10px;
@@ -125,12 +124,14 @@ a.action {
   border: 1px solid $border-color;
 
   @include mq(md) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-// "+" marks at the two internal intersections on the middle
-// horizontal line (desktop only).
+// Single "+" mark, centered exactly on the grid's own
+// midpoint — this lands on the true row/column intersection
+// regardless of how tall each row ends up being, since it's
+// positioned relative to .gridOuter, not a percentage guess.
 .plusMark {
   display: none;
 
@@ -138,6 +139,7 @@ a.action {
     display: block;
     position: absolute;
     top: 50%;
+    left: 50%;
     width: 12px;
     height: 12px;
     color: $accent-blue;
@@ -166,13 +168,6 @@ a.action {
       transform: translateX(-50%);
     }
   }
-
-  &.plusOne {
-    left: 33.3333%;
-  }
-  &.plusTwo {
-    left: 66.6666%;
-  }
 }
 
 .cell {
@@ -186,11 +181,13 @@ a.action {
   @include mq(md) {
     border-bottom: none;
 
-    &:not(:nth-child(3n)) {
+    // Dashed vertical divider between the two columns
+    &:nth-child(odd) {
       border-right: 1px dashed $border-color;
     }
 
-    &:nth-child(n + 4) {
+    // Solid horizontal divider between the two rows
+    &:nth-child(n + 3) {
       border-top: 1px solid $border-color;
     }
   }
