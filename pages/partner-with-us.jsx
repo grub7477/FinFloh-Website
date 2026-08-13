@@ -3,7 +3,7 @@ import WebsiteLayout from "../components/Layouts/WebsiteLayout.js";
 import HeadComponent from "../components/Common/HeadComponent.jsx";
 import generateUtmUrls from "../utils/utmUrls.js";
 import LinkButton from "../components/Common/LinkButton.js";
-import CustomerLogos from "../components/Sections/CustomerLogos/CustomerLogos.jsx";
+import PartnerLogos from "../components/Sections/CustomerLogos/PartnerLogos.jsx";
 import TestimonialsWhyTrust from "../components/Common/TestimonialsWhyTrust.jsx";
 import { partnerProgramData } from "../data/partner-program.data.js";
 import EmailJsButton from "../components/Common/EmailJsButton.js";
@@ -29,7 +29,7 @@ const PartnerWithUs = (isShowMobile = false, errorClassName) => {
       <div className="custom-bg">
         <WebsiteLayout>
           <section className="section section--sm container">
-            <div className="stack card--noHover cardnoHover--loose">
+            <div className="stack card--noHover cardnoHover--loose cardnoHover--gap-loose">
               <div className="inline--responsive inline--responsive--loose">
                 <div className="stack">
                   <h1>{partnerProgramData.partnerWithUs.title}</h1>
@@ -46,7 +46,8 @@ const PartnerWithUs = (isShowMobile = false, errorClassName) => {
                 </div>
               </div>
               <div>
-                <CustomerLogos />
+              <div className="divider"></div>
+                <PartnerLogos />
               </div>
             </div>
           </section>

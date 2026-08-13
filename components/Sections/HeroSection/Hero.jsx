@@ -204,18 +204,15 @@ export default function HeroSection() {
 
       <div className={styles.content}>
         <h1 className={styles.heading}>
-          Join the FinFloh
+          Join the FinFloh 
           <br />
           Partner Ecosystem
         </h1>
         <p className={styles.body}>
-          Help businesses transform Accounts Receivable, Credit Risk, Cash
-          Application, and Collections with AI-powered automation while creating
-          new revenue opportunities for your business.
-          <br />
-          <br /> Whether you're a consulting firm, ERP implementation partner,
-          technology provider, BPO, or finance advisor, FinFloh provides
-          everything you need to deliver exceptional value to your customers.
+          Help businesses transform Accounts Receivable, Credit Risk,
+          Collections and Cash Application with AI-powered automation. While
+          unlocking new revenue opportunities and creating greater value for
+          your customers.
         </p>
         <div className={styles.actions}>
           <button type="button" className={styles.primaryButton}>

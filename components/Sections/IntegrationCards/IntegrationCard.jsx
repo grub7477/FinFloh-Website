@@ -340,9 +340,7 @@ export default function TechStackShowcase() {
         <div className={styles.content}>
           <div className={styles.headerCell}>
             <h2 className={styles.heading}>
-              Works With Your
-              <br />
-              Existing Tech Stack
+              Seamless Integration With Tech Stacks
             </h2>
 
             <button type="button" className={styles.primaryButton}>
