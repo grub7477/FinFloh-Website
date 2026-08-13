@@ -99,26 +99,3 @@
   width:auto;
 }
 
-.heroCaps{
-  text-transform: uppercase;
-  width: 510px;
-  font-weight: 500;
-}
-
-.hero_background{
-  width:100%;
-  height:80vh;
-  
-  background-image: 
-    url("/images/partner-program/partnerHero.svg"), 
-    linear-gradient(180deg, #FFF 0%, #92D1F8 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 12px;
-}
-
-.hero_padding{
-  padding-top: 120px
-}
-

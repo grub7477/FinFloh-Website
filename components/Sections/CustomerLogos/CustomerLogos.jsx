@@ -8,11 +8,11 @@ const CustomerLogos = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          // marginTop: "24px",
+          marginTop: "24px",
           marginBottom: "24px",
         }}
       ></div>
-      <div className="EnterpriseIcons-section container">
+      <div className="EnterpriseIcons-section">
         <div className="EnterpriseIcons">
           {/* Sliding Logos for Larger Screens */}
           <div className="logos">
