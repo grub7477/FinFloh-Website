@@ -1,4 +1,3 @@
-
 import React from "react";
 import styles from "./FinalCta.module.scss";
 
@@ -22,13 +21,16 @@ export default function FinalCta() {
       <div className={styles.card}>
         <div className={styles.quoteBlock}>
           <p className={styles.quote}>
-            &ldquo;FinFloh became a key part of our finance automation
-            practice. We closed 18+ deals and built a strong recurring
-            revenue stream.&rdquo;
+            &ldquo;FinFloh has become a strategic part of our finance automation
+            practice. In the first year of our partnership, we completed 6
+            successful customer implementations, with most projects going live
+            in under 45 days. The team's technical expertise and collaborative
+            approach have been instrumental in helping us win and deliver
+            projects.&rdquo;
           </p>
           <p className={styles.attribution}>
-            <span className={styles.role}>Partner,</span>{" "}
-            <span className={styles.company}>Leading Consulting Firm</span>
+            <span className={styles.role}>Managing Director,</span>{" "}
+            <span className={styles.company}>Digital Finance Consulting Firm</span>
           </p>
         </div>
 
@@ -40,10 +42,7 @@ export default function FinalCta() {
             Join our global partner ecosystem today.
           </p>
           <button type="button" className={styles.ctaButton}>
-             <a
-              href="/partner-with-us"
-              className={styles.action}
-            >
+            <a href="/partner-with-us" className={styles.action}>
               Become a Partner →
             </a>
           </button>
