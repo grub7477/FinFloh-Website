@@ -5,7 +5,6 @@ import { validateBusinessEmail } from "../../utils/emailValidation";
 import CompaniesLogo from "../Common/CompaniesLogo";
 import ButtonCommon from "../UI/Button/Button";
 import Play from "../../public/icons/play.svg";
-import HeroAmbientBackground from "./HeroAmbientBackground";
 import styles from "./MainBanner.module.scss";
 
 const MainBanner = ({ utmURLs }) => {
@@ -82,7 +81,6 @@ const MainBanner = ({ utmURLs }) => {
   return (
     <div className="bg-container">
       <div className={`mainBannerContainer ${styles.hero}`}>
-        <HeroAmbientBackground />
 
         <div className={`main-banner-container ${styles.heroContent}`}>
           <div className="lending-title-container">
