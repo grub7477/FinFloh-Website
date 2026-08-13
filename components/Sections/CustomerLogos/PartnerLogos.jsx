@@ -22,12 +22,14 @@ const PartnerLogos = () => {
                <img alt="salesforce-logomark" src="/images/partner-logos/salesforce.png" />
                 <img alt="fastqlik-logomark" src="/images/partner-logos/fastqlik.png" />
                  <img alt="varisource-logomark" src="/images/partner-logos/varisource.png" />
+                 <img alt="astralmind-logomark" src="/images/partner-logos/astralmind.jpg" />
               {/* Logo Repeat */}
              <img alt="credgenics-logomark" src="/images/partner-logos/credgenics.png" />
               <img alt="aws-logomark" src="/images/partner-logos/aws.png" />
                <img alt="salesforce-logomark" src="/images/partner-logos/salesforce.png" />
                 <img alt="fastqlik-logomark" src="/images/partner-logos/fastqlik.png" />
                  <img alt="varisource-logomark" src="/images/partner-logos/varisource.png" />
+                 <img alt="astralmind-logomark" src="/images/partner-logos/astralmind.jpg" />
             </div>
           </div>
         </div>
