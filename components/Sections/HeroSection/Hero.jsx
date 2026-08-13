@@ -5,17 +5,33 @@ import Link from "next/link";
 /**
  * HeroSection
  * -------------------------------------------------------
- * - Ripple layer: 3 rings share one fixed anchor point at
- *   top-center of the hero and each independently animates
- *   scale 0 -> 1 + opacity 1 -> 0 on a staggered delay, so a
- *   new ring keeps launching as the last one fades — a wave
- *   effect, not rotation. A couple of faint static rings sit
- *   underneath for texture, plus a few dots that pulse in
- *   place (no movement, no orbiting).
- * - Floating cards (desktop only) now each carry an icon on a
- *   soft color backdrop, a title, and a one-line description.
+ * - Static dashed rings share one fixed anchor point at
+ *   top-center. Each ring also has a small ball that travels
+ *   along that exact ring path (via animateMotion + mpath),
+ *   staggered so they don't all move in sync.
+ * - Floating cards (lg+ only) each carry an icon on a soft
+ *   color backdrop, a title, and a one-line description.
+ *   Hidden below `lg` to avoid overlapping the heading/body
+ *   text at tablet/laptop widths.
  * -------------------------------------------------------
  */
+
+const ANCHOR_X = 600;
+const ANCHOR_Y = -40;
+
+const RIPPLE_RINGS = [
+  { r: 150, duration: 14, delay: 0 },
+  { r: 350, duration: 18, delay: 1.2 },
+  { r: 500, duration: 22, delay: 2.4 },
+  { r: 650, duration: 26, delay: 0.6 },
+  { r: 800, duration: 30, delay: 1.8 },
+];
+
+function ringPath(r) {
+  const x1 = ANCHOR_X + r;
+  const x2 = ANCHOR_X - r;
+  return `M ${x1},${ANCHOR_Y} A ${r},${r} 0 1,1 ${x2},${ANCHOR_Y} A ${r},${r} 0 1,1 ${x1},${ANCHOR_Y}`;
+}
 
 function AutomationIcon() {
   return (
@@ -24,14 +40,6 @@ function AutomationIcon() {
       <rect x="13" y="11" width="10" height="1.8" rx="0.9" fill="#fff" />
       <rect x="13" y="15.5" width="10" height="1.8" rx="0.9" fill="#fff" />
       <rect x="13" y="20" width="6" height="1.8" rx="0.9" fill="#fff" />
-      {/* <circle
-        cx="27"
-        cy="27"
-        r="8"
-        fill="#2f5bea"
-        stroke="#fff"
-        strokeWidth="1.6"
-      /> */}
       <path
         d="M23.5 27l2.2 2.2L30.5 24"
         stroke="#fff"
@@ -84,10 +92,8 @@ function NetworkIcon() {
         strokeWidth="1.6"
       />
       <line x1="9" y1="24" x2="31" y2="24" stroke="#93b0f5" strokeWidth="1.6" />
-      {/* <circle cx="20" cy="9" r="4" fill="#2f5bea" /> */}
       <circle cx="9" cy="24" r="4" fill="#1f2937" />
       <circle cx="31" cy="24" r="4" fill="#1f2937" />
-      {/* <circle cx="20" cy="34" r="4" fill="#2f5bea" /> */}
     </svg>
   );
 }
@@ -154,53 +160,29 @@ export default function HeroSection() {
         preserveAspectRatio="xMidYMid slice"
         aria-hidden="true"
       >
-        {/* Faint static rings for texture, anchored top-center */}
-        <circle className={styles.staticRing} cx="600" cy="-40" r="150" />
-        <circle className={styles.staticRing} cx="600" cy="-40" r="350" />
-        <circle className={styles.staticRing} cx="600" cy="-40" r="500" />
-        <circle className={styles.staticRing} cx="600" cy="-40" r="650" />
-        <circle className={styles.staticRing} cx="600" cy="-40" r="800" />
-        {/* <circle className={styles.staticRing} cx="600" cy="-40" r="700" /> */}
-
-     
-        
-
-        {/* Dots pulse in place — no orbiting
-        <circle
-          className={styles.orbitDot}
-          cx="140"
-          cy="180"
-          r="4.5"
-          style={{ animationDelay: "0s" }}
-        />
-        <circle
-          className={styles.orbitDot}
-          cx="1040"
-          cy="230"
-          r="4.5"
-          style={{ animationDelay: "1s" }}
-        />
-        <circle
-          className={styles.orbitDot}
-          cx="820"
-          cy="120"
-          r="4"
-          style={{ animationDelay: "2s" }}
-        />
-        <circle
-          className={styles.orbitDot}
-          cx="95"
-          cy="420"
-          r="4"
-          style={{ animationDelay: "2.2s" }}
-        />
-        <circle
-          className={styles.orbitDot}
-          cx="620"
-          cy="60"
-          r="4"
-          style={{ animationDelay: "1.1s" }}
-        /> */}
+        {RIPPLE_RINGS.map((ring) => {
+          const pathId = `ringPath-${ring.r}`;
+          return (
+            <g key={ring.r}>
+              <circle
+                className={styles.staticRing}
+                cx={ANCHOR_X}
+                cy={ANCHOR_Y}
+                r={ring.r}
+              />
+              <path id={pathId} d={ringPath(ring.r)} fill="none" stroke="none" />
+              <circle className={styles.ringBall} r="4">
+                <animateMotion
+                  dur={`${ring.duration}s`}
+                  begin={`${ring.delay}s`}
+                  repeatCount="indefinite"
+                >
+                  <mpath href={`#${pathId}`} xlinkHref={`#${pathId}`} />
+                </animateMotion>
+              </circle>
+            </g>
+          );
+        })}
       </svg>
 
       <div className={styles.floatingCards} aria-hidden="true">
@@ -230,6 +212,10 @@ export default function HeroSection() {
           Help businesses transform Accounts Receivable, Credit Risk, Cash
           Application, and Collections with AI-powered automation while creating
           new revenue opportunities for your business.
+          <br />
+          <br /> Whether you're a consulting firm, ERP implementation partner,
+          technology provider, BPO, or finance advisor, FinFloh provides
+          everything you need to deliver exceptional value to your customers.
         </p>
         <div className={styles.actions}>
           <button type="button" className={styles.primaryButton}>
@@ -237,13 +223,6 @@ export default function HeroSection() {
             Become a Partner →
           </a>
           </button>
-          {/* <button
-            type="button"
-            className={styles.secondaryButton}
-            link="/partner-with-us"
-          >
-            Schedule a Partnership Call →
-          </button> */}
         </div>
       </div>
 
