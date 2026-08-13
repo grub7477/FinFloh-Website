@@ -1,15 +1,20 @@
 export const partnerProgramData = {
   heroSection: {
     kicker: "FINFLOH PARTNER PROGRAM",
-    title: `Grow Your Business
-    Transform Finance Together`,
+    title: `Join the FinFloh Partner Ecosystem`,
     description:
-      "Partner with FinFloh and help businesses automate Accounts Receivable while building a profitable, recurring revenue stream for your organization.",
+      "Help businesses transform Accounts Receivable, Credit Risk, Cash Application, and Collections with AI-powered automation while creating new revenue opportunities for your business.",
     btnPrimaryText: "Become a Partner",
     btnPrimaryLink: "/partner-with-us",
     btnSecondaryText: "Talk to Partnerships",
     btnSecondaryLink: "/partner-with-us",
     image: "/images/partner-program/pattern-home.svg",
+  },
+
+  integrationStack:{
+    title: "Works With Your Existing Tech Stack",
+    btnText: "Become a Partner",
+    btnLink: "/partner-with-us",
   },
 
   whyFinfloh: {

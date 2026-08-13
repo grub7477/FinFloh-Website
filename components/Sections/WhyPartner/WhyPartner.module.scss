@@ -1,0 +1,608 @@
+@mixin mq($breakpoint) {
+  @if $breakpoint == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+$border-color: #e5e7eb;
+$text-heading: #0f172a;
+$text-body: #4b5563;
+$text-muted: #6b7280;
+
+$blue: #2f5bea;
+$blue-hover: #2447c4;
+
+// =======================================================
+// SECTION
+// =======================================================
+
+.section {
+  width: 100%;
+  background: #fff;
+  padding: 3rem 1.5rem;
+}
+
+// =======================================================
+// WRAPPER
+// =======================================================
+
+.wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 2.5rem;
+
+  @include mq(md) {
+    grid-template-columns: 340px 1fr;
+    align-items: start;
+    gap: 3rem;
+  }
+}
+
+// =======================================================
+// LEFT COLUMN
+// =======================================================
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 1.5rem;
+
+  @include mq(md) {
+    position: sticky;
+    top: 6rem;
+  }
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $text-heading;
+  margin: 0;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $text-body;
+  margin: 0;
+  max-width: 30rem;
+}
+
+.primaryButton {
+  display: inline-block;
+
+  text-decoration: none;
+
+  background: $blue;
+  color: #fff;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  padding: 0.9rem 1.75rem;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 200ms ease,
+    transform 150ms ease;
+
+  min-width: 15rem;
+
+  &:hover {
+    background: $blue-hover;
+    transform: translateY(-1px);
+  }
+}
+
+a.primary {
+  color: #fff;
+  text-decoration: none;
+}
+
+// =======================================================
+// RIGHT COLUMN
+// =======================================================
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+// =======================================================
+// CARD
+// =======================================================
+
+.card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid $border-color;
+  border-radius: 6px;
+
+  min-height: 260px;
+
+  background: #fff;
+
+  isolation: isolate;
+}
+
+// =======================================================
+// CARD CONTENT
+// =======================================================
+
+.cardContent {
+  position: relative;
+
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 1.25rem;
+
+  padding: 2rem;
+}
+
+.iconWrap {
+  position: relative;
+
+  z-index: 3;
+
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+}
+
+.iconWrap img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.cardTitle {
+  position: relative;
+
+  z-index: 3;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  color: $text-heading;
+
+  margin: 0;
+}
+
+.cardDescription {
+  position: relative;
+
+  z-index: 3;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  color: $text-muted;
+
+  margin: 0;
+}
+
+// =======================================================
+// GRID VIEWPORT
+// =======================================================
+
+.gridViewport {
+  position: absolute;
+
+  /*
+   * Smaller overall grid footprint.
+   */
+  width: 135%;
+  height: 125%;
+
+  top: -12%;
+  right: -48%;
+
+  z-index: 0;
+
+  pointer-events: none;
+
+  /*
+   * Fade toward the center.
+   */
+  -webkit-mask-image: radial-gradient(
+    ellipse 72% 90% at 96% 18%,
+    #000 0%,
+    rgba(0, 0, 0, 0.98) 20%,
+    rgba(0, 0, 0, 0.9) 38%,
+    rgba(0, 0, 0, 0.68) 55%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 0.16) 84%,
+    rgba(0, 0, 0, 0.04) 95%,
+    transparent 100%
+  );
+
+  mask-image: radial-gradient(
+    ellipse 72% 90% at 96% 18%,
+    #000 0%,
+    rgba(0, 0, 0, 0.98) 20%,
+    rgba(0, 0, 0, 0.9) 38%,
+    rgba(0, 0, 0, 0.68) 55%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 0.16) 84%,
+    rgba(0, 0, 0, 0.04) 95%,
+    transparent 100%
+  );
+}
+
+// =======================================================
+// GRID TRACK
+// =======================================================
+
+.gridTrack {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+
+  display: flex;
+
+  width: max-content;
+}
+
+// =======================================================
+// GRID SEQUENCE
+// =======================================================
+
+.gridSequence {
+  /*
+   * 8 × 48px = 384px
+   */
+  width: 384px;
+  height: 240px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(8, 48px);
+  grid-template-rows: repeat(5, 48px);
+}
+
+// =======================================================
+// GRID CELLS
+// =======================================================
+
+.gridCell {
+  position: relative;
+
+  /*
+   * SMALLER CELLS
+   */
+  width: 48px;
+  height: 48px;
+
+  box-sizing: border-box;
+
+  border-right: 1px solid rgba(15, 23, 42, 0.05);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+
+  background: rgba(59, 130, 246, 0.1);
+
+  /*
+   * Every cell continues to blink independently.
+   */
+  animation-name: randomBluePulse;
+
+  animation-duration: 3.5s;
+
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: infinite;
+
+  animation-delay: var(--cell-delay);
+
+  opacity: 0.2;
+
+  will-change: opacity;
+}
+
+// =======================================================
+// BLUE VARIATION + DIFFERENT TIMING
+// =======================================================
+
+.gridCell:nth-child(1) {
+  --cell-delay: -0.3s;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.gridCell:nth-child(2) {
+  --cell-delay: -1.7s;
+  background: rgba(37, 99, 235, 0.13);
+}
+
+.gridCell:nth-child(3) {
+  --cell-delay: -2.8s;
+  background: rgba(96, 165, 250, 0.12);
+}
+
+.gridCell:nth-child(4) {
+  --cell-delay: -0.9s;
+  background: rgba(30, 64, 175, 0.09);
+}
+
+.gridCell:nth-child(5) {
+  --cell-delay: -2.2s;
+  background: rgba(59, 130, 246, 0.14);
+}
+
+.gridCell:nth-child(6) {
+  --cell-delay: -3.1s;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.gridCell:nth-child(7) {
+  --cell-delay: -1.2s;
+  background: rgba(96, 165, 250, 0.14);
+}
+
+.gridCell:nth-child(8) {
+  --cell-delay: -2.6s;
+  background: rgba(30, 64, 175, 0.1);
+}
+
+.gridCell:nth-child(9) {
+  --cell-delay: -0.7s;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.gridCell:nth-child(10) {
+  --cell-delay: -3.3s;
+  background: rgba(59, 130, 246, 0.13);
+}
+
+.gridCell:nth-child(11) {
+  --cell-delay: -1.9s;
+  background: rgba(96, 165, 250, 0.1);
+}
+
+.gridCell:nth-child(12) {
+  --cell-delay: -0.4s;
+  background: rgba(30, 64, 175, 0.09);
+}
+
+.gridCell:nth-child(13) {
+  --cell-delay: -2.9s;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.gridCell:nth-child(14) {
+  --cell-delay: -1.4s;
+  background: rgba(37, 99, 235, 0.14);
+}
+
+.gridCell:nth-child(15) {
+  --cell-delay: -3.5s;
+  background: rgba(96, 165, 250, 0.12);
+}
+
+.gridCell:nth-child(16) {
+  --cell-delay: -2.1s;
+  background: rgba(30, 64, 175, 0.1);
+}
+
+.gridCell:nth-child(17) {
+  --cell-delay: -0.8s;
+  background: rgba(59, 130, 246, 0.13);
+}
+
+.gridCell:nth-child(18) {
+  --cell-delay: -2.5s;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.gridCell:nth-child(19) {
+  --cell-delay: -1.1s;
+  background: rgba(96, 165, 250, 0.12);
+}
+
+.gridCell:nth-child(20) {
+  --cell-delay: -3s;
+  background: rgba(30, 64, 175, 0.09);
+}
+
+.gridCell:nth-child(21) {
+  --cell-delay: -1.6s;
+  background: rgba(59, 130, 246, 0.14);
+}
+
+.gridCell:nth-child(22) {
+  --cell-delay: -0.5s;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.gridCell:nth-child(23) {
+  --cell-delay: -2.7s;
+  background: rgba(96, 165, 250, 0.13);
+}
+
+.gridCell:nth-child(24) {
+  --cell-delay: -1.3s;
+  background: rgba(30, 64, 175, 0.1);
+}
+
+.gridCell:nth-child(25) {
+  --cell-delay: -3.4s;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.gridCell:nth-child(26) {
+  --cell-delay: -2s;
+  background: rgba(37, 99, 235, 0.14);
+}
+
+.gridCell:nth-child(27) {
+  --cell-delay: -0.6s;
+  background: rgba(96, 165, 250, 0.1);
+}
+
+.gridCell:nth-child(28) {
+  --cell-delay: -2.4s;
+  background: rgba(30, 64, 175, 0.09);
+}
+
+.gridCell:nth-child(29) {
+  --cell-delay: -1.8s;
+  background: rgba(59, 130, 246, 0.13);
+}
+
+.gridCell:nth-child(30) {
+  --cell-delay: -3.2s;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.gridCell:nth-child(31) {
+  --cell-delay: -0.2s;
+  background: rgba(96, 165, 250, 0.14);
+}
+
+.gridCell:nth-child(32) {
+  --cell-delay: -2.3s;
+  background: rgba(30, 64, 175, 0.1);
+}
+
+.gridCell:nth-child(33) {
+  --cell-delay: -1.5s;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.gridCell:nth-child(34) {
+  --cell-delay: -3.3s;
+  background: rgba(37, 99, 235, 0.13);
+}
+
+.gridCell:nth-child(35) {
+  --cell-delay: -0.9s;
+  background: rgba(96, 165, 250, 0.1);
+}
+
+.gridCell:nth-child(36) {
+  --cell-delay: -2.8s;
+  background: rgba(30, 64, 175, 0.09);
+}
+
+.gridCell:nth-child(37) {
+  --cell-delay: -1.7s;
+  background: rgba(59, 130, 246, 0.13);
+}
+
+.gridCell:nth-child(38) {
+  --cell-delay: -0.4s;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.gridCell:nth-child(39) {
+  --cell-delay: -2.6s;
+  background: rgba(96, 165, 250, 0.12);
+}
+
+.gridCell:nth-child(40) {
+  --cell-delay: -1s;
+  background: rgba(30, 64, 175, 0.09);
+}
+
+// =======================================================
+// BLINKING
+// =======================================================
+
+@keyframes randomBluePulse {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+
+  18% {
+    opacity: 0.25;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  52% {
+    opacity: 0.9;
+  }
+
+  68% {
+    opacity: 0.35;
+  }
+
+  82% {
+    opacity: 0.15;
+  }
+}
+
+// =======================================================
+// MOBILE
+// =======================================================
+
+@media (max-width: 767px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .cardContent {
+    padding: 1.5rem;
+  }
+
+  .gridViewport {
+    width: 150%;
+    height: 125%;
+
+    right: -55%;
+    top: -12%;
+  }
+
+  .gridSequence {
+    width: 336px;
+    height: 210px;
+
+    grid-template-columns: repeat(8, 42px);
+    grid-template-rows: repeat(5, 42px);
+  }
+
+  .gridCell {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+// =======================================================
+// ACCESSIBILITY
+// =======================================================
+
+@media (prefers-reduced-motion: reduce) {
+  .gridCell {
+    animation: none;
+  }
+}

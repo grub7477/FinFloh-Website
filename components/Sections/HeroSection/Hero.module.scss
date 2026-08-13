@@ -1,0 +1,366 @@
+// -------------------------------------------------------
+// HeroSection.module.scss
+// - White-at-top -> blue-at-bottom gradient background.
+// - Wave/ripple animation: rings expand outward from a single
+//   point at top-center and fade, staggered so a new ring keeps
+//   launching as the previous one fades — like sonar/water
+//   ripples, NOT rotation.
+// - A few static dots pulse gently in place (no orbiting).
+// - Floating cards now carry an icon (on a soft color backdrop),
+//   a title, and a short description line.
+// -------------------------------------------------------
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+$text-heading: #0f172a;
+$text-body: #52606d;
+$text-muted: #6b7280;
+$blue: #2f5bea;
+$blue-hover: #2447c4;
+$line-color: rgba(47, 91, 234, 0.3);
+$dot-color: rgba(47, 91, 234, 0.55);
+
+.hero {
+     display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 1.25rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 12%, #dce9fb 55%, #a9cbf6 100%);
+    isolation: isolate;
+    height: 75vh;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+
+  @include mq(md) {
+    padding: 6rem 2rem 0;
+  }
+}
+
+// ---------- Ripple / wave layer ----------
+
+.orbitLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+// Faint static rings for texture (no motion) — the animated
+// ripple rings launch from the same anchor point on top of these.
+.staticRing {
+  fill: none;
+  stroke: $line-color;
+  stroke-width: 1.25;
+  stroke-dasharray: 2 7;
+}
+
+// Rings that expand outward from a fixed top-center anchor and
+// fade out — transform-box: fill-box makes the scale originate
+// from the circle's own center (the anchor point) regardless of
+// where it sits in the viewBox.
+.rippleRing {
+  fill: none;
+  stroke-dasharray: 2 7;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate 8s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    opacity: 0.5;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.15);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.orbitDot {
+  fill: $dot-color;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: dotPulse 3.2s ease-in-out infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+// ---------- Content ----------
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+//   text-transform: uppercase;
+  color: $text-heading;
+  line-height: 1.25;
+  margin: 0 0 1.25rem;
+
+  @include mq(md) {
+    font-size: 2.75rem;
+  }
+}
+
+
+.body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $text-body;
+  margin: 0 auto 2rem;
+  max-width: 34rem;
+
+  @include mq(md) {
+    font-size: 1.05rem;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+
+  @include mq(md) {
+    margin-bottom: 4rem;
+  }
+}
+
+.primaryButton {
+  display: inline-block;
+  text-decoration: none;
+  background: $blue;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 200ms ease, transform 150ms ease;
+  min-width: 15rem;
+
+  &:hover {
+    background: $blue-hover;
+    transform: translateY(-1px);
+  }
+}
+
+a.primary {
+  color: #fff;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.7);
+  color: $text-heading;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 200ms ease, transform 150ms ease;
+  min-width: 15rem;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-1px);
+  }
+}
+
+// ---------- Floating illustrated cards (desktop only) ----------
+
+.floatingCards {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.floatCard {
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 14px 32px rgba(30, 64, 175, 0.14);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  text-align: left;
+  animation: floatCard 6s ease-in-out infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.iconBackdrop {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBackdropBlue {
+  background: linear-gradient(135deg, #e4ecfe, #c7d7fb);
+}
+
+.iconBackdropGold {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+}
+
+.iconBackdropGreen {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $text-heading;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.cardDescription {
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: $text-muted;
+  margin: 0;
+}
+
+.cardWide {
+  top: 20%;
+  left: 3%;
+  width: 232px;
+  animation-delay: 0s;
+}
+
+.cardSmall {
+  top: 66%;
+  left: 8%;
+  width: 168px;
+  flex-direction: column;
+  text-align: center;
+  animation-delay: 1.2s;
+
+  .cardText {
+    align-items: center;
+  }
+}
+
+.cardTall {
+  top: 15%;
+  right: 4%;
+  width: 190px;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.25rem 1.1rem;
+  animation-delay: 0.6s;
+
+  .iconBackdrop {
+    width: 52px;
+    height: 52px;
+  }
+
+  .cardText {
+    align-items: center;
+  }
+}
+
+.cardWideSmall {
+  top: 64%;
+  right: 3%;
+  width: 210px;
+  animation-delay: 1.8s;
+}
+
+// ---------- Trusted-by tab ----------
+
+.trustedTab {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.trustedTabShape {
+  background: #fff;
+  clip-path: polygon(12% 0, 88% 0, 100% 100%, 0% 100%);
+  padding: 0.6rem 1.75rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $text-body;
+}
+
+.link {
+    color:white;
+}
+
