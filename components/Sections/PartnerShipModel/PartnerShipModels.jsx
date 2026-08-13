@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import styles from "./PartnershipModels.module.scss";
+import styles from "./PartnerShipModels.module.scss";
 
 /**
- * PartnershipModels
+ * PartnerShipModels
  * -------------------------------------------------------
  * - Clicking a tab smooth-scrolls the matching card into view.
  * - The card row is a native horizontal scroll-snap carousel,
@@ -80,7 +80,7 @@ const PARTNER_TYPES = [
   },
 ];
 
-export default function PartnershipModels() {
+export default function PartnerShipModels() {
   const [activeId, setActiveId] = useState(PARTNER_TYPES[0].id);
   const rowRef = useRef(null);
   const cardRefs = useRef({});

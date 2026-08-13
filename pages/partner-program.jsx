@@ -6,9 +6,9 @@ import RightArrow from "../public/icons/arrow_right.svg";
 import PartnerLogos from "../components/Sections/CustomerLogos/PartnerLogos";
 import IntegrationCard from "../components/Sections/IntegrationCards/IntegrationCard";
 import WhyPartner from "../components/Sections/WhyPartner/WhyPartner";
-import PartnershipModels from "../components/Sections/PartnerShipModel/PartnerShipModels";
+import PartnerShipModels from "../components/Sections/PartnerShipModel/PartnerShipModels";
 import PartnerBenefits from "../components/Sections/PartnerBenefits/PartnerBenefits";
-import FinalCta from "../components/Sections/FinalCTA/FinalCTA";
+import FinalCta from "../components/Sections/FinalCta/FinalCta";
 import HeroSection from "../components/Sections/HeroSection/Hero";
 
 const partnerProgram = () => {
@@ -36,7 +36,7 @@ const partnerProgram = () => {
 
         <WhyPartner />
 
-        <PartnershipModels />
+        <PartnerShipModels />
 
         <PartnerBenefits />
 
