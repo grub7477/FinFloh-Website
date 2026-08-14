@@ -1,0 +1,132 @@
+<svg viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg" font-family="'Poppins','Segoe UI',sans-serif">
+  <defs>
+    <clipPath id="bgClip2"><rect x="0" y="0" width="1200" height="1000" rx="28"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="1000" rx="28" fill="#DEE1C6"/>
+
+  <g clip-path="url(#bgClip2)">
+    <!-- soft decorative blobs -->
+    <circle cx="80" cy="80" r="220" fill="#D2D6B4" opacity="0.5"/>
+    <circle cx="1150" cy="920" r="260" fill="#CBCF9F" opacity="0.4"/>
+
+    <!-- ================= Document stack (left) ================= -->
+
+    <!-- PO card (back) -->
+    <g transform="rotate(-13 300 440)">
+      <rect x="160" y="270" width="230" height="310" rx="16" fill="#C9A66B"/>
+      <path d="M160 286 a16 16 0 0 1 16 -16 h198 a16 16 0 0 1 16 16 v34 h-230 z" fill="#B08A4C"/>
+      <text x="275" y="308" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Purchase Order</text>
+    </g>
+
+    <!-- SOW card (middle) -->
+    <g transform="rotate(-3 300 440)">
+      <rect x="175" y="265" width="230" height="310" rx="16" fill="#B7B586"/>
+      <path d="M175 281 a16 16 0 0 1 16 -16 h198 a16 16 0 0 1 16 16 v34 h-230 z" fill="#9C9A68"/>
+      <text x="290" y="303" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Statement of Work</text>
+    </g>
+
+    <!-- Contract card (front) -->
+    <g transform="rotate(8 300 440)">
+      <rect x="190" y="255" width="230" height="310" rx="16" fill="#F8F7EA"/>
+      <path d="M190 271 a16 16 0 0 1 16 -16 h198 a16 16 0 0 1 16 16 v34 h-230 z" fill="#2F6B41"/>
+      <text x="305" y="293" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Contract</text>
+
+      <!-- body text lines -->
+      <rect x="212" y="330" width="186" height="8" rx="4" fill="#E4E3D2"/>
+      <rect x="212" y="350" width="160" height="8" rx="4" fill="#E4E3D2"/>
+      <rect x="212" y="370" width="186" height="8" rx="4" fill="#E4E3D2"/>
+
+      <!-- highlighted extracted clause -->
+      <rect x="205" y="398" width="200" height="46" rx="8" fill="#DCEFDF"/>
+      <text x="215" y="418" font-size="11" fill="#2F6B41" font-weight="700">DETECTED CLAUSE</text>
+      <text x="215" y="436" font-size="12" fill="#1C3326">Payment Terms — Net 30</text>
+
+      <rect x="212" y="462" width="140" height="8" rx="4" fill="#E4E3D2"/>
+      <rect x="212" y="482" width="186" height="8" rx="4" fill="#E4E3D2"/>
+    </g>
+
+    <!-- AI sparkle over the stack -->
+    <g transform="translate(430,230)">
+      <path d="M0 -26 L7 -7 L26 0 L7 7 L0 26 L-7 7 L-26 0 L-7 -7 Z" fill="#2F6B41"/>
+      <circle cx="34" cy="-20" r="5" fill="#2F6B41" opacity="0.7"/>
+      <circle cx="-30" cy="18" r="3.5" fill="#2F6B41" opacity="0.5"/>
+    </g>
+
+    <!-- document-type caption strip -->
+    <g transform="translate(150,660)" font-size="13" fill="#4B5B45">
+      <circle cx="6" cy="-4" r="5" fill="#2F6B41"/>
+      <text x="18" y="0">Contracts</text>
+      <circle cx="122" cy="-4" r="5" fill="#B7B586"/>
+      <text x="134" y="0">SOWs</text>
+      <circle cx="212" cy="-4" r="5" fill="#C9A66B"/>
+      <text x="224" y="0">POs</text>
+      <circle cx="288" cy="-4" r="5" fill="#8FA98E"/>
+      <text x="300" y="0">Amendments</text>
+    </g>
+
+    <!-- ================= Extraction connectors ================= -->
+    <g fill="none" stroke="#7C8873" stroke-width="2" stroke-dasharray="5 6" opacity="0.8">
+      <path d="M450,240 Q560,260 690,330"/>
+      <path d="M450,240 Q580,320 690,405"/>
+      <path d="M450,240 Q590,400 690,480"/>
+      <path d="M450,240 Q600,480 690,555"/>
+      <path d="M450,240 Q610,560 690,630"/>
+    </g>
+
+    <!-- ================= Extracted Fields panel (right) ================= -->
+    <g>
+      <rect x="650" y="140" width="420" height="700" rx="24" fill="#FFFFFF"/>
+
+      <text x="682" y="182" font-size="12" font-weight="700" letter-spacing="1" fill="#2F6B41">AI EXTRACTION</text>
+      <text x="682" y="216" font-size="24" font-weight="700" fill="#1C3326">Extracted Fields</text>
+      <text x="682" y="240" font-size="13" fill="#7C8873">Auto-mapped to your AR system</text>
+      <line x1="682" y1="260" x2="1018" y2="260" stroke="#EDEDE0" stroke-width="2"/>
+
+      <!-- Row 1 -->
+      <circle cx="705" cy="330" r="18" fill="#DCEFDF"/>
+      <path d="M698 330 l5 5 l10 -11" stroke="#2F6B41" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="738" y="322" font-size="12" fill="#8A8A78">Commercial Terms</text>
+      <text x="738" y="342" font-size="16" font-weight="600" fill="#1C3326">Fixed Fee — $120,000</text>
+      <line x1="682" y1="368" x2="1018" y2="368" stroke="#F1F1E6" stroke-width="2"/>
+
+      <!-- Row 2 -->
+      <circle cx="705" cy="405" r="18" fill="#EDEBD8"/>
+      <path d="M698 405 l5 5 l10 -11" stroke="#8C8A5E" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="738" y="397" font-size="12" fill="#8A8A78">Billing Schedule</text>
+      <text x="738" y="417" font-size="16" font-weight="600" fill="#1C3326">Monthly, invoiced on the 1st</text>
+      <line x1="682" y1="443" x2="1018" y2="443" stroke="#F1F1E6" stroke-width="2"/>
+
+      <!-- Row 3 -->
+      <circle cx="705" cy="480" r="18" fill="#F3E9D3"/>
+      <path d="M698 480 l5 5 l10 -11" stroke="#A87F35" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="738" y="472" font-size="12" fill="#8A8A78">Payment Terms</text>
+      <text x="738" y="492" font-size="16" font-weight="600" fill="#1C3326">Net 30 · 2% early discount</text>
+      <line x1="682" y1="518" x2="1018" y2="518" stroke="#F1F1E6" stroke-width="2"/>
+
+      <!-- Row 4 -->
+      <circle cx="705" cy="555" r="18" fill="#DCEFDF"/>
+      <path d="M698 555 l5 5 l10 -11" stroke="#2F6B41" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="738" y="547" font-size="12" fill="#8A8A78">Renewal Date</text>
+      <text x="738" y="567" font-size="16" font-weight="600" fill="#1C3326">January 1, 2027</text>
+      <line x1="682" y1="593" x2="1018" y2="593" stroke="#F1F1E6" stroke-width="2"/>
+
+      <!-- Row 5 -->
+      <circle cx="705" cy="630" r="18" fill="#EDEBD8"/>
+      <path d="M698 630 l5 5 l10 -11" stroke="#8C8A5E" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="738" y="622" font-size="12" fill="#8A8A78">Late Payment Penalty</text>
+      <text x="738" y="642" font-size="16" font-weight="600" fill="#1C3326">1.5% per month overdue</text>
+
+      <!-- progress -->
+      <text x="682" y="700" font-size="13" fill="#4B5B45">5 of 5 terms extracted</text>
+      <rect x="682" y="710" width="336" height="8" rx="4" fill="#EDEDE0"/>
+      <rect x="682" y="710" width="336" height="8" rx="4" fill="#2F6B41"/>
+
+      <!-- CTA -->
+      <rect x="682" y="744" width="336" height="56" rx="28" fill="#2F6B41"/>
+      <text x="850" y="778" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">Sync to AR System</text>
+    </g>
+
+  </g>
+</svg>
