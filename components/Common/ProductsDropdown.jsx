@@ -5,6 +5,12 @@ const ProductsDropdown = () => {
   const productData = {
     GET_PAID_FASTER: [
       {
+        title: "Contract Intelligence",
+        subtitle: "Contract insights & analysis",
+        icon: "/images/contract-intelligence/contract.svg",
+        url: "/contract-intelligence",
+      },
+      {
         title: "Invoice Automation",
         subtitle: "Invoice generation, validation & sending",
         icon: "/images/file_export.svg",
@@ -16,26 +22,21 @@ const ProductsDropdown = () => {
         icon: "/images/attach_email.svg",
         url: "/accounts-receivable-collections",
       },
-      // {
-      //   title: "Dispute Resolution",
-      //   subtitle: "Put an end to dispute loops",
-      //   icon: "/images/quick_phrases.svg",
-      //   url: "/collaborative-communication",
-      // },
-      {
+    ],
+    MAKE_BETTER_DECISIONS: [
+       {
         title: "Cash Application",
         subtitle: "Auto match invoices with payments",
         icon: "/images/credit_score.svg",
         url: "/automated-cash-application-software",
       },
-    ],
-    MAKE_BETTER_DECISIONS: [
       {
         title: "AI-driven Credit Decisions",
         subtitle: "Better contract/pricing terms & ARR",
         icon: "/images/Magic_button.svg",
         url: "/credit-decisioning",
       },
+      
       // {
       //   title: "Automated Onboarding in CRM",
       //   subtitle: "Quicker opportunity to go-live",
@@ -71,7 +72,7 @@ const ProductsDropdown = () => {
     <div className="products-dropdown">
       {/* Left Section - Get Paid Faster */}
       <div className="products-dropdown-left">
-        <div className="products-dropdown-left-heading">Get Paid Faster</div>
+        {/* <div className="products-dropdown-left-heading">Get Paid Faster</div> */}
         {productData.GET_PAID_FASTER.map((product, index) => (
           <Link href={product.url} activeClassName="active" key={index}>
             <div className="products-dropdown-left-content">
@@ -92,9 +93,9 @@ const ProductsDropdown = () => {
       </div>
       {/* middle Section - Make Better Decisions */}
       <div className="products-dropdown-left">
-        <div className="products-dropdown-left-heading">
+        {/* <div className="products-dropdown-left-heading">
           Make Better Decisions
-        </div>
+        </div> */}
         {productData.MAKE_BETTER_DECISIONS.map((product, index) => (
           <Link href={product.url} activeClassName="active" key={index}>
             <div className="products-dropdown-left-content">
