@@ -59,6 +59,12 @@ const ProductsDropdown = () => {
 
     WHATS_NEW: [
       {
+        title: "DocSense AI -",
+        description: "Contract Intelligence",
+        icon: "/images/Live Icon.svg",
+        url: "/docsense-ai-agent",
+      },
+      {
         title: "FlohSense AI -",
         description: "Your 24x7 Finance Communications Agent",
         icon: "/images/Live Icon.svg",
@@ -119,7 +125,7 @@ const ProductsDropdown = () => {
       <div className="products-dropdown-right">
         {/* what's new */}
         <div>
-          <div className="products-dropdown-right-heading">WHAT'S NEW ?</div>
+          {/* <div className="products-dropdown-right-heading">WHAT'S NEW ?</div> */}
           {productData.WHATS_NEW.map((product, index) => (
             <Link href={product.url} activeClassName="active" key={index}>
               <div
