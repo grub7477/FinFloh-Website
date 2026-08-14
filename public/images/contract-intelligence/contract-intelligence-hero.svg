@@ -1,0 +1,122 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c2417"/>
+      <stop offset="100%" stop-color="#081a10"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bdf27a"/>
+      <stop offset="100%" stop-color="#5fa838"/>
+    </linearGradient>
+    <linearGradient id="cardGradDim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8fd158"/>
+      <stop offset="100%" stop-color="#3e7a26"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a7a4c"/>
+      <stop offset="100%" stop-color="#12331f"/>
+    </linearGradient>
+    <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8fca0"/>
+      <stop offset="100%" stop-color="#9fe667"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1200" height="800" rx="28" fill="url(#bgGrad)"/>
+
+  <!-- flow path connecting documents -> AI -> invoice -->
+  <path d="M 260 640 C 420 640, 420 480, 560 460 S 760 340, 800 300 S 980 220, 1010 200"
+        fill="none" stroke="#173a22" stroke-width="46" stroke-linecap="round"/>
+  <path d="M 260 640 C 420 640, 420 480, 560 460 S 760 340, 800 300 S 980 220, 1010 200"
+        fill="none" stroke="#20502c" stroke-width="46" stroke-linecap="round" stroke-dasharray="2 26" opacity="0.6"/>
+
+  <!-- SOW card (back) -->
+  <g transform="translate(120,660) rotate(-6)" filter="url(#softShadow)">
+    <rect x="-110" y="-70" width="230" height="150" rx="18" fill="url(#cardGradDim)"/>
+    <rect x="-80" y="-35" width="150" height="10" rx="5" fill="#173a22" opacity="0.55"/>
+    <rect x="-80" y="-12" width="110" height="8" rx="4" fill="#173a22" opacity="0.4"/>
+    <rect x="-80" y="6" width="130" height="8" rx="4" fill="#173a22" opacity="0.4"/>
+    <text x="-80" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0e2814">SOW</text>
+  </g>
+
+  <!-- Contract card (front) -->
+  <g transform="translate(230,590) rotate(-10)" filter="url(#softShadow)">
+    <rect x="-120" y="-80" width="260" height="170" rx="20" fill="url(#cardGrad)"/>
+    <rect x="-88" y="-42" width="170" height="11" rx="5.5" fill="#173a22" opacity="0.6"/>
+    <rect x="-88" y="-16" width="130" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <rect x="-88" y="6" width="150" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <rect x="-88" y="28" width="100" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <text x="-88" y="68" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#0e2814">Contract</text>
+  </g>
+
+  <!-- floating extracted term chips along path -->
+  <g transform="translate(430,540) rotate(-8)" filter="url(#softShadow)">
+    <rect x="-38" y="-24" width="76" height="48" rx="12" fill="url(#chipGrad)"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0e2814" text-anchor="middle">%</text>
+  </g>
+  <g transform="translate(560,430) rotate(6)" filter="url(#softShadow)">
+    <rect x="-52" y="-24" width="104" height="48" rx="12" fill="url(#chipGrad)"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0e2814" text-anchor="middle">Rate</text>
+  </g>
+  <g transform="translate(690,335) rotate(-5)" filter="url(#softShadow)">
+    <rect x="-56" y="-24" width="112" height="48" rx="12" fill="url(#chipGrad)"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0e2814" text-anchor="middle">Term</text>
+  </g>
+  <g transform="translate(840,255) rotate(7)" filter="url(#softShadow)">
+    <rect x="-48" y="-24" width="96" height="48" rx="12" fill="url(#chipGrad)"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0e2814" text-anchor="middle">SLA</text>
+  </g>
+
+  <!-- AI extraction node -->
+  <g transform="translate(690,365)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="100" fill="url(#nodeGrad)"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#bdf27a" stroke-width="2" opacity="0.5"/>
+    <!-- magnifying glass icon -->
+    <circle cx="-10" cy="-12" r="28" fill="none" stroke="#d8fca0" stroke-width="7"/>
+    <line x1="12" y1="10" x2="34" y2="32" stroke="#d8fca0" stroke-width="9" stroke-linecap="round"/>
+    <!-- small orbiting extraction dots -->
+    <circle cx="55" cy="-55" r="6" fill="#bdf27a"/>
+    <circle cx="-60" cy="50" r="5" fill="#bdf27a" opacity="0.7"/>
+    <circle cx="60" cy="45" r="4" fill="#bdf27a" opacity="0.5"/>
+  </g>
+  <text x="690" y="500" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#e7f7d9" text-anchor="middle">AI extraction engine</text>
+
+  <!-- Invoice card -->
+  <g transform="translate(1020,190) rotate(9)" filter="url(#softShadow)">
+    <rect x="-125" y="-95" width="270" height="200" rx="20" fill="url(#cardGrad)"/>
+    <rect x="-92" y="-58" width="180" height="12" rx="6" fill="#173a22" opacity="0.6"/>
+    <rect x="-92" y="-28" width="140" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <rect x="-92" y="-4" width="160" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <rect x="-92" y="20" width="120" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <rect x="-92" y="44" width="150" height="9" rx="4.5" fill="#173a22" opacity="0.45"/>
+    <text x="-92" y="88" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#0e2814">Invoice</text>
+  </g>
+
+  <!-- validated checkmark badge -->
+  <g transform="translate(1150,110)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="46" fill="#d8fca0" stroke="#0c2417" stroke-width="3"/>
+    <path d="M -20 0 L -6 15 L 22 -16" fill="none" stroke="#0e2814" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="1150" y="172" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#e7f7d9" text-anchor="middle">Validated</text>
+
+  <!-- small accuracy gauge, playful nod echoing the original risk-o-meter -->
+  <g transform="translate(950,540)" filter="url(#softShadow)">
+    <rect x="-90" y="-55" width="180" height="110" rx="16" fill="#12331f" stroke="#3a7a4c" stroke-width="2"/>
+    <path d="M -55 5 A 55 55 0 0 1 55 5" fill="none" stroke="#284a30" stroke-width="10" stroke-linecap="round"/>
+    <path d="M -55 5 A 55 55 0 0 1 30 -46" fill="none" stroke="#bdf27a" stroke-width="10" stroke-linecap="round"/>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#d8fca0" text-anchor="middle">98%</text>
+    <text x="0" y="-70" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#e7f7d9" text-anchor="middle">Match accuracy</text>
+  </g>
+
+  <!-- revenue leakage prevented flag near contract origin -->
+  <g transform="translate(150,470)" filter="url(#softShadow)">
+    <rect x="-70" y="-26" width="140" height="52" rx="14" fill="#12331f" stroke="#3a7a4c" stroke-width="2"/>
+    <circle cx="-42" cy="0" r="9" fill="#bdf27a"/>
+    <path d="M -46 0 L -43 4 L -37 -5" fill="none" stroke="#0e2814" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="-24" y="6" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#e7f7d9">No leakage</text>
+  </g>
+</svg>
