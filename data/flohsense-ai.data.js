@@ -186,3 +186,189 @@ export const flohsensePage = {
     image: "/images/flohsense_ai/finfloh-add-on.png",
   },
 };
+
+
+export const docsenseContent = {
+  heroSection: {
+    kicker: "AI-Powered Document Intelligence",
+    title: "Unlock Data from Every Business Document",
+    description:
+      "Extract structured data, actionable insights, and key information from contracts, SOWs, POs, invoices, remittance advices, and bank statements without manual document processing.",
+    btnText: "Book a Demo for DocSense AI",
+    btnLink:
+      "book-a-demo?utm_source=docsense_main_cta&utm_medium=finfloh_website&utm_campaign=docsense_ai_launch",
+    image: "/images/docsense_ai/hero_section-docsenseAi.png",
+  },
+
+  focusSection: {
+    title: "Where Document Processing Breaks Finance Workflows",
+    image: "/images/docsense/focus--document-processing-gaps.png",
+    features: [
+      {
+        title: "Manual Documents, Delayed Decisions",
+        description:
+          "Teams spend hours reading, extracting, and entering information from documents, increasing processing time and the risk of errors.",
+      },
+      {
+        title: "The Human Bottleneck",
+        description:
+          "Manual document review and person-dependent interpretation create inconsistent data, rework, and delays across finance workflows.",
+      },
+      {
+        title: "Inconsistent Document Formats",
+        description:
+          "Variations in document formats, layouts, structures, and terminology make consistent information extraction challenging.",
+      },
+      {
+        title: "No Standardized Document Processing",
+        description:
+          "Different teams and processes interpret documents differently, making it difficult to establish standardized and reliable data across the organization.",
+      },
+    ],
+  },
+
+  spotlightSection: {
+    kicker: "Introducing DocSense AI",
+    title: "AI That Reads, Understands & Structures Business Documents",
+    image: "/images/docsense/docsense-spotlight-section.png",
+  },
+
+  featureCards: {
+    features: [
+      {
+        icon: "/images/docsense/ai.svg",
+        title: "Automated Document Processing",
+        description:
+          "AI automatically reads, extracts, and structures information from business documents, reducing manual effort and processing time.",
+      },
+      {
+        icon: "/images/docsense/ai.svg",
+        title: "AI-Powered Document Understanding",
+        description:
+          "AI understands document context, relationships, and meaning to accurately interpret complex business and financial information.",
+      },
+      {
+        icon: "/images/docsense/multidoc.svg",
+        title: "Multi-Format Processing",
+        description:
+          "Process documents across different formats, layouts, structures, and terminology while maintaining consistent and reliable extraction.",
+      },
+      {
+        icon: "/images/docsense/data.svg",
+        title: "Standardized Data Extraction",
+        description:
+          "Convert information from diverse documents into structured data ready for downstream finance workflows and business systems.",
+      },
+    ],
+  },
+
+  featureSection: {
+    sections: [
+      {
+        title: "Automated Document Processing",
+        description:
+          "AI automatically reads, extracts, and structures information from business documents, reducing manual effort, processing time, and errors.",
+        image: "/images/docsense/feature-autoProcessing.png",
+        ctaLink:
+          "book-a-demo?utm_source=docsense_main_cta&utm_medium=finfloh_website&utm_campaign=docsense_ai_launch",
+        ctaText: "Book a Demo for DocSense AI",
+        features: [
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Extracts relevant information automatically",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Converts unstructured documents into structured data",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Reduces manual data entry and processing errors",
+          },
+        ],
+      },
+
+      {
+        title: "AI-Powered Document Understanding",
+        description:
+          "AI understands document context, relationships, and meaning to accurately interpret complex business and financial information.",
+        image: "/images/docsense/feature-understanding.png",
+        ctaLink:
+          "book-a-demo?utm_source=docsense_main_cta&utm_medium=finfloh_website&utm_campaign=docsense_ai_launch",
+        ctaText: "Book a Demo for DocSense AI",
+        features: [
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Understands document context beyond simple text extraction",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Interprets commercial and financial information intelligently",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Identifies relationships between fields, terms, and entities",
+          },
+        ],
+      },
+
+      {
+        title: "Multi-Format & Multi-Structure Processing",
+        description:
+          "Process documents across different formats, layouts, structures, and terminology while maintaining consistent and reliable extraction.",
+        image: "/images/docsense/feature-multiFormat.png",
+        ctaLink:
+          "book-a-demo?utm_source=docsense_main_cta&utm_medium=finfloh_website&utm_campaign=docsense_ai_launch",
+        ctaText: "Book a Demo for DocSense AI",
+        features: [
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Handles PDFs, scanned documents, images, and other formats",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Adapts to different layouts and document structures",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Extracts information consistently across varied documents",
+          },
+        ],
+      },
+
+      {
+        title: "Standardized Data Extraction Across Workflows",
+        description:
+          "Convert information from diverse documents into standardized, structured data ready for downstream finance workflows and business systems.",
+        image: "/images/docsense/feature-standardizedData.png",
+        ctaLink:
+          "book-a-demo?utm_source=docsense_main_cta&utm_medium=finfloh_website&utm_campaign=docsense_ai_launch",
+        ctaText: "Book a Demo for DocSense AI",
+        features: [
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Creates consistent data across different document types",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Enables seamless integration with ERP, CRM, and other systems",
+          },
+          {
+            icon: "/icons/arrow_right.svg",
+            point: "Supports standardized processing across teams and workflows",
+          },
+        ],
+      },
+    ],
+  },
+
+  // keyFeature: {
+  //   title: "Embed DocSense AI Into Your Finance Workflows",
+  //   description:
+  //     "Connect DocSense seamlessly with your existing systems and workflows to turn business documents into structured, actionable data.",
+  //   ctaText: "Book a Demo for DocSense AI",
+  //   ctaLink:
+  //     "book-a-demo?utm_source=docsense_main_cta&utm_medium=finfloh_website&utm_campaign=docsense_ai_launch",
+  //   image: "/images/docsense_ai/finfloh-docsense.png",
+  // },
+};
