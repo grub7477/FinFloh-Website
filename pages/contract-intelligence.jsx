@@ -191,22 +191,12 @@ const Collections = () => {
   return (
     <>
       <HeadComponent
-        title="Accounts Receivable Collections Software | FinFloh"
-        description="A/R collections software by FinFloh speeds up receivables by automating follow-ups & reminders, and uses AI to prioritize customers by risk & overdue balances."
-        canonicalUrl="https://finfloh.com/accounts-receivable-collections"
+        title="Contract Intelligence for Revenue Assurance & Accurate Invoicing"
+        description="Help businesses transform Accounts Receivable, Credit Risk, Cash Application, and Collections with AI-powered automation while creating new revenue opportunities for your business."
+        canonicalUrl="https://finfloh.com/contract-intelligence"
         includeIsPartOf
         includeAbout
-        aboutProps={{
-          name: "Accounts Receivable Collections",
-          serviceType: "AI-Driven Receivables Collection Automation",
-        }}
-        includeBreadcrumbs
-        breadcrumbItems={[
-          {
-            name: "Accounts Receivable Collections",
-            item: "https://finfloh.com/accounts-receivable-collections",
-          },
-        ]}
+        
         includeFAQ
         FAQProps={[
           {
