@@ -36,14 +36,14 @@ const HeroSection = ({
           {/* <ButtonCommon label={btnText} href={btnLink} variant={btnVariant} /> */}
           <div className={style.offerBanner}>
             {/* <img src="/icons/flohsense-ai/offer_icon.svg" alt="Offer Icon" /> */}
-            <div
+            {/* <div
               className="stack stack--extra-tight"
               style={{ alignItems: "flex-start" }}
-            >
+            > */}
               {/* <h3 className="text-inverse heading_md">
                 Start a 100-Email Pilot
               </h3> */}
-              <p className="para_sm header">
+              {/* <p className="para_sm header">
                 <b>Start a 100-Email Pilot:</b>
               </p>
               <p className="para_sm">
@@ -51,7 +51,7 @@ const HeroSection = ({
                 FlohSense AI Agent in action; no ERP or email integration
                 needed.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <img className={style.hero__image} src={image} alt={title} />
