@@ -81,21 +81,24 @@ const MainBanner = ({ utmURLs }) => {
   return (
     <div className="bg-container">
       <div className={`mainBannerContainer ${styles.hero}`}>
-
         <div className={`main-banner-container ${styles.heroContent}`}>
           <div className="lending-title-container">
-            <h1 className="newLending-heading">
-              Faster Collections. <br />
-              Smarter Credit Decisions. <br />
-              Quicker Recon.
-            </h1>
+            <h1 className="heading_xs highlight-text--gradient">AI-Native Contract-to-Cash Automation</h1>
+            <h2 className="newLending-heading">
+              Automate Invoicing.<br /> 
+              Accelerate Collections. <br />
+              Reconcile Cash.
+            </h2>
             <p className="lending-description">
-              Autonomous Order-to-Cash with AI Agents that think & act like
-              your finance team
+             AI Agents that think and act like your Finance Team — connecting systems and processes into one intelligent Contract-to-Cash
             </p>
           </div>
 
-          <form className="newBook-demo" ref={mainForm} onSubmit={sendEmailMain}>
+          <form
+            className="newBook-demo"
+            ref={mainForm}
+            onSubmit={sendEmailMain}
+          >
             <input
               type="email"
               onChange={handleEmailInput}
@@ -155,7 +158,9 @@ const MainBanner = ({ utmURLs }) => {
           />
         </div>
 
-        <div className={`book-a-demo-container bg-container ${styles.heroLogos}`}>
+        <div
+          className={`book-a-demo-container bg-container ${styles.heroLogos}`}
+        >
           <div className="container-main EnterpriseIcons">
             <CompaniesLogo />
           </div>
