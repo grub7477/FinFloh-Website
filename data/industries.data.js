@@ -3,9 +3,9 @@ export const ServiceIndustry = {
     kicker: "AI . Contract-to-cash . Services Industry",
     title: `AI-Powered Contract-to-Cash Automation for Services Firms`,
     description: [
-  `Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.`,
-  `Built for IT and digital engineering services, professional services, consulting, managed services and other services organisations.`,
-],
+      `Automate contract intelligence, invoice generation, collections, and cash application to accelerate billing, A/R, cashflows and revenue realization.`,
+      `Built for IT and digital engineering services, professional services, consulting, managed services and other services organisations.`,
+    ],
     btnPrimaryText: "Book a Demo",
     btnPrimaryLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
@@ -143,7 +143,8 @@ export const ServiceIndustry = {
     features: [
       {
         title: "THE CFO OFFICE",
-        description: "Complete Visibility & Control Across Contract-to-Cash Processes",
+        description:
+          "Complete Visibility & Control Across Contract-to-Cash Processes",
         subfeatures: [
           "Revenue leakage management",
           "Collection performance and forecast visibility",
@@ -154,13 +155,14 @@ export const ServiceIndustry = {
       },
       {
         title: "Billing Team",
-        description: "Generate accurate invoices faster with higher efficiency.",
+        description:
+          "Generate accurate invoices faster with higher efficiency.",
         subfeatures: [
           "Contract AI Intelligence",
           "Commercial Term Extraction",
           "Invoice Validation",
           "Invoice Generation",
-          "Approval Workflows"
+          "Approval Workflows",
         ],
       },
       {
@@ -194,7 +196,7 @@ export const ServiceIndustry = {
     title: "The digital finance team behind the platform",
     description:
       "DocSense reads your customer and partner contracts and bank statements. FlohSense reads customer and partner emails and takes action. Together they close the loop from agreement to cash.",
-       btnText: "Book a Demo",
+    btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     agents: [
@@ -213,9 +215,19 @@ export const ServiceIndustry = {
       {
         name: "FlohSense AI",
         tagline: "Reads customer & partner emails and takes action",
-        reads: ["Customer Emails", "Partner Emails", "Payment Advice", "Data Requests"],
+        reads: [
+          "Customer Emails",
+          "Partner Emails",
+          "Payment Advice",
+          "Data Requests",
+        ],
         outputLabel: "AUTOMATES",
-        outputs: ["Payment Recon", "Dispute Creation", "Contact Updates", "Auto-Reverts"],
+        outputs: [
+          "Payment Recon",
+          "Dispute Creation",
+          "Contact Updates",
+          "Auto-Reverts",
+        ],
       },
     ],
   },
@@ -253,7 +265,8 @@ export const TravelIndustry = {
   heroSection: {
     kicker: "AI . Contract-to-cash . Travel Industry",
     title: `AI-Powered Contract-to-Cash Automation for Travel Firms`,
-    description:["Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces.",
+    description: [
+      "Automate contract intelligence, invoice generation, collections and cash application to accelerate billing, A/R, cashflows and revenue realization across customer and partner relationships in OTAs, aggregators and travel marketplaces.",
       "Built for travel companies, OTAs, travel marketplaces, travel management companies (TMCs), tour operators and travel aggregators.",
     ],
     btnPrimaryText: "Book a Demo",
@@ -392,7 +405,8 @@ export const TravelIndustry = {
       },
       {
         title: "Billing Team",
-        description: "Generate accurate invoices faster with higher efficiency.",
+        description:
+          "Generate accurate invoices faster with higher efficiency.",
         subfeatures: [
           "Contract AI intelligence",
           "Commercial term extraction",
@@ -403,7 +417,8 @@ export const TravelIndustry = {
       },
       {
         title: "Collections Team",
-        description: "Improve collector productivity and accelerate collections.",
+        description:
+          "Improve collector productivity and accelerate collections.",
         subfeatures: [
           "Automated smart reminders",
           "AI collectors worklist",
@@ -423,7 +438,7 @@ export const TravelIndustry = {
           "ERP posting",
         ],
       },
-      // NEW 
+      // NEW
       // {
       //   title: "Credit Hub",
       //   description: "Make better credit decisions.",
@@ -444,7 +459,7 @@ export const TravelIndustry = {
     title: "The digital finance team behind the platform",
     description:
       "DocSense reads your customer and partner contracts and bank statements. FlohSense reads customer and partner emails and takes action. Together they close the loop from agreement to cash.",
-       btnText: "Book a Demo",
+    btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     agents: [
@@ -463,9 +478,19 @@ export const TravelIndustry = {
       {
         name: "FlohSense AI",
         tagline: "Reads customer & partner emails and takes action",
-        reads: ["Customer Emails", "Partner Emails", "Payment Advice", "Data Requests"],
+        reads: [
+          "Customer Emails",
+          "Partner Emails",
+          "Payment Advice",
+          "Data Requests",
+        ],
         outputLabel: "AUTOMATES",
-        outputs: ["Payment Recon", "Dispute Creation", "Contact Updates", "Auto-Reverts"],
+        outputs: [
+          "Payment Recon",
+          "Dispute Creation",
+          "Contact Updates",
+          "Auto-Reverts",
+        ],
       },
     ],
   },
@@ -477,7 +502,10 @@ export const TravelIndustry = {
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     features: [
-      { kpi: "500+", description: "Man-hours saved within first two months of go-live" },
+      {
+        kpi: "500+",
+        description: "Man-hours saved within first two months of go-live",
+      },
       { kpi: "40%", description: "Faster payment reconciliation" },
       { kpi: "30-40%", description: "Reduction in DSO" },
       { kpi: "40-50%", description: "Decrease in errors and anomalies" },
@@ -495,5 +523,578 @@ export const TravelIndustry = {
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
+  },
+};
+
+export const FMCGIndustry = {
+  heroSection: {
+    kicker: "AI . Contract-to-cash . FMCG Industry",
+    title: `Turn FMCG Receivables Into Faster Cash`,
+    description: [
+      `Automate customer-ledger reconciliation, deductions, claims, collections and cash application — while identifying revenue leakage across every customer channel.`,
+      `Built for FMCG companies operating across Modern Trade, Distributors, D2C and Institutional / B2B channels.`,
+    ],
+    btnPrimaryText: "Book a Demo",
+    btnPrimaryLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    image: "/images/partner-program/pattern-home.svg",
+  },
+
+  theProblem: {
+    kicker: "THE PROBLEM",
+    title: "FMCG Receivables Are Complex. Revenue Leakage Doesn't Have to Be.",
+    description:
+      "High transaction volumes, fragmented customer data, deductions, claims and payment exceptions make FMCG receivables difficult to reconcile and expensive to manage manually.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        icon: "/icons/industry/fragment.svg",
+        title: "Fragmented Customer Data",
+        description:
+          "Customer balances and transactions are spread across ERPs, distributor systems, customer portals, spreadsheets and emails.",
+      },
+      {
+        icon: "/icons/industry/manual.svg",
+        title: "Manual Customer Reconciliation",
+        description:
+          "Finance teams manually compare invoices, payments, credit notes, deductions, claims and customer ledgers.",
+      },
+      {
+        icon: "/icons/industry/claim.svg",
+        title: "Deductions & Claims",
+        description:
+          "Short payments, promotional deductions, pricing differences, tax differences and other claims create thousands of exceptions.",
+      },
+      {
+        icon: "/icons/industry/leakageRevenue.svg",
+        title: "Revenue Leakage",
+        description:
+          "Unrecovered deductions, invalid claims, short payments and commercial mismatches silently reduce realised revenue.",
+      },
+      {
+        icon: "/icons/industry/slowCollection.svg",
+        title: "Slow Collections",
+        description:
+          "Collectors lack a unified view of customer balances, ageing, payment behaviour, disputes and collection priorities.",
+      },
+      {
+        icon: "/icons/industry/slowCashApp.svg",
+        title: "Manual Cash Application",
+        description:
+          "Bank statements and remittance advice need to be manually interpreted and matched before cash can be reconciled and posted.",
+      },
+    ],
+  },
+
+  thePlatform: {
+    kicker: "THE PLATFORM",
+    title: "One AI Platform, Every Receivables Workflow",
+    description:
+      "Six connected modules that take FMCG receivables from contract to reconciled, recovered cash.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        uuid: "0",
+        icon: "/images/partner-program/contractIntelligence.jpg",
+        title: "Contract, SOW & Invoice Reading",
+        description:
+          "AI reads contracts, SOWs, price lists and invoices to extract commercial terms, pricing and billing rules.",
+      },
+      {
+        uuid: "1",
+        icon: "/images/partner-program/invoiceValidation.jpg",
+        title: "Automated Invoice Validation & Generation",
+        description:
+          "Validate pricing, tax and commercial terms before generating and delivering ERP-ready invoices.",
+      },
+      {
+        uuid: "2",
+        icon: "/images/partner-program/ledgerMapping.jpg",
+        title: "Customer Ledger Reconciliation",
+        description:
+          "Automatically reconcile customer ledgers against invoices, payments, credit notes, deductions and claims.",
+      },
+      {
+        uuid: "3",
+        icon: "/images/partner-program/disputeManagement.jpg",
+        title: "Disputes",
+        description:
+          "Classify, investigate and route every exception to resolution, with a full audit trail.",
+      },
+      {
+        uuid: "4",
+        icon: "/images/partner-program/aiCollection.jpg",
+        title: "Collections",
+        description:
+          "AI-prioritized worklists, automated reminders and Promise-to-Pay tracking across every customer.",
+      },
+      {
+        uuid: "5",
+        icon: "/images/partner-program/cashApp.jpg",
+        title: "Cash Application",
+        description:
+          "Extract remittances, match payments and post reconciled cash straight into the ERP.",
+      },
+    ],
+  },
+
+  capabilities: {
+    kicker: "CAPABILITIES",
+    title: "One Platform Across the FMCG Receivables Team",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        title: "THE CFO OFFICE",
+        description: "Complete visibility & control across FMCG receivables.",
+        subfeatures: [
+          "Revenue leakage visibility",
+          "Customer-level receivables visibility",
+          "Collection performance",
+          "Exception analytics",
+          "Recovery tracking",
+          "Cash visibility",
+        ],
+      },
+      {
+        title: "AR / Reconciliation Team",
+        description: "Reconcile customer ledgers faster with fewer exceptions.",
+        subfeatures: [
+          "Customer ledger reconciliation",
+          "Payment matching",
+          "Deduction identification",
+          "Claims management",
+          "Exception workflow",
+          "Audit trail",
+        ],
+      },
+      {
+        title: "Collections Team",
+        description:
+          "Improve collector productivity and accelerate collections.",
+        subfeatures: [
+          "AI-prioritized worklists",
+          "Automated reminders",
+          "Customer communication",
+          "Promise-to-Pay",
+          "Escalations",
+          "Collection analytics",
+        ],
+      },
+      {
+        title: "Cash Application Team",
+        description: "Reconcile payments faster with less manual effort.",
+        subfeatures: [
+          "Remittance extraction",
+          "Bank statement OCR",
+          "Payment matching",
+          "Deduction handling",
+          "TDS / tax adjustments",
+          "ERP posting",
+        ],
+      },
+    ],
+  },
+
+  aiAgents: {
+    kicker: "AI AGENTS",
+    title: "AI Agents That Understand FMCG Finance",
+    description:
+      "FinFloh's AI agents read finance documents and communications, understand context and trigger the workflows required to move receivables forward. AI that doesn't just read finance data — it acts on it.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    agents: [
+      {
+        name: "DocSense AI",
+        tagline:
+          "Reads and understands customer ledgers, invoices & commercial documents",
+        reads: [
+          "Customer Ledgers",
+          "Invoices",
+          "Credit Notes",
+          "Remittance Advice",
+          "Bank Statements",
+          "Claims",
+          "Commercial Documents",
+        ],
+        outputLabel: "EXTRACTS",
+        outputs: [
+          "Customer Info",
+          "Invoice Details",
+          "Payment Info",
+          "Deduction Details",
+          "Claim Info",
+          "Commercial Terms",
+        ],
+      },
+      {
+        name: "FlohSense AI",
+        tagline: "Reads customer emails and communications and takes action",
+        reads: [
+          "Customer Emails",
+          "Remittance Emails",
+          "Payment Advice",
+          "Claims",
+          "Collection Comms",
+          "Dispute Comms",
+        ],
+        outputLabel: "CAN",
+        outputs: [
+          "Create Exceptions",
+          "Extract Payments",
+          "Trigger Workflows",
+          "Capture Promise-to-Pay",
+          "Support Reconciliation",
+          "Route Issues",
+        ],
+      },
+    ],
+  },
+
+  numbers: {
+    kicker: "BUSINESS OUTCOMES",
+    title: "Transform FMCG Receivables With AI",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    // Note: source PDF does not list numeric KPIs for this section (unlike Services/Travel),
+    // only outcome titles + descriptions. kpi left blank — fill in once figures are available.
+    features: [
+      {
+        kpi: "50%",
+        description:
+          "Faster Reconciliation — reduce manual customer-ledger reconciliation",
+      },
+      {
+        kpi: "40%+",
+        description:
+          "Lower Revenue Leakage — identify deductions, claims, short payments and unrecovered amounts",
+      },
+      {
+        kpi: "80%",
+        description:
+          "Faster Cash Application — automate payment and remittance matching",
+      },
+      {
+        kpi: "60%",
+        description:
+          "Better Collections — prioritize customers and invoices requiring action",
+      },
+      {
+        kpi: "40-50%",
+        description:
+          "Fewer Manual Exceptions — automatically identify, classify and route reconciliation issues",
+      },
+      {
+        kpi: "3×",
+        description:
+          "Faster Month-End Close — improve reconciliation and cash visibility",
+      },
+    ],
+  },
+
+  footerCTA: {
+    title: "Ready to Transform FMCG Receivables?",
+    description:
+      "Talk to our finance experts and begin your AR transformation journey today",
+    // Note: no customer quote/testimonial was present for this page in the source PDF.
+    quote: "",
+    speaker: "",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+  },
+};
+
+export const ITIndustry = {
+  heroSection: {
+    kicker: "AI . CONTRACT-TO-CASH . INFORMATION TECHNOLOGY",
+    title: `AI-Powered Contract-to-Cash Automation for Information Technology Firms`,
+    description: [
+      `Contract intelligence for accurate invoicing, faster collections & seamless cash application. AI agents that handle the full Contract-to-Cash lifecycle so your team focuses on strategy, not spreadsheets.`,
+    ],
+    // Note: source PDF hero CTA reads "Explore FinFloh" (not "Book a Demo" like the other pages).
+    btnPrimaryText: "Explore FinFloh",
+    btnPrimaryLink:
+      "/book-a-demo?utm_source=it_industry_cta&utm_medium=finfloh_website",
+    image: "/images/partner-program/pattern-home.svg",
+  },
+
+  theProblem: {
+    kicker: "THE CHALLENGE",
+    title:
+      "Information Technology Firms Have Complex Contract-to-Cash Workflows",
+    // Note: no intro description sentence under the title in the source PDF — only kicker, title, and the 6 feature cards below.
+    description: "",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=it_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        icon: "/icons/industry/compare.svg",
+        title: "Invoices Don't Match Contracts, Orders & Timesheets",
+        description:
+          "Invoices may not consistently reflect contractual terms, order data, timesheets, rates, milestones, or other billing inputs.",
+      },
+      {
+        icon: "/icons/industry/manual.svg",
+        title: "Manual Invoice Creation in ERP",
+        description:
+          "Finance teams manually consolidate information from contracts, CRM, orders, timesheets, and billing systems before creating invoices.",
+      },
+      {
+        icon: "/icons/industry/verify.svg",
+        title: "Manual Invoice Review and Approval",
+        description:
+          "Teams manually review draft invoices against contracts and billing inputs, creating delays and increasing the risk of errors.",
+      },
+      {
+        icon: "/icons/industry/sent.svg",
+        title: "Manual Invoice Sending to Wrong Contacts",
+        description:
+          "Invoices are manually sent to customer contacts, increasing the risk of incorrect recipients, delays, and poor delivery visibility.",
+      },
+      {
+        icon: "/icons/industry/visible.svg",
+        title: "Limited Collector Performance & Worklist Visibility",
+        description:
+          "Collectors lack prioritized worklists and visibility into activities, follow-ups, notes, calls, and individual performance.",
+      },
+      {
+        icon: "/icons/industry/graph.svg",
+        title: "Collections Reports Lack Tracking & Insights",
+        description:
+          "Finance leaders lack actionable collections tracking and insights across company, business unit, customer, and collector levels.",
+      },
+    ],
+  },
+
+  thePlatform: {
+    kicker: "THE PLATFORM",
+    title: "From Contracts to Cash. Powered by AI.",
+    description:
+      "One connected platform that transforms contracts into accurate invoices, automates collections and accelerates cash application.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=it_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        uuid: "0",
+        icon: "/images/partner-program/contractIntelligence.jpg",
+        title: "Contract, SOW & Invoice Reading",
+        description:
+          "AI reads contracts, SOWs, POs and invoices to extract commercial terms, pricing and billing rules.",
+      },
+      {
+        uuid: "1",
+        icon: "/images/partner-program/invoiceValidation.jpg",
+        title: "Automated Invoice Validation & Generation",
+        description:
+          "Validate pricing, tax and commercial terms before generating and delivering ERP-ready invoices.",
+      },
+      {
+        uuid: "2",
+        icon: "/images/partner-program/invoiceGeneration.jpg",
+        title: "Customer Ledger Reconciliation",
+        description:
+          "Automatically reconcile customer ledgers against invoices, payments, credit notes and deductions.",
+      },
+      {
+        uuid: "3",
+        icon: "/images/partner-program/disputeManagement.jpg",
+        title: "Disputes",
+        description:
+          "Classify, investigate and route every exception to resolution, with a full audit trail.",
+      },
+      {
+        uuid: "4",
+        icon: "/images/partner-program/aiCollection.jpg",
+        title: "Collections",
+        description:
+          "AI-prioritized worklists, automated reminders and Promise-to-Pay tracking across every customer.",
+      },
+      {
+        uuid: "5",
+        icon: "/images/partner-program/cashApp.jpg",
+        title: "Cash Application",
+        description:
+          "Extract remittances, match payments and post reconciled cash straight into the ERP.",
+      },
+    ],
+  },
+
+  // Note: source section is "Built for Every Role in Your Finance Team" (6 roles), each with a single
+  // description sentence — the PDF does not break these into bullet subfeatures like Services/Travel/FMCG do.
+  // subfeatures left as a single-item array (the role description) to keep the shape consistent; revisit if
+  // the IT page design calls for real bullet lists per role.
+  capabilities: {
+    kicker: "CAPABILITIES",
+    title: "Everything Your Billing & AR Team Needs",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
+
+    // CFO overview card — sits above/alongside the team cards
+    // cfoOffice: {
+    //   title:
+    //     "Complete Visibility & Control Across Contract-to-Cash Processes",
+    //   description:
+    //     "Give finance leaders complete visibility into billing accuracy, collections performance and cash realization—all from a single AI-powered platform.",
+    //   subfeatures: [
+    //     "Revenue assurance across contracts, SOWs and timesheets",
+    //     "Billing cycle and DSO dashboards",
+    //     "Collection performance and forecast visibility",
+    //     "Revenue leakage identification",
+    //     "AI-driven operational insights",
+    //     "Executive KPI dashboards",
+    //     "Audit-ready contract and invoice traceability",
+    //   ],
+    // },
+
+    // Each team card now has its own distinct description + sub-features
+    // (previously all three shared the same contract-extraction copy)
+    features: [
+      {
+        title: "THE CFO OFFICE",
+        description:
+          "Complete Visibility & Control Across Contract-to-Cash Processes",
+        subfeatures: [
+          "Revenue leakage management",
+          "Collection performance and forecast visibility",
+          "Quicker invoicing & billing",
+          "Validation across contracts, SOWs",
+          "AI-driven operational insights",
+        ],
+      },
+      {
+        title: "Billing Team",
+        description:
+          "Generate accurate invoices faster with higher efficiency.",
+        subfeatures: [
+          "Contract AI Intelligence",
+          "Commercial Term Extraction",
+          "Invoice Validation",
+          "Invoice Generation",
+          "Approval Workflows",
+        ],
+      },
+      {
+        title: "Collections Team",
+        description:
+          "Improve collector productivity and accelerate collections.",
+        subfeatures: [
+          "Automated Smart Reminders",
+          "AI Collectors Worklist",
+          "Internal Alerts",
+          "Promise-to-Pay Management",
+          "Collections Performance",
+        ],
+      },
+      {
+        title: "Cash Application Team",
+        description: "Reconcile payments faster with less manual effort.",
+        subfeatures: [
+          "Payment Matching",
+          "Remittance Processing",
+          "Deduction Management",
+          "Reconciliation Workbench",
+          "ERP Posting",
+        ],
+      },
+    ],
+  },
+
+  // Note: this page has 4 agents (not 2), and the PDF only gives a short description per agent — no
+  // "reads" / "outputs" breakdown like DocSense/FlohSense have on Services & Travel. reads/outputs left
+  // empty rather than invented.
+  aiAgents: {
+    kicker: "AI AGENTS",
+    title: "AI Agents That Understand FMCG Finance",
+    description:
+      "FinFloh's AI agents read finance documents and communications, understand context and trigger the workflows required to move receivables forward. AI that doesn't just read finance data — it acts on it.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    agents: [
+      {
+        name: "DocSense AI",
+        tagline:
+          "Reads and understands customer ledgers, invoices & commercial documents",
+        reads: [
+          "Customer Ledgers",
+          "Invoices",
+          "Credit Notes",
+          "Remittance Advice",
+          "Bank Statements",
+          "Claims",
+          "Commercial Documents",
+        ],
+        outputLabel: "EXTRACTS",
+        outputs: [
+          "Customer Info",
+          "Invoice Details",
+          "Payment Info",
+          "Deduction Details",
+          "Claim Info",
+          "Commercial Terms",
+        ],
+      },
+      {
+        name: "FlohSense AI",
+        tagline: "Reads customer emails and communications and takes action",
+        reads: [
+          "Customer Emails",
+          "Remittance Emails",
+          "Payment Advice",
+          "Claims",
+          "Collection Comms",
+          "Dispute Comms",
+        ],
+        outputLabel: "CAN",
+        outputs: [
+          "Create Exceptions",
+          "Extract Payments",
+          "Trigger Workflows",
+          "Capture Promise-to-Pay",
+          "Support Reconciliation",
+          "Route Issues",
+        ],
+      },
+    ],
+  },
+
+  numbers: {
+    kicker: "BUSINESS OUTCOMES",
+    title: "Measurable Impact Across Finance Operations",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=it_industry_cta&utm_medium=finfloh_website",
+    features: [
+      { kpi: "40%", description: "Reduction in Billing Cycle Time" },
+      { kpi: "75%", description: "Reduction in Manual Invoice Validation" },
+      { kpi: "70%", description: "Faster Invoice Generation" },
+      { kpi: "550+", description: "Man-hours Saved Every Month" },
+      { kpi: "60%", description: "Improvement in Cash Application Efficiency" },
+      { kpi: "35%", description: "Reduction in DSO" },
+    ],
+  },
+
+  footerCTA: {
+    title: "Ready to Transform IT Receivables?",
+    description:
+      "Talk to our finance experts and begin your AR transformation journey today",
+    // Note: no customer quote/testimonial was present for this page in the source PDF.
+    quote:
+      "FinFloh has transformed our credit-to-cash processes from credit onboarding in Salesforce to invoice-to-cash. Using AI-driven credit intelligence, automated workflows and native ERP-CRM sync, we are saving 200 man-hours per month and scaling it up to 400 man-hours soon. We have also reduced DSO by 40-50% and increased on-time payments by 10% for 30 days past due invoices.",
+    speaker: "Gopal Agarwal, VP and Head of Finance, Yellow AI",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
   },
 };
