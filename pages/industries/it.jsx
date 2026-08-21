@@ -35,11 +35,23 @@ const FMCG = () => {
   return (
     <>
       <HeadComponent
-        title="AI Contract-to-Cash Software for Services Firms | FinFloh"
-        description="FinFloh helps services firms automate contract intelligence, invoice validation, project billing, invoice generation, collections, disputes and cash application to improve cash flow and reduce revenue leakage."
-        canonicalUrl="https://finfloh.com/industries/fmcg"
+        title="AI Contract-to-Cash Software for IT Companies | FinFloh"
+        description="FinFloh helps IT companies automate contract intelligence, SOW and timesheet validation, invoice generation, collections and cash application to accelerate billing and reduce revenue leakage."
+        canonicalUrl="https://finfloh.com/industries/it"
         includeIsPartOf
         includeAbout
+        aboutProps={{
+          name: "AI Contract-to-Cash Platform for IT Companies",
+          serviceType:
+            "Contract Intelligence, SOW & Timesheet Validation, Invoice Automation, Collections & Cash Application Software",
+        }}
+        includeBreadcrumbs
+        breadcrumbItems={[
+          {
+            name: "IT",
+            item: "https://finfloh.com/industries/it",
+          },
+        ]}
       />
 
       <WebsiteLayout>
@@ -83,9 +95,9 @@ const FMCG = () => {
           btnLink={ITIndustry.capabilities.btnLink}
           icon={<RightArrow />}
         />
-         {/* Add New Section for AI */}
-        <CardLayoutFlex 
-        kicker={ITIndustry.aiAgents.kicker}
+        {/* Add New Section for AI */}
+        <CardLayoutFlex
+          kicker={ITIndustry.aiAgents.kicker}
           title={ITIndustry.aiAgents.title}
           description={ITIndustry.aiAgents.description}
           agents={ITIndustry.aiAgents.agents}
