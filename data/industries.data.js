@@ -194,22 +194,30 @@ export const ServiceIndustry = {
   aiAgents: {
     kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
     title: "The digital finance team behind the platform",
-    description:
-      "DocSense reads your customer and partner contracts and bank statements. FlohSense reads customer and partner emails and takes action. Together they close the loop from agreement to cash.",
+     description:
+      "DocSense reads all your documents like customer and partner contracts, payment advices, invoices, POs and bank statements. FlohSense reads your customer emails and either auto-reverts or takes actions. Together they close the loop from agreement to cash.",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     agents: [
-      {
+       {
         name: "DocSense AI",
-        tagline: "Reads and parses contracts, bank statements & SOWs",
-        reads: ["Contracts", "SOWs", "Invoices", "Bank Statements"],
+        tagline:
+          "Reads and understands customer ledgers, invoices & commercial documents",
+        reads: [
+          "Contracts & SOWs",
+          "Invoices",
+          "Bank Statements",
+          "Remittance Advice",
+          "Customer Ledger",
+        ],
         outputLabel: "EXTRACTS",
         outputs: [
           "Commercial Terms",
           "Revenue Splits",
           "Billing Schedules",
-          "Customer & Partner Info",
+          "Customer Ledger Items",
+          "Reconciled Payments",
         ],
       },
       {
@@ -252,7 +260,7 @@ export const ServiceIndustry = {
   footerCTA: {
     title: "Supercharge your A/R with FinFloh",
     description:
-      "Talk to our finance experts and begin your AR transformation journey today",
+      "Talk to our finance experts and begin your AR transformation journey today!",
     quote: `"FinFloh automated our entire contract-to-cash process. A special mention of their invoice validation and generation process in sync with our timesheets and SOWs."`,
     speaker: "VP Finance, Leading Global IT Services Firm",
     btnText: "Book a Demo",
@@ -454,25 +462,33 @@ export const TravelIndustry = {
   },
 
   // NEW — "Two AI Agents, One Finance Brain" section (present in HTML, missing from JS)
-  aiAgents: {
+ aiAgents: {
     kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
     title: "The digital finance team behind the platform",
-    description:
-      "DocSense reads your customer and partner contracts and bank statements. FlohSense reads customer and partner emails and takes action. Together they close the loop from agreement to cash.",
+     description:
+      "DocSense reads all your documents like customer and partner contracts, payment advices, invoices, POs and bank statements. FlohSense reads your customer emails and either auto-reverts or takes actions. Together they close the loop from agreement to cash.",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     agents: [
-      {
+       {
         name: "DocSense AI",
-        tagline: "Reads and parses contracts, bank statements & SOWs",
-        reads: ["Contracts", "SOWs", "Invoices", "Bank Statements"],
+        tagline:
+          "Reads and understands customer ledgers, invoices & commercial documents",
+        reads: [
+          "Contracts & SOWs",
+          "Invoices",
+          "Bank Statements",
+          "Remittance Advice",
+          "Customer Ledger",
+        ],
         outputLabel: "EXTRACTS",
         outputs: [
           "Commercial Terms",
           "Revenue Splits",
           "Billing Schedules",
-          "Customer & Partner Info",
+          "Customer Ledger Items",
+          "Reconciled Payments",
         ],
       },
       {
@@ -515,9 +531,9 @@ export const TravelIndustry = {
   },
 
   footerCTA: {
-    title: "Supercharge Your Travel Finance Ops with FinFloh",
+    title: "Supercharge your A/R with FinFloh",
     description:
-      "Talk to our finance experts and begin your contract-to-cash transformation journey today.",
+      "Talk to our finance experts and begin your AR transformation journey today!",
     quote: `"FinFloh automated our entire customer and partner contract-to-cash process. We were able to make our invoicing faster by 40% and save 2 FTE equivalent."`,
     speaker: "Finance Lead, Leading Travel Tech Firm",
     btnText: "Book a Demo",
@@ -544,7 +560,7 @@ export const FMCGIndustry = {
     kicker: "THE PROBLEM",
     title: "FMCG Receivables Are Complex. Revenue Leakage Doesn't Have to Be.",
     description:
-      "High transaction volumes, fragmented customer data, deductions, claims and payment exceptions make FMCG receivables difficult to reconcile and expensive to manage manually.",
+      "High transaction volumes, fragmented customer data, deductions, claims and payment disputes make FMCG receivables difficult to reconcile and expensive to manage manually.",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
@@ -565,7 +581,7 @@ export const FMCGIndustry = {
         icon: "/icons/industry/claim.svg",
         title: "Deductions & Claims",
         description:
-          "Short payments, promotional deductions, pricing differences, tax differences and other claims create thousands of exceptions.",
+          "Short payments, promotional deductions, pricing differences, tax differences and other claims create thousands of disputes.",
       },
       {
         icon: "/icons/industry/leakageRevenue.svg",
@@ -623,7 +639,7 @@ export const FMCGIndustry = {
         icon: "/images/partner-program/disputeManagement.jpg",
         title: "Disputes",
         description:
-          "Classify, investigate and route every exception to resolution, with a full audit trail.",
+          "Classify, investigate and route every disputes to resolution, with a full audit trail.",
       },
       {
         uuid: "4",
@@ -656,20 +672,20 @@ export const FMCGIndustry = {
           "Revenue leakage visibility",
           "Customer-level receivables visibility",
           "Collection performance",
-          "Exception analytics",
+          "Exception & dispute analytics",
           "Recovery tracking",
           "Cash visibility",
         ],
       },
       {
         title: "AR / Reconciliation Team",
-        description: "Reconcile customer ledgers faster with fewer exceptions.",
+        description: "Reconcile customer ledgers faster with fewer disputes.",
         subfeatures: [
           "Customer ledger reconciliation",
           "Payment matching",
           "Deduction identification",
           "Claims management",
-          "Exception workflow",
+          "Dispute workflow",
           "Audit trail",
         ],
       },
@@ -700,58 +716,50 @@ export const FMCGIndustry = {
       },
     ],
   },
-
-  aiAgents: {
-    kicker: "AI AGENTS",
-    title: "AI Agents That Understand FMCG Finance",
-    description:
-      "FinFloh's AI agents read finance documents and communications, understand context and trigger the workflows required to move receivables forward. AI that doesn't just read finance data — it acts on it.",
+aiAgents: {
+    kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
+    title: "The digital finance team behind the platform",
+     description:
+      "DocSense reads all your documents like customer and partner contracts, payment advices, invoices, POs and bank statements. FlohSense reads your customer emails and either auto-reverts or takes actions. Together they close the loop from agreement to cash.",
     btnText: "Book a Demo",
     btnLink:
-      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     agents: [
-      {
+       {
         name: "DocSense AI",
         tagline:
           "Reads and understands customer ledgers, invoices & commercial documents",
         reads: [
-          "Customer Ledgers",
+          "Contracts & SOWs",
           "Invoices",
-          "Credit Notes",
-          "Remittance Advice",
           "Bank Statements",
-          "Claims",
-          "Commercial Documents",
+          "Remittance Advice",
+          "Customer Ledger",
         ],
         outputLabel: "EXTRACTS",
         outputs: [
-          "Customer Info",
-          "Invoice Details",
-          "Payment Info",
-          "Deduction Details",
-          "Claim Info",
           "Commercial Terms",
+          "Revenue Splits",
+          "Billing Schedules",
+          "Customer Ledger Items",
+          "Reconciled Payments",
         ],
       },
       {
         name: "FlohSense AI",
-        tagline: "Reads customer emails and communications and takes action",
+        tagline: "Reads customer & partner emails and takes action",
         reads: [
           "Customer Emails",
-          "Remittance Emails",
+          "Partner Emails",
           "Payment Advice",
-          "Claims",
-          "Collection Comms",
-          "Dispute Comms",
+          "Data Requests",
         ],
-        outputLabel: "CAN",
+        outputLabel: "AUTOMATES",
         outputs: [
-          "Create Exceptions",
-          "Extract Payments",
-          "Trigger Workflows",
-          "Capture Promise-to-Pay",
-          "Support Reconciliation",
-          "Route Issues",
+          "Payment Recon",
+          "Dispute Creation",
+          "Contact Updates",
+          "Auto-Reverts",
         ],
       },
     ],
@@ -789,7 +797,7 @@ export const FMCGIndustry = {
       {
         kpi: "40-50%",
         description:
-          "Fewer Manual Exceptions — automatically identify, classify and route reconciliation issues",
+          "Fewer Manual disputes — automatically identify, classify and route reconciliation issues",
       },
       {
         kpi: "3×",
@@ -800,9 +808,9 @@ export const FMCGIndustry = {
   },
 
   footerCTA: {
-    title: "Ready to Transform FMCG Receivables?",
+    title: "Supercharge your A/R with FinFloh",
     description:
-      "Talk to our finance experts and begin your AR transformation journey today",
+      "Talk to our finance experts and begin your AR transformation journey today!",
     // Note: no customer quote/testimonial was present for this page in the source PDF.
     quote: "",
     speaker: "",
@@ -817,7 +825,7 @@ export const ITIndustry = {
     kicker: "AI . CONTRACT-TO-CASH . INFORMATION TECHNOLOGY",
     title: `AI-Powered Contract-to-Cash Automation for Information Technology Firms`,
     description: [
-      `Contract intelligence for accurate invoicing, faster collections & seamless cash application. AI agents that handle the full Contract-to-Cash lifecycle so your team focuses on strategy, not spreadsheets.`,
+      `Automate contract validation, invoicing, collections and cash application — while preventing revenue leakage across customers. Built for Software & SaaS companies, technology product firms, engineering & R&D organisations, ITES / BPM and digital platforms.`,
     ],
     // Note: source PDF hero CTA reads "Explore FinFloh" (not "Book a Demo" like the other pages).
     btnPrimaryText: "Explore FinFloh",
@@ -827,18 +835,18 @@ export const ITIndustry = {
   },
 
   theProblem: {
-    kicker: "THE CHALLENGE",
+    kicker: "THE PROBLEM",
     title:
       "Information Technology Firms Have Complex Contract-to-Cash Workflows",
     // Note: no intro description sentence under the title in the source PDF — only kicker, title, and the 6 feature cards below.
-    description: "",
+    description: "Disconnected contracts, SOWs, timesheets and CRM-ERP lead to billing errors, delayed invoicing, revenue leakage and slower collections.",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=it_industry_cta&utm_medium=finfloh_website",
     features: [
       {
         icon: "/icons/industry/compare.svg",
-        title: "Invoices Don't Match Contracts, Orders & Timesheets",
+        title: "Invoices Don’t Match Contracts",
         description:
           "Invoices may not consistently reflect contractual terms, order data, timesheets, rates, milestones, or other billing inputs.",
       },
@@ -856,19 +864,19 @@ export const ITIndustry = {
       },
       {
         icon: "/icons/industry/sent.svg",
-        title: "Manual Invoice Sending to Wrong Contacts",
+        title: "Invoice Sending to Wrong Contacts",
         description:
           "Invoices are manually sent to customer contacts, increasing the risk of incorrect recipients, delays, and poor delivery visibility.",
       },
       {
         icon: "/icons/industry/visible.svg",
-        title: "Limited Collector Performance & Worklist Visibility",
+        title: "No Collector Worklist",
         description:
           "Collectors lack prioritized worklists and visibility into activities, follow-ups, notes, calls, and individual performance.",
       },
       {
         icon: "/icons/industry/graph.svg",
-        title: "Collections Reports Lack Tracking & Insights",
+        title: "A/R Performance Lack Tracking",
         description:
           "Finance leaders lack actionable collections tracking and insights across company, business unit, customer, and collector levels.",
       },
@@ -910,7 +918,7 @@ export const ITIndustry = {
         icon: "/images/partner-program/disputeManagement.jpg",
         title: "Disputes",
         description:
-          "Classify, investigate and route every exception to resolution, with a full audit trail.",
+          "Classify, investigate and route every disputes to resolution, with a full audit trail.",
       },
       {
         uuid: "4",
@@ -1014,56 +1022,49 @@ export const ITIndustry = {
   // "reads" / "outputs" breakdown like DocSense/FlohSense have on Services & Travel. reads/outputs left
   // empty rather than invented.
   aiAgents: {
-    kicker: "AI AGENTS",
-    title: "AI Agents That Understand FMCG Finance",
-    description:
-      "FinFloh's AI agents read finance documents and communications, understand context and trigger the workflows required to move receivables forward. AI that doesn't just read finance data — it acts on it.",
+    kicker: "TWO AI AGENTS, ONE FINANCE BRAIN",
+    title: "The digital finance team behind the platform",
+     description:
+      "DocSense reads all your documents like customer and partner contracts, payment advices, invoices, POs and bank statements. FlohSense reads your customer emails and either auto-reverts or takes actions. Together they close the loop from agreement to cash.",
     btnText: "Book a Demo",
     btnLink:
-      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+      "/book-a-demo?utm_source=service_industry_cta&utm_medium=finfloh_website",
     agents: [
-      {
+       {
         name: "DocSense AI",
         tagline:
           "Reads and understands customer ledgers, invoices & commercial documents",
         reads: [
-          "Customer Ledgers",
+          "Contracts & SOWs",
           "Invoices",
-          "Credit Notes",
-          "Remittance Advice",
           "Bank Statements",
-          "Claims",
-          "Commercial Documents",
+          "Remittance Advice",
+          "Customer Ledger",
         ],
         outputLabel: "EXTRACTS",
         outputs: [
-          "Customer Info",
-          "Invoice Details",
-          "Payment Info",
-          "Deduction Details",
-          "Claim Info",
           "Commercial Terms",
+          "Revenue Splits",
+          "Billing Schedules",
+          "Customer Ledger Items",
+          "Reconciled Payments",
         ],
       },
       {
         name: "FlohSense AI",
-        tagline: "Reads customer emails and communications and takes action",
+        tagline: "Reads customer & partner emails and takes action",
         reads: [
           "Customer Emails",
-          "Remittance Emails",
+          "Partner Emails",
           "Payment Advice",
-          "Claims",
-          "Collection Comms",
-          "Dispute Comms",
+          "Data Requests",
         ],
-        outputLabel: "CAN",
+        outputLabel: "AUTOMATES",
         outputs: [
-          "Create Exceptions",
-          "Extract Payments",
-          "Trigger Workflows",
-          "Capture Promise-to-Pay",
-          "Support Reconciliation",
-          "Route Issues",
+          "Payment Recon",
+          "Dispute Creation",
+          "Contact Updates",
+          "Auto-Reverts",
         ],
       },
     ],
@@ -1086,9 +1087,9 @@ export const ITIndustry = {
   },
 
   footerCTA: {
-    title: "Ready to Transform IT Receivables?",
+    title: "Supercharge your A/R with FinFloh",
     description:
-      "Talk to our finance experts and begin your AR transformation journey today",
+      "Talk to our finance experts and begin your AR transformation journey today!",
     // Note: no customer quote/testimonial was present for this page in the source PDF.
     quote:
       "FinFloh has transformed our credit-to-cash processes from credit onboarding in Salesforce to invoice-to-cash. Using AI-driven credit intelligence, automated workflows and native ERP-CRM sync, we are saving 200 man-hours per month and scaling it up to 400 man-hours soon. We have also reduced DSO by 40-50% and increased on-time payments by 10% for 30 days past due invoices.",

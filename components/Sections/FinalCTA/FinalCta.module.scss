@@ -541,7 +541,7 @@ a.action {
   height: 8px;
   border-radius: 50%;
   border: none;
-  background: rgba(0, 0, 0, 0.15); // swap for your muted/border token
+  background: rgb(39, 26, 84); // swap for your muted/border token
   cursor: pointer;
   padding: 0;
   transition: background 200ms ease, transform 200ms ease;
@@ -552,7 +552,7 @@ a.action {
 }
 
 .dotActive {
-  background: rgb(101, 146, 244); // swap for your brand blue token
+  background: rgb(174, 200, 255); // swap for your brand blue token
   transform: scale(1.15);
 }
 
@@ -561,7 +561,7 @@ a.action {
   max-width: 240px;
   height: 3px;
   border-radius: 2px;
-  background: rgba(0, 0, 0, 0.08); // swap for your muted token
+  background: rgb(8, 36, 72); // swap for your muted token
   margin-top: 10px;
   overflow: hidden;
 }
