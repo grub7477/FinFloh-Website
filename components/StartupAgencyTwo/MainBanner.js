@@ -90,7 +90,7 @@ const MainBanner = ({ utmURLs }) => {
               Reconcile Cash.
             </h2>
             <p className="lending-description">
-             AI Agents that think and act like your Finance Team — connecting systems and processes into one intelligent Contract-to-Cash
+             AI Agents that think and act like your Finance Team, connecting systems and processes into one intelligent Contract-to-Cash
             </p>
           </div>
 
