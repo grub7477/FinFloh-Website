@@ -515,3 +515,68 @@ a.action {
     animation: none;
   }
 }
+
+.quoteFade {
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.quoteFadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quoteFadeOut {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.15); // swap for your muted/border token
+  cursor: pointer;
+  padding: 0;
+  transition: background 200ms ease, transform 200ms ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.dotActive {
+  background: rgb(101, 146, 244); // swap for your brand blue token
+  transform: scale(1.15);
+}
+
+.progressTrack {
+  width: 100%;
+  max-width: 240px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.08); // swap for your muted token
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  width: 0%;
+  background: #c0d4ff; // swap for your brand blue token
+  border-radius: 2px;
+  animation-name: progressGrow;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes progressGrow {
+  from { width: 0%; }
+  to { width: 100%; }
+}

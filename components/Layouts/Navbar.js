@@ -141,6 +141,17 @@ const Navbar = (props) => {
             <ResourcesDropdown />
           </ul>
         </li>
+        <li className="nav-item">
+          <Link
+            href={utmURLs?.partner_program || "/partner-program"}
+            activeClassName="active"
+          >
+            <a className="nav-link" style={aStyle}>
+              Partner{" "}
+              {props.smallerScreen ? <img src={"/images/Redirect.svg"} /> : ""}
+            </a>
+          </Link>
+        </li>
 
         <li className="nav-item">
           <Link
