@@ -43,12 +43,12 @@ const ProductsDropdown = () => {
       //   icon: "/images/rubric.svg",
       //   url: "/credit-decisioning/#section-1",
       // },
-      {
-        title: "ML-driven Credit Scoring",
-        subtitle: "Dynamic market/historical data checks",
-        icon: "/images/readiness_score.svg",
-        url: "/credit-decisioning/#section-2",
-      },
+      // {
+      //   title: "ML-driven Credit Scoring",
+      //   subtitle: "Dynamic market/historical data checks",
+      //   icon: "/images/readiness_score.svg",
+      //   url: "/credit-decisioning/#section-2",
+      // },
       // {
       //   title: "Existing Buyer's Risk Control",
       //   subtitle: "Automated periodic reviews",
