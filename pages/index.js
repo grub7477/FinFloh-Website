@@ -625,19 +625,19 @@ const FinFlohHome = () => {
           {
             question: "What does FinFloh do?",
             answer:
-              "FinFloh is an AI-native B2B accounts receivable automation and credit decisioning platform built for finance teams managing postpaid billing. It automates the entire invoice-to-cash process — including invoice generation, invoice sending, collections, cash application, credit risk scoring, and credit onboarding decisions.",
+              "FinFloh is an AI-powered Accounts Receivable platform that helps finance teams automate invoicing, optimize collections, automate cash application, and reconcile contracts and customer ledgers.",
           },
           {
             question:
-              "How does FlohSense AI Agent automate and enable the invoice-to-cash process?",
+              "What is FlohSense AI Agent?",
             answer:
-              "FlohSense AI Agent acts as the intelligence layer across FinFloh’s invoice-to-cash workflows. It reads and interprets operational data and customer communications to automate actions across invoice generation, invoice sending, collections reminders, cash application, and dispute handling.",
+              "FlohSense AI reads and analyzes customer emails and communications to identify payment commitments, dispute reasons, collection risks and other signals that can help finance teams prioritize and take action.",
           },
           {
             question:
               "What is accounts receivable automation, and how does FinFloh support it?",
             answer:
-              "Accounts receivable automation software digitizes and automates invoice-to-cash workflows such as invoice distribution, collections follow-ups, dispute tracking, cash application, and reconciliation. FinFloh automates these processes end-to-end while adding structured prioritization, performance visibility, and AI-driven credit intelligence.",
+              "Accounts Receivable automation uses AI and workflows to streamline processes across invoicing, reconciliation, collections and cash application. FinFloh combines workflow automation, AI agents and finance intelligence to reduce manual effort and improve A/R performance",
           },
           {
             question: "How does FinFloh reduce DSO (Days Sales Outstanding)?",
@@ -648,7 +648,7 @@ const FinFlohHome = () => {
             question:
               "How is FinFloh different from ERP accounts receivable modules?",
             answer:
-              "ERP systems primarily record accounting transactions. FinFloh works alongside ERP systems to automate invoice-to-cash operations, apply AI-based cash application, and enable structured credit decisioning within CRM workflows. It adds operational automation, performance tracking, and decision intelligence on top of accounting systems.",
+              "ERPs such as SAP, Oracle and NetSuite primarily serve as systems of record for financial transactions. FinFloh works alongside the ERP as an AI-powered A/R execution and intelligence layer, connecting ERP data with contracts, customer communications, documents, payments and other finance data to automate reconciliation, collections, disputes and cash application.",
           },
           {
             question:
@@ -666,6 +666,11 @@ const FinFlohHome = () => {
             question: "How does FinFloh accelerate collections?",
             answer:
               "FinFloh accelerates collections by automating follow-ups, prioritizing high-impact accounts based on aging and risk signals, and providing structured visibility into disputes and payment behavior. It triggers internal alerts and escalation workflows to shorten collection cycles.",
+          },
+          {
+            question: "How does FinFloh reconcile customer ledgers?",
+            answer:
+              "FinFloh combines customer ledger data with invoices, payments, credits, remittances, customer communications and supporting documents to identify mismatches, exceptions and the reasons behind them.",
           },
         ]}
       />
