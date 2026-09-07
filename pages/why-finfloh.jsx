@@ -15,7 +15,7 @@ const whyfinfloh = () => {
     <>
       <HeadComponent
         title="Why FinFloh | Reasons to Trust & What Makes Us Different"
-        description="World's Fist AI-Powered Credit-to-Cash Software. Find out 6 reason on why you should choose FinFloh for your credit to cash transformation."
+        description="AI-powered Accounts Receivable automation built for modern finance teams. Discover what makes FinFloh different—from intelligent invoicing and customer-ledger reconciliation to collections, cash application and dispute resolution."
         canonicalUrl="https://finfloh.com/why-finfloh"
         includeIsPartOf
         mainEntityOfPage="https://finfloh.com/why-finfloh"
