@@ -617,6 +617,7 @@ const FinFlohHome = () => {
         title="AI Agents for A/R & Invoice-to-Cash Automation | FinFloh"
         description="Speed up A/R collections, automate cash application, make smarter credit decisions and resolve disputes faster — all with intelligent AI agents built for finance teams."
         canonicalUrl="https://finfloh.com/"
+        keywords="Accounts Receivable, Accounts Receivable Automation, AR Automation, A/R Automation, AR, A/R, Receivables, AI Accounts Receivable, AI AR Automation, Accounts Receivable Software, AR Software, Invoice Automation, Collections Automation, Cash Application Automation, Payment Reconciliation, Customer Ledger Reconciliation, Contract Intelligence, Accounts Receivable Analytics, AI Finance Automation, Reduce DSO"
         includePublisher
         includeBreadcrumbs
         includeFAQ
