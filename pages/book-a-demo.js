@@ -48,7 +48,7 @@ const BookADemo = () => {
     <>
       <HeadComponent
         title="Book a Demo | FinFloh"
-        description="Book a demo and experience the FinFloh platform live in action. Get all your questions answered by our accounts receivable experts."
+        description="Walk us through your A/R process and see how FinFloh can optimize A/R performance, productivity and tracking."
         canonicalUrl="https://finfloh.com/book-a-demo"
         includePublisher
         pageType="ContactPage"

@@ -104,7 +104,7 @@ const Pricing = () => {
     <>
       <HeadComponent
         title="Pricing - FinFloh"
-        description="Tailored pricing as per business needs. Categorized into starter, growth and enterprise. Talk to us today and gain total cash flow control."
+        description="Flexible pricing tailored to your A/R needs, users and workflows, to automate your finance workflows and accelerate receivables."
         canonicalUrl="https://finfloh.com/pricing"
         mainEntityOfPage="https://finfloh.com/pricing"
         includeIsPartOf

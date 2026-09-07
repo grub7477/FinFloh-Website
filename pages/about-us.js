@@ -64,7 +64,7 @@ const AboutUs = () => {
     <>
       <HeadComponent
         title="About Finfloh"
-        description="FinFloh is an invoice-to-cash platform for finance teams to get receivables faster, take better credit decisions, resolve disputes & automate cash application."
+        description="FinFloh is an AI-powered Accounts Receivable platform that helps finance teams automate invoicing, optimize collections, automate cash application, and reconcile contracts and customer ledgers to accelerate receivables"
         canonicalUrl="https://finfloh.com/about-us"
         mainEntityOfPage="https://finfloh.com/about-us"
         includeIsPartOf

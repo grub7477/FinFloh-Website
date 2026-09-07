@@ -53,7 +53,7 @@ const BookADemo = () => {
     <>
       <HeadComponent
         title="Get a 7-Day Free Trial | FinFloh "
-        description="Gain a 7-day full free access to FinFloh's end-to-end invoice-to-cash platform and wave your path to become best-in-class."
+        description="Get 7-day free access to FinFloh's AI-powered Accounts Receivable platform and see how it works and how it can help your finance team"
         canonicalUrl="https://finfloh.com/free-trial"
         includeIsPartOf
         includeAbout
