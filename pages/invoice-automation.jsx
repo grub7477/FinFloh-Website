@@ -7,6 +7,10 @@ import HeadComponent from "../components/Common/HeadComponent";
 import generateUtmUrls from "../utils/utmUrls";
 import CompaniesLogo from "../components/Common/CompaniesLogo";
 import FaqContent from "../components/Faq/FaqContent_New";
+import CardLayoutFlex from "../components/Sections/AdvanceCards/CardLayout";
+import RightArrow  from "../public/icons/arrow_right.svg";
+import { ServiceIndustry } from "../data/industries.data";
+
 const utmURLs = generateUtmUrls("integrations");
 export const PRODUCT_INFO_MAP_integrations = {
   [PRODUCT.Integration]: {
@@ -355,6 +359,17 @@ const Integration = () => {
           </h2>
         </div>
         <MainFeatures mainFeatures={mainFeatures} />
+
+         <CardLayoutFlex
+                  kicker={ServiceIndustry.aiAgents.kicker}
+                  title={ServiceIndustry.aiAgents.title}
+                  description={ServiceIndustry.aiAgents.description}
+                  agents={ServiceIndustry.aiAgents.agents}
+                  btnText={ServiceIndustry.aiAgents.btnText}
+                  btnLink={ServiceIndustry.aiAgents.btnLink}
+                  icon={<RightArrow />}
+                />
+        
         {/* <div
           className="bg-container second-fold"
           style={{

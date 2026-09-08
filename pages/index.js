@@ -17,6 +17,10 @@ import { podcastData } from "../data/podcastData";
 import PodcastSlider from "../components/Common/PodcastSlider.jsx";
 import NewNewsLetter from "../components/Common/NewNewsLetter";
 import AIAgentsSection from "../components/Sections/AIAgents/AIAgentsSection";
+import CardLayoutFlex from "../components/Sections/AdvanceCards/CardLayout";
+import RightArrow  from "../public/icons/arrow_right.svg";
+import { ServiceIndustry } from "../data/industries.data";
+
 const utmURLs = generatehomeUtmUrls("homepage");
 export const PRODUCT_INFO_MAP_homePage = {
   [PRODUCT.Integration]: {
@@ -310,7 +314,8 @@ const Simple_Features_CONTENT = [
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
     flohsenseAI: {
-      description: "Extract payment details from payment advices and customer emails",
+      description:
+        "Extract payment details from payment advices and customer emails",
     },
   },
   {
@@ -320,7 +325,8 @@ const Simple_Features_CONTENT = [
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Validate invoices against contracts, billing & timesheets",
+        description:
+          "Validate invoices against contracts, billing & timesheets",
       },
       {
         icon: "images/CheckIcon.svg",
@@ -353,11 +359,13 @@ const Simple_Features_CONTENT = [
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Read contracts to extract billing data, pricing and terms",
+        description:
+          "Read contracts to extract billing data, pricing and terms",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Reconcile customer ledgers to identify mismatches & exceptions",
+        description:
+          "Reconcile customer ledgers to identify mismatches & exceptions",
       },
       {
         icon: "images/CheckIcon.svg",
@@ -389,11 +397,13 @@ const Simple_Features_CONTENT = [
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Track A/R performance by company, BU, customer & collector",
+        description:
+          "Track A/R performance by company, BU, customer & collector",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Identify performance gaps, bottlenecks & improvement areas",
+        description:
+          "Identify performance gaps, bottlenecks & improvement areas",
       },
       {
         icon: "images/CheckIcon.svg",
@@ -660,8 +670,7 @@ const FinFlohHome = () => {
               "FinFloh is an AI-powered Accounts Receivable platform that helps finance teams automate invoicing, optimize collections, automate cash application, and reconcile contracts and customer ledgers.",
           },
           {
-            question:
-              "What is FlohSense AI Agent?",
+            question: "What is FlohSense AI Agent?",
             answer:
               "FlohSense AI reads and analyzes customer emails and communications to identify payment commitments, dispute reasons, collection risks and other signals that can help finance teams prioritize and take action.",
           },
@@ -714,7 +723,6 @@ const FinFlohHome = () => {
         scrollToSection={scrollToSection}
         utmURLs={utmURLs}
         PRODUCT_INFO_MAP_url={PRODUCT_INFO_MAP_homePage}
-        
       >
         {/* section 1 ->> main banner */}
         <MainBanner handleFn={handleButtonClick} utmURLs={utmURLs} />
@@ -726,6 +734,17 @@ const FinFlohHome = () => {
         </div> */}
         {/* section 2 ->> Invoice-to-Cash Journey section */}
         <AIAgentsSection />
+
+        <CardLayoutFlex
+          kicker={ServiceIndustry.aiAgents.kicker}
+          title={ServiceIndustry.aiAgents.title}
+          description={ServiceIndustry.aiAgents.description}
+          agents={ServiceIndustry.aiAgents.agents}
+          btnText={ServiceIndustry.aiAgents.btnText}
+          btnLink={ServiceIndustry.aiAgents.btnLink}
+          icon={<RightArrow />}
+        />
+
         {/* <div
           className="bg-container"
           style={{
@@ -1005,10 +1024,11 @@ const FinFlohHome = () => {
                         type={"primary"}
                         href={feature.btnLink}
                         openInNewTab={true}
-                      iconSrc="images/ArrowRight.svg"
-                      iconPosition="right"
-                      width="100%"
-                    />)}
+                        iconSrc="images/ArrowRight.svg"
+                        iconPosition="right"
+                        width="100%"
+                      />
+                    )}
                   </div>
 
                   <div className="feature-image">
