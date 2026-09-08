@@ -403,10 +403,10 @@ const Simple_Features_CONTENT = [
     btnTxt: "Know More",
     btnLink:
       "https://finfloh.com/credit-decisioning?utm_source=homepage_central&utm_medium=finfloh_website",
-    imgSrc: "/images/Analytics.jpg",
+    imgSrc: "/images/analytics.jpg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
-    AI: {
+    flohsenseAI: {
       description: "Analyze customer emails to uncover payment risks",
     },
   },
