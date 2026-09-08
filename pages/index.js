@@ -999,15 +999,16 @@ const FinFlohHome = () => {
                         </div>
                       </a>
                     )}
-                    <CommonButton
-                      text={feature.btnTxt}
-                      type={"primary"}
-                      href={feature.btnLink}
-                      openInNewTab={true}
+                    {feature.btnTxt && (
+                      <CommonButton
+                        text={feature.btnTxt}
+                        type={"primary"}
+                        href={feature.btnLink}
+                        openInNewTab={true}
                       iconSrc="images/ArrowRight.svg"
                       iconPosition="right"
                       width="100%"
-                    />
+                    />)}
                   </div>
 
                   <div className="feature-image">
