@@ -8,6 +8,9 @@ import FaqContent from "../components/Faq/FaqContent_New";
 import generateUtmUrls from "../utils/utmUrls";
 import HeadComponent from "../components/Common/HeadComponent";
 import CompaniesLogo from "../components/Common/CompaniesLogo";
+import CardLayoutFlex from "../components/Sections/AdvanceCards/CardLayout";
+import RightArrow  from "../public/icons/arrow_right.svg";
+import { ServiceIndustry } from "../data/industries.data";
 
 const utmURLs = generateUtmUrls("collections");
 
@@ -360,6 +363,15 @@ const Collections = () => {
           </h2>
         </div>
         <MainFeatures mainFeatures={mainFeatures} />
+ <CardLayoutFlex
+          kicker={ServiceIndustry.aiAgents.kicker}
+          title={ServiceIndustry.aiAgents.title}
+          description={ServiceIndustry.aiAgents.description}
+          agents={ServiceIndustry.aiAgents.agents}
+          btnText={ServiceIndustry.aiAgents.btnText}
+          btnLink={ServiceIndustry.aiAgents.btnLink}
+          icon={<RightArrow />}
+        />
 
         <Newsletter
           heading={
