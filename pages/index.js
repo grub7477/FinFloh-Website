@@ -255,19 +255,19 @@ const Simple_Features_CONTENT = [
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Automate reminders as per payment aging",
+        description: "Automate reminders as per aging and customer priority",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Internal alerts & escalations for payment delays",
+        description: "Enable collector AI worklists with prioritization",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Collectors performance tracking & worklist",
+        description: "Track collector performance, notes, call logs and emails",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Accept & track Promise-to-Pay",
+        description: "Capture, track & follow up on Promise-to-Pay",
       },
     ],
     btnTxt: "Know More",
@@ -284,19 +284,19 @@ const Simple_Features_CONTENT = [
   {
     icon: "images/recon-icon.svg",
     text: "Floh <strong>Recon</strong> AI",
-    title: "Optimize Cash Application Speed and Accuracy",
+    title: "Acceleratge Cash Application Speed, Accuracy & Efficiency",
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "OCR on bank statements to retrieve customers",
+        description: "Perform OCR on bank statements and advices",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Recon amongst payment-customer-invoices",
+        description: "Match payments with customers and invoices",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Adjustment of tax and other charges",
+        description: "Adjust of taxes against payments and invoices",
       },
       {
         icon: "images/CheckIcon.svg",
@@ -310,25 +310,25 @@ const Simple_Features_CONTENT = [
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
     flohsenseAI: {
-      description: "Extract payment details from customer emails/chats",
+      description: "Extract payment details from payment advices and customer emails",
     },
   },
   {
     icon: "images/invoice-icon.svg",
     text: "Floh <strong>Invoice</strong> AI",
-    title: "Automate Invoice Generation and Delivery",
+    title: "Accelerate Invoice Validation, Generation & Delivery",
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
+        description: "Validate invoices against contracts, billing & timesheets",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Auto-generate invoices in ERP",
+      },
+      {
+        icon: "images/CheckIcon.svg",
         description: "Send invoices via email and buyer portal uploads",
-      },
-      {
-        icon: "images/CheckIcon.svg",
-        description: "Generate invoices aligned with orders and contracts",
-      },
-      {
-        icon: "images/CheckIcon.svg",
-        description: "Configure invoice email templates with attachments",
       },
       {
         icon: "images/CheckIcon.svg",
@@ -343,29 +343,29 @@ const Simple_Features_CONTENT = [
 
     flohsenseAI: {
       description:
-        "Auto-revert to customer queries & data requests for invoice details & statements",
+        "Close customer queries & data requests for invoice details & statements",
     },
   },
   {
     icon: "images/credit-icon.svg",
     text: "Floh <strong>Credit</strong> AI",
-    title: "Onboard Faster with Smart Credit & Pricing Terms",
+    title: "Extract Contract Terms and Reconcile Customer Ledgers",
     featurePoints: [
       {
         icon: "images/CheckIcon.svg",
-        description: "Track buyer's market data and A/R aging data",
+        description: "Read contracts to extract billing data, pricing and terms",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Generate dynamic ML-based credit scoring",
+        description: "Reconcile customer ledgers to identify mismatches & exceptions",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Apply AI-driven onboarding decisions in CRM",
+        description: "Resolve mismatches through intelligent dispute workflows",
       },
       {
         icon: "images/CheckIcon.svg",
-        description: "Drive post-go-live decisions using credit scores",
+        description: "Validate and manage customer claims",
       },
     ],
     btnTxt: "Know More",
@@ -376,6 +376,38 @@ const Simple_Features_CONTENT = [
 
     flohsenseAI: {
       description: "Analyze buyer emails and responses for credit scoring",
+    },
+  },
+  {
+    icon: "images/credit-icon.svg",
+    text: "Floh <strong>Analytics</strong> AI",
+    title: "Review & Optimize A/R Performance with Analytics",
+    featurePoints: [
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Monitor DSO, ageing & collection trends",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Track A/R performance by company, BU, customer & collector",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Identify performance gaps, bottlenecks & improvement areas",
+      },
+      {
+        icon: "images/CheckIcon.svg",
+        description: "Forecast collections, cash flow & A/R outcomes",
+      },
+    ],
+    btnTxt: "Know More",
+    btnLink:
+      "https://finfloh.com/credit-decisioning?utm_source=homepage_central&utm_medium=finfloh_website",
+    imgSrc: "/images/Analytics.jpg",
+    alt: "AI based Credit integrations-and-invoice-verification FinFloh",
+
+    AI: {
+      description: "Analyze customer emails to uncover payment risks",
     },
   },
   // {
