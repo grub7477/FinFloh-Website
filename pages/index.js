@@ -354,7 +354,7 @@ const Simple_Features_CONTENT = [
   },
   {
     icon: "images/credit-icon.svg",
-    text: "Floh <strong>Credit</strong> AI",
+    text: "Floh <strong>Contract</strong> AI",
     title: "Extract Contract Terms and Reconcile Customer Ledgers",
     featurePoints: [
       {
@@ -379,7 +379,7 @@ const Simple_Features_CONTENT = [
     btnTxt: "Know More",
     btnLink:
       "https://finfloh.com/credit-decisioning?utm_source=homepage_central&utm_medium=finfloh_website",
-    imgSrc: "/images/Credit-home.svg",
+    imgSrc: "/images/Contract-intelligence-product-banner.jpg",
     alt: "AI based Credit integrations-and-invoice-verification FinFloh",
 
     flohsenseAI: {
@@ -388,7 +388,7 @@ const Simple_Features_CONTENT = [
   },
   {
     icon: "images/credit-icon.svg",
-    text: "Floh <strong>Analytics</strong> AI",
+    text: "Floh <strong>Insights</strong> AI",
     title: "Review & Optimize A/R Performance with Analytics",
     featurePoints: [
       {
@@ -734,16 +734,6 @@ const FinFlohHome = () => {
         </div> */}
         {/* section 2 ->> Invoice-to-Cash Journey section */}
         <AIAgentsSection />
-
-        <CardLayoutFlex
-          kicker={ServiceIndustry.aiAgents.kicker}
-          title={ServiceIndustry.aiAgents.title}
-          description={ServiceIndustry.aiAgents.description}
-          agents={ServiceIndustry.aiAgents.agents}
-          btnText={ServiceIndustry.aiAgents.btnText}
-          btnLink={ServiceIndustry.aiAgents.btnLink}
-          icon={<RightArrow />}
-        />
 
         {/* <div
           className="bg-container"
@@ -1205,6 +1195,15 @@ const FinFlohHome = () => {
             </div>
           </div>
         </div>
+          <CardLayoutFlex
+          kicker={ServiceIndustry.aiAgents.kicker}
+          title={ServiceIndustry.aiAgents.title}
+          description={ServiceIndustry.aiAgents.description}
+          agents={ServiceIndustry.aiAgents.agents}
+          btnText={ServiceIndustry.aiAgents.btnText}
+          btnLink={ServiceIndustry.aiAgents.btnLink}
+          icon={<RightArrow />}
+        />
         {/* section 11 ->> FAQ section */}
         <FaqContent />
         {/* section 12 ->> Newsletter */}
