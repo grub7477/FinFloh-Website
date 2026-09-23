@@ -246,9 +246,7 @@ const IMPLEMENTATION_CONTENT = [
     id: "2",
     number: "02",
     title: "Configure",
-    description: [
-      "Workflow configuration user and role setup",
-    ],
+    description: ["Workflow configuration user and role setup"],
   },
   {
     id: "3",
@@ -392,7 +390,7 @@ export default function NetsuitePage() {
   const cardRefs = useRef({});
   const isClickScrolling = useRef(false);
 
- useEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (isClickScrolling.current) return;
@@ -401,7 +399,7 @@ export default function NetsuitePage() {
         if (visible.length === 0) return;
 
         const topMost = visible.reduce((a, b) =>
-          a.boundingClientRect.top < b.boundingClientRect.top ? a : b
+          a.boundingClientRect.top < b.boundingClientRect.top ? a : b,
         );
         setActiveReconciliationId(topMost.target.dataset.id);
       },
@@ -409,7 +407,7 @@ export default function NetsuitePage() {
         root: null,
         rootMargin: "-30% 0px -50% 0px",
         threshold: 0,
-      }
+      },
     );
 
     Object.values(cardRefs.current).forEach((el) => el && observer.observe(el));
@@ -420,7 +418,10 @@ export default function NetsuitePage() {
     setActiveReconciliationId(id);
     isClickScrolling.current = true;
 
-    cardRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "start" });
+    cardRefs.current[id]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
 
     window.clearTimeout(handleTabClick._t);
     handleTabClick._t = window.setTimeout(() => {
@@ -428,10 +429,81 @@ export default function NetsuitePage() {
     }, 700);
   };
 
-
   return (
     <>
-      <HeadComponent />
+      <HeadComponent
+        title="AI Accounts Receivable Automation for Oracle NetSuite | FinFloh"
+        description="FinFloh connects with Oracle NetSuite to automate customer-ledger reconciliation, invoice validation, collections, cash application & disputes with AI."
+        canonicalUrl="https://finfloh.com/erp/oracle-netsuite"
+        includeIsPartOf
+        includeAbout
+        aboutProps={{
+          name: "Accounts Receivable Automation for Oracle NetSuite",
+          serviceType: "AI-Driven Accounts Receivable Automation for NetSuite",
+        }}
+        includeBreadcrumbs
+        breadcrumbItems={[
+          {
+            name: "Oracle NetSuite",
+            item: "https://finfloh.com/erp/oracle-netsuite",
+          },
+        ]}
+        includeFAQ
+        FAQProps={[
+          {
+            question: "Does FinFloh replace Oracle NetSuite?",
+            answer:
+              "No. NetSuite remains your financial system of record. FinFloh works alongside it as an AI-powered accounts receivable layer, reading NetSuite data, adding the context that sits outside the ERP, and automating the AR workflows around it.",
+          },
+          {
+            question: "How does FinFloh connect to NetSuite?",
+            answer:
+              "FinFloh uses a native NetSuite connector that keeps customer, invoice, payment and receivables data dynamically in sync, so finance teams work from current NetSuite data rather than periodic exports.",
+          },
+          {
+            question:
+              "Can FinFloh update data in NetSuite, or only read from it?",
+            answer:
+              "Both. The connector is two-way: FinFloh retrieves data from NetSuite and writes approved outcomes back, such as payment applications, AR updates, dispute outcomes and workflow status. Supported write-back objects are confirmed per deployment and governed by your approval controls.",
+          },
+          {
+            question: "What NetSuite data does FinFloh use?",
+            answer:
+              "FinFloh workflows are built around customer master data, invoices, credit memos, sales orders, payments, open receivables, customer transactions and AR balances. The exact scope for your instance is confirmed during integration design.",
+          },
+          {
+            question: "How does FinFloh reconcile customer ledgers?",
+            answer:
+              "FinFloh reconciles NetSuite receivables against evidence outside the ERP, including remittances, emails, contracts, POs, credit notes and claims, and shows matched items, exceptions, root cause and recommended action for each customer.",
+          },
+          {
+            question:
+              "Can FinFloh validate invoices before they reach the customer?",
+            answer:
+              "Yes. FinFloh reads contracts, SOWs, POs and billing inputs, validates pricing, tax and commercial terms against the invoice, and flags discrepancies before the invoice is posted to NetSuite and delivered.",
+          },
+          {
+            question: "How does FinFloh improve collections on NetSuite AR?",
+            answer:
+              "FinFloh layers payment behaviour, open disputes and prior commitments onto NetSuite ageing and open AR, then gives collectors a prioritized worklist with a recommended next action, automated reminders and promise-to-pay tracking.",
+          },
+          {
+            question: "How does cash application work with NetSuite?",
+            answer:
+              "FinFloh reads remittance advice, identifies the customer, matches payments to open invoices and scores its confidence. High-confidence matches are applied to NetSuite, and genuine exceptions are routed to a person for review.",
+          },
+          {
+            question: "What does the FlohSense AI agent do?",
+            answer:
+              "FlohSense AI reads customer emails and replies, understands intent such as a payment commitment, dispute, query or payment advice, links it to the right NetSuite customer and invoice, and triggers or routes the next workflow.",
+          },
+          {
+            question: "How does FinFloh handle disputes and deductions?",
+            answer:
+              "Every short payment or deduction becomes a classified exception. FinFloh gathers the supporting invoice, contract, remittance and correspondence, routes it to an owner, and tracks the decision and recovery through to closure with a full audit trail.",
+          },
+        ]}
+      />
       <WebsiteLayout>
         {/* Hero Section */}
         <section className="section">
@@ -447,9 +519,10 @@ export default function NetsuitePage() {
                 href="/book-a-demo?utm_source=netsuite_main_cta&utm_medium=finfloh_website&utm_campaign=netsuite_page"
               />
               <p className={styles.ParaDef}>
-                FinFloh connects Oracle NetSuite with CRM and other
-                systems through a single warehouse and deploys AI automations and agents to automate invoicing, customer-ledger recon,
-                collections and cash application.
+                FinFloh connects Oracle NetSuite with CRM and other systems
+                through a single warehouse and deploys AI automations and agents
+                to automate invoicing, customer-ledger recon, collections and
+                cash application.
               </p>
             </div>
             <div>
@@ -493,7 +566,7 @@ export default function NetsuitePage() {
             <div className={styles.CardWrapper}>
               {GAP_CONTENT.map((key, index) => (
                 <div className={styles.Card} key={index}>
-                  <img src={key.icon} className="icon--lg"/>
+                  <img src={key.icon} className="icon--lg" />
                   <h4 className="heading_md">{key.title}</h4>
                   <p className="p18">{key.content}</p>
                 </div>
@@ -597,11 +670,14 @@ export default function NetsuitePage() {
               </div>
             </div>
             <div className={styles.CardWrapper_4cards}>
-                {CONTROL_CONTENT.map((key, i)=>(
-              <div className={styles.Card_4Column} key={i}>
-                <img src="/icons/integrations/blueCheck.svg" className="icon--lg" />
-                <h4 className="heading_md">{key.title}</h4>
-              </div>
+              {CONTROL_CONTENT.map((key, i) => (
+                <div className={styles.Card_4Column} key={i}>
+                  <img
+                    src="/icons/integrations/blueCheck.svg"
+                    className="icon--lg"
+                  />
+                  <h4 className="heading_md">{key.title}</h4>
+                </div>
               ))}
             </div>
           </div>
@@ -620,22 +696,27 @@ export default function NetsuitePage() {
               </div>
             </div>
             <div className={styles.Card_GridLayout}>
-                {IMPLEMENTATION_CONTENT.map((key, i)=>(
-              <div className={styles.CardGrid} key={i}>
-                <p className={styles.kicker}>{key.number}</p>
-                <h4 className="heading_md">{key.title}</h4>
-                <p className={styles.ParaDef}>{key.description}</p>
-              </div>
+              {IMPLEMENTATION_CONTENT.map((key, i) => (
+                <div className={styles.CardGrid} key={i}>
+                  <p className={styles.kicker}>{key.number}</p>
+                  <h4 className="heading_md">{key.title}</h4>
+                  <p className={styles.ParaDef}>{key.description}</p>
+                </div>
               ))}
               <div className={styles.gridWide}>
                 <div className={styles.CardGrid}>
                   <div>
                     <p className={styles.kicker}>05</p>
                     <h4 className="heading_md">Scale</h4>
-                    <p className={styles.ParaDef}>Manage increase in size and complexity of business</p>
+                    <p className={styles.ParaDef}>
+                      Manage increase in size and complexity of business
+                    </p>
                   </div>
                   <div>
-                    <ButtonCommon  label="Talk to an expert" href="/book-a-demo" />
+                    <ButtonCommon
+                      label="Talk to an expert"
+                      href="/book-a-demo"
+                    />
                   </div>
                 </div>
               </div>
@@ -656,15 +737,15 @@ export default function NetsuitePage() {
                 </p>
               </div>
               <div>
-                <ButtonCommon label="Talk to an Expert"  href="/book-a-demo"/>
+                <ButtonCommon label="Talk to an Expert" href="/book-a-demo" />
               </div>
             </div>
             <div className={styles.CardWrapper_4cards}>
-                {BUSINESS_CONTENT.map((key, i)=>(
-              <div className={styles.Card_4Column} key={i}>
-                <img src={key.icon} className="icon--lg" />
-                <h4 className="heading_md">{key.title}</h4>
-              </div>
+              {BUSINESS_CONTENT.map((key, i) => (
+                <div className={styles.Card_4Column} key={i}>
+                  <img src={key.icon} className="icon--lg" />
+                  <h4 className="heading_md">{key.title}</h4>
+                </div>
               ))}
             </div>
           </div>
@@ -682,18 +763,16 @@ export default function NetsuitePage() {
         {/* Contact Us */}
         <div
           className="container whyfinfloh-newsletter"
-          style={{ padding: "48px" }} 
+          style={{ padding: "48px" }}
         >
-          <div className="whyfinfloh-newsletter-cnt" >
+          <div className="whyfinfloh-newsletter-cnt">
             <h2 className="h3 text-inverse">
-              Turn Your NetSuite AR Into<br /> an Intelligent Finance Operation
+              Turn Your NetSuite AR Into
+              <br /> an Intelligent Finance Operation
             </h2>
           </div>
           <div className="whyfinfloh-newsletter-btn">
-            <LinkButton
-              openInNewTab={true}
-              href="/book-a-demo"
-            >
+            <LinkButton openInNewTab={true} href="/book-a-demo">
               Talk To An Expert
             </LinkButton>
           </div>
