@@ -1,0 +1,332 @@
+// Specific level
+.kickerH3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #3b82f6 0%, #a97bf2 40%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CardHeader {
+  color: var(--Font-primary, #111827);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.p18 {
+  color: #595c64;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.p16 {
+  color: #6b7280;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
+}
+
+// Container Level
+.HeadingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.CardWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  border: 1px solid #d1d5db;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px;
+  border-right: 1px dashed #d1d5db;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.Card:nth-child(3n) {
+  border-right: none;
+}
+
+.Card:nth-child(3n + 1):nth-last-child(-n + 3),
+.Card:nth-child(3n + 1):nth-last-child(-n + 3) ~ .Card {
+  border-bottom: none;
+}
+
+.Card > img {
+  max-width: 48px;
+  width: 100%;
+  height: 100%;
+}
+
+.CardWrapper_Vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gridLayout_2column {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 24px;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.leftWrapper--sticky {
+  position: sticky;
+  top: 96px; // adjust to your header height
+  align-self: start;
+  height: fit-content;
+}
+
+.Loose_card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 36px;
+  border: 1px solid #d1d5db;
+  border-radius: 2px;
+  scroll-margin-top: 40px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItems_new {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.unorderedList_new {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.divider_new {
+  padding-top: 1px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #e5e7eb 0px,
+    #e5e7eb 8px,
+    transparent 8px,
+    transparent 32px
+  );
+  background-size: 16px 1px;
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+
+.tagInsideCard {
+  display: flex;
+  padding: 4px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 99px;
+  text-wrap: wrap;
+  width: fit-content;
+}
+
+.cardFlex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+// ---------- Section 5: reconciliation scroll-spy nav ----------
+.tab_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+
+  .CardHeader {
+    color: #9ca3af;
+    transition: color 0.2s ease;
+  }
+
+  .tab-indicator {
+    width: 16px;
+    height: 2px;
+    background: transparent;
+    transition: background 0.2s ease;
+  }
+
+  &.active {
+    .CardHeader {
+      color: var(--Font-primary, #111827);
+    }
+    .tab-indicator {
+      background: #6366f1;
+    }
+  }
+}
+
+// ---------- Section 4: DataScope hero ----------
+.DataScopeSection {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.IllustrationPlaceholder {
+  width: 100%;
+  height: 160px;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-family: Inter;
+  font-size: 14px;
+  background: repeating-linear-gradient(
+    45deg,
+    #fafafa,
+    #fafafa 10px,
+    #f3f4f6 10px,
+    #f3f4f6 20px
+  );
+  flex-shrink: 0;
+}
+
+.DataScopeContent {
+  position: relative;
+  flex: 1;
+  min-height: 320px;
+}
+
+.DataScopeCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 620px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.DataScopeSide {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 260px;
+  height: 100%;
+}
+
+.DataScopeSide--left {
+  left: 40px;
+}
+
+.DataScopeSide--right {
+  right: 40px;
+}
+
+.TopicPill,
+.TopicCard {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.TopicPill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: fit-content;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    border-color: #9ca3af;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.TopicCard {
+  width: 260px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.TopicCardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TopicIconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
