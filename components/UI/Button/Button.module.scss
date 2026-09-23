@@ -7,7 +7,7 @@
 
   padding: var(--padding-sm) var(--padding-md);
   gap: var(--gap-sm);
-  border-radius: var(--radius-xs);
+  border-radius: 2px;
 
   &__icon {
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .btn--primary {
-  background-color: var(--brand-color);
+  background-color: #2563EB;
   color: white;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .btn:hover {
-  background-color: var(--hover-primary);
+  background-color: #16419f;
   color: white;
   box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);

@@ -1,0 +1,176 @@
+// Integration CSS Styles
+// Custom Styles
+.Kicker {
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 680px;
+  color: #2563EB;
+  text-transform: uppercase;
+}
+
+
+// Hero Section
+.HeroContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+// 2nd Section
+.ContainerFloating {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  background-color: antiquewhite;
+}
+
+.CenterAlignAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Class added via JavaScript when scrolled */
+.ContainerFloating.active {
+  background-color: #3498db; /* New full-screen background color */
+}
+
+.ContainerFloating.active .CenterAlignAll {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.HeadingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.CardWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  border: 1px solid #d1d5db;
+}
+
+.CardWrapper_4cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border: 1px solid #d1d5db;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px;
+  border-right: 1px dashed #d1d5db;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.Card:nth-child(3n) {
+  border-right: none;
+}
+
+.Card:nth-child(3n + 1):nth-last-child(-n + 3),
+.Card:nth-child(3n + 1):nth-last-child(-n + 3) ~ .Card {
+  border-bottom: none;
+}
+
+.Card_4Column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px;
+  border-right: 1px dashed #d1d5db;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.Card_4Column:nth-child(4n) {
+  border-right: none;
+}
+
+.Card_4Column:nth-child(4n + 1):nth-last-child(-n + 4),
+.Card_4Column:nth-child(4n + 1):nth-last-child(-n + 4) ~ .Card_4Column {
+  border-bottom: none;
+}
+
+// --- Section 5 --
+.tab_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+
+  .CardHeader {
+    color: #9ca3af;
+    transition: color 0.2s ease;
+  }
+
+  .tab-indicator {
+    width: 16px;
+    height: 2px;
+    background: transparent;
+    transition: background 0.2s ease;
+  }
+
+  &.active {
+    .CardHeader {
+      color: var(--Font-primary, #111827);
+    }
+    .tab-indicator {
+      background: #6366f1;
+    }
+  }
+}
+
+// Card Layout Grid
+.Card_GridLayout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.CardGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px;
+  border: 1px solid #d1d5db;
+  justify-content: space-between;
+}
+
+.gridWide{
+    grid-column:span 4;
+    border-radius: 4px;
+background: radial-gradient(220.85% 133.24% at 0% 0%, #FFF 0%, #EEF2FF 18.75%, #96D3F9 100%);
+}
