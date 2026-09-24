@@ -89,6 +89,10 @@
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 24px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .leftWrapper {
@@ -102,6 +106,10 @@
   top: 96px; // adjust to your header height
   align-self: start;
   height: fit-content;
+  @media (max-width: 1024px) {
+    position: relative;
+    top: 0px;
+  }
 }
 
 .Loose_card {
@@ -112,6 +120,9 @@
   border: 1px solid #d1d5db;
   border-radius: 2px;
   scroll-margin-top: 40px;
+  @media (max-width: 1024px) {
+    padding: 24px;
+  }
 }
 
 ul,
@@ -170,6 +181,9 @@ li {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .tab-btn {
@@ -294,7 +308,9 @@ li {
   font-weight: 500;
   color: #111827;
   cursor: pointer;
-  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  transition:
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
 
   &:hover {
     border-color: #9ca3af;
