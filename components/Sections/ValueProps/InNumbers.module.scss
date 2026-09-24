@@ -1,0 +1,52 @@
+// Add Code
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 36px;
+  overflow-x: auto;
+  gap: 24px;
+  -webkit-overflow-scrolling: touch;
+  @media (max-width: 1200) {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    gap: 32px;
+
+    scrollbar-width: none; // Firefox
+    &::-webkit-scrollbar {
+      display: none; // Chrome/Safari
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+  @media (max-width: 1200) {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+}
+
+.header_h3,
+.value_p {
+  color: #424753;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-wrap: nowrap;
+}
+
+.value_p {
+  color: #1750ca;
+}

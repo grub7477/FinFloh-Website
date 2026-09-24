@@ -20,6 +20,7 @@ import AIAgentsSection from "../components/Sections/AIAgents/AIAgentsSection";
 import CardLayoutFlex from "../components/Sections/AdvanceCards/CardLayout";
 import RightArrow  from "../public/icons/arrow_right.svg";
 import { ServiceIndustry } from "../data/industries.data";
+import InNumberProp from "../components/Sections/ValueProps/InNumbers.jsx"
 
 const utmURLs = generatehomeUtmUrls("homepage");
 export const PRODUCT_INFO_MAP_homePage = {
@@ -734,6 +735,7 @@ const FinFlohHome = () => {
         </div> */}
         {/* section 2 ->> Invoice-to-Cash Journey section */}
         <AIAgentsSection />
+        <InNumberProp />
 
         {/* <div
           className="bg-container"
