@@ -434,7 +434,7 @@ export default function NetsuitePage() {
       <HeadComponent
         title="AI Accounts Receivable Automation for Oracle NetSuite | FinFloh"
         description="FinFloh connects with Oracle NetSuite to automate customer-ledger reconciliation, invoice validation, collections, cash application & disputes with AI."
-        canonicalUrl="https://finfloh.com/erp/oracle-netsuite"
+        canonicalUrl="https://finfloh.com/integrations/netsuite"
         includeIsPartOf
         includeAbout
         aboutProps={{
@@ -445,7 +445,7 @@ export default function NetsuitePage() {
         breadcrumbItems={[
           {
             name: "Oracle NetSuite",
-            item: "https://finfloh.com/erp/oracle-netsuite",
+            item: "https://finfloh.com/integrations/netsuite",
           },
         ]}
         includeFAQ
