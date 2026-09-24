@@ -6,6 +6,7 @@ import { PRODUCT, PRODUCT_INFO_MAP } from "../Common/ProductArea";
 import NavBarSmallScreen from "./NavBarSmallScreen";
 import ProductsDropdown from "../Common/ProductsDropdown";
 import ResourcesDropdown from "../Common/ResourcesDropdown";
+import AboutFinFlohDropdown from "../Common/AboutFinFlohDropdown";
 import { MainBanner } from "../UI/Banner/MainBanner";
 import IndustriesDropdown from "../Common/industriesDropdown";
 
@@ -45,7 +46,12 @@ const Navbar = (props) => {
 
     return (
       <ul className={`${!noNavbar && "d-none"} navbar-nav navbar-dropdown`}>
-        <li className="nav-item">
+        {/* add A new dropdown for Why FinFloh with following options inside
+        1. Addition of why finfloh page
+        2. Integrations page
+        3. Company Page
+        */}
+        {/* <li className="nav-item">
           <Link
             href={
               // utmURLs?.pricing_navbar ||
@@ -58,7 +64,7 @@ const Navbar = (props) => {
               {props.smallerScreen ? <img src={"/images/Redirect.svg"} /> : ""}
             </a>
           </Link>
-        </li>
+        </li> */}
         <li className="nav-item">
           <Link href="#">
             <a
@@ -141,6 +147,36 @@ const Navbar = (props) => {
             <ResourcesDropdown />
           </ul>
         </li>
+
+        {/* About Us */}
+        <li className="nav-item">
+          <Link href="#">
+            <a
+              className="nav-link"
+              style={aStyle}
+              onClick={(e) => e.preventDefault()}
+            >
+            Company{" "}
+              {props.smallerScreen ? (
+                ""
+              ) : (
+                <img
+                  src={
+                    props.theme === Theme.LIGHT
+                      ? "/images/Dropdown.svg"
+                      : "/images/Dropdown.svg"
+                  }
+                  alt="Dropdown menu icon FinFloh"
+                />
+              )}
+            </a>
+          </Link>
+          <ul className="dropdown-menu dropdown-menu1">
+            <AboutFinFlohDropdown />
+          </ul>
+        </li>
+
+        {/* Partner */}
         <li className="nav-item">
           <Link
             href={utmURLs?.partner_program || "/partner-program"}
@@ -153,7 +189,7 @@ const Navbar = (props) => {
           </Link>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link
             href={utmURLs?.about_us_nabvar || "/about-us"}
             activeClassName="active"
@@ -163,7 +199,7 @@ const Navbar = (props) => {
               {props.smallerScreen ? <img src={"/images/Redirect.svg"} /> : ""}
             </a>
           </Link>
-        </li>
+        </li> */}
 
         <li className="nav-item">
           <Link
