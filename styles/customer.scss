@@ -1,0 +1,100 @@
+// Customer css styles specific for gupshup/yellow
+.caseStudy {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.leftSide_Layout {
+    display: flex;
+    flex-direction: column;
+  flex: 1.25;
+  position: sticky;
+  height: fit-content;
+  top: 80px;
+  gap: 20px;
+}
+
+.rightSide_Layout {
+  flex: 2;
+  min-height: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+// --- Basic layout ---
+.quoteCard{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: #F5EAFE;
+    border-radius: 4px;
+}
+
+.quoteCard span p{
+    gap: 12px;
+    color: #111827;
+}
+
+.wrapper-valueProp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8px;
+}
+
+.valueProp-customer{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 8px;
+
+
+    border: 1px solid #D9D9D9;
+    height: 100%;
+}
+
+// Table Starts here
+.headerTable{
+    padding: 20px;
+    background-color: #EDF5FE;
+    border-right: 1px solid #bccde0;
+}
+
+.headerTable:last-child {
+    border-right: none;
+}
+
+.itemTable{
+    padding: 20px;
+    align-items: center;
+    border: 1px solid #dee7f3;
+    align-content: flex-start;
+} 
+
+// -- Card --
+.card-customerContact{
+    display: flex;
+    flex-direction: row;
+    padding: 48px;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: radial-gradient(220.85% 133.24% at 0% 0%, #FFF 0%, #EEF2FF 18.75%, #96D3F9 100%);
+}
+
+.card-customerHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logoButtonCombo{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-block: 48px;
+}
