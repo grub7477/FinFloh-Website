@@ -31,6 +31,8 @@ import "../styles/PodcastDetails.scss";
 import "../styles/flohsense_ai.scss";
 import "../styles/PodcastSlider.scss";
 import "../styles/integrations.scss";
+import "../styles/customer.scss"
+
 import GoTop from "../components/Shared/GoTop";
 import { Analytics } from "@vercel/analytics/react";
 import Custom404 from "./404";
