@@ -90,4 +90,89 @@ export const caseStudies = [
       buttonLink: "/book-a-demo",
     },
   },
+  {
+  slug: "gupshup",
+  logo: "/assets/logos/gupshup.svg",
+  customerName: "Gupshup",
+  industry: "CPaaS / Conversational Messaging",
+  pdfFile: "/pdfs/case-study/finfloh-case-study-gupshup.pdf",
+  pdfIllustration: "/images/customer/gupshup-websiteBanner.svg", // book/doc illustration for the download side
+
+  // Hero section
+  hero: {
+    headline:
+      "How Gupshup reduced DSO by 40% and saved 450 Man-Hours per month with FinFloh?",
+    // No named customer quote provided in source material
+  },
+
+  // Key metrics / stat cards
+  stats: [
+    { value: "40%", label: "Reduction in DSO" },
+    { value: "450", label: "Man Hours Saved" },
+    { value: "40%", label: "Growth in Month-wise Collections" },
+  ],
+
+  // Two-column challenge/solution intro block
+  challengeSolutionSummary: {
+    challengeTitle: "Biggest Business Challenges",
+    challengeBody:
+      "Managing the Invoice-to-Cash cycle becomes increasingly complex as businesses scale, with multiple customers, billing entities and contacts during invoicing and collections. For Gupshup, ensuring invoice and reminder emails reached the right stakeholders across different customers required considerable manual effort and was error-prone. Finance teams also needed visibility into email deliverability for better payment closure and control.",
+    solutionTitle: "How does FinFloh solve them?",
+    solutionBody:
+      "With FinFloh, Gupshup automated its invoice delivery and collection follow-up workflows, ensuring invoices and reminders reached the right POCs at the right time. FinFloh provided deliverability analytics to track invoice communication and automated reminders to drive timely payments. This helped Gupshup streamline invoice-to-cash operations, reduce manual follow-ups and improve visibility across customer communications.",
+  },
+
+  // Detailed challenge -> solution table
+  challengeSolutionTable: [
+    {
+      challenge:
+        "Invoices had to be manually sent to multiple POCs across different sites and customers",
+      solution:
+        "Automated invoice distribution to the correct POCs based on customers and billing config",
+    },
+    {
+      challenge:
+        "Reminder emails needed to be sent and tracked at a customer level",
+      solution:
+        "Automated sending of reminder emails at a customer level with open invoices and SoA",
+    },
+    {
+      challenge:
+        "Customer contacts were managed offline and not stored in a centralized platform",
+      solution:
+        "Centralized management of contacts across systems and teams with easier updations",
+    },
+    {
+      challenge:
+        "Invoice emails and payment reminders weren't connected, creating gaps in payment follow-up",
+      solution:
+        "Connected invoice-to-reminders for follow-ups with correct aging balances and invoice status",
+    },
+    {
+      challenge:
+        "Finance teams had limited visibility into customer-level invoice communication history",
+      solution:
+        "Centralized communication system between customers and POC",
+    },
+  ],
+
+  // About FinFloh block (reused across case studies, kept here for per-page override if needed)
+  about: {
+    title: "About FinFloh's AI-Powered Credit-to-Cash Software",
+    body: [
+      "FinFloh is an AI-native finance platform that connects ERP, CRM, banking, and other finance systems into one intelligent Contract-to-Cash workbench. Its AI agents power Contract Intelligence, Invoice Automation, Collections, and Cash Application to prevent revenue leakage, accelerate invoicing and cash realization, and reduce manual effort.",
+      "By bringing fragmented data and processes together, FinFloh creates a single source of truth that enables finance teams to operate with greater visibility, control, and efficiency.",
+    ],
+    ctaLabel: "Learn More About FinFloh Software",
+    ctaLink: "https://www.finfloh.com",
+  },
+
+  productBanner: {
+    heading: "Supercharge your A/R with FinFloh",
+    subheading:
+      "Talk to our finance experts and begin your AR transformation journey today",
+    buttonLabel: "BOOK A DEMO",
+    buttonLink: "/book-a-demo",
+  },
+},
 ];
