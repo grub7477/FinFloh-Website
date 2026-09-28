@@ -30,6 +30,19 @@ const ResourcesDropdown = () => {
         url: "/glossary",
       },
     ],
+    caseStudy: [
+      {
+        title: "Yellow AI",
+        icon: "/images/book_ribbon.svg",
+        url: "/customers/yellow-ai",
+      },
+      {
+        title: "Gupshup",
+        icon: "/images/book_ribbon.svg",
+        url: "/customers/gupshup",
+      },
+      
+    ],
 
     podcast: [
       // latest podcast content manuaaly added
@@ -59,6 +72,29 @@ const ResourcesDropdown = () => {
       <div className="products-dropdown-left">
         <div className="products-dropdown-left-heading">KNOWLEDGE HUB</div>
         {ResourcesData.others.map((product, index) => (
+          <Link href={product.url} activeClassName="active" key={index}>
+            <div className="products-dropdown-left-content">
+              <div className="products-dropdown-left-icon">
+                <img src={product.icon} alt={`${product.title} Icon`} />
+              </div>
+              <div className="products-dropdown-left-content-main">
+                <div className="products-dropdown-left-title">
+                  {product.title}
+                </div>
+                <div className="products-dropdown-left-subtitle">
+                  {product.subtitle}
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      
+    
+      <div className="products-dropdown-left">
+        <div className="products-dropdown-left-heading">CASE STUDIES</div>
+        {ResourcesData.caseStudy.map((product, index) => (
           <Link href={product.url} activeClassName="active" key={index}>
             <div className="products-dropdown-left-content">
               <div className="products-dropdown-left-icon">
