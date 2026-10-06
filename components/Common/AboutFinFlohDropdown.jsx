@@ -22,7 +22,7 @@ const AboutFinFlohDropdown = () => {
       {
         title: "Oracle Netsuite",
         // description: "ERP",
-        icon: "/icons/integrations/netsuite_icon.svg",
+        icon: "/icons/integrations/oracleNetsuite.svg",
         url: "/integrations/netsuite",
       },
     ],
