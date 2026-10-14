@@ -37,9 +37,9 @@ const AboutFinFlohDropdown = () => {
         {productData.ABOUTFINFLOH.map((product, index) => (
           <Link href={product.url} activeClassName="active" key={index}>
             <div className="products-dropdown-left-content">
-              <div className="products-dropdown-left-icon">
+              {/* <div className="products-dropdown-left-icon">
                 <img src={product.icon} alt={`${product.title} Icon`} />
-              </div>
+              </div> */}
               <div className="products-dropdown-left-content-main">
                 <div className="products-dropdown-left-title">
                   {product.title}
