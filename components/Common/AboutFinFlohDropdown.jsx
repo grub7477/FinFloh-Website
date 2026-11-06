@@ -22,8 +22,14 @@ const AboutFinFlohDropdown = () => {
       {
         title: "Oracle Netsuite",
         // description: "ERP",
-        icon: "/icons/integrations/oracleNetsuite.svg",
+        icon: "/icons/integrations/oracle-netsuite.svg",
         url: "/integrations/netsuite",
+      },
+      {
+        title: "Microsoft Dynamics",
+        // description: "ERP",
+        icon: "/icons/integrations/business-central.svg",
+        url: "/integrations/business-central",
       },
     ],
   };
