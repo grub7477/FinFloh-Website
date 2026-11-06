@@ -576,7 +576,7 @@ export default function BusinessCentralPage() {
             <div>
               {/* TODO: Replace this hero image with the Business Central hero image (current path is a placeholder) */}
               <img
-                src="/images/dynamicsHeroIllustration.jpg"
+                src="/images/businessCentralHeroIllustration.jpg"
                 alt="Microsoft dynamics Logo"
               />
             </div>
