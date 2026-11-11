@@ -31,6 +31,18 @@ const AboutFinFlohDropdown = () => {
         icon: "/icons/integrations/business-central.svg",
         url: "/integrations/business-central",
       },
+      {
+        title: "Tally",
+        // description: "ERP",
+        icon: "/icons/integrations/tally.svg",
+        url: "/integrations/tally",
+      },
+      {
+        title: "Orcale Fusion",
+        // description: "ERP",
+        icon: "/icons/integrations/oracle.svg",
+        url: "/integrations/oracle-fusion",
+      },
     ],
   };
 
