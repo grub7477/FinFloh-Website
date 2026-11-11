@@ -15,7 +15,7 @@ const CardsSectionV2 = ({
       <div className="container stack stack--extra">
         <div className="stack ">
           <h3 className="heading_xs highlight-text--gradient">{kicker}</h3>
-          <h2>{title}</h2>
+          <h2 className="ch30">{title}</h2>
           <p>{description}</p>
           <ButtonCommon
             label={btnText}

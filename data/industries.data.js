@@ -630,9 +630,9 @@ export const FMCGIndustry = {
       {
         uuid: "2",
         icon: "/images/partner-program/ledgerMapping.jpg",
-        title: "Customer Ledger Reconciliation",
+        title: "Claims and Deductions",
         description:
-          "Automatically reconcile customer ledgers against invoices, payments, credit notes, deductions and claims.",
+          "Automate capture of claims and deductions and their resolution workflows",
       },
       {
         uuid: "3",
@@ -651,9 +651,9 @@ export const FMCGIndustry = {
       {
         uuid: "5",
         icon: "/images/partner-program/cashApp.jpg",
-        title: "Cash Application",
+        title: "Cash Application and Ledger Reconciliation",
         description:
-          "Extract remittances, match payments and post reconciled cash straight into the ERP.",
+          "Capture payment details from bank statements, payment advices, emails and ledger statements for recon",
       },
     ],
   },
@@ -1094,6 +1094,305 @@ export const ITIndustry = {
     quote:
       "FinFloh has transformed our credit-to-cash processes from credit onboarding in Salesforce to invoice-to-cash. Using AI-driven credit intelligence, automated workflows and native ERP-CRM sync, we are saving 200 man-hours per month and scaling it up to 400 man-hours soon. We have also reduced DSO by 40-50% and increased on-time payments by 10% for 30 days past due invoices.",
     speaker: "Gopal Agarwal, VP and Head of Finance, Yellow AI",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+  },
+};
+
+export const ManufacturingIndustry = {
+  heroSection: {
+    kicker: "AI . Order-to-Cash . Manufacturing Industry",
+    title: `Automate Manufacturing Receivables. Reduce Revenue Leakage. Accelerate Cash Flow.`,
+    description: [
+      `Automate invoice validation, customer-ledger reconciliation, claims and deductions, collections and cash application. Connect ERP data with purchase orders, dispatch records, customer communications and supporting documents to improve receivables performance across your manufacturing operations.`,
+      // `Built for manufacturers managing complex customer billing, multiple invoices, partial payments, delivery discrepancies, quality claims and commercial deductions.`,
+    ],
+    btnPrimaryText: "Book a Demo",
+    btnPrimaryLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    image: "/images/partner-program/pattern-home.svg",
+  },
+
+  theProblem: {
+    kicker: "THE PROBLEM",
+    title: "Manufacturing Receivables Are Complex. Revenue Leakage Doesn't Have to Be.",
+    description:
+      "Manufacturing receivables involve more than tracking outstanding invoices. Finance teams must reconcile customer payments, validate billing against purchase orders and dispatch records, investigate quantity and quality claims, and recover deductions across multiple customers and business units. Disconnected ERP data, customer communications and supporting documents make these processes difficult to manage manually, delaying collections and increasing revenue leakage.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        icon: "/icons/industry/fragment.svg",
+        title: "Fragmented Customer and Transaction Data",
+        description:
+          "Customer invoices, payments, purchase orders, dispatch records, credit notes and claims are spread across ERP systems, customer portals, spreadsheets, emails and documents.",
+      },
+      {
+        icon: "/icons/industry/manual.svg",
+        title: "Manual Invoice and Delivery Validation",
+        description:
+          "Finance teams manually compare invoices against purchase orders, sales orders, dispatch records, delivery confirmations and customer GRNs to identify quantity, pricing and billing discrepancies.",
+      },
+      {
+        icon: "/icons/industry/claim.svg",
+        title: "Customer Claims and Deductions",
+        description:
+          "Short-payments, quality rejections, quantity differences, pricing disputes, freight deductions, damaged goods and product returns create complex claims that require investigation.",
+      },
+      {
+        icon: "/icons/industry/leakageRevenue.svg",
+        title: "Unidentified Revenue Leakage",
+        description:
+          "Unrecovered deductions, invalid claims, unrecorded short-payments, incorrect pricing and unresolved billing discrepancies reduce realised revenue and affect working capital.",
+      },
+      {
+        icon: "/icons/industry/slowCollection.svg",
+        title: "Slow Collections and Payment Delays",
+        description:
+          "Collectors lack a unified view of customer balances, ageing, payment behaviour, open claims, disputes and payment commitments, making it difficult to prioritize follow-ups.",
+      },
+      {
+        icon: "/icons/industry/slowCashApp.svg",
+        title: "Manual Cash Application",
+        description:
+          "Bank statements and remittance advice need to be interpreted and matched against customer invoices. Partial payments, multiple-invoice settlements and unidentified receipts increase manual effort.",
+      },
+    ],
+  },
+
+  thePlatform: {
+    kicker: "THE PLATFORM",
+    title: "One AI Platform Across the Manufacturing Receivables Lifecycle",
+    description:
+      "FinFloh connects contracts, purchase orders, invoices, dispatch records, customer ledgers, payments and communications to automate manufacturing receivables — from invoice validation to reconciled cash.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        uuid: "0",
+        icon: "/images/partner-program/contractIntelligence.jpg",
+        title: "Contract, PO and Invoice Intelligence",
+        description:
+          "Read contracts, purchase orders, price lists, invoices and supporting documents to extract commercial terms, pricing, billing conditions and relevant transaction details.",
+      },
+      {
+        uuid: "1",
+        icon: "/images/partner-program/invoiceValidation.jpg",
+        title: "Automated Invoice Validation and Automation",
+        description:
+          "Validate invoices against available purchase orders, sales orders, dispatch records, delivery confirmations and customer GRNs. Identify discrepancies before or during invoice processing and support invoice generation and delivery.",
+      },
+      {
+        uuid: "2",
+        icon: "/images/partner-program/ledgerMapping.jpg",
+        title: "Customer-Ledger Reconciliation",
+        description:
+          "Reconcile customer ledgers against invoices, payments, credit notes, deductions, claims and supporting evidence to identify mismatches and outstanding exceptions.",
+      },
+      {
+        uuid: "3",
+        icon: "/images/partner-program/disputeManagement.jpg",
+        title: "Claims, Deductions and Disputes",
+        description:
+          "Classify, investigate and track customer claims involving quantity differences, quality rejections, pricing, freight, damaged goods, returns and short-payments.",
+      },
+      {
+        uuid: "4",
+        icon: "/images/partner-program/aiCollection.jpg",
+        title: "Collections",
+        description:
+          "Generate AI-prioritized collector worklists, automate payment reminders, capture Promise-to-Pay commitments and track customer follow-ups.",
+      },
+      {
+        uuid: "5",
+        icon: "/images/partner-program/cashApp.jpg",
+        title: "Cash Application",
+        description:
+          "Extract remittance information, match payments to customers and invoices, identify partial payments and deductions, and support cash application into the ERP.",
+      },
+    ],
+  },
+
+  capabilities: {
+    kicker: "CAPABILITIES",
+    title: "One Platform Across the Manufacturing Finance Team",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        title: "THE CFO OFFICE",
+        description:
+          "Complete Visibility and Control Across Manufacturing Receivables",
+        subfeatures: [
+          "Customer-level receivables visibility",
+          "Revenue leakage identification",
+          "Deductions and claims visibility",
+          "Collection performance tracking",
+          "Recovery and dispute tracking",
+          "DSO and ageing analysis",
+          "Cash flow visibility",
+          "Receivables performance analytics",
+        ],
+      },
+      {
+        title: "AR / Reconciliation Team",
+        description:
+          "Validate Invoices and Reconcile Customer Ledgers with Greater Accuracy",
+        subfeatures: [
+          "Invoice validation against POs and sales orders",
+          "Dispatch and delivery confirmation checks",
+          "Customer GRN and quantity discrepancy validation",
+          "Customer-ledger reconciliation",
+          "Payment and invoice matching",
+          "Deduction identification and classification",
+          "Claims management",
+          "Dispute investigation and workflow tracking",
+          "Supporting document verification",
+          "Audit trail and exception visibility",
+        ],
+      },
+      {
+        title: "Collections Team",
+        description:
+          "Improve Collector Productivity and Accelerate Collections",
+        subfeatures: [
+          "AI-prioritized collector worklists",
+          "Customer-wise outstanding tracking",
+          "Automated payment reminders",
+          "Payment behaviour and ageing analysis",
+          "Customer communication",
+          "Promise-to-Pay capture and tracking",
+          "Internal alerts and escalations",
+          "Collector productivity and performance tracking",
+        ],
+      },
+      {
+        title: "Cash Application Team",
+        description:
+          "Reconcile Customer Payments with Less Manual Effort",
+        subfeatures: [
+          "Bank statement OCR",
+          "Remittance advice extraction",
+          "Customer and invoice identification",
+          "Multi-invoice payment matching",
+          "Partial-payment handling",
+          "Unidentified receipt investigation",
+          "Deduction and tax adjustment handling",
+          "ERP cash posting where supported",
+        ],
+      },
+    ],
+  },
+
+  aiAgents: {
+    kicker: "AI AGENTS",
+    title: "AI Agents That Understand Manufacturing Finance Documents and Customer Communications",
+    description:
+      "Manufacturing receivables involve a large volume of documents and customer conversations. DocSense AI extracts information from contracts, purchase orders, invoices and payment documents, while FlohSense AI reads customer emails and communications to understand claims, payment commitments and queries. Together, they help connect documents and customer conversations with the relevant receivable and finance workflow.",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    agents: [
+      {
+        name: "DocSense AI",
+        tagline:
+          "Understand Manufacturing Contracts, Invoices and Supporting Documents",
+        reads: [
+          "Customer and supplier contracts",
+          "Purchase orders",
+          "Sales orders",
+          "Invoices",
+          "Delivery documents and GRNs",
+          "Credit notes and debit notes",
+          "Bank statements",
+          "Remittance advice",
+          "Supporting claim documents",
+        ],
+        outputLabel: "EXTRACTS",
+        outputs: [
+          "Contractual pricing and commercial terms",
+          "Product and quantity details",
+          "Billing conditions",
+          "Invoice information",
+          "Payment and remittance details",
+          "Discrepancies and relevant document information",
+        ],
+      },
+      {
+        name: "FlohSense AI",
+        tagline:
+          "Understand Customer Emails and Automate Finance Communication",
+        reads: [
+          "Customer emails",
+          "Payment advice and related email content",
+          "Invoice queries",
+          "Customer claims and dispute explanations",
+          "Payment commitments",
+          "Supporting communication and data requests",
+        ],
+        outputLabel: "AUTOMATES / SUPPORTS",
+        outputs: [
+          "Promise-to-Pay identification and capture",
+          "Dispute and claim identification",
+          "Payment and invoice query identification",
+          "Communication routing",
+          "Supported customer auto-replies",
+          "Workflow initiation and follow-up",
+        ],
+      },
+    ],
+  },
+
+  numbers: {
+    kicker: "BUSINESS OUTCOMES",
+    title: "Transform Manufacturing Receivables with AI",
+    btnText: "Book a Demo",
+    btnLink:
+      "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
+    features: [
+      {
+        kpi: "XX%",
+        description:
+          "Faster Invoice Validation — reduce manual checks across purchase orders, dispatch records, delivery confirmations and invoices",
+      },
+      {
+        kpi: "40%+",
+        description:
+          "Lower Revenue Leakage — identify and investigate deductions, short-payments, invalid claims and commercial discrepancies",
+      },
+      {
+        kpi: "50%",
+        description:
+          "Faster Reconciliation — reduce manual effort in matching customer ledgers, payments and invoices",
+      },
+      {
+        kpi: "60%",
+        description:
+          "Improved Collections — prioritize customers and outstanding invoices that require action",
+      },
+      {
+        kpi: "40-50%",
+        description:
+          "Faster Claim Resolution — connect customer claims with relevant transaction and supporting document evidence",
+      },
+      {
+        kpi: "XX%",
+        description:
+          "Better Working-Capital Visibility — improve visibility into outstanding receivables, payment commitments, deductions and collection performance",
+      },
+    ],
+  },
+
+  footerCTA: {
+    title: "Supercharge Your Manufacturing Receivables with FinFloh",
+    description:
+      "Connect contracts, purchase orders, invoices, customer communications and payment data to automate manufacturing receivables, reduce revenue leakage and accelerate cash flow.",
+    quote: "",
+    speaker: "",
     btnText: "Book a Demo",
     btnLink:
       "/book-a-demo?utm_source=fmcg_industry_cta&utm_medium=finfloh_website",
