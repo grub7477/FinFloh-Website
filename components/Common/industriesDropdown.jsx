@@ -28,6 +28,12 @@ const IndustriesDropdown = () => {
         icon: "/icons/fmcg.svg",
         url: "/industries/fmcg",
       },
+      {
+        title: "Manufacturing",
+        /*subtitle: "Automate billing and collections.",*/
+        icon: "/icons/manufacturing.svg",
+        url: "/industries/manufacturing",
+      },
     ],
   };
 
