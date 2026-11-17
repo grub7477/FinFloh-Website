@@ -38,7 +38,7 @@ const AboutFinFlohDropdown = () => {
         url: "/integrations/tally",
       },
       {
-        title: "Orcale Fusion",
+        title: "Oracle Fusion",
         // description: "ERP",
         icon: "/icons/integrations/oracle.svg",
         url: "/integrations/oracle-fusion",
