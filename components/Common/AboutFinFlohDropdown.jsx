@@ -26,7 +26,7 @@ const AboutFinFlohDropdown = () => {
         url: "/integrations/netsuite",
       },
       {
-        title: "Microsoft Dynamics",
+        title: "Business Central",
         // description: "ERP",
         icon: "/icons/integrations/business-central.svg",
         url: "/integrations/business-central",
